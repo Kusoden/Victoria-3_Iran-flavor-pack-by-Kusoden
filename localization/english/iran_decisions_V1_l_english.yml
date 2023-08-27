@@ -1,0 +1,37 @@
+﻿l_english:
+#Bahrein decision
+bahrein_decision:0 "Regain power on Persian Gulf and regain Bahrein"
+bahrein_event_tt:0 "Bahrein will be regained"
+bahrein_decision_desc:0 "It's been a long time since we lost our power on Persian Gulf and because of that not only outsiders trying to claim Bahrein, but also local landowners trying to gain Independence. Although Iran says otherwise, it has no power to show it. Will Iran be able to change that?"
+bahrein.1.t:0 "Bahrein Regained!"
+bahrein.1.d:0 "After Iran regaining power in Persian gulf once again. We were able to Regain our islands once again!"
+bahrein.1.f:0 "We have been able to prevent some of our people from being taken over by foreigners, we have been able to reclaim some of our lands. As the Shah of Iran, it is your duty to make sure that all our people are within Iran's borders. They should be safe, prosperous and have a guaranteed future."
+bahrein.1.a:0 "Perhaps now is an opportune moment to repossess our lost territories, starting by adversaries who have sought to undermine Iran over the course of centuries."
+
+#Arable land Kariz (Qanat) decision
+arable_land_decision:0 "Improve arable land and water supplies"
+arable_land_event_tt:0 "Arable lands will be improved in all states where Iran already owns."
+arable_land_decision_desc:0 "The kārēz (< kār- “to draw furrows” and rēz- “to flow”) conducts water from the level of an aquifer to the open air by means of simple gravity in order to distribute it to lower areas. This technology is primarily used for irrigation (ābyāri) and allows for the cultivation of approximately 1,500,000 hectares worldwide, or about 0.6 percent of the total irrigated surface area. Underground water channels originated in the highlands of Iranian lands, where until today they have remained the preferred irrigation technology. (Source:Iranica)"
+arable_land_var_custom_tooltip:0 "Has made the decision to work on the Arable lands"
+
+#Confront British envoy
+justin_sheil_decision:0 "Confront the British envoy and see what they desire"
+justin_sheil_decision_event_tt:0 "You will be confronting Brits and their request"
+justin_sheil_decision_desc:0 "When Justin Sheil succeeded John McNiel as the envoy to Iran in 1844, he and his wife observed the slavery and decided to act against it. He sent a letter to Aqasi (Mirza Aqasi Iravani a Yerevani Armenian was prime minister of Iran 1835 to 1848, which is represented as Landowner leaders ingame.) and pleaded for its abolition. Mohammad Shah, however, did not respond to this diplomatic pressure so Sheil brought up the moral aspect of slavery, emphasizing its negative impacts on the African population. Mohammad Shah remained unmoved and said abolition would contradict the Islamic tradition. Sheil further argued his points but Mohammad responded such interference would undermine diplomatic relations between the two nations. But this time this desicion is in your hands!"
+justin_sheil_event_tt:0 "Choose your road"
+slavery.1.t:0 "Confrontation!"
+slavery.1.d:0 "Will you choose to stand for the traditions (which isnt ours its an outsider uncivilized tradition) or will you do what is good for all? and be a step more close to Iranian culture and traditions"
+slavery.1.f:0 "In late 1847, Sheil was recalled to London and replaced with Colonel Francis Farrant, who also negotiated for abolition with Aqasi. Farrant was more successful, especially for the newly signed treaty of Erzurum that put him a good light for the grand vizier. Farrant argued if the Ottoman Empire could abolish slavery in their nation, Iranians could do the same. The argument appealed to Aqasi, who suggested it to Mohammad Shah. Mohammad was ready to adapt the changes similar to those of the Ottomans because it is clear from the letter he sent to Farrant. In this way, he could appease the British without challenging Islamic tradition. Mohammad wrote thus to Farrant regarding the abolition of slavery in the Ottoman Empire:Between the religions of Europe and our religion there is great distinction and difference, and we cannot observe or join in matters which are in accordance with their religion and in opposition to ours, why we wrote that the exalted English government should make enquiries of the Turkish government on this subject, was because that government being a Mahomedan state and in that country the traffic in slaves being much more extensive than any where else, we might observe what answer it will give, that then we may give a reply which should not be opposed to tenets of the Mahomedan faith. Mohammad Shah agreed to the abolition of the slave trade through the Persian Gulf but having slaves and trading them over land was still allowed. On Mohammad's behest, Aqasi sent three letters to the governors of Fars, Kerman, and Isfahan, ordering the governors not to partake in the slave trade in the Persian Gulf and expressing his concerns of the shah's health. On the advice of both Sheil and Farrant, Aqasi also approached the major ulama of Tehran to ask their consent should the slave traders accuse them of blasphemy. The results were unfavorable; most of the ulama regarded slavers as legal according to Mohammedan law. Sheil, however, was successful in obtaining a fatwa in support of the shah's decision."
+slavery.1.a:0 "Reject what British wants, praise islamic traditions"
+slavery.1.b:0 "Do what Mohammad Shah done, and partially ban the Slaves in some states"
+slavery.1.c:0 "Accept what they say, and fully ban Slavery!"
+
+#Farman-e Vejdan-e Azad
+farman_e_din_decision:0 "Listen to the wishes of the French Ambassador"
+farman_e_din_event_tt:0 "The French Ambassador will ask you for an order to enforce Freedom of Conscience, maybe we can get something more from them!"
+farman_e_din_decision_desc:0 "The arrival in 1839 of Félix Édouard Comte de Sercey as French ambassador to the Iranian court brought the Lazarists unprecedented advantages. In June he obtained from Moḥammad Shah an farmān (order) affirming the principle of freedom of conscience in Iran. Thenceforth, Roman Catholics were to enjoy the same rights and privileges as Muslim Iranians! source:Iranica (FRANCE xv. FRENCH SCHOOLS IN PERSIA)"
+
+#turan_decision 
+turan_decision:0 "Fight back the Jahansuzan and regain power in Turan!"
+turan_decision_desc:0 "The Treaty of Akhal was a treaty signed by Iran and Imperial Russia on 21 September 1881. The treaty marked Iran's official recognition of Khwarazm's annexation by the Russian Empire. Although Iran had won a clear victory in the last Ottoman–Iranian War (1821–23) over their Ottoman arch rivals, it had been considerably weakened by years of ineffective rulers, the defeat against Russia in 1813 and 1828 in which they lost all of the Caucasus, and with the increasing occupation by Great Britain of Egypt, during the years of 1873 to 1881, and on top of that the decaying Ottoman Empire, Imperial Russia stepped up its campaign to wrest full control over Central Asia. By virtue of this treaty, Iran would henceforth cease any claim to all parts of Gostana and Farā-rūd (Transoxiana), setting the Atrek River as the new boundary. Hence Merv, Sarakhs, Ashkanabad, and the surrounding areas were transferred to Russian control under the command of General Alexander Komarov in 1884. If you can react before 1880 you might stop Russians and even reclaim what is lost in Kafkas!"
+turan_event_tt:0 "The Lion Roars!    Annex khiva, bukhara and kokand"

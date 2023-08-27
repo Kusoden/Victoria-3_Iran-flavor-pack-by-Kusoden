@@ -1,0 +1,28 @@
+﻿l_english:
+ catholic:0 "Catholic"
+ protestant:0 "Protestant"
+ orthodox:0 "Orthodox"
+ oriental_orthodox:1 "Oriental Orthodox"
+ sunni:0 "Sunni"
+ shiite:0 "Shiite"
+ jewish:0 "Jewish"
+ mahayana:0 "Mahayana"
+ gelugpa:0 "Gelugpa"
+ theravada:0 "Theravada"
+ hindu:0 "Hindu"
+ shinto:0 "Shinto"
+ sikh:0 "Sikh"
+ animist:0 "Animist"
+ eastern:0 "Eastern"
+ buddhist:0 "Buddhist"
+ christian:0 "Christian"
+ muslim:0 "Muslim"
+
+#Faith
+ mazdayasna:0 "Mazda Yasna"
+
+#Religious Trait
+ zoroastrian:0 "Mazda Yasni"
+
+ zoroastrianism_decision:0 "Return to Ahura Mazda's Light"
+ zoroastrianism_decision_desc:0 "The ancient teachings of the Zarathushtra made our ancient land to be remembered for over centuries. His teaching has not only influenced us, most of the civilized world today follows his ethics and morality! Perhaps it is time, while we have no sword on our throat anymore. To reject the Tazis and Jahansuzan and return to our roots."

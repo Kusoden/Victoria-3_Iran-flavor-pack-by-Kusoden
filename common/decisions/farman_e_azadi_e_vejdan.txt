@@ -1,0 +1,34 @@
+farman_e_din_decision = {
+	is_shown = {
+		NOT = { has_variable = farman_e_din_var }
+		this ?= c:PER
+	}
+
+	possible = {
+		year >= 1839
+
+		c:FRA = {
+			relations:root >= relations_threshold:cordial
+		}
+		
+	}
+
+	when_taken = {
+		set_variable = farman_e_din_var
+		custom_tooltip = farman_e_din_event_tt
+		
+		activate_law = law_type:law_freedom_of_conscience
+		add_technology_researched = logistics
+		add_technology_researched = field_works
+		add_technology_researched = empiricism
+		
+		change_relations = {
+   		country = c:FRA
+   		value = 50
+  		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}

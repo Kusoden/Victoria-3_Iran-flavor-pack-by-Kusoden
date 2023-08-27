@@ -1,0 +1,13 @@
+{
+  "name" : "Iran Flavor pack by Kusoden",
+  "id" : "",
+  "version" : "1.0",
+  "supported_game_version" : "",
+  "picture": "thumbnail.png",
+  "short_description" : "",
+  "tags" : ["Iran"],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

@@ -1,0 +1,27 @@
+pm_default_building_argebam = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_legitimacy_headofstate_add = 20
+			country_prestige_add = 200
+			country_authority_add = 200
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			building_throughput_mult = 0.01
+		}
+	}
+
+	building_modifiers = {
+		#workforce_scaled = {
+		#}
+
+		level_scaled = {
+			building_employment_machinists_add = 100
+			building_employment_officers_add = 100
+		}
+	}
+}

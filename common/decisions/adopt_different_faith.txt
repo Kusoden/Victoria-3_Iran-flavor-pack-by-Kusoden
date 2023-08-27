@@ -1,0 +1,70 @@
+﻿zoroastrianism_decision = {
+	is_shown = {
+		exists = c:PER
+		this ?= c:PER
+		NOT = { country_has_state_religion = rel:mazdayasna }
+		NOT = { has_law = law_type:law_theocracy }
+	}
+
+	possible = {
+		has_law = law_type:law_freedom_of_conscience
+		has_law = law_type:law_slavery_banned
+		ig:ig_devout = {
+			is_in_government = no
+		}
+
+		NOT = { has_law = law_type:law_religious_schools }
+		OR = {
+			has_law = law_type:law_ethnostate
+			has_law = law_type:law_national_supremacy
+		}
+	}
+
+	when_taken = {
+		set_state_religion = rel:mazdayasna
+		set_ruler_religion = rel:mazdayasna
+		ig:ig_devout = {
+			remove_ideology = ideology_pious
+			add_ideology = ideology_loyalist
+			remove_ideology = ideology_patriarchal
+			add_ideology = ideology_egalitarian
+			hidden_effect = { set_interest_group_name = ig_zoroastrian_priests }
+		}
+
+		ig:ig_landowners = {
+			remove_ideology = ideology_pro_slavery
+			add_ideology = ideology_reactionary
+			hidden_effect = { set_interest_group_name = "Deh-sālār" }
+		}
+
+
+		ig:ig_petty_bourgeoisie = {
+			hidden_effect = { set_interest_group_name = "Dehgān-ān" }
+		}
+
+		ig:ig_armed_forces = {
+			hidden_effect = { set_interest_group_name = "Gārd-e jāvidān-e Šāh-an-Šāh-i" }
+		}
+
+		ig:ig_intelligentsia = {
+			hidden_effect = { set_interest_group_name = "Rošan fekr-ān" }
+		}
+
+		ig:ig_trade_unions = {
+			hidden_effect = { set_interest_group_name = "Xāne-ye kārgar-ān" }
+		}
+
+		ig:ig_rural_folk = {
+			hidden_effect = { set_interest_group_name = "Šahrestān-i-ha" }
+		}
+
+		ig:ig_industrialists = {
+			hidden_effect = { set_interest_group_name = "Bāzār-i" }
+		}
+
+		add_radicals = {
+   		value = 0.1
+  	 	religion = <scope/rel:shiite>
+ 	  	}
+	}
+}

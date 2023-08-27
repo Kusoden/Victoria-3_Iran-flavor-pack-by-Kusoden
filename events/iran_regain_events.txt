@@ -1,0 +1,62 @@
+﻿namespace = iran
+
+iran.1 = {
+	type = country_event
+
+	title = bahrein.1.t
+	desc = bahrein.1.d
+	flavor = bahrein.1.f
+
+	placement = scope:bahrein_overlord_capital
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:BHN = {
+			save_scope_as = bahrein_country
+			top_overlord = {
+				save_scope_as = bahrein_overlord
+				capital = {
+					save_scope_as = bahrein_overlord_capital
+				}
+			}
+		}
+	}
+
+	option = {
+		name = bahrein.1.a
+		default_option = yes
+		annex = c:BHN
+		if = {
+			limit = {
+				NOR = {
+					has_claim = s:STATE_BALUCHISTAN
+					owns_entire_state_region = STATE_BALUCHISTAN 
+				}
+			}
+			s:STATE_BALUCHISTAN = {
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_claim = s:STATE_EASTERN_AFGHANISTAN
+					owns_entire_state_region = STATE_EASTERN_AFGHANISTAN
+				}
+			}
+			s:STATE_EASTERN_AFGHANISTAN = {
+				add_claim = ROOT
+			}
+		}
+	}
+}

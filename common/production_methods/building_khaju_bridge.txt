@@ -1,0 +1,27 @@
+pm_default_building_khaju_bridge = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_legitimacy_headofstate_add = 20
+			country_prestige_add = 200
+			country_authority_add = 200
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 30
+		}
+	}
+
+	building_modifiers = {
+		#workforce_scaled = {
+		#}
+
+		level_scaled = {
+			building_employment_machinists_add = 50
+			building_employment_officers_add = 10
+		}
+	}
+}

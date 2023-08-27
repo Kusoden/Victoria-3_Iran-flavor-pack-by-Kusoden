@@ -1,0 +1,38 @@
+﻿COUNTRIES = {
+	c:PER = {
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_devout = {
+			add_ruling_interest_group = yes
+			set_interest_group_name = ig_shia_madrasahs
+		}
+		effect_starting_technology_tier_4_tech = yes
+		
+		effect_starting_politics_conservative = yes
+
+		add_technology_researched = admiralty
+		add_technology_researched = law_enforcement
+		add_technology_researched = urban_planning
+		add_technology_researched = nationalism
+		add_technology_researched = mandatory_service 
+		add_technology_researched = line_infantry 
+		add_technology_researched = cotton_gin 
+
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_state_religion  #by june1839 freedom of conscience https://www.iranicaonline.org/articles/france-xv#prettyPhoto
+		activate_law = law_type:law_ethnostate
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_land_based_taxation	
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_local_police # there were some minor Police forces (including shabgards, baazaar watchmen etc.) but not a big Police force all over the country.
+		activate_law = law_type:law_private_schools #https://www.iranicaonline.org/articles/france-xv#prettyPhoto
+		activate_law = law_type:law_professional_army # Under Mohammad Shah qajar the army were moslty Professional and especially around 1836 because he wanted to invade Herat and extend Iran's influence up to Amu Darya.
+		activate_law = law_type:law_appointed_bureaucrats #The Shah had the authority to appoint officials to various administrative roles within the government, including high-ranking positions such as ministers, governors, and other administrative posts.
+
+		set_tax_level = medium
+	}
+}

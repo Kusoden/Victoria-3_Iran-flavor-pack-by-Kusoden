@@ -1,0 +1,33 @@
+justin_sheil_decision = {
+	is_shown = {
+		NOT = { has_variable = justin_sheil_var }
+		this ?= c:PER
+	}
+
+	possible = {
+		year >= 1844
+		year <= 1850
+
+		c:GBR = {
+			relations:root >= relations_threshold:cordial
+		}
+		has_law = law_type:law_slave_trade
+	}
+
+	when_taken = {
+		set_variable = justin_sheil_var
+		custom_tooltip = justin_sheil_event_tt
+
+		hidden_effect = {
+			trigger_event = {
+				id = slavery.1
+				days = 0
+				popup = yes
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}

@@ -1,0 +1,534 @@
+﻿namespace = iranian_culture
+
+# Mark states with new homeland
+iranian_culture.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = iranian_culture.1.t
+
+	flavor = iranian_culture.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	duration = 1
+
+	trigger = {
+		# triggered by standardization JE
+	}
+
+	option = {
+		name = iranian_culture.1.a
+		default_option = yes
+
+		add_primary_culture = cu:iranian
+
+		every_state_region = {
+			limit = {
+				any_scope_state = {
+					owner = ROOT
+					NOT = {
+						cu:iranian =  {
+							has_homeland = PREV
+						}
+					}
+					OR = {
+							cu:pashtun =  {
+								has_homeland = PREV
+							}
+							cu:kurdish =  {
+								has_homeland = PREV
+							}
+							cu:baluchi =  {
+								has_homeland = PREV
+							}
+							cu:persian =  {
+								has_homeland = PREV
+							}
+							cu:tajik =  {
+								has_homeland = PREV
+							}
+							cu:armenian =  {
+								has_homeland = PREV
+							}
+							cu:georgian =  {
+								has_homeland = PREV
+							}
+							cu:azerbaijani =  {
+								has_homeland = PREV
+							}
+							cu:north_caucasian =  {
+								has_homeland = PREV
+							}
+							cu:circassian =  {
+								has_homeland = PREV
+							}
+					}
+				}
+			}
+			add_homeland = iranian
+		}
+	}
+}
+
+iranian_culture.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = iranian_culture.2.t
+
+	flavor = iranian_culture.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	trigger = {
+		# triggered by standardization JE pulses
+	}
+
+	hidden = yes
+	immediate = {
+        # check and re-add syncretic primary culture on this yearly check, because forming countries changes the primary cultures, which could lead to no cultures at all with event 5 causing a crash
+        if = {
+            limit = {
+                NOT = {
+                    country_has_primary_culture = cu:iranian
+                }
+            }
+            add_primary_culture = cu:iranian
+        }
+
+		# check for newcomer states
+		if = {
+			limit = {
+				any_state_region = {
+					any_scope_state = {
+						owner = ROOT
+						NOT = {
+							cu:iranian =  {
+								has_homeland = PREV
+							}
+						}
+						OR = {
+							cu:pashtun =  {
+								has_homeland = PREV
+							}
+							cu:kurdish =  {
+								has_homeland = PREV
+							}
+							cu:baluchi =  {
+								has_homeland = PREV
+							}
+							cu:persian =  {
+								has_homeland = PREV
+							}
+							cu:tajik =  {
+								has_homeland = PREV
+							}
+							cu:armenian =  {
+								has_homeland = PREV
+							}
+							cu:georgian =  {
+								has_homeland = PREV
+							}
+							cu:azerbaijani =  {
+								has_homeland = PREV
+							}
+							cu:north_caucasian =  {
+								has_homeland = PREV
+							}
+							cu:circassian =  {
+								has_homeland = PREV
+							}
+
+						}
+					}
+				}
+			}
+			# trigger homeland expansion event
+			trigger_event = { id = iranian_culture.4 }
+		}
+
+		# trigger actual pop change event with delay to account for eventual new homelands
+		trigger_event = { id = iranian_culture.5 days = 45}
+	}
+}
+
+iranian_culture.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = iranian_culture.3.t
+
+	flavor = iranian_culture.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	duration = 1
+
+	trigger = {
+		# triggered by standardization JE end
+	}
+
+    #remove primaries
+	option = {
+		name = iranian_culture.3.a
+		default_option = no
+        ai_chance = {
+            base = 0
+        }
+
+		remove_primary_culture = cu:pashtun
+		remove_primary_culture = cu:kurdish
+		remove_primary_culture = cu:baluchi
+		remove_primary_culture = cu:persian
+		remove_primary_culture = cu:tajik
+		remove_primary_culture = cu:armenian
+		remove_primary_culture = cu:georgian
+		remove_primary_culture = cu:azerbaijani
+		remove_primary_culture = cu:north_caucasian
+		remove_primary_culture = cu:circassian
+	}
+
+    #do nothing
+	option = {
+		name = iranian_culture.3.b
+		default_option = no
+	}
+
+    #remove all primary and homelands
+	option = {
+		name = iranian_culture.3.c
+		default_option = yes
+
+		remove_primary_culture = cu:pashtun
+		remove_primary_culture = cu:kurdish
+		remove_primary_culture = cu:baluchi
+		remove_primary_culture = cu:persian
+		remove_primary_culture = cu:tajik
+		remove_primary_culture = cu:armenian
+		remove_primary_culture = cu:georgian
+		remove_primary_culture = cu:azerbaijani
+		remove_primary_culture = cu:north_caucasian
+		remove_primary_culture = cu:circassian
+
+		every_state_region = {
+			limit = {
+				any_scope_state = {
+					owner = ROOT
+					cu:iranian =  {
+						has_homeland = PREV
+					}
+					OR = {
+							cu:pashtun =  {
+								has_homeland = PREV
+							}
+							cu:kurdish =  {
+								has_homeland = PREV
+							}
+							cu:baluchi =  {
+								has_homeland = PREV
+							}
+							cu:persian =  {
+								has_homeland = PREV
+							}
+							cu:tajik =  {
+								has_homeland = PREV
+							}
+							cu:armenian =  {
+								has_homeland = PREV
+							}
+							cu:georgian =  {
+								has_homeland = PREV
+							}
+							cu:azerbaijani =  {
+								has_homeland = PREV
+							}
+							cu:north_caucasian =  {
+								has_homeland = PREV
+							}
+							cu:circassian =  {
+								has_homeland = PREV
+							}
+					}
+				}
+			}
+			remove_homeland = pashtun
+			remove_homeland = kurdish
+			remove_homeland = baluchi
+			remove_homeland = persian
+			remove_homeland = tajik
+			remove_homeland = cu:armenian
+			remove_homeland = cu:georgian
+			remove_homeland = cu:azerbaijani
+			remove_homeland = cu:north_caucasian
+			remove_homeland = cu:circassian
+		}
+	}
+}
+
+# Add newly added states that fit the criteria to homelands
+iranian_culture.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = iranian_culture.4.t
+
+	flavor = iranian_culture.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	duration = 1
+
+	trigger = {
+		# triggered by standardization JE
+	}
+
+	option = {
+		name = iranian_culture.4.a
+		default_option = yes
+
+		every_state_region = {
+			limit = {
+				any_scope_state = {
+					owner = ROOT
+					NOT = {
+						cu:iranian =  {
+							has_homeland = PREV
+						}
+					}
+					OR = {
+							cu:pashtun =  {
+								has_homeland = PREV
+							}
+							cu:kurdish =  {
+								has_homeland = PREV
+							}
+							cu:baluchi =  {
+								has_homeland = PREV
+							}
+							cu:persian =  {
+								has_homeland = PREV
+							}
+							cu:tajik =  {
+								has_homeland = PREV
+							}
+							cu:armenian =  {
+								has_homeland = PREV
+							}
+							cu:georgian =  {
+								has_homeland = PREV
+							}
+							cu:azerbaijani =  {
+								has_homeland = PREV
+							}
+							cu:north_caucasian =  {
+								has_homeland = PREV
+							}
+							cu:circassian =  {
+								has_homeland = PREV
+							}
+					}
+				}
+			}
+			add_homeland = iranian
+		}
+	}
+}
+
+iranian_culture.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = iranian_culture.5.t
+
+	flavor = iranian_culture.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	trigger = {
+		# triggered by standardization .2
+	}
+
+	hidden = yes
+	immediate = {
+
+		every_state = {
+			# apply 100% pop change to all owned states if the debug decision was taken
+			if = {
+				limit = {
+					ROOT = { has_variable = complete_iranian_decision_var }
+					owner = ROOT
+				}
+				every_scope_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = pashtun
+							has_pop_culture = kurdish
+							has_pop_culture = baluchi
+							has_pop_culture = persian
+							has_pop_culture = tajik
+							}
+
+						}
+					}
+					change_pop_culture = {
+						target = cu:iranian
+						value = change_entire_pop_value
+					}
+				}
+			}
+
+			# apply pop changes to old primary cultures living in newly marked homelands
+			if = {
+				limit = {
+                    ROOT = { NOT = {has_variable = complete_iranian_decision_var } }
+					cu:iranian = {
+						has_homeland = PREV
+					}
+					owner = ROOT
+				}
+				every_scope_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = pashtun
+							has_pop_culture = kurdish
+							has_pop_culture = baluchi
+							has_pop_culture = persian
+							has_pop_culture = tajik
+						}
+					}
+					change_pop_culture = {
+						target = cu:iranian
+						value = change_pop_value
+					}
+				}
+			}
+
+			# apply pop changes to old primary cultures that have moved around within your country
+			if = {
+                limit = {
+                    ROOT = { NOT = {has_variable = complete_iranian_decision_var } }
+                    NOT = {
+                        cu:iranian = {
+                            has_homeland = PREV
+                        }
+                    }
+                    owner = ROOT
+                }
+                every_scope_pop = {
+                    limit = {
+                        OR = {
+							has_pop_culture = pashtun
+							has_pop_culture = kurdish
+							has_pop_culture = baluchi
+							has_pop_culture = persian
+							has_pop_culture = tajik
+
+                        }
+
+                    }
+                    change_pop_culture = {
+                        target = cu:iranian
+                        value = change_pop_value_non_homeland
+                    }
+                }
+			}
+		}
+
+	}
+}
+
+# Debug menu
+iranian_culture.6 = {
+	type = country_event
+	placement = ROOT
+
+	title = iranian_culture.6.t
+
+	flavor = iranian_culture.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	duration = 1
+
+	trigger = {
+		# triggered by debug menu decision
+	}
+
+	#keep it around
+	option = {
+		name = iranian_culture.6.a
+		default_option = yes
+	}
+	#hide it forever
+	option = {
+		name = iranian_culture.6.b
+		default_option = no
+
+		custom_tooltip = {
+			text = hide_iranian_debug_menu_var_custom_tooltip
+			set_variable = hide_iranian_debug_menu_var
+		}
+	}
+	#trigger a yearly tick
+	option = {
+		name = iranian_culture.6.c
+		default_option = no
+
+		trigger_event = { id = iranian_culture.5 }
+	}
+	#trigger milestone event
+	option = {
+		name = iranian_culture.6.d
+		default_option = no
+
+		trigger_event = { id = iranian_culture.3 }
+	}
+	#set conversion to 100 percent
+	option = {
+		name = iranian_culture.6.e
+		default_option = no
+
+		custom_tooltip = {
+			text = complete_iranian_decision_var_custom_tooltip
+			set_variable = complete_iranian_decision_var
+		}
+		trigger_event = { id = iranian_culture.5 }
+	}
+}

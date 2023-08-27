@@ -1,0 +1,106 @@
+﻿je_iranian_culture = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:pashtun
+			country_has_primary_culture = cu:kurdish
+			country_has_primary_culture = cu:baluchi
+			country_has_primary_culture = cu:persian
+			country_has_primary_culture = cu:tajik
+			country_has_primary_culture = cu:armenian
+			country_has_primary_culture = cu:georgian
+			country_has_primary_culture = cu:azerbaijani
+			country_has_primary_culture = cu:north_caucasian
+			country_has_primary_culture = cu:circassian
+		}
+
+        OR = {
+            has_variable = iranian_culture_decision_var
+            NOT = {has_variable = has_picked_iranian_culture_var}
+        }
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+		OR = {
+			country_has_primary_culture = cu:pashtun
+			country_has_primary_culture = cu:kurdish
+			country_has_primary_culture = cu:baluchi
+			country_has_primary_culture = cu:persian
+			country_has_primary_culture = cu:tajik
+			country_has_primary_culture = cu:armenian
+			country_has_primary_culture = cu:georgian
+			country_has_primary_culture = cu:azerbaijani
+			country_has_primary_culture = cu:north_caucasian
+			country_has_primary_culture = cu:circassian
+		}
+
+		custom_tooltip = {
+			text = iranian_culture_decision_var_custom_tooltip
+			has_variable = iranian_culture_decision_var
+		}
+	}
+
+	immediate = {
+		set_variable = {
+			name = iranian_culture_decision_var
+			value = 50
+		}
+		# adds primary to country and new homelands
+		trigger_event = { id = iranian_culture.1 }
+	}
+
+	on_yearly_pulse = {
+		random_events = {
+			1 = iranian_culture.2
+		}
+		effect = {
+			change_variable = {
+				name = iranian_culture_var
+				add = 1
+			}
+			if = {
+				limit = {
+					var:iranian_culture_var = 10
+				}
+				# option to remove primary cultures and homelands
+				trigger_event = { id = iranian_culture.3 }
+			}
+			if = {
+				limit = {
+					var:iranian_culture_var = 30
+				}
+				# option to remove primary cultures and homelands
+				trigger_event = { id = iranian_culture.3 }
+			}
+            if = {
+                limit = {
+                    var:iranian_culture_var = 60
+                }
+                # option to remove primary cultures and homelands
+                trigger_event = { id = iranian_culture.3 }
+            }
+		}
+	}
+
+	complete = {
+		var:iranian_culture_var = 100
+	}
+
+	current_value = {
+		value = root.var:iranian_culture_var
+	}
+
+	goal_add_value = {
+		add = 100
+	}
+
+	progressbar = yes
+
+	on_complete = {
+		remove_variable = iranian_culture_var
+	}
+
+	weight = 100
+}
