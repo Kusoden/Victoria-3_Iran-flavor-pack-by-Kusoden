@@ -867,10 +867,15 @@
 		}
 	}
 	s:STATE_KHORASAN = {
+
 		region_state:PER = {
 			create_pop = {
+				culture = kurdish
+				size = 280000
+			}
+			create_pop = {
 				culture = persian
-				size = 951194
+				size = 851194
 			}
 			create_pop = {
 				culture = persian

@@ -4,8 +4,8 @@
 	modifier = {
 		state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
-		building_group_bg_agriculture_throughput_add = 0.3
-		building_output_hardwood_mult = 0.50 
+		building_group_bg_agriculture_throughput_add = 0.2
+		goods_output_hardwood_mult = 0.25
 	}
 }
 
@@ -13,7 +13,7 @@ state_trait_turqoise_deposits = {
 	icon = "gfx/interface/icons/state_trait_icons/turquoise.dds"
 
 	modifier = {
-		building_dye_plantation_throughput_add =  0.6
+		building_dye_plantation_throughput_add = 0.4
 	}
 }
 
@@ -21,10 +21,10 @@ state_trait_Hormozgan_harbors = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
-		building_shipyards_throughput_mult = 0.3
+		building_shipyards_throughput_add = 0.2
 		state_building_port_max_level_add = 3
-		state_building_naval_base_max_level_add = 20
-		building_group_bg_fishing_throughput_mult = 0.5
+		state_building_naval_base_max_level_add = 10
+		building_group_bg_fishing_throughput_add = 0.4
 	}
 }
 
@@ -33,16 +33,8 @@ state_trait_caspian_sea = {
 	
 	modifier = {
 		state_infrastructure_add = 15
-		building_group_bg_fishing_throughput_mult = 0.2
+		building_group_bg_fishing_throughput_mult = 0.1
 	}	
-}
-
-state_trait_tigris_river = {
-	icon = "gfx/interface/icons/state_trait_icons/river.dds"
-	
-	modifier = {
-		state_infrastructure_add = 20
-	}
 }
 
 state_trait_Hyrcanian_forests = {
@@ -57,7 +49,7 @@ state_trait_Bisheh_waterfall = {
 	icon = "gfx/interface/icons/state_trait_icons/waterfall.dds"
 	
 	modifier = {
-		building_output_electricity_add = 0.15
+		goods_output_electricity_mult = 0.15
 	}	
 }
 
@@ -77,10 +69,16 @@ state_trait_Tehran_buildup = {
 	modifier = {
 		state_education_access_add = 0.3
 		state_pop_qualifications_mult = 0.5
-		building_group_bg_manufacturing_throughput_mult = 0.15
-		building_group_bg_service_throughput_mult = 0.15
 		state_migration_pull_mult = 0.2
 	}	
+}
+
+state_trait_tigris_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+	}
 }
 
 state_trait_euphrates_river = {
