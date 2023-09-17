@@ -1304,6 +1304,19 @@ PER = {
 	capital = STATE_IRAKAJEMI
 }
 
+GOS = {
+	color = { 255  234  174 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { tajik }
+	capital = STATE_TIANSHAN
+}
+
+
+
 JAB = {
 	color = { 183  62  62 }
 	

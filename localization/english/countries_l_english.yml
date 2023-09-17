@@ -589,6 +589,8 @@
  ARY_ADJ:0 "Aryan"
  PER:0 "Iran"
  PER_ADJ:0 "Iranian"
+ GOS:0 "Gostana"
+ GOS_ADJ:0 "Gostanian"
  PEU:0 "Peru"
  PEU_ADJ:0 "Peruvian"
  PHI:0 "Philippines"
