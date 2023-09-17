@@ -1,15 +1,36 @@
-﻿company_basic_agriculture = {
-	texture = "gfx/interface/icons/company_icons/basic_agriculture.dds"
+﻿company_bank-e_melli-e_iran = {
+	texture = "gfx/interface/icons/company_icons/bank-e_melli-e_iran.dds"
 	
+	potential = {
+		country_has_primary_culture = cu:persian
+	}
+
 	building_types = {  
-		building_wheat_farm
-		building_rice_farm
-		building_millet_farm
-		building_rye_farm	
+		building_tooling_workshops
 	}
 	
 	prosperity_modifier = {
-		interest_group_ig_rural_folk_approval_add = 1
+		building_group_bg_manufacturing_throughput_add = 0.1
+	}	
+}
+
+company_iranian_Carpet_Company = { #NON-HISTORTICAL company
+	texture = "gfx/interface/icons/company_icons/iranian_carpet_company.dds"
+	
+	potential = {
+		country_has_primary_culture = cu:persian
+	}
+
+	building_types = {  
+		building_cotton_plantation
+		building_silk_plantation
+		building_dye_plantation
+	}
+	
+	prosperity_modifier = {
+		building_synthetics_plants_throughput_add = 0.1
+		building_silk_plantation_throughput_add = 0.2
+		building_Textile_Mills_throughput_add = 0.1
 	}	
 }
 
