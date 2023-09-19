@@ -47,11 +47,11 @@
 		}
 
 		ig:ig_intelligentsia = {
-			hidden_effect = { set_interest_group_name = "Rošan fekr-ān" }
+			hidden_effect = { set_interest_group_name = "Rošan Fekr-ān" }
 		}
 
 		ig:ig_trade_unions = {
-			hidden_effect = { set_interest_group_name = "Xāne-ye kārgar-ān" }
+			hidden_effect = { set_interest_group_name = "Xāne-ye Kārgar-ān" }
 		}
 
 		ig:ig_rural_folk = {
