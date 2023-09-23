@@ -30,7 +30,7 @@ ig_trait_iranian_artesh_1 = {
 
 ig_trait_iranian_roshan_3 ={
 	icon = "gfx/interface/icons/ig_trait_icons/propagandists.dds"
-	min_approval = unhappy
+	min_approval = loyal
 
 	modifier ={
 		country_weekly_innovation_add = 15
@@ -50,7 +50,7 @@ ig_trait_iranian_roshan_2 = {
 
 ig_trait_iranian_roshan_1 = {
 	icon = "gfx/interface/icons/ig_trait_icons/social_criticism.dds"
-	min_approval = loyal
+	min_approval = unhappy
 	
 	modifier = {
 		country_prestige_mult = -0.1

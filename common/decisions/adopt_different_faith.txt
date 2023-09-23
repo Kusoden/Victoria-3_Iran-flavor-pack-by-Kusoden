@@ -7,11 +7,7 @@
 	}
 
 	possible = {
-		has_law = law_type:law_freedom_of_conscience
-		has_law = law_type:law_slavery_banned
-		ig:ig_devout = {
-			is_in_government = no
-		}
+
 
 		NOT = { has_law = law_type:law_religious_schools }
 		OR = {
@@ -30,13 +26,13 @@
 			remove_ideology = ideology_patriarchal
 			add_ideology = ideology_egalitarian
 
-			remove_trait = ig_trait_da_wat
-			remove_trait = ig_trait_sharia
-			remove_trait = ig_trait_pious_fiction
+			#remove_trait = ig_trait_da_wat				NOT NEEDED
+			#remove_trait = ig_trait_sharia
+			#remove_trait = ig_trait_pious_fiction
 			
-			add_trait = ig_trait_iranian_din_3
-			add_trait = ig_trait_iranian_din_2
-			add_trait = ig_trait_iranian_din_1
+			set_ig_trait = ig_trait:ig_trait_iranian_din_3
+			set_ig_trait = ig_trait:ig_trait_iranian_din_2
+			set_ig_trait = ig_trait:ig_trait_iranian_din_1
 			hidden_effect = { set_interest_group_name = ig_zoroastrian_priests }
 		}
 
