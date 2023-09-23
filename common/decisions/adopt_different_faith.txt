@@ -26,8 +26,17 @@
 		ig:ig_devout = {
 			remove_ideology = ideology_pious
 			add_ideology = ideology_loyalist
+
 			remove_ideology = ideology_patriarchal
 			add_ideology = ideology_egalitarian
+
+			remove_trait = ig_trait_da_wat
+			remove_trait = ig_trait_sharia
+			remove_trait = ig_trait_pious_fiction
+			
+			add_trait = ig_trait_iranian_din_3
+			add_trait = ig_trait_iranian_din_2
+			add_trait = ig_trait_iranian_din_1
 			hidden_effect = { set_interest_group_name = ig_zoroastrian_priests }
 		}
 

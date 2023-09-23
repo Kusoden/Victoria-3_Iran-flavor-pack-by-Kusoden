@@ -32,7 +32,7 @@
 		activate_law = law_type:law_private_schools #https://www.iranicaonline.org/articles/france-xv#prettyPhoto
 		activate_law = law_type:law_professional_army # Under Mohammad Shah qajar the army were moslty Professional and especially around 1836 because he wanted to invade Herat and extend Iran's influence up to Amu Darya.
 		activate_law = law_type:law_appointed_bureaucrats #The Shah had the authority to appoint officials to various administrative roles within the government, including high-ranking positions such as ministers, governors, and other administrative posts.
-
+		activate_law = law_type:law_closed_borders
 		set_tax_level = medium
 	}
 }
