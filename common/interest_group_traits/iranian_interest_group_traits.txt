@@ -75,6 +75,7 @@ ig_trait_iranian_din_2 = { #old Teachings?
 	modifier = {
 		building_group_bg_plantations_throughput_add = 0.2
 		building_group_bg_manufacturing_tax_mult = 0.2
+		building_group_bg_manufacturing_throughput_add = 0.2
 	}
 }
 

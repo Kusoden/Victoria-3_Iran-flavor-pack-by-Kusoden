@@ -1,6 +1,11 @@
 ﻿arable_land_taken = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	country_expenses_add = 10000
-	
 	country_bureaucracy_mult = -0.1
 } 
+
+Zarathushtras_teachings{
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds
+	state_education_access_add = 0.15
+	country_tech_spread_add = 10
+}

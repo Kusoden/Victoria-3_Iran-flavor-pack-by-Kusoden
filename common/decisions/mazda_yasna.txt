@@ -7,7 +7,11 @@
 	}
 
 	possible = {
-
+		has_law = law_type:law_freedom_of_conscience
+		has_law = law_type:law_slavery_banned
+		ig:ig_devout = {
+			is_in_government = no
+		}
 
 		NOT = { has_law = law_type:law_religious_schools }
 		OR = {
@@ -19,7 +23,11 @@
 	when_taken = {
 		set_state_religion = rel:mazdayasna
 		set_ruler_religion = rel:mazdayasna
+		add_modifier = {
+			name = Zarathushtras_teachings
+		}
 		ig:ig_devout = {
+			
 			remove_ideology = ideology_pious
 			add_ideology = ideology_loyalist
 
