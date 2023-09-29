@@ -418,7 +418,7 @@
 		region_state:PER={
 			create_building={
 				building="building_wheat_farm"
-				level=6
+				level=4
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" }
 			}

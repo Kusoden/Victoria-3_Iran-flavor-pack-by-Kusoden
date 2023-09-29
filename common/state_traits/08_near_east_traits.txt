@@ -1,15 +1,15 @@
-﻿state_trait_zagros_mountains = {
+﻿state_trait_zagros_mountains = { #updates / replaces already existing one
 	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
 
 	modifier = {
 		state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
-		building_group_bg_agriculture_throughput_add = 0.2
-		goods_output_hardwood_mult = 0.25
+		building_group_bg_plantations_throughput_add = 0.2
+		building_group_bg_logging_throughput_add = 0.2
 	}
 }
 
-state_trait_turqoise_deposits = {
+state_trait_turqoise_deposits = { #updates / replaces already existing one
 	icon = "gfx/interface/icons/state_trait_icons/turquoise.dds"
 
 	modifier = {
@@ -17,7 +17,7 @@ state_trait_turqoise_deposits = {
 	}
 }
 
-state_trait_Hormozgan_harbors = {
+state_trait_Hormozgan_harbors = { #added
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
@@ -28,42 +28,44 @@ state_trait_Hormozgan_harbors = {
 	}
 }
 
-state_trait_caspian_sea = {
+state_trait_caspian_sea = { #added
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	
 	modifier = {
 		state_infrastructure_add = 15
 		building_group_bg_fishing_throughput_mult = 0.1
+		building_group_bg_plantations_throughput_add = 0.1
 	}	
 }
 
-state_trait_Hyrcanian_forests = {
+state_trait_Hyrcanian_forests = { #added
 	icon = "gfx/interface/icons/state_trait_icons/swamp.dds"
 	
 	modifier = {
-		building_group_bg_logging_throughput_add = 0.4
+		building_group_bg_logging_throughput_add = 0.3
+		goods_output_hardwood_mult = 0.25
 	}
 }
 
-state_trait_Bisheh_waterfall = {
+state_trait_Bisheh_waterfall = { #added
 	icon = "gfx/interface/icons/state_trait_icons/waterfall.dds"
 	
 	modifier = {
-		goods_output_electricity_mult = 0.15
+		goods_output_electricity_mult = 0.05
 	}	
 }
 
-state_trait_Ispahan_mines = {
+state_trait_Ispahan_mines = { 
 	icon = "gfx/interface/icons/state_trait_icons/rich_natural_resources.dds"
 	
 	modifier = {
-		building_coal_mine_throughput_add = 0.3
-		building_lead_mine_throughput_add = 0.3
-		building_iron_mine_throughput_add = 0.3
+		building_coal_mine_throughput_add = 0.1
+		building_lead_mine_throughput_add = 0.1
+		building_iron_mine_throughput_add = 0.1
 	}	
 }
 
-state_trait_Tehran_buildup = {
+state_trait_Tehran_buildup = { #not used anymore, used modifiers  for  other parts
 	icon = "gfx/interface/icons/state_trait_icons/Azaditower.dds"
 	
 	modifier = {
