@@ -26,6 +26,15 @@
 		add_modifier = {
 			name = Zarathushtras_teachings
 		}
+		every_scope_state = {
+			limit = {
+				is_incorporated = yes
+			}
+			convert_population = {
+				target = rel:mazdayasna
+				value = 0.45
+			}
+		}
 		ig:ig_devout = {
 			
 			remove_ideology = ideology_pious
