@@ -11,7 +11,7 @@
 				building="building_barracks"
 				level=4
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 	}
@@ -51,7 +51,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 			create_building={
 				building="building_port"
@@ -73,7 +73,7 @@
 				building="building_barracks"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 			create_building={
 				building="building_port"
@@ -121,7 +121,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 		region_state:HDJ={
@@ -145,7 +145,7 @@
 				building="building_barracks"
 				level=10
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 	}
@@ -155,7 +155,7 @@
 				building="building_barracks"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}		
 		}
 		region_state:NEJ={		
@@ -169,7 +169,7 @@
 				building="building_barracks"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}			
 		}
 	}
@@ -226,7 +226,7 @@
 				building="building_barracks"
 				level=3
 				reserves=1
-				activate_production_methods={ "pm_line_infantry" }
+				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}
@@ -248,7 +248,7 @@
 				building="building_barracks"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_line_infantry" }
+				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}
@@ -288,7 +288,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_line_infantry" }
+				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}
@@ -328,7 +328,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_line_infantry" }
+				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}
@@ -356,7 +356,7 @@
 				building="building_barracks"
 				level=10
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 	}
@@ -372,7 +372,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 	}
@@ -444,7 +444,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_line_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}			
 			# Re-add monument here
 
@@ -462,7 +462,7 @@
 				building="building_barracks"
 				level=3
 				reserves=1
-				activate_production_methods={ "pm_line_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}				
 			create_building={
 				building= "building_argebam"
@@ -495,7 +495,7 @@
 				building="building_barracks"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_line_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}				
 		}
 	}
@@ -509,7 +509,7 @@
 			}
 			create_building={
 				building="building_glassworks"
-				level=3
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_forest_glass" "pm_merchant_guilds_building_glassworks" "pm_manual_glassblowing" "pm_ceramics" }
 			}
@@ -529,7 +529,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_line_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 	}
@@ -537,7 +537,7 @@
 		region_state:PER={
 			create_building={
 				building="building_fishing_wharf"
-				level=2
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
 			}
@@ -557,7 +557,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_line_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 	}
@@ -579,16 +579,10 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_line_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 			create_building={
 				building= "building_khaju_bridge"
-			}
-			create_building={
-				building="building_iron_mine"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_iron_mine" }
 			}
 		}
 	}
@@ -620,7 +614,7 @@
 			}
 			create_building={
 				building="building_rice_farm"
-				level=3
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_privately_owned" "pm_tools_disabled" "pm_fig_orchards_building_rice_farm" }
 			}
@@ -634,7 +628,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_line_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 	}
@@ -645,18 +639,6 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_handsewn_clothes" "pm_craftsman_sewing" "pm_traditional_looms" "pm_merchant_guilds_building_textile_mills" }
-			}
-			create_building={
-				building="building_tooling_workshops"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled" "pm_privately_owned_building_tooling_workshops" }
-			}
-			create_building={
-				building="building_arms_industry"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_muskets" "pm_merchant_guilds_building_arms_industry" "pm_no_artillery_production" }
 			}
 			create_building={
 				building="building_government_administration"
@@ -680,7 +662,7 @@
 				building="building_barracks"
 				level=8
 				reserves=1
-				activate_production_methods={ "pm_line_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 	}
@@ -694,7 +676,7 @@
 			}
 			create_building={
 				building="building_textile_mills"
-				level=3
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_handsewn_clothes" "pm_merchant_guilds_building_textile_mills" "pm_traditional_looms" "pm_craftsman_sewing" }
 			}
@@ -702,7 +684,7 @@
 				building="building_logging_camp"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" "pm_merchant_guilds_building_logging_camp" }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" "pm_merchant_guilds_building_logging_camp" }
 			}
 			create_building={
 				building="building_cotton_plantation"
@@ -726,7 +708,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_line_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 	}
@@ -734,7 +716,7 @@
 		region_state:PER={
 			create_building={
 				building="building_wheat_farm"
-				level=3
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
@@ -748,14 +730,8 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_line_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
-			create_building={
-				building="building_logging_camp"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_merchant_guilds_building_logging_camp" }
-			} 
 		}
 	}
 	s:STATE_HUDAVENDIGAR={
@@ -910,7 +886,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 	}
@@ -932,7 +908,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 	}
@@ -960,7 +936,7 @@
 				building="building_barracks"
 				level=10
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 	}
@@ -1056,7 +1032,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 	}
@@ -1078,7 +1054,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 		region_state:RUS={
@@ -1114,108 +1090,8 @@
 				building="building_barracks"
 				level=10
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

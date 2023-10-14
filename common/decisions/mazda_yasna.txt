@@ -34,6 +34,12 @@
 				target = rel:mazdayasna
 				value = 0.45
 			}
+			if = {
+				limit = {
+					has_pop_religion = shiite
+				}
+				value = 0.1
+			}
 		}
 		ig:ig_devout = {
 			
@@ -84,9 +90,6 @@
 			hidden_effect = { set_interest_group_name = "Bāzār-i" }
 		}
 
-		add_radicals = {
-   		value = 0.1
-  	 	religion = <scope/rel:shiite>
- 	  	}
+		
 	}
 }

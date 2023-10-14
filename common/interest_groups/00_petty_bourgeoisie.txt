@@ -25,6 +25,19 @@
 		ig:ig_petty_bourgeoisie = {
 			if = {
 				limit = {
+					owner = {
+						OR = {
+							c:PER ?= this
+							c:ARY ?= this
+						}
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_iranian_dehgan_3
+				set_ig_trait = ig_trait:ig_trait_iranian_dehgan_2
+				set_ig_trait = ig_trait:ig_trait_iranian_dehgan_1
+			}
+			else_if = {
+				limit = {
 					owner = { c:SWE ?= this}
 				}
 				set_ig_trait = ig_trait:ig_trait_xenophobia
@@ -136,6 +149,23 @@
 					is_pop_type = engineers
 				}
 				value = 50
+			}
+		}
+
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_elected_bureaucrats
+				}
+			}
+			add = {
+				desc = "POP_BUREAUCRATS_ELECTED"
+				if = {
+					limit = {
+						is_pop_type = bureaucrats
+					}
+					value = 50
+				}
 			}
 		}
 

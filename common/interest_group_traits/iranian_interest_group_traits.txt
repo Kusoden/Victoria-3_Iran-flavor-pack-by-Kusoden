@@ -143,6 +143,7 @@ ig_trait_iranian_deh_salar_1 = {
 	
 	modifier = {
 		country_authority_mult = -0.1
+		country_influence_mult = -0.1
 	}
 }
 
@@ -151,7 +152,7 @@ ig_trait_iranian_dehgan_3 = {
 	min_approval = loyal
 	
 	modifier = {
-		country_authority_mult = 0.5
+		country_authority_mult = 0.2
 		state_education_access_add = 0.25
 	}
 }
