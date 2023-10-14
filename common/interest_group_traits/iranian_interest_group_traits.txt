@@ -1,4 +1,5 @@
-﻿ig_trait_iranian_artesh_3 ={
+﻿  # Armed Forces IG Traits
+ig_trait_iranian_artesh_3 ={
 	icon = "gfx/interface/icons/ig_trait_icons/patriotic_fervor.dds"
 	min_approval = loyal
 	
@@ -27,7 +28,7 @@ ig_trait_iranian_artesh_1 = {
 		country_authority_mult = -0.4
 	}
 }
-
+ # Devout IG Traits
 ig_trait_iranian_din_3 = {
 	icon = "gfx/interface/icons/ig_trait_icons/be_fruitful_and_multiply.dds"
 	min_approval = loyal
@@ -57,7 +58,7 @@ ig_trait_iranian_din_1 = {
 		state_radicals_from_discrimination_mult = 0.25
 	}
 }
-
+  # Industrialists IG Traits
 ig_trait_iranian_bazaari_3 = {
 	icon = "gfx/interface/icons/ig_trait_icons/job_creators.dds"
 	min_approval = loyal
@@ -87,7 +88,7 @@ ig_trait_iranian_bazaari_1 = { #not used
 		state_construction_mult = -0.3
 	}
 }
-
+  # Intelligentsia IG Traits
 ig_trait_iranian_roshan_3 ={
 	icon = "gfx/interface/icons/ig_trait_icons/propagandists.dds"
 	min_approval = loyal
@@ -117,7 +118,7 @@ ig_trait_iranian_roshan_1 = {
 		country_authority_mult = -0.2
 	}
 }
-
+  # Landowners IG Traits
 ig_trait_iranian_deh_salar_3 = {
 	icon = "gfx/interface/icons/ig_trait_icons/noblesse_oblige.dds"
 	min_approval = loyal
@@ -146,7 +147,7 @@ ig_trait_iranian_deh_salar_1 = {
 		country_influence_mult = -0.1
 	}
 }
-
+  # Petite-Bourgeoisie IG Traits
 ig_trait_iranian_dehgan_3 = {
 	icon = "gfx/interface/icons/ig_trait_icons/treasury_bonds.dds"
 	min_approval = loyal

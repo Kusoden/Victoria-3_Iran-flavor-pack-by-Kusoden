@@ -390,7 +390,7 @@
  STATE_HAIL:0 "Hail"
  STATE_NEJD:0 "Nejd"
  STATE_TRANSJORDAN:0 "Transjordan"
- STATE_PALESTINE:0 "Palestine"
+ STATE_PALESTINE:0 "Israel"
  STATE_LEBANON:0 "Lebanon"
  STATE_SYRIA:0 "Syria"
  STATE_ALEPPO:0 "Aleppo"
