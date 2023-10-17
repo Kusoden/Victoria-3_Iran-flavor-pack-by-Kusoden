@@ -444,10 +444,15 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_no_organization" }
+				activate_production_methods={ "pm_general_training" }
 			}			
 			# Re-add monument here
-
+			create_building={
+				building="building_port"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_anchorage" }
+			}
 		}
 	}
 	s:STATE_LARISTAN={
@@ -462,7 +467,7 @@
 				building="building_barracks"
 				level=3
 				reserves=1
-				activate_production_methods={ "pm_no_organization" }
+				activate_production_methods={ "pm_general_training" }
 			}				
 			create_building={
 				building= "building_argebam"
@@ -495,7 +500,7 @@
 				building="building_barracks"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_no_organization" }
+				activate_production_methods={ "pm_general_training" }
 			}				
 		}
 	}
@@ -529,7 +534,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_no_organization" }
+				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}
@@ -557,7 +562,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_no_organization" }
+				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}
@@ -579,7 +584,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_no_organization" }
+				activate_production_methods={ "pm_general_training" }
 			}
 			create_building={
 				building= "building_khaju_bridge"
@@ -628,7 +633,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_no_organization" }
+				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}
@@ -662,7 +667,7 @@
 				building="building_barracks"
 				level=8
 				reserves=1
-				activate_production_methods={ "pm_no_organization" }
+				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}
@@ -708,7 +713,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_no_organization" }
+				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}
@@ -730,7 +735,7 @@
 				building="building_barracks"
 				level=5
 				reserves=1
-				activate_production_methods={ "pm_no_organization" }
+				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}

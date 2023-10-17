@@ -1,0 +1,11 @@
+﻿TRADE_ROUTES = {
+	# Iran
+	c:PER = {
+		create_trade_route = {
+			goods = small_arms
+			level = 3
+			direction = import
+			target = c:GBR.market
+		}
+	}
+}

@@ -26,6 +26,7 @@ ig_trait_iranian_artesh_1 = {
 	
 	modifier = {
 		country_authority_mult = -0.4
+		country_legitimacy_base_add = -30
 	}
 }
  # Devout IG Traits
@@ -116,6 +117,7 @@ ig_trait_iranian_roshan_1 = {
 	modifier = {
 		country_prestige_mult = -0.1
 		country_authority_mult = -0.2
+		country_legitimacy_base_add = -10
 	}
 }
   # Landowners IG Traits
@@ -174,5 +176,6 @@ ig_trait_iranian_dehgan_1 = {
 	modifier = {
 		country_authority_mult = -0.2
 		country_bureaucracy_mult = -0.1
+		country_legitimacy_base_add = -10
 	}
 }
