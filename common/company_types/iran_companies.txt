@@ -1,7 +1,14 @@
 ﻿company_bank-e_melli-e_iran = {
 	texture = "gfx/interface/icons/company_icons/bank-e_melli-e_iran.dds"
 	potential = {
-		country_has_primary_culture = cu:persian
+		OR = {
+			AND = {
+				country_has_primary_culture = cu:persian
+				country_has_primary_culture = cu:kurdish
+				country_has_primary_culture = cu:azerbaijani
+			}
+			country_has_primary_culture = cu:iranian
+		}
 	}
 	building_types = {
 		building_paper_mills
@@ -11,7 +18,7 @@
 	prosperity_modifier = {
 		state_infrastructure_mult = 0.05
 		state_infrastructure_from_population_add = 1
-		state_loyalists_from_sol_change_mult = 0.1
+		state_loyalists_from_sol_change_mult = 0.2
 	}
 }
 
@@ -19,7 +26,14 @@ company_iranian_Carpet_Company = {
 	#NON-HISTORTICAL company
 	texture = "gfx/interface/icons/company_icons/iranian_carpet_company_1936.dds"
 	potential = {
-		country_has_primary_culture = cu:persian
+		OR = {
+			AND = {
+				country_has_primary_culture = cu:persian
+				country_has_primary_culture = cu:kurdish
+				country_has_primary_culture = cu:azerbaijani
+			}
+			country_has_primary_culture = cu:iranian
+		}
 	}
 	building_types = {
 		building_cotton_plantation
@@ -30,7 +44,7 @@ company_iranian_Carpet_Company = {
 	prosperity_modifier = {
 		building_Textile_Mills_throughput_add = 0.2
 		country_prestige_mult = 0.1
-		state_loyalists_from_sol_change_mult = 0.2
+		
 	}
 }
 

@@ -1,8 +1,8 @@
 ﻿arable_land_taken = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	country_expenses_add = 10000
-	country_bureaucracy_mult = -0.1
-	
+	country_bureaucracy_mult = -0.1,
+	state_loyalists_from_sol_change_mult = 0.4
 } 
 
 Zarathushtras_teachings{
