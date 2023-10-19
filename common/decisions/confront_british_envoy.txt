@@ -17,7 +17,7 @@ justin_sheil_decision = {
 	when_taken = {
 		set_variable = justin_sheil_var
 		custom_tooltip = justin_sheil_event_tt
-
+		state_loyalists_from_sol_change_mult = 0.1
 		hidden_effect = {
 			trigger_event = {
 				id = slavery.1

@@ -62,7 +62,7 @@
 		ig:ig_landowners = {
 			remove_ideology = ideology_pro_slavery
 			add_ideology = ideology_reactionary
-			hidden_effect = { set_interest_group_name = "Deh-sālār" }
+			hidden_effect = { set_interest_group_name = "wuzur­gān" } #changed from Deh-sālār, Āzādān might be viable aswell. but because of the power of Wuzurgan during Sasanians i chose Wuzurgan. source: https://www.iranicaonline.org/articles/bozorgan-mpers
 		}
 
 
