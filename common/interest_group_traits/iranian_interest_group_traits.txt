@@ -121,7 +121,7 @@ ig_trait_iranian_roshan_1 = {
 	}
 }
   # Landowners IG Traits
-ig_trait_iranian_deh_salar_3 = {
+ig_trait_iranian_wuzurgan_3 = {
 	icon = "gfx/interface/icons/ig_trait_icons/noblesse_oblige.dds"
 	min_approval = loyal
 	
@@ -130,7 +130,7 @@ ig_trait_iranian_deh_salar_3 = {
 	}
 }
 
-ig_trait_iranian_deh_salar_2 = {
+ig_trait_iranian_wuzurgan_2 = {
 	icon = "gfx/interface/icons/ig_trait_icons/family_ties.dds"
 	min_approval = happy
 	
@@ -140,7 +140,7 @@ ig_trait_iranian_deh_salar_2 = {
 	}
 }
 
-ig_trait_iranian_deh_salar_1 = {
+ig_trait_iranian_wuzurgan_1 = {
 	icon = "gfx/interface/icons/ig_trait_icons/noble_privileges.dds"
 	max_approval = unhappy
 	

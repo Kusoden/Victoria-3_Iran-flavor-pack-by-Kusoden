@@ -32,9 +32,9 @@
 						}
 					}
 				}
-				set_ig_trait = ig_trait:ig_trait_iranian_deh_salar_3
-				set_ig_trait = ig_trait:ig_trait_iranian_deh_salar_2
-				set_ig_trait = ig_trait:ig_trait_iranian_deh_salar_1
+				set_ig_trait = ig_trait:ig_trait_iranian_wuzurgan_3
+				set_ig_trait = ig_trait:ig_trait_iranian_wuzurgan_2
+				set_ig_trait = ig_trait:ig_trait_iranian_wuzurgan_1
 			}
 			else_if = {
 				limit = {

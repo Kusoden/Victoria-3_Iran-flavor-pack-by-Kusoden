@@ -411,7 +411,7 @@
 			create_pop = {
 				culture = mashriqi
 				religion = sunni
-				size = 248000
+				size = 48000
 			}
 			create_pop = {
 				culture = mashriqi
@@ -436,11 +436,11 @@
 			create_pop = {
 				culture = sephardic
 				religion = jewish
-				size = 18000
+				size = 178000
 			}
 			create_pop = {
 				culture = armenian
-				size = 1400
+				size = 51400
 			}
 			create_pop = {
 				pop_type = slaves
@@ -799,7 +799,7 @@
 		region_state:PER = {
 			create_pop = {
 				culture = persian
-				size = 295942
+				size = 205942
 			}
 			create_pop = {
 				culture = persian
@@ -848,7 +848,7 @@
 		region_state:PER = {
 			create_pop = {
 				culture = persian
-				size = 03192
+				size = 50192
 			}
 			create_pop = {
 				culture = persian
@@ -857,7 +857,7 @@
 			}
 			create_pop = {
 				culture = baluchi
-				size = 252300
+				size = 162300
 			}
 			create_pop = {
 				culture = somali
@@ -875,7 +875,7 @@
 			}
 			create_pop = {
 				culture = persian
-				size = 851194
+				size = 551194
 			}
 			create_pop = {
 				culture = persian
@@ -953,7 +953,7 @@
 		region_state:PER = {
 			create_pop = {
 				culture = persian
-				size = 308746
+				size = 358746
 			}
 			create_pop = {
 				culture = persian
@@ -964,19 +964,13 @@
 				culture = azerbaijani
 				size = 10000
 			}
-
-			create_pop = {
-				culture = azerbaijani
-				size = 33600
-				pop_type = slaves
-			}
 		}
 	}
 	s:STATE_IRAKAJEMI = {
 		region_state:PER = {
 			create_pop = {
 				culture = persian
-				size = 447846
+				size = 547846
 			}
 			create_pop = {
 				culture = persian
@@ -1015,7 +1009,7 @@
 		region_state:PER = {
 			create_pop = {
 				culture = azerbaijani
-				size = 1001300
+				size = 651300
 			}
 			create_pop = {
 				culture = sephardic
@@ -1038,7 +1032,7 @@
 			create_pop = {
 				culture = kurdish
 				religion = shiite
-				size = 609900
+				size = 409900
 			}
 			create_pop = {
 				culture = kurdish
@@ -1077,12 +1071,12 @@
 			}
 			create_pop = {
 				culture = kurdish
-				size = 726008
+				size = 626008
 			}
 			create_pop = {
 				culture = kurdish
 				religion = mazdayasna
-				size = 32000
+				size = 12000
 			}
 			create_pop = {
 				culture = sephardic

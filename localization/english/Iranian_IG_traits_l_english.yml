@@ -2,48 +2,36 @@
 
   # Landowners IG Traits
 
-  ig_trait_iranian_deh_salar_3: "Škōh-e Āzādmardōm-ān"
-  ig_trait_iranian_deh_salar_3_desc: "Škōh = glory, Āzādmardōm = Noble"
+  ig_trait_iranian_wuzurgan_3:0 "Škōh-e Āzādmardōm-ān"
+  ig_trait_iranian_wuzurgan_3_desc:0 "Škōh = glory, Āzādmardōm = Noble"
 
-  ig_trait_iranian_deh_salar_2: "Bann-i Dūdag-i"
-  ig_trait_iranian_deh_salar_2_desc: "Bann = tie, Dūdag = Family "
+  ig_trait_iranian_wuzurgan_2:0 "Bann-i Dūdag-i"
+  ig_trait_iranian_wuzurgan_2_desc:0 "Bann = tie, Dūdag = Family "
 
-  ig_trait_iranian_deh_salar_1: "abarmānd-i Āzādmardōm-ān"
-  ig_trait_iranian_deh_salar_1_desc: "abarmānd = privilege, Āzādmardōm = Noble"
+  ig_trait_iranian_wuzurgan_1:0 "Abarmānd-i Āzādmardōm-ān"
+  ig_trait_iranian_wuzurgan_1_desc:0 "abarmānd = privilege, Āzādmardōm = Noble"
 
   # Industrialists IG Traits
-#  ig_trait_job_creators:0 "Job Creators"
-#  ig_trait_job_creators_desc:0 "One must spend money to make money. As long as the government can be trusted not to interfere with our investments, there's nowhere we'd rather put our profits than towards economic growth."
-#  ig_trait_engines_of_progress:0 "Engines of Progress"
-#  ig_trait_engines_of_progress_desc:0 "Behold the marvels of the modern age! There is no time for hesitation. If it can be thought, designed and patented, it should be built, tested and put to immediate use."
-#  ig_trait_tax_avoidance:0 "Tax Avoidance"
-#  ig_trait_tax_avoidance_desc:0 "Who knows best where our money should be spent? Not the government, and certainly not the current one. Fortunately, their incompetence has left tax loopholes that can be put to good use."
-#  ig_trait_zaibatsu_cooperation: "Zaibatsu Cooperation"
-#  ig_trait_zaibatsu_cooperation_desc: "A healthy relationship between industry and the government benefits everyone. It's in both our interests to ensure this amicable state of affairs continues."
-#  ig_trait_zaibatsu_withdrawal: "Zaibatsu Withdrawal"
-#  ig_trait_zaibatsu_withdrawal_desc: "Our financial health would benefit most through a refocusing on currency speculation and internal re-investment. Public trading is, sadly for the government, not a priority right now."
-#  ig_trait_kommerskollegium: "Kommerskollegium"
-#  ig_trait_kommerskollegium_desc: "It behooves us, as the scale of our commercial interests continues to grow, to ensure that the wealth earned is equitably managed."
-#  ig_trait_ventilate_unify_beautify: "Ventilate, Unify, and Beautify"
-#  ig_trait_ventilate_unify_beautify_desc: "Have you seen what it's like out there? It's a workshop of disease, a place where the sun never shines, where plants whither and perish, and where misery and plague work in concert. It falls to us, of course, to fix this mess."
+
+  ig_trait_iranian_bazaari_3:0 "Kār Āfrīdārān"
+  ig_trait_iranian_bazaari_3_desc:0 "Kār = Job, āfrīdār = Creator"
+
+  ig_trait_iranian_bazaari_2:0 "Abzār-e Frāz" 
+  ig_trait_iranian_bazaari_2_desc:0 "Abzār = Engine, Frāz = Progress" 
+
+  ig_trait_iranian_bazaari_1:0 "Harg Vizīrišn"
+  ig_trait_iranian_bazaari_1_desc:0 "Harg = tax, vizīrišn = avoidance" 
 
   # Armed Forces IG Traits
-#  ig_trait_patriotic_fervor:0 "Patriotic Fervor"
-#  ig_trait_patriotic_fervor_desc:0 "No matter how brilliant the strategy and how advanced the weapons, some battles can only be won with hard work and guts. Soldiers who truly believe in what their country stands for will fight bravely regardless of the odds."
-#  ig_trait_veteran_consultation:0 "Veteran Consultation"
-#  ig_trait_veteran_consultation_desc:0 "Technological advancements are changing the face of war, but we can only make use of them if we understand how. Fortunately, those of us with firsthand experience should have an idea."
-#  ig_trait_materiel_waste:0 "Materiel Waste"
-#  ig_trait_materiel_waste_desc:0 "Loyalty to the nation is not loyalty to the government. If we can't trust the people in charge, we might as well use what we're given as we see fit."
-#  ig_trait_elan_vital: "Élan Vital"
-#  ig_trait_elan_vital_desc: "While the latest arms and armaments are all well and good, the path to victory depends on a driving spirit that will not bow in the face of adversity. Soldiers who truly believe in what the nation stands for will advance bravely, regardless of the odds."
-#  ig_trait_newly_created_army: "Newly-Created Army"
-#  ig_trait_newly_created_army_desc: "The heart of a modern army lies not in the latest rifles, or the finest uniforms, but in organization and logistics. To keep every soldier supplied, to keep the flow of munitions and rations regular and reliable, to make sure every man knows his role in the vast military machine—that's how to make an army worth something."
-#  ig_trait_self_strengthening: "Self-Strengthening"
-#  ig_trait_self_strengthening_desc: "Our intelligence and wisdom are necessarily superior to those who surround us. Thus, what we have to learn from abroad is only one thing: solid ships and effective guns."
-#  ig_trait_parochial_leadership: "Parochial Leadership"
-#  ig_trait_parochial_leadership_desc: "In these dark times, it's every man for himself, and every province must look to its own welfare first and foremost. It is unreasonable to expect every officer to lead enthusiastically far away from home, when his own hearth could be under threat."
-#  ig_trait_el_buen_jefe: "El Buen Jefe"
-#  ig_trait_el_buen_jefe_desc: "What every good soldier needs is a good officer to lead him. In these times, what the whole nation needs is a good officer."
+
+  ig_trait_iranian_artesh_3:0 "Wizārišn-e Mihan-Parasti"
+  ig_trait_iranian_artesh_3_desc:0 "Wizārišn = fervor or enthusiasm, Mihan-Parasti = Patriotic"
+
+  ig_trait_iranian_artesh_2:0 "Pēšawarag-e Hampursagīh"
+  ig_trait_iranian_artesh_2_desc:0 "Pēšawarag ?= Veteran, hampursagīh ?= Consultation"
+
+  ig_trait_iranian_artesh_1:0 "Kešvarāndag "
+  ig_trait_iranian_artesh_1_desc:0 "Kešvarāndag ?=wastage of resources or materials"
 
   # Rural Folk IG Traits
 #  ig_trait_farmers_markets:0 "Farmer's Markets"

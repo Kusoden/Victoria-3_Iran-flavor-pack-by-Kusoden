@@ -7,6 +7,11 @@
 			add_ruling_interest_group = yes
 			set_interest_group_name = ig_shia_madrasahs
 		}
+
+		add_modifier = {
+			name = qajar_familial_corruption
+		}
+
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_conservative = yes

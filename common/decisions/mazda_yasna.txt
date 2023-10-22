@@ -89,7 +89,5 @@
 		ig:ig_industrialists = {
 			hidden_effect = { set_interest_group_name = "Bāzār-i" }
 		}
-
-		
 	}
 }

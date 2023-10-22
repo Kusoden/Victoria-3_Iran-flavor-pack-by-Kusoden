@@ -6610,7 +6610,7 @@ azerbaijani={
 	religion = shiite
 	traits = { caucasus_group iranian_turanian_culture_group aryan_heritage}
 	obsessions = {
-		tea wine meat
+		tea wine
 	}
 	male_common_first_names={
 		Asha
@@ -7319,7 +7319,7 @@ persian={
 	religion = shiite
 	traits = { iranian_turanian_culture_group aryan_heritage }
 	obsessions = {
-		meat wine
+		wine
 	}
 	male_common_first_names={
 		Asha
@@ -7828,7 +7828,7 @@ baluchi={
 	religion = sunni
 	traits = { iranian_turanian_culture_group aryan_heritage }
 	obsessions = {
-		tea meat
+		tea
 	}
 	male_common_first_names={
 		Asha
@@ -8002,7 +8002,7 @@ kurdish={
 	religion = sunni
 	traits = { iranian_turanian_culture_group aryan_heritage}
 	obsessions = {
-		tea meat
+		tea
 	}
 	male_common_first_names={
 		Asha

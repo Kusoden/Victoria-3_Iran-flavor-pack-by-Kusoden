@@ -15,12 +15,18 @@ qajar_familial_corruption{
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	state_tax_collection_mult = -0.25
 	state_tax_waste_add = 0.15
-	state_radicals_from_sol_change_mult = 1.0
+	state_radicals_from_sol_change_mult = 0.20
+	country_authority_mult = -0.20
 }
 
 qajar_familial_corruption_lower{
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	state_tax_collection_mult = -0.15
-	state_tax_waste_add = 0.05
-	state_radicals_from_sol_change_mult = 1.0
+	state_radicals_from_sol_change_mult = 0.20
+	country_authority_mult = -0.10
+}
+
+cleansed_government{
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_loyalists_from_sol_change_mult = 0.5
 }
