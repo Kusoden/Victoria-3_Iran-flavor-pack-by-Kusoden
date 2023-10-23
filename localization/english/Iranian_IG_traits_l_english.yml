@@ -60,18 +60,15 @@
 #  ig_trait_bourse_du_travail_desc: "Organization doesn't end at the end of workday! A united front requires aiding each other not just on the factory floor, but in our homes and communities as well."
 
   # Intelligentsia IG Traits
-#  ig_trait_propagandists:0 "Propagandists"
-#  ig_trait_propagandists_desc:0 "In our poetry, our letters and our political manifestos, we must above all uphold the progress achieved in our home country as an example of what this new age has to bring to less fortunate parts of the world."
-#  ig_trait_avant_garde:0 "Avant-garde"
-#  ig_trait_avant_garde_desc:0 "What others dare not even think, we will already be speaking aloud. Our art and ideas will cut directly to hearts and force open eyes, if not in astonishment, then in shock!"
-#  ig_trait_social_criticism:0 "Social Criticism"
-#  ig_trait_social_criticism_desc:0 "People in power often think they are beyond reproach, but authority does not make someone's ideas interesting. We have a lot of interesting things to say, and we know exactly who to say them about."
-#  ig_trait_restoration: "Restoration"
-#  ig_trait_restoration_desc: "In this era of great challenges and great achievements, we pride ourselves on our dogged pursuit of restoring the nation to its old greatness. Extraordinary work has reaffirmed the status of our civilization, and extraordinary work will bring it to even greater heights."
-#  ig_trait_crisis_of_identity: "Crisis of Identity"
-#  ig_trait_crisis_of_identity_desc: "The nation we serve may not be the nation we truly are. How much do we really have in common with the people in charge?"
-#  ig_trait_les_beaux_arts: "Les Beaux-Arts"
-#  ig_trait_les_beaux_arts_desc: "Our arts, our exhibitions, and our creative talent is second to none. Why shouldn't we show off? We deserve to make others jealous."
+
+  ig_trait_iranian_roshan_3:0 "Nistād konandegān"
+  ig_trait_iranian_roshan_3_desc:0 "Nistād =advertisement/propaganda?, konandegān = those who do it"
+
+  ig_trait_iranian_roshan_2:0 "pēšāhang"
+  ig_trait_iranian_roshan_2_desc:0 "pēšāhang = Vanguard?"
+
+  ig_trait_iranian_roshan_1:0 "īrād-gereftan az hangēhīh"
+  ig_trait_iranian_roshan_1_desc:0 "īrād-gereftan = criticizing, hangēhīh = society"
 
   # Petite-Bourgeoisie IG Traits
 #  ig_trait_treasury_bonds:0 "Treasury Bonds"

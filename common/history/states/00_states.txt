@@ -6606,7 +6606,6 @@ STATES = {
 			country = c:RUS
 			owned_provinces = { x9F1D8F xDA5ABE x72A1AB x41D080 x205781 x0BDBDA x537501 x2C776A x5C32EA x9CDC20 x9A6A44 xBD38C5 x4C6398 x01D041 x27E9C3 x676C0E }
 			state_type = unincorporated
-			add_claim = c:PER
 		}
 		create_state = {
 			country = c:CHC
@@ -6616,6 +6615,7 @@ STATES = {
 		add_homeland = north_caucasian
 		add_claim = c:CHC
 		add_claim = c:RUS
+		add_claim = c:PER
 	}
 	s:STATE_KUBAN = {
 		create_state = {

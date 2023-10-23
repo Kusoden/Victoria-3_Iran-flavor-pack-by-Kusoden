@@ -35,3 +35,7 @@ farman_e_din_decision_desc:0 "The arrival in 1839 of Félix Édouard Comte de Se
 turan_decision:0 "Fight back the Jahansuzan and regain power in Turan!"
 turan_decision_desc:0 "The Treaty of Akhal was a treaty signed by Iran and Imperial Russia on 21 September 1881. The treaty marked Iran's official recognition of Khwarazm's annexation by the Russian Empire. Although Iran had won a clear victory in the last Ottoman–Iranian War (1821–23) over their Ottoman arch rivals, it had been considerably weakened by years of ineffective rulers, the defeat against Russia in 1813 and 1828 in which they lost all of the Caucasus, and with the increasing occupation by Great Britain of Egypt, during the years of 1873 to 1881, and on top of that the decaying Ottoman Empire, Imperial Russia stepped up its campaign to wrest full control over Central Asia. By virtue of this treaty, Iran would henceforth cease any claim to all parts of Gostana and Farā-rūd (Transoxiana), setting the Atrek River as the new boundary. Hence Merv, Sarakhs, Ashkanabad, and the surrounding areas were transferred to Russian control under the command of General Alexander Komarov in 1884. If you can react before 1880 you might stop Russians and even reclaim what is lost in Kafkas!"
 turan_event_tt:0 "The Lion Roars!    Annex khiva, bukhara and kokand"
+
+#Qajar corruption
+qajar_lowering_decision:0 "Regulate the government!"
+qajar_cleanse_decision:0 "Cleanse the government from corruption!"
