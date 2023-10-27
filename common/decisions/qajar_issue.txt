@@ -14,7 +14,8 @@ qajar_lowering_decision = {
 	when_taken = {
 		set_variable =  qajar_var1
 		remove_modifier = qajar_familial_corruption
-
+		interest_group_ig_landowners_pop_attraction_mult = -0.25
+		interest_group_ig_landowners_approval_add = -2
 		add_modifier = {
 			name = qajar_familial_corruption_lower
 		}
@@ -38,7 +39,9 @@ qajar_cleanse_decision = {
 			institution = institution_police
 			value = 3
 		}
-		bureaucracy >= 500
+		interest_group_ig_landowners_pop_attraction_mult = -0.25
+		interest_group_ig_landowners_approval_add = -2
+		bureaucracy >= 300
 	}
 
 	when_taken = {
