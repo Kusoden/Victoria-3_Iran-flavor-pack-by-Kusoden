@@ -2,7 +2,6 @@
 	texture = "gfx/interface/icons/religion_icons/zoroastrian.dds"
 	traits = {
 		zoroastrian
-		eastern
 	}
 	color = { 0.3 0.0 0.5 }
-}
+ }

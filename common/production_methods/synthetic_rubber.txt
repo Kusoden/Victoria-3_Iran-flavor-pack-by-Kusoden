@@ -9,13 +9,13 @@
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_sulfur_add = 20
-			building_input_fertilizer_add = 30
-			building_input_oil_add = 25
+			goods_input_sulfur_add = 15
+			goods_input_fertilizer_add = 20
+			goods_input_oil_add = 15
 
 			# output goods
-			building_output_dye_add = 40
-			building_output_rubber_add = 35
+			goods_output_dye_add = 40
+			goods_output_rubber_add = 35
 		}
 
 		level_scaled = {

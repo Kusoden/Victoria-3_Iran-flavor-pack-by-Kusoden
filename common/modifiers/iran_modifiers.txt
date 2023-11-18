@@ -9,6 +9,7 @@ Zarathushtras_teachings{
 	icon = gfx/interface/icons/timed_modifier_icons/Zarathushtras_fire.dds
 	state_education_access_add = 0.15
 	country_tech_spread_add = 10
+	state_conversion_mult = 0.6
 }
 
 qajar_familial_corruption{
