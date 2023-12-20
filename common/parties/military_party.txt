@@ -4,7 +4,13 @@ military_party = {
 	color = { 132 100 53 }
 	name = {
 		first_valid = {
-
+			triggered_desc = {
+				desc = garde_javidane_iran
+				trigger = {
+					exists = c:PER
+					THIS = c:PER
+				}
+			}
 			triggered_desc = {
 				desc = party_true_peoples_party
 				trigger = {
@@ -32,13 +38,6 @@ military_party = {
 					exists = c:CHI
 					THIS = c:CHI
 					has_law = law_type:law_monarchy
-				}
-			}
-			triggered_desc = {
-				desc = garde_javidane_iran
-				trigger = {
-					exists = c:PER
-					THIS = c:PER
 				}
 			}
 			triggered_desc = {
@@ -126,6 +125,37 @@ military_party = {
 		value = {
 			value = -5
 			desc = "base_value"
+		}
+		if = {
+			limit = {
+				owner = {
+					country_is_in_south_america = yes
+					any_primary_culture = {
+						has_discrimination_trait = hispanophone
+					}
+				}
+			}
+			add = {
+				value = -10
+				desc = "south_america_two_party_system"
+			}
+		}
+		
+		if = {
+			limit = {
+				owner = {
+					country_is_in_north_america = yes
+					OR = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+					has_law = law_type:law_presidential_republic
+				}
+			}
+			add = {
+				value = -10
+				desc = "usa_two_party_system"
+			}
 		}
 		if = { # nobody will join if the armed forces don't join
 			limit = {
@@ -263,20 +293,6 @@ military_party = {
 		}
 		if = {
 			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	 owner.var:only_valid_party = {
-		        	is_party_type = military_party
-		        }
-			}
-			add = {
-				value = 3
-				desc = "from_only_legal_party"
-			}
-		}
-		if = {
-			limit = {
 				scope:number = 1
 				is_powerful = no
 				is_marginal = no
@@ -366,12 +382,17 @@ military_party = {
 		if = { # anti-orleanist
 			limit = {
 				leader = {
-					has_ideology = ideology:ideology_bonapartist
-					has_ideology = ideology:ideology_legitimist
+					OR = {
+						has_ideology = ideology:ideology_bonapartist
+						has_ideology = ideology:ideology_legitimist
+					}
 				}
 				owner = {
 					any_interest_group = {
-						is_member_of_party = owner.py:conservative_party
+						has_party = yes
+						party = {
+							is_party_type = military_party
+						}
 						is_powerful = yes
 						leader = {
 							has_ideology = ideology:ideology_orleanist
@@ -387,12 +408,17 @@ military_party = {
 		if = { # anti-legitimist
 			limit = {
 				leader = {
-					has_ideology = ideology:ideology_bonapartist
-					has_ideology = ideology:ideology_orleanist
+					OR = {
+						has_ideology = ideology:ideology_bonapartist
+						has_ideology = ideology:ideology_orleanist
+					}
 				}
 				owner = {
 					any_interest_group = {
-						is_member_of_party = owner.py:conservative_party
+						has_party = yes
+						party = {
+							is_party_type = military_party
+						}
 						is_powerful = yes
 						leader = {
 							has_ideology = ideology:ideology_legitimist
@@ -408,12 +434,17 @@ military_party = {
 		if = { # anti-bonapartist
 			limit = {
 				leader = {
-					has_ideology = ideology:ideology_legitimist
-					has_ideology = ideology:ideology_orleanist
+					OR = {
+						has_ideology = ideology:ideology_legitimist
+						has_ideology = ideology:ideology_orleanist
+					}
 				}
 				owner = {
 					any_interest_group = {
-						is_member_of_party = owner.py:conservative_party
+						has_party = yes
+						party = {
+							is_party_type = military_party
+						}
 						is_powerful = yes
 						leader = {
 							has_ideology = ideology:ideology_bonapartist
@@ -439,6 +470,37 @@ military_party = {
 			}
 			multiply = {
 				value = 0
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+	         		has_variable = only_valid_party
+	         	}
+				owner.var:only_valid_party = {
+		        	is_party_type = military_party
+		        }
+	         	owner.ruler = {
+					this.interest_group = prev
+				}
+			}
+			add = {
+				value = 1000
+				desc = "from_only_legal_party"
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+	         		has_variable = only_valid_party
+	         	}
+	         	 owner.var:only_valid_party = {
+		        	is_party_type = military_party
+		        }
+			}
+			add = {
+				value = 3
+				desc = "from_only_legal_party"
 			}
 		}
 	}

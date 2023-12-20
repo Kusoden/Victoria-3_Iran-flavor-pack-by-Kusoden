@@ -23,9 +23,12 @@
 	when_taken = {
 		set_state_religion = rel:mazdayasna
 		set_ruler_religion = rel:mazdayasna
+		
 		add_modifier = {
 			name = Zarathushtras_teachings
 		}
+
+		
 		every_scope_state = {
 			limit = {
 				is_incorporated = yes
@@ -34,13 +37,28 @@
 				target = rel:mazdayasna
 				value = 0.45
 			}
-			if = {
-				limit = {
-					has_pop_religion = shiite
-				}
-				value = 0.1
+			#radicals
+			# if = {
+			# 	limit = {
+			# 		has_pop_religion = shiite
+			# 	}
+			# 	value = 0.1
+			# }
+			add_radicals = {
+				value = small_radicals
+				religion = shiite
 			}
 		}
+		
+		#obsession and taboos
+		every_scope_culture = {
+			limit = {
+				is_primary_culture_of = root
+			}
+			remove_cultural_taboo = wine
+		}
+
+		#ideology changes
 		ig:ig_devout = {
 			
 			remove_ideology = ideology_pious
@@ -48,24 +66,20 @@
 
 			remove_ideology = ideology_patriarchal
 			add_ideology = ideology_egalitarian
-
-			#remove_trait = ig_trait_da_wat				NOT NEEDED
-			#remove_trait = ig_trait_sharia
-			#remove_trait = ig_trait_pious_fiction
 			
 			set_ig_trait = ig_trait:ig_trait_iranian_din_3
 			set_ig_trait = ig_trait:ig_trait_iranian_din_2
 			set_ig_trait = ig_trait:ig_trait_iranian_din_1
 			hidden_effect = { set_interest_group_name = ig_zoroastrian_priests }
 		}
-
+		
 		ig:ig_landowners = {
 			remove_ideology = ideology_pro_slavery
 			add_ideology = ideology_reactionary
 			hidden_effect = { set_interest_group_name = "wuzur­gān" } #changed from Deh-sālār, Āzādān might be viable aswell. but because of the power of Wuzurgan during Sasanians i chose Wuzurgan. source: https://www.iranicaonline.org/articles/bozorgan-mpers
 		}
 
-
+		#namechanges
 		ig:ig_petty_bourgeoisie = {
 			hidden_effect = { set_interest_group_name = "Dehgān-ān" }
 		}

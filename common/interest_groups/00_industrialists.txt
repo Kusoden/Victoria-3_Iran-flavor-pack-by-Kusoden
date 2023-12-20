@@ -1,26 +1,26 @@
 ﻿ig_industrialists = {
-	color = {
-		0.06
-		0.6
-		0.89
-	}
+	color = hsv{ 0.06 0.60 0.89 }
 	texture = "gfx/interface/icons/ig_icons/industrialists.dds"
 	layer = "revolution_dynamic_industrialists"
 	index = 2
+
 	ideologies = {
 		ideology_plutocratic
 		ideology_laissez_faire
 		ideology_individualist
 	}
+
 	enable = {
 		always = yes
 	}
+
 	# Deprecated; use on_enable effect to assign traits instead
 	traits = {
 		ig_trait_job_creators
 		ig_trait_engines_of_progress
 		ig_trait_tax_avoidance
 	}
+	
 	on_enable = {
 		ig:ig_industrialists = {
 			if = {
@@ -38,9 +38,7 @@
 			}
 			else_if = {
 				limit = {
-					owner = {
-						c:JAP ?= this
-					}
+					owner = { c:JAP ?= this }
 				}
 				set_ig_trait = ig_trait:ig_trait_zaibatsu_withdrawal
 				set_ig_trait = ig_trait:ig_trait_engines_of_progress
@@ -48,9 +46,7 @@
 			}
 			else_if = {
 				limit = {
-					owner = {
-						c:SWE ?= this
-					}
+					owner = { c:SWE ?= this }
 				}
 				set_ig_trait = ig_trait:ig_trait_tax_avoidance
 				set_ig_trait = ig_trait:ig_trait_engines_of_progress
@@ -59,13 +55,20 @@
 			else_if = {
 				limit = {
 					has_dlc_feature = voice_of_the_people_content
-					owner = {
-						c:FRA ?= this
-					}
+					owner = { c:FRA ?= this }
 				}
 				set_ig_trait = ig_trait:ig_trait_tax_avoidance
 				set_ig_trait = ig_trait:ig_trait_engines_of_progress
 				set_ig_trait = ig_trait:ig_trait_ventilate_unify_beautify
+			}
+			else_if = {
+				limit = {
+					has_dlc_feature = rp1_content
+					owner = { c:BRZ ?= this }
+				}
+				set_ig_trait = ig_trait:ig_trait_tax_avoidance
+				set_ig_trait = ig_trait:ig_trait_the_goods_must_flow
+				set_ig_trait = ig_trait:ig_trait_job_creators
 			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_tax_avoidance
@@ -74,10 +77,10 @@
 			}
 		}
 	}
-	on_disable = {
-	}
-	on_character_ig_membership = {
-	}
+
+	on_disable = {}
+	on_character_ig_membership = {}
+
 	pop_potential = {
 		OR = {
 			is_pop_type = capitalists
@@ -85,8 +88,10 @@
 			is_pop_type = shopkeepers
 		}
 	}
+
 	pop_weight = {
 		value = 0
+
 		add = {
 			desc = "POP_CAPITALISTS"
 			if = {
@@ -97,6 +102,7 @@
 				add = this.standard_of_living
 			}
 		}
+
 		add = {
 			desc = "POP_ENGINEERS"
 			if = {
@@ -107,6 +113,7 @@
 				add = this.standard_of_living
 			}
 		}
+
 		add = {
 			desc = "POP_SHOPKEEPERS"
 			if = {
@@ -117,6 +124,7 @@
 				add = this.standard_of_living
 			}
 		}
+
 		multiply = {
 			desc = "LEADER_POPULARITY"
 			scope:interest_group = {
@@ -129,16 +137,18 @@
 				}
 			}
 		}
+
 		multiply = {
 			desc = "decentralized_power"
-			value = 1
+			value = 1.0
+
 			if = {
 				limit = {
 					owner = {
 						is_country_type = decentralized
 					}
 				}
-				value = 0
+				value = 0.0
 			}
 		}
 		if = {
@@ -154,14 +164,14 @@
 				min = 0
 			}
 		}
+		
 		if = {
 			limit = {
 				scope:interest_group = {
 					is_in_government = yes
 				}
 			}
-			multiply = {
-				# Multiplied by 1.25x max
+			multiply = { # Multiplied by 1.25x max
 				desc = "POP_LOYALISTS"
 				value = pop_loyalist_fraction
 				divide = 4
@@ -174,8 +184,7 @@
 					is_in_government = no
 				}
 			}
-			multiply = {
-				# Multiplied by 1.25x max
+			multiply = { # Multiplied by 1.25x max
 				desc = "POP_RADICALS"
 				value = pop_radical_fraction
 				divide = 4
@@ -183,6 +192,7 @@
 			}
 		}
 	}
+
 	monarch_weight = {
 		value = 1
 		# Monarch is not likely to adopt a marginal IG
@@ -232,9 +242,7 @@
 		if = {
 			limit = {
 				owner = {
-					NOT = {
-						has_technology_researched = mutual_funds
-					}
+					NOT = { has_technology_researched = mutual_funds }
 				}
 			}
 			multiply = {
@@ -245,9 +253,7 @@
 		if = {
 			limit = {
 				owner = {
-					NOT = {
-						has_technology_researched = currency_standards
-					}
+					NOT = { has_technology_researched = currency_standards }
 				}
 			}
 			multiply = {
@@ -255,6 +261,7 @@
 			}
 		}
 	}
+
 	agitator_weight = {
 		# Agitators more likely to come from populist IG's rather than elitist
 		value = 0.25
@@ -270,61 +277,75 @@
 			}
 		}
 	}
+
 	commander_weight = {
 		value = 0.5
 	}
+
 	noble_chance = {
 		value = 0.3
 	}
+
 	female_commander_chance = {
-		value = 0
+		value = 0.0
 	}
+
 	female_politician_chance = {
-		value = 0
+		value = 0.0
+
 		if = {
 			limit = {
 				owner = {
 					has_law = law_type:law_womens_suffrage
 				}
+
 			}
 			add = {
 				value = 0.025
 			}
 		}
 	}
+
 	female_agitator_chance = {
 		value = 0.025
+		
 		if = {
 			limit = {
 				owner = {
 					has_law = law_type:law_women_own_property
 				}
+
 			}
 			add = {
 				value = 0.025
 			}
-		}
+		}	
+		
 		if = {
 			limit = {
 				owner = {
 					has_law = law_type:law_women_in_the_workplace
 				}
+
 			}
 			add = {
 				value = 0.025
 			}
 		}
+
 		if = {
 			limit = {
 				owner = {
 					has_law = law_type:law_womens_suffrage
 				}
+
 			}
 			add = {
 				value = 0.025
 			}
-		}
+		}		
 	}
+
 	# The chance that a commander belonging to this IG takes over leadership when it changes
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {

@@ -25,7 +25,6 @@ company_iranian_Carpet_Company = {
 
 	possible = {
 		any_scope_state = {
-			is_incorporated = yes
 			any_scope_building = {
 				AND = {
 					is_building_type = building_cotton_plantation
@@ -65,9 +64,8 @@ company_bank-e_melli-e_iran = {
 		}
 	}
 
-	possible = {
+	possible = { 
 		any_scope_state = {
-			is_incorporated = yes
 			any_scope_building = {
 				AND = {
 					is_building_type = building_railway
@@ -86,7 +84,6 @@ company_bank-e_melli-e_iran = {
 }
 
 company_iranian_zob_ahan_aryamehr_Company = { 
-
 	texture = "gfx/interface/icons/company_icons/Zob_Ahan_Aryamehr.dds"
 
 	flavored_company = yes
@@ -112,12 +109,10 @@ company_iranian_zob_ahan_aryamehr_Company = {
 		}
 	}
 
-	possible = {
+	possible = { 
 		any_scope_state = {
-			state_region = s:STATE_ISFAHAN
-			is_incorporated = yes
 			any_scope_building = {
-				AND = {
+				OR = {
 					is_building_type = building_coal_mine
 					is_building_type = building_iron_mine
 				}

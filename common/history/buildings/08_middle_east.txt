@@ -532,7 +532,7 @@
 			}
 			create_building={
 				building="building_barracks"
-				level=5
+				level=10	#originaly 5 increased to 10 because currently cant add conscripts to represent the history
 				reserves=1
 				activate_production_methods={ "pm_general_training" }
 			}
@@ -711,7 +711,7 @@
 			}
 			create_building={
 				building="building_barracks"
-				level=5
+				level=15 #originaly 5 increased to 15 because currently cant add conscripts to represent the history
 				reserves=1
 				activate_production_methods={ "pm_general_training" }
 			}
@@ -733,7 +733,7 @@
 			}
 			create_building={
 				building="building_barracks"
-				level=5
+				level=10 #originaly 5 increased to 10 because currently cant add conscripts to represent the history
 				reserves=1
 				activate_production_methods={ "pm_general_training" }
 			}
