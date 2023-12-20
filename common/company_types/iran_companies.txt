@@ -1,7 +1,7 @@
 ﻿#NON-HISTORTICAL companies
 company_iranian_Carpet_Company = {
-	
-	texture = "gfx/interface/icons/company_icons/iranian_carpet_company_1936.dds"
+	icon = "gfx/interface/icons/company_icons/iranian_carpet_company_1936.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	
 	flavored_company = yes
 	
@@ -43,7 +43,8 @@ company_iranian_Carpet_Company = {
 
 #early by year companies
 company_bank-e_melli-e_iran = {
-	texture = "gfx/interface/icons/company_icons/bank-e_melli-e_iran.dds"
+	icon = "gfx/interface/icons/company_icons/bank-e_melli-e_iran.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
 	flavored_company = yes
 	
@@ -84,8 +85,8 @@ company_bank-e_melli-e_iran = {
 }
 
 company_iranian_zob_ahan_aryamehr_Company = { 
-	texture = "gfx/interface/icons/company_icons/Zob_Ahan_Aryamehr.dds"
-
+	icon = "gfx/interface/icons/company_icons/Zob_Ahan_Aryamehr.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	flavored_company = yes
 	
 	building_types = {
