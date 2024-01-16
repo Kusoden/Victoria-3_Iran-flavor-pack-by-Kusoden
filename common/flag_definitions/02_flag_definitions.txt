@@ -76,8 +76,16 @@
 
 ARY = { 
 	flag_definition = { 
-		coa = ARY_flag 
-		subject_canton = ARY_flag 
+		coa = ARY_flag
+		subject_canton = ARY_flag
+		priority = 1500 
+	} 
+}
+
+GOS = { 
+	flag_definition = { 
+		coa = GOS_flag
+		subject_canton = GOS_flag
 		priority = 1500 
 	} 
 }

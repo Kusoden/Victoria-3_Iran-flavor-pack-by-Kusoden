@@ -6,8 +6,10 @@
 		}
 	}
 	possible = {
-		loyalty >= 0.2
-		standard_of_living > 13
+		c:PER = {
+			loyalty >= 0.2
+			standard_of_living > 13
+		}
 		
 		custom_tooltip = {
 			text = iranian_culture_decision_not_var_custom_tooltip

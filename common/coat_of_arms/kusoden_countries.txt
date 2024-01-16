@@ -1,17 +1,13 @@
 ARY_flag = {
 	textured_emblem = {
-		pattern = pattern_solid.tga
-		color1 = white
-		texture = aryana_flag.dds
+		texture = "aryana_flag.dds"
 		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
 	}
 }
 
-GOS = {
+GOS_flag = {
 	textured_emblem = {
-		pattern = pattern_solid.tga
-		color1 = white
-		texture = gostana.dds
+		texture = "gostana.dds"
 		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
 	}
 }
