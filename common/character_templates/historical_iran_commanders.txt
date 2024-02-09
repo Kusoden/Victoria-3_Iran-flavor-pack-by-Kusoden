@@ -1,0 +1,30 @@
+﻿IRA_izydor_borowski_general = {
+	is_general = yes
+	first_name = "Izydor" 
+	last_name = "Borowski"
+	historical = yes
+	birth_date = 1770.4.30
+    ig_leader = yes
+    culture = cu:lithuanian
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	traits = {
+		direct
+		meticulous
+	}
+}
+
+IRA_asef_alDowlehi_general = {
+	is_general = yes
+	first_name = "Asef"  
+	last_name = "Al_Dowleh"
+	historical = yes
+	birth_date = 1760.4.30
+    culture = cu:iranian
+	interest_group = ig_armed_forces
+	ideology = ideology_traditionalist
+	traits = {
+		Cautious
+        Diplomat
+	}
+}

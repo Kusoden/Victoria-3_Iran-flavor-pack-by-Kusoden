@@ -41,3 +41,9 @@ qajar_lowering_decision:0 "Regulate the government!"
 qajar_lowering_decision_desc:0 "Reduce control of the families in the government."
 qajar_cleanse_decision:0 "Cleanse the government from corruption!"
 qajar_cleanse_decision_desc:0 "Remove all the corruptors in the government."
+
+#centralize Iranians
+ iranian_culture_decision:0 "Re-centralize Iranians in lost lands!"
+ iranian_culture_decision_desc:0 "after every loss of land and people, enemies tried to radicalize Iranians toward their identity, history and culture. Support cultural formation! "
+ iranian_culture_decision_var_custom_tooltip:0 "Has made the decision to re-centralize Iranians"
+ iranian_culture_decision_not_var_custom_tooltip:0 "Has not yet made the decision to re-centralize Iranians"

@@ -30,7 +30,7 @@
 				size = 8400
 			}
 			create_pop = {
-				culture = baluchi
+				culture = iranian
 				size = 9200
 			}
 			create_pop = {
@@ -39,7 +39,7 @@
 				size = 38000
 			}
 			create_pop = {
-				culture = persian
+				culture = iranian
 				religion = shiite
 				size = 4000
 			}
@@ -66,7 +66,7 @@
 			create_pop = {
 				culture = bedouin
 				religion = sunni
-				size = 52900
+				size = 32900
 			}
 			create_pop = {
 				pop_type = slaves
@@ -80,9 +80,9 @@
 				size = 2000
 			}
 			create_pop = {
-				culture = persian
+				culture = iranian
 				religion = shiite
-				size = 1900
+				size = 21900
 			}
 			create_pop = {
 				culture = sephardic
@@ -102,7 +102,7 @@
 				size = 1800
 			}
 			create_pop = {
-				culture = persian
+				culture = iranian
 				religion = shiite
 				size = 1500
 			}
@@ -120,7 +120,7 @@
 		}
 		region_state:BHN = {
 			create_pop = {
-				culture = persian
+				culture = iranian
 				religion = shiite
 				size = 18000
 			}
@@ -582,7 +582,7 @@
 				size = 63000
 			}
 			create_pop = {
-				culture = kurdish
+				culture = iranian
 				religion = sunni
 				size = 296000
 			}
@@ -641,7 +641,8 @@
 				size = 23992
 			}
 			create_pop = {
-				culture = kurdish
+				culture = iranian
+				religion = sunni
 				size = 200000
 			}
 			create_pop = {
@@ -668,7 +669,8 @@
 	s:STATE_MOSUL = {
 		region_state:TUR = {
 			create_pop = {
-				culture = kurdish
+				culture = iranian
+				religion = sunni
 				size = 1003004
 			}
 			create_pop = {
@@ -706,7 +708,7 @@
 			create_pop = {
 				culture = mashriqi
 				religion = sunni
-				size = 80000
+				size = 60000
 			}
 			create_pop = {
 				culture = assyrian
@@ -714,8 +716,9 @@
 				size = 53996
 			}
 			create_pop = {
-				culture = kurdish
-				size = 299600
+				culture = iranian
+				religion = sunni
+				size = 90600
 			}
 			create_pop = {
 				culture = bedouin
@@ -740,7 +743,7 @@
 				size = 272000
 			}
 			create_pop = {
-				culture = mashriqi
+				culture = iranian
 				religion = sunni
 				size = 13404
 			}
@@ -768,11 +771,11 @@
 	s:STATE_FARS = {
 		region_state:PER = {
 			create_pop = {
-				culture = persian
+				culture = iranian
 				size = 438496
 			}
 			create_pop = {
-				culture = persian
+				culture = iranian
 				religion = mazdayasna
 				size = 17600
 			}
@@ -781,11 +784,13 @@
 				size = 1004
 			}
 			create_pop = {
-				culture = baluchi
+				culture = iranian
+				religion = sunni
 				size = 36000
 			}
 			create_pop = {
-				culture = kurdish
+				culture = iranian
+				religion = sunni
 				size = 89500
 			}
 			create_pop = {
@@ -798,11 +803,11 @@
 	s:STATE_LARISTAN = {
 		region_state:PER = {
 			create_pop = {
-				culture = persian
+				culture = iranian
 				size = 205942
 			}
 			create_pop = {
-				culture = persian
+				culture = iranian
 				religion = mazdayasna
 				size = 34150
 			}
@@ -820,11 +825,11 @@
 		}
 		region_state:OMA = {
 			create_pop = {
-				culture = persian
+				culture = iranian
 				size = 31000
 			}
 			create_pop = {
-				culture = persian
+				culture = iranian
 				religion = mazdayasna
 				size = 2100
 			}
@@ -847,17 +852,18 @@
 	s:STATE_SISTAN = {
 		region_state:PER = {
 			create_pop = {
-				culture = persian
-				size = 50192
+				culture = iranian
+				size = 40192
 			}
 			create_pop = {
-				culture = persian
+				culture = iranian
 				religion = mazdayasna
 				size = 7230
 			}
 			create_pop = {
-				culture = baluchi
-				size = 162300
+				culture = iranian
+				religion = sunni
+				size = 152300
 			}
 			create_pop = {
 				culture = somali
@@ -867,18 +873,18 @@
 		}
 	}
 	s:STATE_KHORASAN = {
-
 		region_state:PER = {
 			create_pop = {
-				culture = kurdish
-				size = 280000
+				culture = iranian
+				religion = sunni
+				size = 250000
 			}
 			create_pop = {
-				culture = persian
-				size = 551194
+				culture = iranian
+				size = 451194
 			}
 			create_pop = {
-				culture = persian
+				culture = iranian
 				religion = mazdayasna
 				size = 8910
 			}
@@ -888,7 +894,7 @@
 			}
 			create_pop = {
 				culture = turkmen
-				size = 59996
+				size = 49996
 			}
 			create_pop = {
 				culture = sephardic
@@ -900,11 +906,11 @@
 	s:STATE_KHUZESTAN = {
 		region_state:PER = {
 			create_pop = {
-				culture = persian
+				culture = iranian
 				size = 181226
 			}
 			create_pop = {
-				culture = persian
+				culture = iranian
 				religion = mazdayasna
 				size = 4770
 			}
@@ -926,11 +932,11 @@
 	s:STATE_ISFAHAN = {
 		region_state:PER = {
 			create_pop = {
-				culture = persian
+				culture = iranian
 				size = 632754
 			}
 			create_pop = {
-				culture = persian
+				culture = iranian
 				religion = mazdayasna
 				size = 19050
 			}
@@ -952,16 +958,16 @@
 	s:STATE_MAZANDARAN = {
 		region_state:PER = {
 			create_pop = {
-				culture = persian
+				culture = iranian
 				size = 358746
 			}
 			create_pop = {
-				culture = persian
+				culture = iranian
 				religion = mazdayasna
 				size = 58250
 			}
 			create_pop = {
-				culture = azerbaijani
+				culture = iranian
 				size = 10000
 			}
 		}
@@ -969,11 +975,11 @@
 	s:STATE_IRAKAJEMI = {
 		region_state:PER = {
 			create_pop = {
-				culture = persian
+				culture = iranian
 				size = 547846
 			}
 			create_pop = {
-				culture = persian
+				culture = iranian
 				religion = mazdayasna
 				size = 16350
 			}
@@ -996,11 +1002,12 @@
 				pop_type = slaves
 			}
 			create_pop = {
-				culture = azerbaijani
+				culture = iranian
 				size = 121300
 			}
 			create_pop = {
-				culture = kurdish
+				culture = iranian
+				religion = sunni
 				size = 79996
 			}
 		}
@@ -1008,43 +1015,44 @@
 	s:STATE_TABRIZ = {
 		region_state:PER = {
 			create_pop = {
-				culture = azerbaijani
-				size = 651300
+				culture = iranian
+				size = 551300
 			}
 			create_pop = {
 				culture = sephardic
 				size = 2000
 			}
 			create_pop = {
-				culture = azerbaijani
+				culture = iranian
 				religion = mazdayasna
 				size = 50000
 			}
 			create_pop = {
-				culture = persian
-				size = 110750
+				culture = iranian
+				size = 90750
 			}
 			create_pop = {
-				culture = persian
+				culture = iranian
 				religion = mazdayasna
 				size = 1250
 			}
 			create_pop = {
-				culture = kurdish
+				culture = iranian
 				religion = shiite
-				size = 409900
+				size = 209900
 			}
 			create_pop = {
-				culture = kurdish
-				size = 79996
+				culture = iranian
+				religion = sunni
+				size = 100996
 			}
 			create_pop = {
 				culture = armenian
 				religion = mazdayasna
-				size = 215996
+				size = 21996
 			}
 			create_pop = {
-				culture = azerbaijani
+				culture = iranian
 				size = 132207
 				pop_type = slaves
 			}
@@ -1057,11 +1065,11 @@
 	s:STATE_LURISTAN = {
 		region_state:PER = {
 			create_pop = {
-				culture = persian
-				size = 136544
+				culture = iranian
+				size = 106544
 			}
 			create_pop = {
-				culture = persian
+				culture = iranian
 				religion = mazdayasna
 				size = 6660
 			}
@@ -1070,11 +1078,12 @@
 				size = 42000
 			}
 			create_pop = {
-				culture = kurdish
-				size = 626008
+				culture = iranian
+				religion = sunni
+				size = 556008
 			}
 			create_pop = {
-				culture = kurdish
+				culture = iranian
 				religion = mazdayasna
 				size = 12000
 			}
@@ -1178,7 +1187,8 @@
 				size = 720204
 			}
 			create_pop = {
-				culture = kurdish
+				culture = iranian
+				religion = sunni
 				size = 20102
 			}
 			create_pop = {
@@ -1234,7 +1244,8 @@
 	s:STATE_DIYARBAKIR = {
 		region_state:TUR = {
 			create_pop = {
-				culture = kurdish
+				culture = iranian
+				religion = sunni
 				size = 451906
 			}
 			create_pop = {
@@ -1274,7 +1285,8 @@
 				size = 20062
 			}
 			create_pop = {
-				culture = kurdish
+				culture = iranian
+				religion = sunni
 				size = 124002
 			}
 			create_pop = {
@@ -1374,7 +1386,8 @@
 				size = 44045
 			}
 			create_pop = {
-				culture = kurdish
+				culture = iranian
+				religion = sunni
 				size = 380301
 			}
 			create_pop = {
@@ -1428,7 +1441,8 @@
 				size = 9500
 			}
 			create_pop = {
-				culture = kurdish
+				culture = iranian
+				religion = sunni
 				size = 15000
 			}
 			create_pop = {
@@ -1452,11 +1466,12 @@
 		}
 		region_state:RUS = {
 			create_pop = {
-				culture = azerbaijani
+				culture = iranian
 				size = 17000
 			}
 			create_pop = {
-				culture = kurdish
+				culture = iranian
+				religion = sunni
 				size = 7000
 			}
 			create_pop = {
@@ -1476,7 +1491,8 @@
 				size = 206365
 			}
 			create_pop = {
-				culture = kurdish
+				culture = iranian
+				religion = sunni
 				size = 264470
 			}
 			create_pop = {

@@ -2,7 +2,6 @@
 	is_shown = {
 		this ?= c:PER
 		NOT = { has_variable = bahrain_var }
-		country_has_primary_culture = cu:persian
 		is_subject = no
 		exists = c:BHN
 		c:BHN = {
@@ -13,10 +12,6 @@
 	possible = {
 				c:PER = {
 			navy_size >= 8
-		}
-		
-		c:BHN = {
-			relations:root >= relations_threshold:cordial
 		}
 	}
 
@@ -74,7 +69,7 @@
 turan_decision = {
 	is_shown = {
 		NOT = { has_variable = turan_var }
-		country_has_primary_culture = cu:persian
+		this ?= c:PER
 		is_subject = no
 		exists = c:KHI
 		c:KHI = {

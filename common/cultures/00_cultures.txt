@@ -6200,7 +6200,10 @@ armenian={
 		Varapetian Vartanian
 	}
 	ethnicities = {
+		1 = arab
+		1 = north_caucasian
 		1 = slavic
+		2 = caucasian
 	}
 	graphics = european
 }
@@ -6540,6 +6543,9 @@ azerbaijani={
 		Zardabi
 	}
 	ethnicities = {
+		1 = arab
+		2 = north_caucasian
+		1 = slavic
 		1 = caucasian
 	}
 	graphics = arabic
@@ -7048,12 +7054,9 @@ berber={ # Amazigh
 }
 #EDIT
 iranian={
-	color= rgb{ 255 255 0 }
-	religion = mazdayasna
+	color= hsv{ 0.63 0.75 0.80 }
+	religion = shiite
 	traits = { iranian_turanian_culture_group aryan_heritage}
-	obsessions = {
-		
-	}
 	male_common_first_names={
 		Asha
 		Arya
@@ -7147,15 +7150,17 @@ iranian={
 		Naser_ed-Din
 		Sultan_Hamid
 		Reza Pahlavi
-		MohammadReza Aryamehr Pahlavi
-		Reza Kurosh II Pahlavi
 	}
-	graphics = european
 	ethnicities = {
+		1 = arab
+		2 = north_caucasian
+		1 = slavic
 		1 = caucasian
 	}
+	graphics = european
 }
 #EDIT
+
 persian={
 	color= hsv{ 0.1 0.43 0.56 }
 	religion = shiite
@@ -7252,6 +7257,9 @@ persian={
 	}
 	ethnicities = {
 		1 = arab
+		2 = north_caucasian
+		1 = slavic
+		1 = caucasian
 	}
 	graphics = arabic
 }
@@ -7507,6 +7515,9 @@ tajik={
 		Zahedi
 	}
 	ethnicities = {
+		1 = arab
+		2 = north_caucasian
+		1 = slavic
 		1 = caucasian
 	}
 	graphics = east_asian
@@ -7725,6 +7736,8 @@ baluchi={
 	}
 	ethnicities = {
 		1 = arab
+		2 = north_caucasian
+		1 = slavic
 	}
 	graphics = south_asian
 }
@@ -7772,7 +7785,7 @@ hazara={
 turkmen={
 	color= hsv{ 0.84 0.21 0.75 }
 	religion = sunni
-	traits = { iranian_turanian_culture_group central_asian_heritage }
+	traits = {central_asian_heritage }
 	male_common_first_names={
 		Ahmed
 		Borkluce
@@ -7905,6 +7918,9 @@ kurdish={
 		Zahedi
 	}
 	ethnicities = {
+		1 = arab
+		2 = north_caucasian
+		1 = slavic
 		1 = caucasian
 	}
 	graphics = arabic

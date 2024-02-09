@@ -23,7 +23,8 @@
 	s:STATE_TIANSHAN = {
 		region_state:CHI = {
 			create_pop = {
-				culture = tajik
+				culture = iranian
+				religion = sunni
 				size = 1684180
 			}
 			create_pop = {
