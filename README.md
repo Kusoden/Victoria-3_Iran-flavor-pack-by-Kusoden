@@ -29,12 +29,16 @@
 <li>Historical law passings and opportunities to liberalise easier when the great powers were there to help!</li>
 <li>Re-gaining Power and regions</li>
 <li>Improve Iranian soil</li>
-<li>Re-unite Iranians</li>
+<li>Re-integrate lost lands and Iranians, then promote the culture.</li>
 <li>Navigate through Qajar corruption decisions.</li>
+<li>Reform Land Owners from Khans to Dehgans, and praise Iranian Royals.</li>
+<li>Iranization of the Crown. Abolish Qajars.</li>
+<li>Seperator modifier and decision.</li>
 </ul>
 
 <h3>More Historical Iranian Army than vanilla game.</h3>
 <p>Considering its wars/conflicts against its rivals and the diplomatic plays and treaties. Made the army bigger and implemented cannons aswell.</p>
+<p>Historical Commanders.</p>
 
 <h3>Constitutional Monarchy Elegance</h3>
 <p>Historical 3colors with Shir-o Shamshir-o Xorshid flag when Constitutional monarchy is enacted. (viable also for Technocracy)</p>
@@ -42,7 +46,8 @@
 <h3>Resource Reallocation</h3>
 <p>Refined arrangement of arable land numbers and mines for a more strategic/history accurate experience.</p>
 
-<h3>Interest Group Traits</h3>
+<h3>Interest Group</h3>
+<p>Iranian Ideologies, after re-Iranizing the culture and identity.</p>
 <p>Discover new interest group traits that add depth and complexity/challenges to the Iranian political landscape.</p>
 
 <h3>Companies to Shape History</h3>
