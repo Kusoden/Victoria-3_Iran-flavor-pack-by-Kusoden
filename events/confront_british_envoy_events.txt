@@ -1,87 +1,73 @@
 ﻿namespace = slavery
-
 slavery.1 = {
 	type = country_event
-
 	title = slavery.1.t
 	desc = slavery.1.d
 	flavor = slavery.1.f
-
-
-
 	event_image = {
 		video = "unspecific_signed_contract"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	duration = 3
-
 	trigger = {
 	}
-
 	immediate = {
-
+		set_variable = slavery_var
 	}
-
 	option = {
 		name = slavery.1.a
 		change_relations = {
-   			country = c:GBR
-   			value = -30
-   		}
-		
+			country = c:GBR
+			value = -30
+		}
 	}
-	
 	option = {
 		name = slavery.1.b
 		activate_law = law_type:law_legacy_slavery
 		change_relations = {
-   			country = c:GBR
-   			value = 20
-   		}
+			country = c:GBR
+			value = 15
+		}
 	}
-
 	option = {
 		default_option = yes
 		name = slavery.1.c
 		activate_law = law_type:law_slavery_banned
 		change_relations = {
-   			country = c:GBR
-   			value = 40
-   		}
+			country = c:GBR
+			value = 30
+		}
 		change_relations = {
-   			country = c:JAB
-   			value = -40
-   		}
+			country = c:JAB
+			value = -40
+		}
 		change_relations = {
-   			country = c:NEJ
-   			value = -40
-   		}
+			country = c:NEJ
+			value = -40
+		}
 		change_relations = {
-   			country = c:OMA
-   			value = -40
-   		}
+			country = c:OMA
+			value = -40
+		}
 		change_relations = {
-   			country = c:KHI
-   			value = -50
-   		}
+			country = c:KHI
+			value = -50
+		}
 		change_relations = {
-   			country = c:BUK
-   			value = -50
-   		}
+			country = c:BUK
+			value = -50
+		}
 		change_relations = {
-   			country = c:KOK
-   			value = -50
-   		}
+			country = c:KOK
+			value = -50
+		}
 		change_relations = {
-   			country = c:AFG
-   			value = -50
-   		}
+			country = c:AFG
+			value = -50
+		}
 		add_radicals = {
-   		value = 0.1
-  	 	religion = <scope/rel:shiite>
- 	  	}
+			value = 0.05
+			religion = rel:shiite
+		}
 	}
-
 }

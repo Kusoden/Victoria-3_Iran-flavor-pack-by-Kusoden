@@ -1,7 +1,6 @@
 ﻿l_english:
 
   # Landowners IG Traits
-
   ig_trait_iranian_wuzurgan_3:0 "Škōh-e Āzādmardōm-ān"
   ig_trait_iranian_wuzurgan_3_desc:0 "Škōh = glory, Āzādmardōm = Noble"
 
@@ -12,7 +11,6 @@
   ig_trait_iranian_wuzurgan_1_desc:0 "abarmānd = privilege, Āzādmardōm = Noble"
 
   # Industrialists IG Traits
-
   ig_trait_iranian_bazaari_3:0 "Kār Āfrīdārān"
   ig_trait_iranian_bazaari_3_desc:0 "Kār = Job, āfrīdār = Creator"
 
@@ -23,7 +21,6 @@
   ig_trait_iranian_bazaari_1_desc:0 "Harg = tax, vizīrišn = avoidance" 
 
   # Armed Forces IG Traits
-
   ig_trait_iranian_artesh_3:0 "Wizārišn-e Mihan-Parasti"
   ig_trait_iranian_artesh_3_desc:0 "Wizārišn = fervor or enthusiasm, Mihan-Parasti = Patriotic"
 
@@ -33,6 +30,7 @@
   ig_trait_iranian_artesh_1:0 "Kešvarāndag "
   ig_trait_iranian_artesh_1_desc:0 "Kešvarāndag ?=wastage of resources or materials"
 
+ ideology_wehdin:0 "Weh-dēn"
   # Rural Folk IG Traits
 #  ig_trait_farmers_markets:0 "Farmer's Markets"
 #  ig_trait_farmers_markets_desc:0 "Getting the goods we produce out to the people who need them seems to be a big concern these days. Under good circumstances, we're quite capable of getting them where they need to be ourselves."
@@ -60,7 +58,6 @@
 #  ig_trait_bourse_du_travail_desc: "Organization doesn't end at the end of workday! A united front requires aiding each other not just on the factory floor, but in our homes and communities as well."
 
   # Intelligentsia IG Traits
-
   ig_trait_iranian_roshan_3:0 "Nistād konandegān"
   ig_trait_iranian_roshan_3_desc:0 "Nistād =advertisement/propaganda?, konandegān = those who do it"
 

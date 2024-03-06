@@ -1,4 +1,4 @@
-﻿  # Armed Forces IG Traits
+﻿# Armed Forces IG Traits
 ig_trait_iranian_artesh_3 ={
 	icon = "gfx/interface/icons/ig_trait_icons/patriotic_fervor.dds"
 	min_approval = loyal
@@ -29,7 +29,7 @@ ig_trait_iranian_artesh_1 = {
 		country_legitimacy_base_add = -30
 	}
 }
- # Devout IG Traits
+# Devout IG Traits
 ig_trait_iranian_din_3 = {
 	icon = "gfx/interface/icons/ig_trait_icons/be_fruitful_and_multiply.dds"
 	min_approval = loyal
@@ -46,7 +46,7 @@ ig_trait_iranian_din_2 = { #old Teachings?
 	
 	modifier = {
 		building_group_bg_plantations_throughput_add = 0.2
-		building_group_bg_manufacturing_tax_mult = 0.2
+		building_group_bg_manufacturing_tax_mult = 0.1
 		building_group_bg_manufacturing_throughput_add = 0.2
 	}
 }
@@ -59,7 +59,7 @@ ig_trait_iranian_din_1 = {
 		state_radicals_from_discrimination_mult = 0.25
 	}
 }
-  # Industrialists IG Traits
+# Industrialists IG Traits
 ig_trait_iranian_bazaari_3 = {
 	icon = "gfx/interface/icons/ig_trait_icons/job_creators.dds"
 	min_approval = loyal
@@ -76,7 +76,6 @@ ig_trait_iranian_bazaari_2 = {
 	
 	modifier = {
 		country_production_tech_research_speed_mult = 0.1
-		state_capitalists_investment_pool_efficiency_mult = 0.15
 	}
 }
 
@@ -86,7 +85,7 @@ ig_trait_iranian_bazaari_1 = { #not used
 	
 	modifier = {
 		building_group_bg_manufacturing_tax_mult = -0.1
-		state_construction_mult = -0.3
+		state_construction_mult = -0.2
 	}
 }
   # Intelligentsia IG Traits

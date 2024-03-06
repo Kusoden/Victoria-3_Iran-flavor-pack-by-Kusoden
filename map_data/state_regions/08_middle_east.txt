@@ -262,6 +262,9 @@ STATE_MOSUL = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" }
     capped_resources = {
         bg_sulfur_mining = 36
+        bg_iron_mining = 10
+        bg_lead_mining = 5
+        bg_logging = 4
     }
     resource = {
         type = "bg_oil_extraction"
@@ -279,7 +282,7 @@ STATE_DEIR_EZ_ZOR = {
     mine = "x519F26"
     wood = "x1ECFDA"
     arable_land = 20
-    arable_resources = { "bg_livestock_ranches" "bg_tobacco_plantations" }
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" }
 }
 
 STATE_BASRA = {
@@ -632,6 +635,7 @@ STATE_DIYARBAKIR = {
     capped_resources = {
         bg_logging = 6
         bg_coal_mining = 32
+        bg_iron_mining = 5
     }
 }
 

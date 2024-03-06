@@ -36,6 +36,9 @@
 				set_ig_trait = ig_trait:ig_trait_iranian_roshan_3
 				set_ig_trait = ig_trait:ig_trait_iranian_roshan_2
 				set_ig_trait = ig_trait:ig_trait_iranian_roshan_1
+				
+				remove_ideology = ideology_republican
+				add_ideology = ideology_constitutionalist
 			}
 			else_if = {
 				limit = {

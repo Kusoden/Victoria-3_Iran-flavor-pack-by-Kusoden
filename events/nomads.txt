@@ -1,0 +1,69 @@
+﻿namespace = nomads
+nomads.1 = {
+	type = country_event
+
+	title = nomads.1.t
+	desc = nomads.1.d
+	flavor = nomads.1.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	duration = 3
+	
+	trigger = {
+		# Triggered by JE iranian_nomads
+	}
+
+	immediate = {
+		set_variable = iranian_nomads_settled_var
+		remove_modifier = high_number_nomads
+		add_modifier = { 
+			name = settled_nomads
+			months = 120
+		}
+	}
+
+	option = {
+		name = nomads.1.a
+		default_option = yes
+		
+		ROOT = {
+			country_bureaucracy_mult = 0.1
+			country_authority_mult = 0.05
+			state_construction_mult = 0.05
+		}
+	}
+
+	option = {
+		name = nomads.1.b
+		
+		s:STATE_LURISTAN = {
+			add_building_level = {
+				building = building_barracks
+				level = 5
+			}
+		}
+		s:STATE_FARS = {
+			add_building_level = {
+				building = building_barracks
+				level = 5
+			}
+		}
+		s:STATE_KHORASAN = {
+			add_building_level = {
+				building = building_barracks
+				level = 5
+			}
+		}
+		s:STATE_TABRIZ = {
+			add_building_level = {
+				building = building_barracks
+				level = 5
+			}
+		}
+	}
+}

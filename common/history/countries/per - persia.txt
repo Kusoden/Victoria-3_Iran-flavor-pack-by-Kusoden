@@ -2,6 +2,7 @@
 	c:PER = {
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
+			set_interest_group_name = local_khans
 		}
 		ig:ig_devout = {
 			add_ruling_interest_group = yes
@@ -10,6 +11,15 @@
 
 		add_modifier = {
 			name = qajar_familial_corruption
+		}
+		add_modifier = {
+			name = high_number_nomads
+		}
+		add_modifier = {
+			name = seperator_delusion
+		}
+		add_modifier = {
+			name = local_khans
 		}
 
 		effect_starting_technology_tier_4_tech = yes
@@ -20,9 +30,10 @@
 		add_technology_researched = law_enforcement
 		add_technology_researched = urban_planning
 		add_technology_researched = nationalism
-		add_technology_researched = mandatory_service 
-		add_technology_researched = line_infantry 
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
 		add_technology_researched = cotton_gin 
+		add_technology_researched = general_staff
 
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_autocracy 
@@ -38,6 +49,11 @@
 		activate_law = law_type:law_professional_army # Under Mohammad Shah qajar the army were moslty Professional and especially around 1836 because he wanted to invade Herat and extend Iran's influence up to Amu Darya.
 		activate_law = law_type:law_appointed_bureaucrats #The Shah had the authority to appoint officials to various administrative roles within the government, including high-ranking positions such as ministers, governors, and other administrative posts.
 		activate_law = law_type:law_no_migration_controls
-		set_tax_level = medium
+		
+		set_tax_level = high
+
+		set_tariffs_import_priority = g:small_arms
+		set_tariffs_import_priority = g:artillery
+
 	}
 }

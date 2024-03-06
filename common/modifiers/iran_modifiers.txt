@@ -3,6 +3,7 @@
 	country_expenses_add = 10000
 	country_bureaucracy_mult = -0.1,
 	state_loyalists_from_sol_change_mult = 0.4
+	state_birth_rate_mult = 0.05
 } 
 
 Zarathushtras_teachings{
@@ -14,20 +15,72 @@ Zarathushtras_teachings{
 
 qajar_familial_corruption{
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	state_tax_collection_mult = -0.25
-	state_tax_waste_add = 0.15
+	state_tax_waste_add = 0.05
 	state_radicals_from_sol_change_mult = 0.20
-	country_authority_mult = -0.20
+	country_authority_mult = -0.15
 }
 
 qajar_familial_corruption_lower{
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	state_tax_collection_mult = -0.15
+	state_tax_collection_mult = -0.05
 	state_radicals_from_sol_change_mult = 0.20
-	country_authority_mult = -0.10
+	country_authority_mult = -0.1
 }
 
 cleansed_government{
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	state_loyalists_from_sol_change_mult = 0.5
+}
+
+promote_culture{
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 5000
+	state_construction_mult = 0.05
+	state_birth_rate_mult = 0.1
+}
+
+re_integrate_cultures{
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1500
+	country_authority_mult = -0.05
+}
+
+high_number_nomads{
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	state_construction_mult = -0.05
+	country_bureaucracy_mult = -0.1
+	country_authority_mult = -0.05
+	state_urbanization_mult = -0.05
+	state_tax_collection_mult = -0.05
+	state_conscription_rate_mult = 0.15
+}
+
+settled_nomads{
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	state_construction_mult = 0.05
+	state_loyalists_from_sol_change_mult = 0.1
+	country_expenses_add = 2500
+	state_birth_rate_mult = 0.1
+}
+
+seperator_delusion{
+	icon = gfx/interface/icons/proposal_icons/proposal_diplomatic_demand.dds
+	country_authority_mult = -0.1
+}
+
+local_khans{
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	state_urbanization_mult = -0.1
+	state_mortality_turmoil_mult = 0.05
+	state_conscription_rate_add = 0.01
+	state_bureaucracy_population_base_cost_factor_mult = -0.05
+	country_bureaucracy_mult = -0.1
+}
+
+wuzurgan{
+	interest_group_ig_landowners_pop_attraction_mult = 0.25
+	state_urbanization_mult = 0.1
+	state_construction_mult = 0.05
+	state_mortality_turmoil_mult = -0.01
+	unit_army_experience_gain_mult = 0.5
 }

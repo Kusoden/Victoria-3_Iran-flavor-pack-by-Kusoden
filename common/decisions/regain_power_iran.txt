@@ -2,7 +2,6 @@
 	is_shown = {
 		this ?= c:PER
 		NOT = { has_variable = bahrain_var }
-		country_has_primary_culture = cu:persian
 		is_subject = no
 		exists = c:BHN
 		c:BHN = {
@@ -13,10 +12,6 @@
 	possible = {
 				c:PER = {
 			navy_size >= 8
-		}
-		
-		c:BHN = {
-			relations:root >= relations_threshold:cordial
 		}
 	}
 
@@ -67,14 +62,14 @@
 	}
 
 	ai_chance = {
-		base = 10
+		base = 100
 	}
 }
 
 turan_decision = {
 	is_shown = {
 		NOT = { has_variable = turan_var }
-		country_has_primary_culture = cu:persian
+		this ?= c:PER
 		is_subject = no
 		exists = c:KHI
 		c:KHI = {
@@ -84,7 +79,7 @@ turan_decision = {
 
 	possible = {
 		c:PER = {
-			army_size >= 80
+			army_size >= 120
 			gdp >= 8000000
 			year <= 1880
 		}
@@ -104,8 +99,6 @@ turan_decision = {
 			
 				type = dp_annex_war
 
-
-
 				add_war_goal = {
 				holder = c:PER
 				type = annex_country
@@ -117,7 +110,6 @@ turan_decision = {
 				type = annex_country
 				target_state = s:STATE_UZBEKIA.region_state:BUK
 				}
-
 
 				add_war_goal = {
 					holder = c:KHI
@@ -144,6 +136,41 @@ turan_decision = {
 	}
 
 	ai_chance = {
-		base = 10
+		base = 100
+	}
+}
+
+seperators_decision = {
+	is_shown = {
+		this ?= c:PER
+		NOT = { has_variable = seperators_var }
+	}
+
+	possible = {
+		has_law = law_type:law_dedicated_police
+		institution_investment_level = {
+			institution = institution_police
+			value = 3
+		}
+		has_variable = wuzurgan_var
+	}
+
+	when_taken = {
+		set_variable = seperators_var
+		custom_tooltip = seperators_event_tt
+
+		remove_modifier = seperator_delusion
+
+		hidden_effect = {
+			trigger_event = {
+				id = re-centralized.1
+				days = 30
+				popup = yes
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 75
 	}
 }

@@ -1,0 +1,36 @@
+﻿AI = {
+	c:PER = {
+		set_secret_goal = {
+			country = c:RUS
+			secret_goal = antagonize
+		}
+		set_secret_goal = {
+			country = c:TUR
+			secret_goal = conquer
+		}
+		set_secret_goal = {
+			country = c:GBR
+			secret_goal = befriend
+		}	
+		set_secret_goal = {
+			country = c:FRA
+			secret_goal = befriend
+		}	
+		set_secret_goal = {
+			country = c:AUS
+			secret_goal = befriend
+		}	
+		set_secret_goal = {
+			country = c:AFG
+			secret_goal = conquer
+		}	
+		set_secret_goal = {
+			country = c:MAK
+			secret_goal = conquer
+		}	
+		set_secret_goal = {
+			country = c:KAL
+			secret_goal = conquer
+		}	
+	}
+}

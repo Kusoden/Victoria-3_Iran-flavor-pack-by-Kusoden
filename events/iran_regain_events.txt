@@ -36,6 +36,7 @@ iran.1 = {
 		name = bahrein.1.a
 		default_option = yes
 		annex = c:BHN
+		
 		if = {
 			limit = {
 				NOR = {
@@ -47,6 +48,7 @@ iran.1 = {
 				add_claim = ROOT
 			}
 		}
+		
 		if = {
 			limit = {
 				NOR = {

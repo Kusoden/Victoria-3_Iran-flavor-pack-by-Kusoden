@@ -1,0 +1,43 @@
+wuzurgan_decision = {
+	is_shown = {
+		NOT = { has_variable = wuzurgan_var }
+		this ?= c:PER
+	}
+
+	possible = {
+		ig:ig_landowners = {
+			ig_clout <= 0.3
+		}
+
+		literacy_rate >= 0.3
+	}
+
+	when_taken = {
+		set_variable = wuzurgan_var
+		custom_tooltip = wuzurgan_event_tt
+		
+		add_modifier = {
+			name = wuzurgan
+			months = 84
+		}
+
+		ig:ig_landowners = {
+			hidden_effect = {
+				set_interest_group_name = "wuzur­gān"
+			}
+			remove_ideology = ideology_paternalistic
+			add_ideology = ideology_er
+
+			remove_ideology = ideology_stratocratic
+			add_ideology = ideology_dehgan
+
+			remove_ideology = ideology_patriarchal
+			add_ideology = ideology_wehdin
+			#changed from Deh-sālār, Āzādān might be viable aswell. but because of the power of Wuzurgan during Sasanians i chose Wuzurgan. source: https://www.iranicaonline.org/articles/bozorgan-mpers
+		}
+	}
+
+	ai_chance = {
+   		base = 50
+	}
+}

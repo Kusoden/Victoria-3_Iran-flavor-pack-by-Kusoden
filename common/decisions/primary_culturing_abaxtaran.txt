@@ -1,0 +1,30 @@
+﻿primary_culturing_abaxtaran_decision = {
+	is_shown = {
+		this ?= c:PER
+		NOT = {
+			has_variable = primary_culturing_abaxtaran_var
+		}
+	}
+	possible = {
+		country_has_state_religion = rel:mazdayasna
+		hidden = {
+			NOT = {
+				has_variable = primary_culturing_abaxtaran_var
+			}
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:armenian
+		add_primary_culture = cu:georgian
+		add_primary_culture = cu:north_caucasian
+		add_primary_culture = cu:circassian
+		set_variable = primary_culturing_abaxtaran_var
+		add_modifier = {
+			name = re_integrate_cultures
+			months = 12
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}

@@ -6,50 +6,35 @@
 		}
 	}
 	possible = {
-		c:PER = {
-			loyalty >= 0.2
-			standard_of_living > 13
-		}
-		
-		custom_tooltip = {
-			text = iranian_culture_decision_not_var_custom_tooltip
+		country_has_accepted_religion = mazdayasna
+		owns_entire_state_region = STATE_TURKMENIA
+		owns_entire_state_region = STATE_UZBEKIA
+		owns_entire_state_region = STATE_TAJIKISTAN
+		owns_entire_state_region = STATE_AZERBAIJAN
+		owns_entire_state_region = STATE_ARMENIA
+		owns_entire_state_region = STATE_GREATER_CAUCASUS
+		owns_entire_state_region = STATE_DAGESTAN
+		hidden = {
 			NOT = {
 				has_variable = iranian_culture_decision_var
 			}
 		}
-		is_player = yes
+		custom_tooltip = {
+			text = iranian_culture_decision_pc_abaxtaran_var_custom_tooltip
+			has_variable = primary_culturing_abaxtaran_var
+		}
 	}
 	when_taken = {
-		custom_tooltip = {
-			text = iranian_culture_decision_var_custom_tooltip
-			set_variable = iranian_culture_decision_var
-			set_variable = has_picked_iranian_decision
+		set_variable = iranian_culture_decision_var
+		add_modifier = {
+			name = promote_culture
+			months = 60
 		}
-	}
-}
-
-complete_iranian_decision = {
-	is_shown = {
-		country_has_primary_culture = cu:iranian
-		has_variable = has_picked_a_iranian_culture_var
-		NOT = {
-			has_variable = hide_iranian_debug_menu_var
-		}
-	}
-	possible = {
-		country_has_primary_culture = cu:iranian
-		custom_tooltip = {
-			text = has_picked_a_iranian_culture_custom_tooltip
-			has_variable = has_picked_a_iranian_culture_var
-		}
-		is_player = yes
-	}
-	when_taken = {
-		trigger_event = {
-			id = iranian_culture.6
+		add_loyalists = {
+			value = 0.2
 		}
 	}
 	ai_chance = {
-		base = 0
+		base = 100
 	}
 }
