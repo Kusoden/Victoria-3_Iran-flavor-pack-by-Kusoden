@@ -12,7 +12,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MAZANDARAN
-				count = 10
+				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -47,12 +47,12 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LARISTAN
-				count = 5
+				count = 3
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_SISTAN
-				count = 5
+				count = 2
 			}
 			#Artillery
 			combat_unit = {
@@ -68,7 +68,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_KHORASAN
-				count = 10
+				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
@@ -77,25 +77,14 @@
 			}
 			save_scope_as = arteshiran
 		}
-
 		create_character = {
-			template = IRA_izydor_borowski_general
-			commander_rank = commander_rank_4
-			save_scope_as = Izydor_borowski
+			template = Air_asef_alDowlehi_general
+			first_name = Asef
+			save_scope_as = Asef
 		}
-		scope:Izydor_borowski = {
-			transfer_to_formation = scope:arteshiran
+		scope:Asef = {
+			transfer_to_formation = scope:artesh_iran
 		}
-
-		create_character = {
-			template = IRA_asef_alDowlehi_general
-			commander_rank = commander_rank_3
-			save_scope_as = Asef_alDowlehi
-		}
-		scope:Asef_alDowlehi = {
-			transfer_to_formation = scope:arteshiran
-		}
-
 		activate_production_method = {
 			building_type = building_barracks
 			production_method = pm_general_training

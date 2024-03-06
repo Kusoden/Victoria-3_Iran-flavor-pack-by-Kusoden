@@ -1,0 +1,44 @@
+﻿iranian_nomads = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+		this ?= c:PER
+	}
+
+	possible = {
+		this ?= c:PER
+		NOT = {
+			OR = {
+				has_law = law_type:law_traditionalism
+				has_law = law_type:law_agrarianism 
+			} 
+		}
+		pop_type_percent_country = {
+			pop_type = peasants
+			percent < 0.50
+		}
+		ig:ig_industrialists = {
+			is_marginal = no
+		}
+		every_scope_state = {
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 2
+			}
+		}
+	}
+
+	immediate = {
+		trigger_event = { id = nomads.1 }
+	}
+
+	complete = {
+		has_variable = iranian_nomads_settled_var 
+	}
+	on_complete = {
+	}
+
+	weight = 20
+}

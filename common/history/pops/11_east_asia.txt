@@ -28,6 +28,11 @@
 				size = 1684180
 			}
 			create_pop = {
+				culture = iranian
+				religion = mazdayasna
+				size = 2000
+			}
+			create_pop = {
 				culture = uighur
 				size = 3996
 			}
@@ -37,12 +42,12 @@
 				size = 32072
 			}
 			create_pop = {
-				culture = han # nanfaren
+				culture = han			# nanfaren
 				religion = sunni
 				size = 52000
 			}
 			create_pop = {
-				culture = han # nanfaren
+				culture = han			# nanfaren
 				size = 16196
 			}
 			create_pop = {

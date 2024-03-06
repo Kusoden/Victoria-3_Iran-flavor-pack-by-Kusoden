@@ -20,13 +20,12 @@ arable_land_decision = {
 
 		c:PER = {
    			every_scope_state = {
-				state_region = {
-      			add_arable_land = 15}
+				state_region = { add_arable_land = 15}
    			}
 		}
 	}
 
 	ai_chance = {
-   		base = 0
+   		base = 10
 	}
 }

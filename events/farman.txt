@@ -1,0 +1,74 @@
+﻿namespace = farman
+farman.1 = {
+	type = country_event
+
+	title = farman.1.t
+	desc = farman.1.d
+	flavor = farman.1.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	duration = 3
+	
+	trigger = {
+		# Triggered by JE farman_e_din
+	}
+
+	immediate = {
+		set_variable = farman_e_din_var
+	}
+
+	option = {
+		name = farman.1.a
+		default_option = yes
+		c:PER = {
+			activate_law = law_type:law_freedom_of_conscience
+			add_technology_researched = logistics
+			add_technology_researched = field_works
+			add_technology_researched = empiricism
+			loyalists_from_sol_change_mult = 0.1
+			change_relations = {
+				country = c:FRA
+				value = 15
+			}
+			add_loyalists = {
+				value = 0.9
+				religion = rel:catholic
+			}
+			add_loyalists = {
+				value = 0.3
+				religion = rel:mazdayasna
+			}
+			add_radicals = {
+				value = 0.01
+				religion = rel:shiite
+			}
+		}
+	}
+
+	option = {
+		name = farman.1.b
+		c:PER = {
+			change_relations = {
+				country = c:FRA
+				value = -20
+			}
+			change_relations = {
+				country = c:GBR
+				value = -10
+			}
+			change_relations = {
+				country = c:RUS
+				value = -10
+			}
+			add_loyalists = {
+				value = 0.2
+				religion = rel:shiite
+			}
+		}
+	}
+}

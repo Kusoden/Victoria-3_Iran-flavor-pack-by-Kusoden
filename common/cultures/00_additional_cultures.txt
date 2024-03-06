@@ -698,7 +698,7 @@ cajun={
 assyrian={
 	color={ 255 156 156 }
 	religion = oriental_orthodox
-	traits = { middle_eastern_heritage }
+	traits = { iranian_turanian_culture_group }
 	male_common_first_names = {
 		Aho
 		Aram

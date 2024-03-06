@@ -14,16 +14,27 @@
 		owns_entire_state_region = STATE_ARMENIA
 		owns_entire_state_region = STATE_GREATER_CAUCASUS
 		owns_entire_state_region = STATE_DAGESTAN
-		custom_tooltip = {
-			text = iranian_culture_decision_not_var_custom_tooltip
+		hidden = {
 			NOT = {
 				has_variable = iranian_culture_decision_var
 			}
 		}
+		custom_tooltip = {
+			text = iranian_culture_decision_pc_abaxtaran_var_custom_tooltip
+			has_variable = primary_culturing_abaxtaran_var
+		}
 	}
 	when_taken = {
+		set_variable = iranian_culture_decision_var
+		add_modifier = {
+			name = promote_culture
+			months = 60
+		}
 		add_loyalists = {
 			value = 0.2
 		}
+	}
+	ai_chance = {
+		base = 100
 	}
 }

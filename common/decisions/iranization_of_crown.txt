@@ -1,0 +1,47 @@
+﻿iranization_of_crown = {
+	is_shown = {
+		this ?= c:PER
+		NOT = {
+			has_variable = iranization_of_crown_var
+		}
+	}
+	possible = {
+		country_has_state_religion = rel:mazdayasna
+		ig:ig_armed_forces = {
+			ig_clout >= 0.15
+		}
+		hidden = {
+			NOT = {
+				has_variable = iranization_of_crown_var
+			}
+		}
+	}
+	when_taken = {
+		hidden = {
+			heir = {
+				disinherit_character = yes
+			}
+		}
+
+		ig:ig_armed_forces = {
+			leader = {
+				set_character_as_ruler = yes
+			}
+		}
+		create_character = {
+			first_name = "Vahram"
+			heir = yes
+			age = 12
+			culture = cu:iranian
+			religion = rel:mazdayasna
+			interest_group = ig_armed_forces
+			traits = {
+				trait_child
+			}
+		}
+		set_variable = iranization_of_crown_var
+	}
+	ai_chance = {
+		base = 100
+	}
+}

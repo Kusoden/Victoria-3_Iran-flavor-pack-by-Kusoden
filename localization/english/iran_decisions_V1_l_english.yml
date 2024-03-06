@@ -15,21 +15,21 @@ arable_land_decision_desc:0 "The kārēz (< kār- “to draw furrows” and rēz
 arable_land_var_custom_tooltip:0 "Has made the decision to work on the Arable lands"
 
 #Confront British envoy
-justin_sheil_decision:0 "Confront the British envoy and see what they desire"
-justin_sheil_decision_event_tt:0 "You will be confronting Brits and their request"
-justin_sheil_decision_desc:0 "When Justin Sheil succeeded John McNiel as the envoy to Iran in 1844, he and his wife observed the slavery and decided to act against it. He sent a letter to Aqasi (Mirza Aqasi Iravani a Yerevani Armenian was prime minister of Iran 1835 to 1848, which is represented as Landowner leaders ingame.) and pleaded for its abolition. Mohammad Shah, however, did not respond to this diplomatic pressure so Sheil brought up the moral aspect of slavery, emphasizing its negative impacts on the African population. Mohammad Shah remained unmoved and said abolition would contradict the Islamic tradition. Sheil further argued his points but Mohammad responded such interference would undermine diplomatic relations between the two nations. But this time this desicion is in your hands!"
-justin_sheil_event_tt:0 "Choose your road"
+justin_sheil:0 "When Justin Sheil succeeded John McNiel as the envoy to Iran in 1844, he and his wife observed the slavery and decided to act against it."
 slavery.1.t:0 "Confrontation!"
-slavery.1.d:0 "Will you choose to stand for the traditions (which isnt ours its an outsider uncivilized tradition) or will you do what is good for all? and be a step more close to Iranian culture and traditions"
-slavery.1.f:0 "In late 1847, Sheil was recalled to London and replaced with Colonel Francis Farrant, who also negotiated for abolition with Aqasi. Farrant was more successful, especially for the newly signed treaty of Erzurum that put him a good light for the grand vizier. Farrant argued if the Ottoman Empire could abolish slavery in their nation, Iranians could do the same. The argument appealed to Aqasi, who suggested it to Mohammad Shah. Mohammad was ready to adapt the changes similar to those of the Ottomans because it is clear from the letter he sent to Farrant. In this way, he could appease the British without challenging Islamic tradition. Mohammad wrote thus to Farrant regarding the abolition of slavery in the Ottoman Empire:Between the religions of Europe and our religion there is great distinction and difference, and we cannot observe or join in matters which are in accordance with their religion and in opposition to ours, why we wrote that the exalted English government should make enquiries of the Turkish government on this subject, was because that government being a Mahomedan state and in that country the traffic in slaves being much more extensive than any where else, we might observe what answer it will give, that then we may give a reply which should not be opposed to tenets of the Mahomedan faith. Mohammad Shah agreed to the abolition of the slave trade through the Persian Gulf but having slaves and trading them over land was still allowed. On Mohammad's behest, Aqasi sent three letters to the governors of Fars, Kerman, and Isfahan, ordering the governors not to partake in the slave trade in the Persian Gulf and expressing his concerns of the shah's health. On the advice of both Sheil and Farrant, Aqasi also approached the major ulama of Tehran to ask their consent should the slave traders accuse them of blasphemy. The results were unfavorable; most of the ulama regarded slavers as legal according to Mohammedan law. Sheil, however, was successful in obtaining a fatwa in support of the shah's decision."
+slavery.1.d:0 "He sent a letter to Mirza Aqasi Iravani and pleaded for its abolition. Mohammad Shah, however, did not respond to this diplomatic pressure so Sheil brought up the moral aspect of slavery. Mohammad Shah remained unmoved and said abolition would contradict the islamic tradition."
+slavery.1.f:0 "In late 1847, Sheil was recalled to London and replaced with Colonel Francis Farrant, who also negotiated for abolition with Aqasi. Farrant argued if the Ottoman Empire could abolish slavery in their nation, Iranians could do the same. The argument appealed to Aqasi, who suggested it to Mohammad Shah. Mohammad was ready to adapt the changes similar to those of the Ottomans because it is clear from the letter he sent to Farrant. Mohammad Shah agreed to the abolition of the slave trade through the Persian Gulf but having slaves and trading them over land was still allowed. On the advice of both Sheil and Farrant, Aqasi also approached the major ulama of Tehran to ask their consent should the slave traders accuse them of blasphemy. The results were unfavorable; most of the ulama regarded slavers as legal according to Mohammedan law. Sheil, however, was successful in obtaining a fatwa in support of the shah's decision."
 slavery.1.a:0 "Reject what British wants, praise islamic traditions"
 slavery.1.b:0 "Do what Mohammad Shah done, and partially ban the Slaves in some states"
-slavery.1.c:0 "Accept what they say, and fully ban Slavery!"
+slavery.1.c:0 "Accept their request, and fully ban Slavery!"
 
 #Farman-e Vejdan-e Azad
-farman_e_din_decision:0 "Listen to the wishes of the French Ambassador"
-farman_e_din_event_tt:0 "The French Ambassador will ask you for an order to enforce Freedom of Conscience, maybe we can get something more from them!"
-farman_e_din_decision_desc:0 "The arrival in 1839 of Félix Édouard Comte de Sercey as French ambassador to the Iranian court brought the Lazarists unprecedented advantages. In June he obtained from Moḥammad Shah an farmān (order) affirming the principle of freedom of conscience in Iran. Thenceforth, Roman Catholics were to enjoy the same rights and privileges as Muslim Iranians! source:Iranica (FRANCE xv. FRENCH SCHOOLS IN PERSIA)"
+farman_e_din:0 "Listen to the wishes of the French Ambassador"
+farman.1.t:0 "Confrontation!"
+farman.1.d:0 "The French Ambassador asks for an order to enforce Freedom of Conscience!"
+farman.1.f:0 "The arrival in 1839 of Félix Édouard Comte de Sercey as French ambassador to the Iranian court brought the Lazarists unprecedented advantages. In June he obtained from Moḥammad Shah an farmān (order) affirming the principle of freedom of conscience in Iran. Thenceforth, Roman Catholics were to enjoy the same rights and privileges as Muslim Iranians! source:Iranica (FRANCE xv. FRENCH SCHOOLS IN PERSIA)"
+farman.1.a:0 "Pass the law Freedom of Conscience, and ask for help from the French to modernize!"
+farman.1.b:0 "Reject their wishes."
 
 #turan_decision 
 turan_decision:0 "Fight back the Jahansuzan and regain power in Turan!"
@@ -46,4 +46,23 @@ qajar_cleanse_decision_desc:0 "Remove all the corruptors in the government."
  iranian_culture_decision:0 "Re-centralize Iranians in lost lands!"
  iranian_culture_decision_desc:0 "after every loss of land and people, enemies tried to radicalize Iranians toward their identity, history and culture. Support cultural formation! "
  iranian_culture_decision_var_custom_tooltip:0 "Has made the decision to re-centralize Iranians"
- iranian_culture_decision_not_var_custom_tooltip:0 "Has not yet made the decision to re-centralize Iranians"
+ promote_culture:0 "Promoting culture."
+
+ iranian_culture_decision_pc_abaxtaran_var_custom_tooltip:0 "Have made the desicion to Integrate Kafkasian."
+
+#Mazda Yasna 
+ mazdayasna:0 "Mazda Yasna"
+ wehden:0 "Weh-Dēn"
+ decision_mazda_yasna_ig_leaders_tt:0 "All leaders will convert to Mazda Yasna."
+ decision_mazda_yasna_dec_react_tt:0 "45% of Iran will convert, all Weh-dinan will become loyal. and extremist shiites will get radicalized."
+
+ mazdayasna_decision:0 "Return to Ahura Mazda's Light"
+ mazdayasna_decision_desc:0 "The ancient teachings of the Zarathushtra made our ancient land to be remembered for over centuries. His teaching has not only influenced us, most of the civilized world today follows his ethics and morality! Perhaps it is time, while we have no sword on our throat anymore. To reject the Tazis and Jahansuzan and return to our roots."
+
+#Primary Culturing new cultures
+ primary_culturing_abaxtaran_decision:0 "Integrate Kafkasian!"
+ primary_culturing_abaxtaran_decision_desc:0 "Our people in Kafkas, will be re-integrated into the Country."
+
+ primary_culturing_nemroz_decision:0 "Integrate the rest of those close to us!"
+ primary_culturing_nemroz_decision_desc:0 "Those whom either has no land, or lived with us for thousands of years. Will be given a home."
+

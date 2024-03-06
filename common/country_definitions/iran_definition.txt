@@ -3,7 +3,7 @@
 	country_type = recognized
 	tier = hegemony
 	religion = mazdayasna
-	cultures = {  iranian armenian georgian  north_caucasian pashtun assyrian sephardic circassian }
+	cultures = {  iranian armenian georgian north_caucasian pashtun assyrian sephardic circassian }
 	capital = STATE_IRAKAJEMI
 }
 PER = {
@@ -13,7 +13,7 @@ PER = {
 	
 	tier = empire
 	religion = shiite
-	cultures = { iranian armenian georgian  north_caucasian pashtun assyrian sephardic circassian }
+	cultures = { iranian }
 	capital = STATE_IRAKAJEMI
 }
 
@@ -25,7 +25,7 @@ GOS = {
 	tier = kingdom
 
 	religion = mazdayasna
-	cultures = { tajik }
+	cultures = { iranian }
 	capital = STATE_TIANSHAN
 }
 
@@ -49,6 +49,7 @@ KAL = {
 	tier = principality
 	
 	cultures = { iranian }
+	religion = sunni
 	capital = STATE_BALUCHISTAN
 }
 
@@ -60,5 +61,17 @@ MAK = {
 	tier = principality
 	
 	cultures = { iranian }
+	religion = sunni
 	capital = STATE_BALUCHISTAN
+}
+
+AFG = {
+	color = { 92  148  152 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { pashtun iranian }
+	capital = STATE_EASTERN_AFGHANISTAN
 }
