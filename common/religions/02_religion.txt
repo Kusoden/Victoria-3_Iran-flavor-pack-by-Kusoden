@@ -1,7 +1,7 @@
 ﻿ mazdayasna = {
-	texture = "gfx/interface/icons/religion_icons/zoroastrian.dds"
+	texture = "gfx/interface/icons/religion_icons/mazdayasna.dds"
 	traits = {
-		zoroastrian
+		iranic
 	}
 	color = { 0.3 0.0 0.5 }
  }

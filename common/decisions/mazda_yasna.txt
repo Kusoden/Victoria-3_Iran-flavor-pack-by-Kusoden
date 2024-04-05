@@ -70,7 +70,7 @@
 		#ideology changes
 		ig:ig_devout = {
 			hidden_effect = {
-				set_interest_group_name = ig_mazdayasna_priests
+				set_interest_group_name = mazdayasna_priests
 				set_ig_trait = ig_trait:ig_trait_iranian_din_3
 				set_ig_trait = ig_trait:ig_trait_iranian_din_2
 				set_ig_trait = ig_trait:ig_trait_iranian_din_1

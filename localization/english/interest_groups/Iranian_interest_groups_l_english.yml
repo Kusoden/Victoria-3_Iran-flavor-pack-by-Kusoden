@@ -1,4 +1,7 @@
 ﻿l_english:
  
-ig_mazdayasna_priests:0 "Athornan"
-ig_mazdayasna_priests_desc:0 "Zarathushtra's teachings is once again the light to our Society, and Mobad-ān will help our people with the moral and ethic values of good thoughts, good words, good deeds."
+ mazdayasna_priests:0 "Athornan"
+ mazdayasna_priests_desc:0 "Zarathushtra's teachings is once again the light to our Society, and Mobad-ān will help our people with the moral and ethic values of good thoughts, good words, good deeds."
+
+ local_khans:0 "Local Khans"
+ local_khans_desc:0 "Local Khans arrived Iran after the arrival of so called turks and Central Asians whom got assimilated into Turanian cultures. It quickly took over Iran while most of the Iranian nobles were massacred by the islamists/arabs."

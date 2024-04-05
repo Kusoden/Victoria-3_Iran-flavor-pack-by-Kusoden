@@ -7,10 +7,10 @@
 	}
 	possible = {
 		country_has_state_religion = rel:mazdayasna
-		hidden = {
-			NOT = {
-				has_variable = primary_culturing_nemroz_var
-			}
+		
+		custom_tooltip = {
+			text = has_iranization_of_crown_var
+			has_variable = iranization_of_crown_var
 		}
 	}
 	when_taken = {

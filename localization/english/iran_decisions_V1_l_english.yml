@@ -41,6 +41,7 @@ qajar_lowering_decision:0 "Regulate the government!"
 qajar_lowering_decision_desc:0 "Reduce control of the families in the government."
 qajar_cleanse_decision:0 "Cleanse the government from corruption!"
 qajar_cleanse_decision_desc:0 "Remove all the corruptors in the government."
+ has_qajar_var2:0 "has fully Cleansed the government from qajar corruption"
 
 #centralize Iranians
  iranian_culture_decision:0 "Re-centralize Iranians in lost lands!"
@@ -52,12 +53,13 @@ qajar_cleanse_decision_desc:0 "Remove all the corruptors in the government."
 
 #Mazda Yasna 
  mazdayasna:0 "Mazda Yasna"
- wehden:0 "Weh-Dēn"
- decision_mazda_yasna_ig_leaders_tt:0 "All leaders will convert to Mazda Yasna."
+ wehden:0 "Weh-Dēn" #not used anywhere
+ decision_mazda_yasna_ig_leaders_tt:0 "All interest group leaders will convert to Mazda Yasna."
  decision_mazda_yasna_dec_react_tt:0 "45% of Iran will convert, all Weh-dinan will become loyal. and extremist shiites will get radicalized."
 
  mazdayasna_decision:0 "Return to Ahura Mazda's Light"
  mazdayasna_decision_desc:0 "The ancient teachings of the Zarathushtra made our ancient land to be remembered for over centuries. His teaching has not only influenced us, most of the civilized world today follows his ethics and morality! Perhaps it is time, while we have no sword on our throat anymore. To reject the Tazis and Jahansuzan and return to our roots."
+ iranic:0 "Iranic"
 
 #Primary Culturing new cultures
  primary_culturing_abaxtaran_decision:0 "Integrate Kafkasian!"
@@ -65,4 +67,21 @@ qajar_cleanse_decision_desc:0 "Remove all the corruptors in the government."
 
  primary_culturing_nemroz_decision:0 "Integrate the rest of those close to us!"
  primary_culturing_nemroz_decision_desc:0 "Those whom either has no land, or lived with us for thousands of years. Will be given a home."
+ has_primary_culturing_abaxtaran_var:0 "has taken "Integrate Kafkasian" decision"
 
+#Iranization of the Crown
+ iranization_of_crown:0 "Iranization of the Crown!"
+ 
+ has_iranization_of_crown_var:0 "Iranization of the Crown decision has been made."
+
+#Landowner reform Wuzurgan
+ wuzurgan_decision:0 "Iranization of the Noblity system."
+
+#Nomads
+ iranian_nomads:0 "Nomadic Issues"
+  #event
+   nomads.1.t:0 "Settling Nomads"
+   nomads.1.d:0 ""
+   nomads.1.f:0 "In 19th centur Iran's population was up to 20% either nomadics or nomad-like, it was a Issue for the Capital since they was also armed and bring up their own issues."
+   nomads.1.a:0 "Use their workforce to Industrialize."
+   nomads.1.b:0 "Integrate their armed once into the Arteš"

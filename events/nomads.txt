@@ -20,7 +20,9 @@ nomads.1 = {
 
 	immediate = {
 		set_variable = iranian_nomads_settled_var
+
 		remove_modifier = high_number_nomads
+
 		add_modifier = { 
 			name = settled_nomads
 			months = 120
@@ -31,10 +33,40 @@ nomads.1 = {
 		name = nomads.1.a
 		default_option = yes
 		
-		ROOT = {
-			country_bureaucracy_mult = 0.1
-			country_authority_mult = 0.05
-			state_construction_mult = 0.05
+		add_modifier = { 
+			name = nomads_industrialize
+			months = 120
+		}
+
+		s:STATE_LURISTAN = {
+			add_building_level = {
+				building = government_administration
+				level = 2
+			}
+		}
+		s:STATE_LURISTAN = {
+			add_building_level = {
+				building = wheat_farms
+				level = 4
+			}
+		}
+		s:STATE_FARS = {
+			add_building_level = {
+				building = government_administration
+				level = 2
+			}
+		}
+		s:STATE_KHORASAN = {
+			add_building_level = {
+				building = wheat_farms
+				level = 5
+			}
+		}
+		s:STATE_TABRIZ = {
+			add_building_level = {
+				building = wheat_farms
+				level = 3
+			}
 		}
 	}
 
@@ -62,7 +94,7 @@ nomads.1 = {
 		s:STATE_TABRIZ = {
 			add_building_level = {
 				building = building_barracks
-				level = 5
+				level = 2
 			}
 		}
 	}

@@ -1,13 +1,19 @@
 {
-  "name" : "Iran Flavor pack by Kusoden",
-  "id" : "",
-  "version" : "1.0",
-  "supported_game_version" : "",
+  "name": "Iran Flavor pack by Kusoden",
+  "id": "com.github.kusoden",
+  "version": "1.0",
+  "supported_game_version": "1.6.2",
   "picture": "thumbnail.png",
-  "short_description" : "",
-  "tags" : ["Iran"],
-  "relationships" : [],
-  "game_custom_data" : {
-    "multiplayer_synchronized" : true
+  "short_description": "Semi-Historical and Alternative Content for Iran with visual improvements",
+  "tags": [
+    "Iran",
+    "Flavor",
+    "Persia",
+    "Zoroastrian",
+    "Mazda Yasna"
+  ],
+  "relationships": [],
+  "game_custom_data": {
+    "multiplayer_synchronized": true
   }
 }

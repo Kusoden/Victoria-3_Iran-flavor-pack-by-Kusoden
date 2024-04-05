@@ -47,7 +47,7 @@ re_integrate_cultures{
 
 high_number_nomads{
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	state_construction_mult = -0.05
+	state_construction_mult = -0.01
 	country_bureaucracy_mult = -0.1
 	country_authority_mult = -0.05
 	state_urbanization_mult = -0.05
@@ -63,12 +63,19 @@ settled_nomads{
 	state_birth_rate_mult = 0.1
 }
 
+nomads_industrialize{
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	state_construction_mult = 0.05
+	country_bureaucracy_mult = 0.1
+	country_authority_mult = 0.05
+}
+
 seperator_delusion{
 	icon = gfx/interface/icons/proposal_icons/proposal_diplomatic_demand.dds
 	country_authority_mult = -0.1
 }
 
-local_khans{
+local_khans_modifier{
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	state_urbanization_mult = -0.1
 	state_mortality_turmoil_mult = 0.05
@@ -77,7 +84,7 @@ local_khans{
 	country_bureaucracy_mult = -0.1
 }
 
-wuzurgan{
+wuzurgan_modifier{
 	interest_group_ig_landowners_pop_attraction_mult = 0.25
 	state_urbanization_mult = 0.1
 	state_construction_mult = 0.05

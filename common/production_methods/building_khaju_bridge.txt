@@ -5,8 +5,6 @@ pm_default_building_khaju_bridge = {
 		workforce_scaled = {
 			country_legitimacy_headofstate_add = 20
 			country_prestige_add = 100
-			state_standard_of_living_add = 0.1
-			state_construction_mult = 0.1
 		}
 	}
 

@@ -23,7 +23,7 @@ company_iranian_Carpet_Company = {
 		}
 	}
 
-	possible = {
+	possible = { 
 		any_scope_state = {
 			any_scope_building = {
 				AND = {

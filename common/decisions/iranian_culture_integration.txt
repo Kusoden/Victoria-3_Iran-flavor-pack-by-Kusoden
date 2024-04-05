@@ -20,7 +20,7 @@
 			}
 		}
 		custom_tooltip = {
-			text = iranian_culture_decision_pc_abaxtaran_var_custom_tooltip
+			text = has_primary_culturing_abaxtaran_var
 			has_variable = primary_culturing_abaxtaran_var
 		}
 	}

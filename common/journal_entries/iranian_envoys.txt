@@ -5,6 +5,7 @@
 
 	is_shown_when_inactive = {
 		this ?= c:PER
+		year <= 1842
 	}
 
 	possible = {
@@ -38,6 +39,7 @@ justin_sheil = {
 
 	is_shown_when_inactive = {
 		this ?= c:PER
+		year <= 1851
 	}
 
 	possible = {
