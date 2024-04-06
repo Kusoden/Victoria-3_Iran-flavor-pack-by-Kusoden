@@ -30,7 +30,9 @@
   ig_trait_iranian_artesh_1:0 "Kešvarāndag "
   ig_trait_iranian_artesh_1_desc:0 "Kešvarāndag ?=wastage of resources or materials"
 
- ideology_wehdin:0 "Weh-dēn"
+  ideology_wehdin:0 "Weh-dēn"
+  ideology_dehgan:0 "Ēr Values"
+  ideology_er:0 "Ēr Nobility"
   # Rural Folk IG Traits
 #  ig_trait_farmers_markets:0 "Farmer's Markets"
 #  ig_trait_farmers_markets_desc:0 "Getting the goods we produce out to the people who need them seems to be a big concern these days. Under good circumstances, we're quite capable of getting them where they need to be ourselves."

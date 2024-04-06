@@ -157,17 +157,8 @@ seperators_decision = {
 
 	when_taken = {
 		set_variable = seperators_var
-		custom_tooltip = seperators_event_tt
-
+		
 		remove_modifier = seperator_delusion
-
-		hidden_effect = {
-			trigger_event = {
-				id = re-centralized.1
-				days = 30
-				popup = yes
-			}
-		}
 	}
 
 	ai_chance = {

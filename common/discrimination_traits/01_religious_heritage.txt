@@ -22,6 +22,6 @@ buddhist = {
 	heritage = yes
 }
 
-zoroastrian = {
+iranic = {
 	heritage = yes
 }

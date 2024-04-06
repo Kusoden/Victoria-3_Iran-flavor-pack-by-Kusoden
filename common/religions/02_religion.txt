@@ -1,10 +1,10 @@
-﻿ mazdayasna = {
+﻿mazdayasna = {
 	texture = "gfx/interface/icons/religion_icons/mazdayasna.dds"
 	traits = {
 		iranic
 	}
 	color = { 0.3 0.0 0.5 }
- }
+}
 
 shiite = {
 	texture = "gfx/interface/icons/religion_icons/shiite.dds"

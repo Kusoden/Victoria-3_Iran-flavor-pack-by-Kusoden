@@ -71,17 +71,24 @@ qajar_cleanse_decision_desc:0 "Remove all the corruptors in the government."
 
 #Iranization of the Crown
  iranization_of_crown:0 "Iranization of the Crown!"
+ iranization_of_crown_desc:0 "Coup the Armed forces against the Qajar dynasty and make sure that the Iranian crown only belongs to the Iranian society."
  
  has_iranization_of_crown_var:0 "Iranization of the Crown decision has been made."
 
 #Landowner reform Wuzurgan
  wuzurgan_decision:0 "Iranization of the Noblity system."
+ wuzurgan_decision_desc:0 "By reforming the Landowners, we will ensure to put the Iranian culture and Identity as their priority, and put the Iranian Nobilities in charge whom value the Ethics and Morals of our society."
 
 #Nomads
  iranian_nomads:0 "Nomadic Issues"
+
   #event
    nomads.1.t:0 "Settling Nomads"
    nomads.1.d:0 ""
    nomads.1.f:0 "In 19th centur Iran's population was up to 20% either nomadics or nomad-like, it was a Issue for the Capital since they was also armed and bring up their own issues."
    nomads.1.a:0 "Use their workforce to Industrialize."
    nomads.1.b:0 "Integrate their armed once into the Arteš"
+
+#seperators decision
+ seperators_decision:0 "Put an end to the Seperator movements"
+ seperators_decision_desc:0 "After long inventions of Russia and Ottomans in north-west of Iran and British in south-east, Iran must put an end to these inventions."

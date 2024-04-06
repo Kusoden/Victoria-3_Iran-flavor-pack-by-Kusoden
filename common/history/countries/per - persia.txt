@@ -19,7 +19,7 @@
 			name = seperator_delusion
 		}
 		add_modifier = {
-			name = local_khans
+			name = local_khans_modifier
 		}
 
 		effect_starting_technology_tier_4_tech = yes

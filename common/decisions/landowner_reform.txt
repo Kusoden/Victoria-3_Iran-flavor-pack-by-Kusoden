@@ -16,9 +16,9 @@ wuzurgan_decision = {
 		set_variable = wuzurgan_var
 		custom_tooltip = wuzurgan_event_tt
 		
-		remove_modifier = local_khans
+		remove_modifier = local_khans_modifier
 		add_modifier = {
-			name = wuzurgan
+			name = wuzurgan_modifier
 			months = 84
 		}
 
@@ -30,6 +30,7 @@ wuzurgan_decision = {
 				set_ig_trait = ig_trait:ig_trait_iranian_wuzurgan_1
 			}
 			remove_ideology = ideology_paternalistic
+			remove_ideology = ideology_paternalistic
 			add_ideology = ideology_er
 
 			remove_ideology = ideology_stratocratic
@@ -38,7 +39,7 @@ wuzurgan_decision = {
 			remove_ideology = ideology_patriarchal
 			add_ideology = ideology_wehdin
 
-			remove_ideology = ideology_slavery
+			remove_ideology = ideology_pro_slavery
 
 			#changed from Deh-sālār, Āzādān might be viable aswell. but because of the power of Wuzurgan during Sasanians i chose Wuzurgan. source: https://www.iranicaonline.org/articles/bozorgan-mpers
 		}
