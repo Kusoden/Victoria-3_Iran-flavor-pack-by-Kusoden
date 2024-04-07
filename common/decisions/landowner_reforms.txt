@@ -8,8 +8,10 @@ wuzurgan_decision = {
 		ig:ig_landowners = {
 			ig_clout <= 0.3
 		}
-
 		literacy_rate >= 0.3
+		has_law = law_type:law_slavery_banned
+		has_law = law_type:law_homesteading
+		country_has_state_religion = rel:mazdayasna
 	}
 
 	when_taken = {
@@ -29,7 +31,6 @@ wuzurgan_decision = {
 				set_ig_trait = ig_trait:ig_trait_iranian_wuzurgan_2
 				set_ig_trait = ig_trait:ig_trait_iranian_wuzurgan_1
 			}
-			remove_ideology = ideology_paternalistic
 			remove_ideology = ideology_paternalistic
 			add_ideology = ideology_er
 

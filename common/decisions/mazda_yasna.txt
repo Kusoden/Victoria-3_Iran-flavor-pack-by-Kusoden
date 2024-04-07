@@ -6,20 +6,26 @@
 			country_has_state_religion = rel:mazdayasna
 		}
 	}
+
 	possible = {
 		has_law = law_type:law_slavery_banned
 		has_law = law_type:law_freedom_of_conscience
+
 		ig:ig_devout = {
 			is_in_government = no
+			ig_clout <= 0.10
 		}
+
 		NOT = {
 			has_law = law_type:law_religious_schools
 		}
+
 		OR = {
 			has_law = law_type:law_ethnostate
 			has_law = law_type:law_national_supremacy
 		}
 	}
+
 	when_taken = {
 		set_state_religion = rel:mazdayasna
 		#cant scope all devouts
@@ -55,7 +61,7 @@
 					value = 0.45
 				}
 				add_radicals = {
-					value = 0.02
+					value = 0.03
 					religion = rel:shiite
 				}
 				add_loyalists = {

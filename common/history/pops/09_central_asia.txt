@@ -29,6 +29,11 @@
 				culture = north_caucasian
 				size = 92200
 			}
+			create_pop = {
+				culture = iranian
+				religion = mazdayasna
+				size = 5000
+			}
 		}
 	}
 	s:STATE_KUBAN = {
@@ -63,6 +68,11 @@
 			create_pop = {
 				culture = north_caucasian
 				size = 32140
+			}
+			create_pop = {
+				culture = iranian
+				religion = mazdayasna
+				size = 5000
 			}
 		}
 	}
@@ -411,11 +421,11 @@
 				culture = sephardic
 				size = 8000
 			}
-		}
-		create_pop = {
-			culture = iranian
-			religion = mazdayasna
-			size = 5000
+			create_pop = {
+				culture = iranian
+				religion = mazdayasna
+				size = 5000
+			}
 		}
 	}
 	
