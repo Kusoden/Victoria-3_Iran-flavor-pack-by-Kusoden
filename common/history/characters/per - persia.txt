@@ -46,7 +46,7 @@
 			is_general = yes
 			first_name = Izydor
 			last_name = Borowski
-			culture = cu:lithuanian
+			culture = cu:polish
 			historical = yes
 			hq = region_persia
 			birth_date = 1770.4.30

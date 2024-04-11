@@ -4,7 +4,7 @@ bahrein_decision:0 "Regain power on Persian Gulf and regain Bahrein"
 bahrein_event_tt:0 "Bahrein will be regained"
 bahrein_decision_desc:0 "It's been a long time since we lost our power on Persian Gulf and because of that not only outsiders trying to claim Bahrein, but also local landowners trying to gain Independence. Although Iran says otherwise, it has no power to show it. Will Iran be able to change that?"
 bahrein.1.t:0 "Bahrein Regained!"
-bahrein.1.d:0 "After Iran regaining power in Persian gulf once again. We were able to Regain our islands once again!"
+bahrein.1.d:0 "After Iran regaining power in Persian gulf once again. We were able to Regain our islands back from bedouin invaders and settlers!"
 bahrein.1.f:0 "We have been able to prevent some of our people from being taken over by foreigners, we have been able to reclaim some of our lands. As the Shah of Iran, it is your duty to make sure that all our people are within Iran's borders. They should be safe, prosperous and have a guaranteed future."
 bahrein.1.a:0 "Perhaps now is an opportune moment to repossess our lost territories, starting by adversaries who have sought to undermine Iran over the course of centuries."
 
@@ -84,7 +84,7 @@ qajar_cleanse_decision_desc:0 "Remove all the corruptors in the government."
 
   #event
    nomads.1.t:0 "Settling Nomads"
-   nomads.1.d:0 ""
+   nomads.1.d:0 "Settling Nomadic people, for the centralization of power."
    nomads.1.f:0 "In 19th centur Iran's population was up to 20% either nomadics or nomad-like, it was a Issue for the Capital since they was also armed and bring up their own issues."
    nomads.1.a:0 "Use their workforce to Industrialize."
    nomads.1.b:0 "Integrate their armed once into the Arteš"

@@ -9,8 +9,15 @@ wuzurgan_decision = {
 			ig_clout <= 0.3
 		}
 		literacy_rate >= 0.3
+
 		has_law = law_type:law_slavery_banned
 		has_law = law_type:law_homesteading
+
+		institution_investment_level = {
+			institution = institution_police
+			value = 3
+		}
+		
 		country_has_state_religion = rel:mazdayasna
 	}
 

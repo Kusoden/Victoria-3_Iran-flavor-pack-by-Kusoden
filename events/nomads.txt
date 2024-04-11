@@ -37,65 +37,65 @@ nomads.1 = {
 			name = nomads_industrialize
 			months = 120
 		}
-
-		s:STATE_LURISTAN = {
-			add_building_level = {
-				building = government_administration
-				level = 2
-			}
-		}
-		s:STATE_LURISTAN = {
-			add_building_level = {
-				building = wheat_farms
-				level = 4
-			}
-		}
-		s:STATE_FARS = {
-			add_building_level = {
-				building = government_administration
-				level = 2
-			}
-		}
-		s:STATE_KHORASAN = {
-			add_building_level = {
-				building = wheat_farms
-				level = 5
-			}
-		}
-		s:STATE_TABRIZ = {
-			add_building_level = {
-				building = wheat_farms
-				level = 3
-			}
-		}
+    #! buildings not being added
+	#	s:STATE_LURISTAN = {
+	#		add_building_level = {
+	#			building = government_administration
+	#			level = 2
+	#		}
+	#	}
+	#	s:STATE_LURISTAN = {
+	#		add_building_level = {
+	#			building = wheat_farms
+	#			level = 4
+	#		}
+	#	}
+	#	s:STATE_FARS = {
+	#		add_building_level = {
+	#			building = government_administration
+	#			level = 2
+	#		}
+	#	}
+	#	s:STATE_KHORASAN = {
+	#		add_building_level = {
+	#			building = wheat_farms
+	#			level = 5
+	#		}
+	#	}
+	#	s:STATE_TABRIZ = {
+	#		add_building_level = {
+	#			building = wheat_farms
+	#			level = 3
+	#		}
+	#	}
 	}
-
-	option = {
-		name = nomads.1.b
-		
-		s:STATE_LURISTAN = {
-			add_building_level = {
-				building = building_barracks
-				level = 5
-			}
-		}
-		s:STATE_FARS = {
-			add_building_level = {
-				building = building_barracks
-				level = 5
-			}
-		}
-		s:STATE_KHORASAN = {
-			add_building_level = {
-				building = building_barracks
-				level = 5
-			}
-		}
-		s:STATE_TABRIZ = {
-			add_building_level = {
-				building = building_barracks
-				level = 2
-			}
-		}
-	}
-}
+	 #! buildings not being added
+	#option = {
+	#	name = nomads.1.b
+	#	
+	#	s:STATE_LURISTAN = { 
+	#		add_building_level = {
+	#			building = building_barracks
+	#			level = 5
+	#		}
+	#	}
+	#	s:STATE_FARS = {
+	#		add_building_level = {
+	#			building = building_barracks
+	#			level = 5
+	#		}
+	#	}
+	#	s:STATE_KHORASAN = {
+	#		add_building_level = {
+	#			building = building_barracks
+	#			level = 5
+	#		}
+	#	}
+	#	s:STATE_TABRIZ = {
+	#		add_building_level = {
+	#			building = building_barracks
+	#			level = 2
+	#		}
+	#	}
+	#}
+}#

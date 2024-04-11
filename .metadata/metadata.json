@@ -1,10 +1,10 @@
 {
   "name": "Iran Flavor pack by Kusoden",
   "id": "com.github.kusoden",
-  "version": "1.0",
+  "version": "1.1",
   "supported_game_version": "1.6.2",
   "picture": "thumbnail.png",
-  "short_description": "Semi-Historical and Alternative Content for Iran with visual improvements",
+  "short_description": "Semi-historical and alternative paths and content for Iran with visual improvements (rivers added on the map).",
   "tags": [
     "Iran",
     "Flavor",
