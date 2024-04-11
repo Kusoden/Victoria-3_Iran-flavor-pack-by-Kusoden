@@ -18,6 +18,7 @@ qajar_familial_corruption{
 	state_tax_waste_add = 0.05
 	state_radicals_from_sol_change_mult = 0.20
 	country_authority_mult = -0.15
+	country_resource_discovery_chance_mult = -0.5
 }
 
 qajar_familial_corruption_lower{
@@ -25,11 +26,13 @@ qajar_familial_corruption_lower{
 	state_tax_collection_mult = -0.05
 	state_radicals_from_sol_change_mult = 0.20
 	country_authority_mult = -0.1
+	country_resource_discovery_chance_mult = -0.25
 }
 
 cleansed_government{
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	state_loyalists_from_sol_change_mult = 0.5
+	country_resource_discovery_chance_mult = 0.1
 }
 
 promote_culture{
