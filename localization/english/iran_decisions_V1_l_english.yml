@@ -67,6 +67,7 @@ qajar_cleanse_decision_desc:0 "Remove all the corruptors in the government."
 
  primary_culturing_nemroz_decision:0 "Integrate the rest of those close to us!"
  primary_culturing_nemroz_decision_desc:0 "Those whom either has no land, or lived with us for thousands of years. Will be given a home."
+
  has_primary_culturing_abaxtaran_var:0 "has taken "Integrate Kafkasian" decision"
 
 #Iranization of the Crown
@@ -79,15 +80,17 @@ qajar_cleanse_decision_desc:0 "Remove all the corruptors in the government."
  wuzurgan_decision:0 "Iranization of the Noblity system."
  wuzurgan_decision_desc:0 "By reforming the Landowners, we will ensure to put the Iranian culture and Identity as their priority, and put the Iranian Nobilities in charge whom value the Ethics and Morals of our society."
 
+ has_wuzurgan_var:0 "Iranization of the Noblity system" decision has been made"
+
 #Nomads
  iranian_nomads:0 "Nomadic Issues"
 
   #event
-   nomads.1.t:0 "Settling Nomads"
-   nomads.1.d:0 "Settling Nomadic people, for the centralization of power."
-   nomads.1.f:0 "In 19th centur Iran's population was up to 20% either nomadics or nomad-like, it was a Issue for the Capital since they was also armed and bring up their own issues."
-   nomads.1.a:0 "Use their workforce to Industrialize."
-   nomads.1.b:0 "Integrate their armed once into the Arteš"
+  nomads.1.t:0 "Settling Nomads"
+  nomads.1.d:0 "Settling Nomadic people, for the centralization of power."
+  nomads.1.f:0 "In 19th centur Iran's population was up to 20% either nomadics or nomad-like, it was a Issue for the Capital since they was also armed and bring up their own issues."
+  nomads.1.a:0 "Use their workforce to Industrialize."
+  nomads.1.b:0 "Integrate their armed once into the Arteš"
 
 #seperators decision
  seperators_decision:0 "Put an end to the Seperator movements"

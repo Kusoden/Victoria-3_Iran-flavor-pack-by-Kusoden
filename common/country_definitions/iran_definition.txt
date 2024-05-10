@@ -75,3 +75,14 @@ AFG = {
 	cultures = { pashtun iranian }
 	capital = STATE_EASTERN_AFGHANISTAN
 }
+
+PLC = {
+	color = { 219  31  62 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { polish lithuanian }
+	capital = STATE_MAZOVIA
+}

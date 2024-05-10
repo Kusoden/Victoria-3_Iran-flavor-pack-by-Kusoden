@@ -152,7 +152,11 @@ seperators_decision = {
 			institution = institution_police
 			value = 3
 		}
-		has_variable = wuzurgan_var
+		custom_tooltip = {
+			text = has_wuzurgan_var
+			has_variable = wuzurgan_var
+		}
+		
 	}
 
 	when_taken = {
