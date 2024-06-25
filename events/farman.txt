@@ -35,6 +35,14 @@ farman.1 = {
 				country = c:FRA
 				value = 15
 			}
+			change_relations = {
+				country = c:GBR
+				value = 5
+			}
+			change_relations = {
+				country = c:RUS
+				value = 5
+			}
 			add_loyalists = {
 				value = 0.9
 				religion = rel:catholic

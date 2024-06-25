@@ -9,19 +9,6 @@
 			set_interest_group_name = ig_shia_madrasahs
 		}
 
-		add_modifier = {
-			name = qajar_familial_corruption
-		}
-		add_modifier = {
-			name = high_number_nomads
-		}
-		add_modifier = {
-			name = seperator_delusion
-		}
-		add_modifier = {
-			name = local_khans_modifier
-		}
-
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_conservative = yes
@@ -32,17 +19,17 @@
 		add_technology_researched = nationalism
 		add_technology_researched = mandatory_service
 		add_technology_researched = line_infantry
-		add_technology_researched = cotton_gin 
+		add_technology_researched = cotton_gin
 		add_technology_researched = general_staff
 
 		activate_law = law_type:law_monarchy
-		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_state_religion  #by june1839 freedom of conscience https://www.iranicaonline.org/articles/france-xv#prettyPhoto
 		activate_law = law_type:law_ethnostate
 		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_censorship
-		activate_law = law_type:law_land_based_taxation	
+		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_local_police # there were some minor Police forces (including shabgards, baazaar watchmen etc.) but not a big Police force all over the country.
 		activate_law = law_type:law_private_schools #https://www.iranicaonline.org/articles/france-xv#prettyPhoto
@@ -55,5 +42,11 @@
 		set_tariffs_import_priority = g:small_arms
 		set_tariffs_import_priority = g:artillery
 
+		if = {
+			limit = {
+				has_dlc_feature = ep1_content
+			}
+			add_journal_entry = { type = je_eastern_frontier }
+		}
 	}
 }

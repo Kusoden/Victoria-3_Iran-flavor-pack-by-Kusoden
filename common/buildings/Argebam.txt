@@ -25,7 +25,7 @@ building_argebam = {
 		error_check = {
 			severity = invalid
 			this = {
-				state_region = s:STATE_LARESTAN
+				state_region = s:STATE_KERMAN
 			}
 		}
 	}

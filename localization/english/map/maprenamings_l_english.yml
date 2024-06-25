@@ -1,0 +1,9 @@
+l_english:
+ region_persia:0 "Ērānšahr"
+ region_caucasus:0 "Kafkās"
+ region_central_asia:0 "Tūrān"
+ region_anatolia:0 "Hitiye"
+ region_arabian_sea:0 "Makrān Sea"
+ STATE_ARABIAN_SEA:0 "Makrān Sea"
+ # states missed, since there are new states
+ 
