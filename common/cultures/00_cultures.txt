@@ -6997,7 +6997,7 @@ iranian={
 		1 = slavic
 		1 = caucasian
 	}
-	graphics = european
+	graphics = arabic
 }
 #EDIT
 

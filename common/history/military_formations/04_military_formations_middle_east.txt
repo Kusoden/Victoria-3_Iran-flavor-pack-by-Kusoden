@@ -302,7 +302,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_LURISTAN
+				state_region = s:STATE_PERSIAN_KURDISTAN
 				count = 5
 			}
 
@@ -311,6 +311,10 @@
 				state_region = s:STATE_KHORASAN
 				count = 1
 			}
+		}
+		activate_production_method = {
+			building_type = building_barracks
+			production_method = pm_general_training
 		}
 	}
 	c:PER = {
@@ -366,7 +370,10 @@
 				state_region = s:STATE_LURISTAN
 				count = 2
 			}
+			save_scope_as = tribesmen_iran
 		}
+
+
 	}
 	c:KAB = {
 		create_military_formation = {

@@ -1,0 +1,122 @@
+﻿ARY = { #Āryānā
+	color = { 255 255 0 }
+	country_type = recognized
+	tier = hegemony
+	religion = mazdayasna
+	cultures = {  iranian armenian georgian north_caucasian pashtun assyrian sephardic circassian }
+	capital = STATE_IRAKAJEMI
+}
+
+PER = {
+	color = { 60 150 230 }
+	
+	country_type = unrecognized
+	
+	tier = empire
+	religion = shiite
+	cultures = { iranian }
+	capital = STATE_IRAKAJEMI
+}
+
+GOS = {
+	color = { 255  234  174 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+
+	religion = mazdayasna
+	cultures = { iranian }
+	capital = STATE_TIANSHAN
+}
+
+ISR = {
+	color = { 150  212  214 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { ashkenazi sephardic }
+	religion = jewish
+	capital = STATE_PALESTINE
+}
+
+KAL = {
+	color = { 97  98  195 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { iranian }
+	religion = sunni
+	capital = STATE_BALUCHISTAN
+}
+
+MAK = {
+	color = { 219  146  162 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { iranian }
+	religion = sunni
+	capital = STATE_BALUCHISTAN
+}
+
+PLC = {
+	color = { 219  31  62 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { polish lithuanian }
+	capital = STATE_MAZOVIA
+}
+
+KUN = {
+	color = { 153 76 0 }
+
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { uzbek iranian }
+	capital = STATE_BALKH
+}
+
+HER = {
+	color = { 80 135 113 }
+
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { pashtun iranian }
+	capital = STATE_HERAT
+}
+
+KAN = {
+	color = { 71 113 193 }
+
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { pashtun iranian }
+	capital = STATE_KANDAHAR
+}
+
+KAB = {
+	color = { 95 95 109 }
+
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { pashtun iranian }
+	capital = STATE_KABUL
+}

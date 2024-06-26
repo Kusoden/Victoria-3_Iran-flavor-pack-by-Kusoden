@@ -153,7 +153,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:mashriqi
-		add_homeland = cu:bedouin
+		add_homeland = cu:iranian
 		add_claim = c:PER
 	}
 	s:STATE_EASTERN_THRACE = {
@@ -5411,7 +5411,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:mashriqi
-		add_homeland = cu:bedouin
+		add_homeland = cu:iranian
 		add_claim = c:PER
 	}
 	s:STATE_MOSUL = {
@@ -7730,6 +7730,7 @@ STATES = {
 		add_homeland = cu:mashriqi
 		add_homeland = cu:iranian
 		add_homeland = cu:assyrian
+		add_claim = c:PER
 	}
 	s:STATE_BAJA_CALIFORNIA = {
 		create_state = {

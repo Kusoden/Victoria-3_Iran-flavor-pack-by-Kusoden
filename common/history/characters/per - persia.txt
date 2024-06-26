@@ -1,0 +1,60 @@
+﻿CHARACTERS = {
+	c:PER ?= {
+		create_character = {
+			template = per_mohammad_shah_qajar_template
+		}	
+
+		create_character = {
+			template = per_nasir_al_din_qajar_template
+		}
+
+		create_character = {
+			first_name = "Mirza_Aqasi"
+			last_name = Iravani
+			historical = yes
+			age = 53 # unknown birthday
+			ig_leader = yes
+			culture = cu:armenian
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				reckless
+			}
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Izydor
+			last_name = Borowski
+			culture = cu:polish
+			historical = yes
+			hq = region_persia
+			birth_date = 1770.4.30
+			ig_leader = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_royalist
+			traits = {
+				direct
+				meticulous
+			}
+			commander_rank = commander_rank_4
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Asef
+			last_name = Al_Dowleh
+			culture = cu:iranian
+			historical = yes
+			hq = region_persia
+			birth_date = 1760.4.30
+			interest_group = ig_armed_forces
+			ideology = ideology_traditionalist
+			traits = {
+				cautious
+				diplomat
+			}
+			commander_rank = commander_rank_2
+		}
+	}
+}
