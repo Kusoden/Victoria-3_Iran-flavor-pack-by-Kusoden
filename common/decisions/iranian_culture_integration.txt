@@ -1,0 +1,40 @@
+﻿iranian_culture_decision = {
+	is_shown = {
+		this ?= c:PER
+		NOT = {
+			has_variable = iranian_culture_decision_var
+		}
+	}
+	possible = {
+		country_has_accepted_religion = mazdayasna
+		owns_entire_state_region = STATE_TURKMENIA
+		owns_entire_state_region = STATE_UZBEKIA
+		owns_entire_state_region = STATE_TAJIKISTAN
+		owns_entire_state_region = STATE_AZERBAIJAN
+		owns_entire_state_region = STATE_ARMENIA
+		owns_entire_state_region = STATE_GREATER_CAUCASUS
+		owns_entire_state_region = STATE_DAGESTAN
+		hidden = {
+			NOT = {
+				has_variable = iranian_culture_decision_var
+			}
+		}
+		custom_tooltip = {
+			text = has_primary_culturing_abaxtaran_var
+			has_variable = primary_culturing_abaxtaran_var
+		}
+	}
+	when_taken = {
+		set_variable = iranian_culture_decision_var
+		add_modifier = {
+			name = promote_culture
+			months = 60
+		}
+		add_loyalists = {
+			value = 0.15
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}

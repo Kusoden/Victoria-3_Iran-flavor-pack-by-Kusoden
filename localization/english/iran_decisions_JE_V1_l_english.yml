@@ -62,13 +62,13 @@ qajar_cleanse_decision_desc:0 "Remove all the corruptors in the government."
  iranic:0 "Iranic"
 
 #Primary Culturing new cultures
- primary_culturing_abaxtaran_decision:0 "Integrate Kafkasian!"
+ primary_culturing_abaxtaran_decision:0 "Re-Integrate Kafkasian!"
  primary_culturing_abaxtaran_decision_desc:0 "Our people in Kafkas, will be re-integrated into the Country."
 
- primary_culturing_nemroz_decision:0 "Integrate the rest of those close to us!"
+ primary_culturing_nemroz_decision:0 "Re-Integrate the rest of those close to us!"
  primary_culturing_nemroz_decision_desc:0 "Those whom either has no land, or lived with us for thousands of years. Will be given a home."
 
- has_primary_culturing_abaxtaran_var:0 "has taken "Integrate Kafkasian" decision"
+ has_primary_culturing_abaxtaran_var:0 "has taken "Re-Integrate Kafkasian" decision"
 
 #Iranization of the Crown
  iranization_of_crown:0 "Iranization of the Crown!"

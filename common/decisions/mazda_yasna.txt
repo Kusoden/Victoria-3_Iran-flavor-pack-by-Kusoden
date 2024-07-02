@@ -1,0 +1,122 @@
+﻿mazdayasna_decision = {
+	is_shown = {
+		exists = c:PER
+		this ?= c:PER
+		NOT = {
+			country_has_state_religion = rel:mazdayasna
+		}
+	}
+
+	possible = {
+		has_law = law_type:law_slavery_banned
+		has_law = law_type:law_freedom_of_conscience
+
+		ig:ig_devout = {
+			is_in_government = no
+			ig_clout <= 0.10
+		}
+
+		NOT = {
+			has_law = law_type:law_religious_schools
+		}
+
+		OR = {
+			has_law = law_type:law_ethnostate
+			has_law = law_type:law_national_supremacy
+		}
+	}
+
+	when_taken = {
+		set_state_religion = rel:mazdayasna
+		#cant scope all devouts
+		#every_scope_pop = {
+		#	ig:ig_devout = {
+		#		change_pop_religion = {
+		#			target = rel:mazdayasna
+		#			value = 1
+		#		}
+		#	}
+		#}
+		#all leaders convert
+		custom_tooltip = {
+			text = decision_mazda_yasna_ig_leaders_tt
+			every_scope_character = {
+				change_character_religion = rel:mazdayasna
+			}
+		}
+		#every_primary_culture = { taboo doesnot exists
+		#	limit = {
+		#		culture = cu:iranian
+		#	}
+		#	remove_cultural_taboo = wine
+		#}
+		custom_tooltip = {
+			text = decision_mazda_yasna_dec_react_tt
+			every_scope_state = {
+				limit = {
+					is_incorporated = yes
+				}
+				convert_population = {
+					target = rel:mazdayasna
+					value = 0.45
+				}
+				add_radicals = {
+					value = 0.03
+					religion = rel:shiite
+				}
+				add_loyalists = {
+					value = 1
+					religion = rel:mazdayasna
+				}
+			}
+		}
+		add_modifier = {
+			name = Zarathushtras_teachings
+		}
+		#ideology changes
+		ig:ig_devout = {
+			hidden_effect = {
+				set_interest_group_name = mazdayasna_priests
+				set_ig_trait = ig_trait:ig_trait_iranian_din_3
+				set_ig_trait = ig_trait:ig_trait_iranian_din_2
+				set_ig_trait = ig_trait:ig_trait_iranian_din_1
+			}
+			remove_ideology = ideology_patriarchal
+			add_ideology = ideology_wehdin
+		}
+		#namechanges
+		ig:ig_petty_bourgeoisie = {
+			hidden_effect = {
+				set_interest_group_name = "Dehgān-ān"
+			}
+		}
+		ig:ig_armed_forces = {
+			hidden_effect = {
+				set_interest_group_name = "Gārd-e jāvidān-e Šāh-an-Šāh-i"
+			}
+		}
+		ig:ig_intelligentsia = {
+			hidden_effect = {
+				set_interest_group_name = "Rošan Fekr-ān"
+			}
+		}
+		ig:ig_trade_unions = {
+			hidden_effect = {
+				set_interest_group_name = "Xāne-ye Kārgar-ān"
+			}
+		}
+		ig:ig_rural_folk = {
+			hidden_effect = {
+				set_interest_group_name = "Šahrestān-i-ha"
+			}
+		}
+		ig:ig_industrialists = {
+			hidden_effect = {
+				set_interest_group_name = "Bāzār-i"
+			}
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}

@@ -1,0 +1,59 @@
+qajar_lowering_decision = {
+	is_shown = {
+		NOT = { has_variable = qajar_var1 }
+		this ?= c:PER
+		has_modifier = qajar_familial_corruption
+	}
+
+	possible = {
+		this ?= c:PER
+		has_law = law_type:law_dedicated_police
+		bureaucracy >= 100
+	}
+
+	when_taken = {
+		set_variable =  qajar_var1
+		remove_modifier = qajar_familial_corruption
+		interest_group_ig_landowners_pop_attraction_mult = -0.25
+		interest_group_ig_landowners_approval_add = -2
+		add_modifier = {
+			name = qajar_familial_corruption_lower
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+qajar_cleanse_decision = {
+	is_shown = {
+		NOT = { has_variable = qajar_var2 }
+		this ?= c:PER
+		has_modifier = qajar_familial_corruption_lower
+	}
+
+	possible = {
+		this ?= c:PER
+		institution_investment_level = {
+			institution = institution_police
+			value = 3
+		}
+		interest_group_ig_landowners_pop_attraction_mult = -0.50
+		interest_group_ig_landowners_approval_add = -2
+		bureaucracy >= 150
+	}
+
+	when_taken = {
+		set_variable =  qajar_var2
+		remove_modifier = qajar_familial_corruption_lower
+		add_modifier = {
+			name = cleansed_government
+			months = 80
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}

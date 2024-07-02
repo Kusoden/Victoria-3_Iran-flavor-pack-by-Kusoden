@@ -1,4 +1,4 @@
-﻿iranian_nomads = {
+iranian_nomads = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	
 	group = je_group_internal_affairs
@@ -40,5 +40,5 @@
 	on_complete = {
 	}
 
-	weight = 20
+	weight = 100
 }

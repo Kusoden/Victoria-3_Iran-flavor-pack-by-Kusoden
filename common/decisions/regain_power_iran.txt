@@ -1,0 +1,104 @@
+﻿bahrein_decision = {
+	is_shown = {
+		this ?= c:PER
+		NOT = { has_variable = bahrain_var }
+		is_subject = no
+		exists = c:BHN
+		c:BHN = {
+			NOT = { is_subject_of = ROOT }
+		}
+	}
+
+	possible = {
+		c:PER = {
+			navy_size >= 8
+		}
+	}
+
+	when_taken = {
+		s:STATE_ABU_DHABI = {
+				add_claim = ROOT
+		}
+		set_variable = bahrain_var
+		custom_tooltip = bahrein_event_tt
+		hidden_effect = {
+			trigger_event = {
+				id = iran.1
+				days = 0
+				popup = yes
+			}
+		}
+
+		#will get the oman treaty port, because of the low prestige of oman you cant get the treaty port inside the diplomatic playXDDD
+		s:STATE_BALUCHISTAN= {
+			set_owner_of_provinces = { 
+				country = ROOT
+				provinces = {xB7B2BD}
+			}
+			state_type = treaty_port
+		}
+		s:STATE_SISTAN= {
+			set_owner_of_provinces = { 
+				country = ROOT
+				provinces = {xA9F721}
+			}
+			state_type = treaty_port
+		}
+
+		create_diplomatic_play = {
+			name = push_back_oman
+
+			target_state = s:STATE_ABU_DHABI.region_state:OMA
+			
+			war = yes
+			
+			type = dp_return_state
+
+			add_war_goal = {
+				holder = c:PER
+				type = return_state
+				target_state = s:STATE_LARISTAN.region_state:OMA
+			}
+			
+			add_war_goal = {
+				holder = c:OMA
+				type = conquer_state
+				target_state = s:STATE_LARISTAN.region_state:PER
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+seperators_decision = {
+	is_shown = {
+		this ?= c:PER
+		NOT = { has_variable = seperators_var }
+	}
+
+	possible = {
+		has_law = law_type:law_dedicated_police
+		institution_investment_level = {
+			institution = institution_police
+			value = 3
+		}
+		custom_tooltip = {
+			text = has_wuzurgan_var
+			has_variable = wuzurgan_var
+		}
+		
+	}
+
+	when_taken = {
+		set_variable = seperators_var
+		
+		remove_modifier = seperator_delusion
+	}
+
+	ai_chance = {
+		base = 75
+	}
+}

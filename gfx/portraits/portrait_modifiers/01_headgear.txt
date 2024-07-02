@@ -2309,7 +2309,10 @@
                 OR = {
                     scope:pop ?= {
                         is_pop_type = aristocrats
-                        culture = cu:iranian
+                        culture = {
+                            has_discrimination_trait = iranian_turanian_culture_group
+                            has_discrimination_trait = aryan_heritage
+                        }
                     }
                     scope:character ?= {
                         is_interest_group_type = ig_landowners
@@ -2321,7 +2324,10 @@
                                 has_law = law_type:law_monarchy
                             }
                         }
-                        culture = cu:iranian
+                        culture = {
+                            has_discrimination_trait = iranian_turanian_culture_group
+                            has_discrimination_trait = aryan_heritage
+                        }
                     }
                 }
             }
@@ -2423,7 +2429,10 @@
                 scope:character ?= {
                     has_role = agitator
                     is_ruler = no
-                    culture = cu:iranian
+                    culture = {
+                        has_discrimination_trait = iranian_turanian_culture_group
+                        has_discrimination_trait = aryan_heritage
+                    }
                 }
             }
         }

@@ -1552,7 +1552,10 @@
                         owner ?={
                             NOT = { has_law = law_type:law_monarchy }
                         }
-                        culture = cu:iranian
+                        culture = {
+                            has_discrimination_trait = iranian_turanian_culture_group
+                            has_discrimination_trait = aryan_heritage
+                        }
                     }
                     scope:character ?= {
                         culture = {
@@ -1612,7 +1615,10 @@
                         owner ?={
                             NOT = { has_law = law_type:law_monarchy }
                         }
-                        culture = cu:iranian
+                        culture = {
+                            has_discrimination_trait = iranian_turanian_culture_group
+                            has_discrimination_trait = aryan_heritage
+                        }
                     }
                     scope:character ?= {
                         culture = {
@@ -1672,7 +1678,10 @@
                         owner ?={
                             NOT = { has_law = law_type:law_monarchy }
                         }
-                        culture = cu:iranian
+                        culture = {
+                            has_discrimination_trait = iranian_turanian_culture_group
+                            has_discrimination_trait = aryan_heritage
+                        }
                     }
                     scope:character ?= {
                         culture = {
@@ -1732,7 +1741,10 @@
                         owner ?={
                             NOT = { has_law = law_type:law_monarchy }
                         }
-                        culture = cu:iranian
+                        culture = {
+                            has_discrimination_trait = iranian_turanian_culture_group
+                            has_discrimination_trait = aryan_heritage
+                        }
                     }
                     scope:character ?= {
                         culture = {
@@ -1792,10 +1804,15 @@
                         owner ?={
                             NOT = { has_law = law_type:law_monarchy }
                         }
-                        culture = cu:iranian
+                        culture = {
+                            has_discrimination_trait = iranian_turanian_culture_group
+                            has_discrimination_trait = aryan_heritage
+                        }
                     }
                     scope:character ?= {
-                        culture = cu:iranian
+                        culture = {
+                            has_discrimination_trait = central_asian_heritage
+                        }
                     }
                 }
             }

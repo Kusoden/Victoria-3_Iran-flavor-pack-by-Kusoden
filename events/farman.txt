@@ -30,6 +30,8 @@ farman.1 = {
 			add_technology_researched = logistics
 			add_technology_researched = field_works
 			add_technology_researched = empiricism
+			add_technology_researched = colonization
+
 			loyalists_from_sol_change_mult = 0.1
 			change_relations = {
 				country = c:FRA
@@ -53,7 +55,7 @@ farman.1 = {
 			}
 			add_radicals = {
 				value = 0.01
-				religion = rel:shiite
+				religion = rel:shiiteremade
 			}
 		}
 	}

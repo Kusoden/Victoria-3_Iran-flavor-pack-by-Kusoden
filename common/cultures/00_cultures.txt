@@ -6895,7 +6895,7 @@ berber={ # Amazigh
 #EDIT
 iranian={
 	color= hsv{ 0.63 0.75 0.80 }
-	religion = shiite
+	religion = shiiteremade
 	traits = { iranian_turanian_culture_group aryan_heritage}
 	male_common_first_names={
 		Asha

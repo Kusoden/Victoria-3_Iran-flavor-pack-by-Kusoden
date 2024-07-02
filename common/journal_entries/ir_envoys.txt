@@ -1,4 +1,4 @@
-﻿farman_e_din = {
+farman_e_din = {
 	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
 	
 	group = je_group_historical_content
@@ -29,7 +29,7 @@
 	on_complete = {
 	}
 
-	weight = 20
+	weight = 100
 }
 
 justin_sheil = {
@@ -63,5 +63,5 @@ justin_sheil = {
 	on_complete = {
 	}
 
-	weight = 20
+	weight = 100
 }

@@ -7,7 +7,7 @@
 			}
 			create_pop = {
 				culture = bedouin
-				religion = shiite
+				religion = shiiteremade
 				size = 22000
 			}
 			create_pop = {
@@ -22,7 +22,7 @@
 		region_state:OMA = {
 			create_pop = {
 				culture = bedouin
-				religion = shiite
+				religion = shiiteremade
 				size = 158000
 			}
 			create_pop = {
@@ -40,7 +40,7 @@
 			}
 			create_pop = {
 				culture = iranian
-				religion = shiite
+				religion = shiiteremade
 				size = 4000
 			}
 			create_pop = {
@@ -76,12 +76,12 @@
 			}
 			create_pop = {
 				culture = bedouin
-				religion = shiite
+				religion = shiiteremade
 				size = 2000
 			}
 			create_pop = {
 				culture = iranian
-				religion = shiite
+				religion = shiiteremade
 				size = 1900
 			}
 			create_pop = {
@@ -93,7 +93,7 @@
 		region_state:OMA = {
 			create_pop = {
 				culture = bedouin
-				religion = shiite
+				religion = shiiteremade
 				size = 1600
 			}
 			create_pop = {
@@ -103,12 +103,12 @@
 			}
 			create_pop = {
 				culture = iranian
-				religion = shiite
+				religion = shiiteremade
 				size = 100
 			}
 			create_pop = {
 				culture = iranian
-				religion = shiite
+				religion = shiiteremade
 				size = 230
 			}
 			create_pop = {
@@ -121,7 +121,7 @@
 		region_state:BHN = {
 			create_pop = {
 				culture = bedouin
-				religion = shiite
+				religion = shiiteremade
 				size = 12000
 			}
 			create_pop = {
@@ -131,7 +131,7 @@
 			}
 			create_pop = {
 				culture = iranian
-				religion = shiite
+				religion = shiiteremade
 				size = 5200
 			}
 			create_pop = {
@@ -157,7 +157,7 @@
 			}
 			create_pop = {
 				culture = yemenite
-				religion = shiite
+				religion = shiiteremade
 				size = 630000
 			}
 			create_pop = {
@@ -195,7 +195,7 @@
 			}
 			create_pop = {
 				culture = yemenite
-				religion = shiite
+				religion = shiiteremade
 				size = 9000
 			}
 			create_pop = {
@@ -236,7 +236,7 @@
 			}
 			create_pop = {
 				culture = yemenite
-				religion = shiite
+				religion = shiiteremade
 				size = 8000
 			}
 			create_pop = {
@@ -299,7 +299,7 @@
 			}
 			create_pop = {
 				culture = bedouin
-				religion = shiite
+				religion = shiiteremade
 				size = 5000
 			}
 			create_pop = {
@@ -320,7 +320,7 @@
 			}
 			create_pop = {
 				culture = bedouin
-				religion = shiite
+				religion = shiiteremade
 				size = 38040
 			}
 			create_pop = {
@@ -391,7 +391,7 @@
 			}
 			create_pop = {
 				culture = mashriqi
-				religion = shiite
+				religion = shiiteremade
 				size = 1600
 			}
 			create_pop = {
@@ -415,12 +415,12 @@
 			}
 			create_pop = {
 				culture = mashriqi
-				religion = shiite
+				religion = shiiteremade
 				size = 8000
 			}
 			create_pop = {
 				culture = mashriqi
-				religion = shiite
+				religion = shiiteremade
 				size = 25600
 			}
 			create_pop = {
@@ -472,7 +472,7 @@
 			}
 			create_pop = {
 				culture = mashriqi
-				religion = shiite
+				religion = shiiteremade
 				size = 128000
 			}
 			create_pop = {
@@ -482,7 +482,7 @@
 			}
 			create_pop = {
 				culture = mashriqi
-				religion = shiite
+				religion = shiiteremade
 				size = 78000
 			}
 			create_pop = {
@@ -515,12 +515,12 @@
 		region_state:EGY = {
 			create_pop = {
 				culture = mashriqi
-				religion = shiite
+				religion = shiiteremade
 				size = 25000
 			}
 			create_pop = {
 				culture = mashriqi
-				religion = shiite
+				religion = shiiteremade
 				size = 32000
 			}
 			create_pop = {
@@ -563,12 +563,12 @@
 			}
 			create_pop = {
 				culture = mashriqi
-				religion = shiite
+				religion = shiiteremade
 				size = 84000
 			}
 			create_pop = {
 				culture = mashriqi
-				religion = shiite
+				religion = shiiteremade
 				size = 8000
 			}
 			create_pop = {
@@ -637,7 +637,7 @@
 			}
 			create_pop = {
 				culture = bedouin
-				religion = shiite
+				religion = shiiteremade
 				size = 19996
 			}
 			create_pop = {
@@ -764,7 +764,7 @@
 			}
 			create_pop = {
 				culture = bedouin
-				religion = shiite
+				religion = shiiteremade
 				size = 52004
 			}
 			create_pop = {
@@ -800,7 +800,7 @@
 			}
 			create_pop = {
 				culture = turkmen # Qashqai
-				religion = shiite
+				religion = shiiteremade
 				size = 66400
 			}
 			create_pop = {
@@ -813,7 +813,7 @@
 			}
 			create_pop = {
 				culture = circassian
-				religion = shiite
+				religion = shiiteremade
 				size = 3010
 			}
 			create_pop = {
@@ -1017,7 +1017,7 @@
 			}
 			create_pop = {
 				culture = circassian
-				religion = shiite
+				religion = shiiteremade
 				size = 2074
 			}
 			create_pop = {
@@ -1055,7 +1055,7 @@
 			}
 			create_pop = {
 				culture = georgian
-				religion = shiite
+				religion = shiiteremade
 				size = 7001
 			}
 			create_pop = {
@@ -1065,7 +1065,7 @@
 			}
 			create_pop = {
 				culture = circassian
-				religion = shiite
+				religion = shiiteremade
 				size = 6500
 			}
 			create_pop = {
@@ -1108,7 +1108,7 @@
 			}
 			create_pop = {
 				culture = georgian
-				religion = shiite
+				religion = shiiteremade
 				size = 4009
 			}
 			create_pop = {
@@ -1164,7 +1164,7 @@
 			}
 			create_pop = {
 				culture = circassian
-				religion = shiite
+				religion = shiiteremade
 				size = 701
 			}
 			create_pop = {
@@ -1202,7 +1202,7 @@
 			}
 			create_pop = {
 				culture = circassian
-				religion = shiite
+				religion = shiiteremade
 				size = 1001
 			}
 			create_pop = {
@@ -1336,7 +1336,7 @@
 			}
 			create_pop = {
 				culture = circassian
-				religion = shiite
+				religion = shiiteremade
 				size = 4089
 			}
 			create_pop = {
