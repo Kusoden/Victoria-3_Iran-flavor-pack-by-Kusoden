@@ -1,11 +1,17 @@
 arable_land_decision = {
 	is_shown = {
 		NOT = { has_variable = arable_land_var }
-		this ?= c:PER
+		OR ={
+			this ?= c:PER
+			this ?= c:ARY
+		}
 	}
 
 	possible = {
-		this ?= c:PER
+		OR ={
+			this ?= c:PER
+			this ?= c:ARY
+		}
 		gdp >= 12000000	
 	}
 

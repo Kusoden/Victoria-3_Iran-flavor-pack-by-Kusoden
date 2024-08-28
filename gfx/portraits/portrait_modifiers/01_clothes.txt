@@ -1944,9 +1944,15 @@
 
                 OR = {
                     AND = {
-                        scope:pop ?= {
-                            exists = c:PER
-                            owner = c:PER
+                        OR = {
+                            scope:pop ?= {
+                                exists = c:PER
+                                owner = c:PER
+                            }
+                            scope:pop ?= {
+                                exists = c:ARY
+                                owner = c:ARY
+                            }
                         }
                         OR = {
                             soldier_clothes_pop_trigger = yes
@@ -1955,8 +1961,13 @@
                     }
                     AND = {
                         scope:character ?= {
-                            home_country ?= { 
-                                c:PER ?= this
+                            OR = {
+                                home_country ?= { 
+                                    c:PER ?= this
+                                }
+                                home_country ?= { 
+                                    c:ARY ?= this
+                                }
                             }
                             OR = {
                                 has_role = general
@@ -1982,8 +1993,13 @@
                         }
                     }
                 }
-                c:PER ?= {
-                    has_technology_researched = bolt_action_rifles
+                OR = {
+                    c:PER ?= {
+                        has_technology_researched = bolt_action_rifles
+                    }
+                    c:ARY ?= {
+                        has_technology_researched = bolt_action_rifles
+                    }
                 }
             }
         }
@@ -3391,8 +3407,13 @@
                 add = 10000
 
                 scope:pop ?= {
-                    owner ?= {
-                        c:PER ?= this
+                    OR = {
+                        owner ?= {
+                            c:PER ?= this
+                        }
+                        owner ?= {
+                            c:ARY ?= this
+                        }
                     }
                     OR = {
                         is_pop_type = soldiers
@@ -3412,6 +3433,10 @@
                         AND = {
                             exists = c:PER
                             home_country ?= c:PER
+                        } 
+                        AND = {
+                            exists = c:ARY
+                            home_country ?= c:ARY
                         } 
                     }
                     is_ruler = no
@@ -4333,9 +4358,15 @@
                 scope:character ?= {
                     is_ruler = yes
                     is_female = no
-                    owner ?= {
-                        c:PER ?= this
-                        has_law = law_type:law_monarchy
+                    OR = {
+                        owner ?= {
+                            c:PER ?= this
+                            has_law = law_type:law_monarchy
+                        }
+                        owner ?= {
+                            c:ARY ?= this
+                            has_law = law_type:law_monarchy
+                        }
                     }
                     culture = {
                         has_discrimination_trait = iranian_turanian_culture_group

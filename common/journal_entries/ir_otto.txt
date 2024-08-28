@@ -1,0 +1,35 @@
+ir_retake_west = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+	
+	group = je_group_historical_content
+
+	is_shown_when_inactive = {
+		this ?= c:PER
+		NOT = {
+			has_variable = ir_retake_west_var
+		}
+	}
+
+	possible = {
+		this ?= c:PER
+		c:PER = {
+			owns_entire_state_region = STATE_HERAT
+			owns_entire_state_region = STATE_MERZ
+		}
+		c:TUR = {
+			relations:root <= relations_threshold:poor
+		}
+	}
+
+	immediate = {
+		trigger_event = { id = iran.2 }
+	}
+
+	complete = {
+		has_variable = ir_retake_west_var
+	}
+	on_complete = {
+	}
+
+	weight = 100
+}

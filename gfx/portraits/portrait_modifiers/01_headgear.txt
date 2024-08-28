@@ -2352,9 +2352,15 @@
 
                 scope:character ?= {
                     is_ruler = yes
-                    owner ?= {
-                        c:PER ?= this
-                        has_law = law_type:law_monarchy
+                    OR = {
+                        owner ?= {
+                            c:PER ?= this
+                            has_law = law_type:law_monarchy
+                        }
+                        owner ?= {
+                            c:ARY ?= this
+                            has_law = law_type:law_monarchy
+                        }
                     }
                 }
             }
@@ -2368,8 +2374,13 @@
                 has_dlc_feature = ep1_cosmetics
 
                 scope:pop ?= {
-                    owner ?= {
-                        c:PER ?= this
+                    OR = {
+                        owner ?= {
+                            c:PER ?= this
+                        }
+                        owner ?= {
+                            c:ARY ?= this
+                        }
                     }
                     OR = {
                         is_pop_type = soldiers
@@ -2386,8 +2397,13 @@
 
                 has_dlc_feature = ep1_cosmetics
 
-                c:PER ?= {
-                    NOT = { has_technology_researched = bolt_action_rifles }
+                OR = {
+                    c:PER ?= {
+                        NOT = { has_technology_researched = bolt_action_rifles }
+                    }
+                    c:ARY ?= {
+                        NOT = { has_technology_researched = bolt_action_rifles }
+                    }
                 }
 
                 scope:character ?= {
@@ -2395,6 +2411,10 @@
                         AND = {
                             exists = c:PER
                             home_country ?= c:PER
+                        } 
+                        AND = {
+                            exists = c:ARY
+                            home_country ?= c:ARY
                         } 
                     }
                     is_ruler = no

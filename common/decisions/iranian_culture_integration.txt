@@ -1,6 +1,9 @@
 ﻿iranian_culture_decision = {
 	is_shown = {
-		this ?= c:PER
+		OR ={
+			this ?= c:PER
+			this ?= c:ARY
+		}
 		NOT = {
 			has_variable = iranian_culture_decision_var
 		}

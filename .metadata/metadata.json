@@ -2,7 +2,7 @@
   "name": "Iran Flavor pack by Kusoden",
   "id": "com.github.kusoden",
   "version": "1.2",
-  "supported_game_version": "1.7",
+  "supported_game_version": "1.7.5",
   "picture": "thumbnail.png",
   "short_description": "Semi-historical and alternative paths, extra content for Iran with visual improvements (rivers added on the map).",
   "tags": [
@@ -10,7 +10,8 @@
     "Flavor",
     "Persia",
     "Zoroastrian",
-    "Mazda Yasna"
+    "Mazda Yasna",
+    "Eranshahr"
   ],
   "relationships": [],
   "game_custom_data": {

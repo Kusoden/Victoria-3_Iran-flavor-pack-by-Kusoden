@@ -1,0 +1,63 @@
+﻿SHAH = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_SHAH_MODDED"
+	female_ruler = "" # Empty on purpose
+
+	male_heir = "RULER_TITLE_SHAHZADEH"
+	female_heir = "" # Empty on purpose
+	
+	possible = {
+		is_country_type = unrecognized
+		has_law = law_type:law_monarchy
+		OR ={
+			AND ={
+				exists = c:PER
+				c:PER = ROOT
+			}
+			AND = {
+				exists = c:ARY
+				c:ARY = ROOT
+			}
+		}
+	}			
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+SHAHANSHAHI = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_SHAHANSHAH"
+	female_ruler = "" # Empty on purpose
+
+	male_heir = "RULER_TITLE_SHAHZADEH"
+	female_heir = "" # Empty on purpose
+	
+	possible = {
+		NOT = { is_country_type = unrecognized }
+		has_law = law_type:law_monarchy
+		OR ={
+			AND ={
+				exists = c:PER
+				c:PER = ROOT
+			}
+			AND = {
+				exists = c:ARY
+				c:ARY = ROOT
+			}
+		}
+	}			
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}

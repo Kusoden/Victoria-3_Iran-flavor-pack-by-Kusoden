@@ -1,0 +1,33 @@
+﻿l_english:
+#Amir Kabir paperworks
+amirkabir.1.t:0 "Amīr-e Nezām sends students abroad to be trained"
+amirkabir.1.d:0 "Amīr-e Kabīr planned to send some students to Russia for training so that we could catch up with the Farang-ī production methods."
+
+amirkabir.1.f:0 "To become less dependent on European imports, the reformist grand vizier, Amir-e Kabir sent a few students to Russia to be trained, amongst other things, in the art of papermaking. Despite his execution in 1852, many of his plans survived, such as that of establishing modern industries in Iran. Āqā Raḥim Eṣfahāni, who returned from Russia in 1854, established a paper factory in the neighborhood below the Eṣfahān Gate in Tehran. Additional paper-mills (kārḵāna-ye kāḡaḏgari) were also established in both Tehran and Isfahan under Nāṣer-al-Din Shah, although it is not clear whether this was the same as the one built by Āqā Raḥim Eṣfahāni. According to Mahdiqoli Hedāyat quoting his father, the paper factory in Isfahan failed because the government used the paper that it produced without paying for it. In 1892, a concession was granted to this Belgian group for the manufacturing of glass, pottery, candles, and paper. The production of paper was exempt of all taxes and customs duties and the government would support the industry in exchange for 2.5 percent of the net profits. The duration of the paper concession was fifty years, but the initiative fell through"
+
+amirkabir.1.a:0 "May the Mehr light their path!"
+  #return
+amirkabir.2.t:0 "Students come back!"
+amirkabir.2.d:0 "Amīr-e Nezām's students just arrived and some of them already took some steps to Industrialize Iran!"
+
+amirkabir.2.f:0 "Āqā Raḥim Eṣfahāni, who returned from Russia in 1854, established a paper factory in the neighborhood below the Eṣfahān Gate in Tehran."
+
+amirkabir.2.a:0 "2 Paper Industries will be built in Erak-e-Ajami"
+
+#ir_otto
+ir_retake_west:0 "For Ērānšahr"
+
+ #event
+ iran.2.t:0 "The Lion Roars!"
+ iran.2.d:0 "Iran reclaims Ērānšahr, after standing against both Farang-i's, Taz-i's and Turkish invaders!"
+ iran.2.f:0 " "
+ iran.2.a:0 "Let's show these foreigners and invaders what Iranian unity looks like!"
+
+#ir_events_alternative persia soi events
+ir_events_alternative.8.t: "Britain Demands Protection of her Interests in India"
+ir_events_alternative.8.d: "After our recent attempts to befriend [SCOPE.sCountry('britain_scope').GetName], they have not only ceased fighting against our interests but also consider appointing us as guardians of their interests in India. If we can maintain their trust, we might be able to regain our lost territories in the West and North!"
+ir_events_alternative.8.f: " "
+ir_events_alternative.8.a: "Ensure their unwavering trust in you to stand against Russia for India"
+ir_events_alternative.8.b: "Having conquered Herat, we know what to do with it as well. No Farang-i can dictate our actions."
+britain_ir_protect_india_tt: "[SCOPE.sCountry('britain_scope').GetName] will show increased support and protection towards us."
+britian_wants_strong_iran_tt: "[SCOPE.sCountry('britain_scope').GetName] wants us to strengthen in order to protect their interests"

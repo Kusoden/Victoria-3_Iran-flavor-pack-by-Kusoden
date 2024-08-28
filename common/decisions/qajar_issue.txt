@@ -1,12 +1,14 @@
 qajar_lowering_decision = {
 	is_shown = {
 		NOT = { has_variable = qajar_var1 }
-		this ?= c:PER
+		OR ={
+			this ?= c:PER
+			this ?= c:ARY
+		}
 		has_modifier = qajar_familial_corruption
 	}
 
 	possible = {
-		this ?= c:PER
 		has_law = law_type:law_dedicated_police
 		bureaucracy >= 100
 	}

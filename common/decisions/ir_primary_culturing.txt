@@ -1,0 +1,64 @@
+﻿primary_culturing_abaxtaran_decision = {
+	is_shown = {
+		OR ={
+			this ?= c:PER
+			this ?= c:ARY
+		}
+		NOT = {
+			has_variable = primary_culturing_abaxtaran_var
+		}
+	}
+	possible = {
+		country_has_state_religion = rel:mazdayasna
+
+		custom_tooltip = {
+			text = has_iranization_of_crown_var
+			has_variable = iranization_of_crown_var
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:armenian
+		add_primary_culture = cu:georgian
+		add_primary_culture = cu:north_caucasian
+		add_primary_culture = cu:circassian
+		add_primary_culture = cu:chechen
+		set_variable = primary_culturing_abaxtaran_var
+		add_modifier = {
+			name = re_integrate_cultures
+			months = 12
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}
+
+
+primary_culturing_nemroz_decision = {
+	is_shown = {
+		this ?= c:PER
+		NOT = {
+			has_variable = primary_culturing_nemroz_var
+		}
+	}
+	possible = {
+		country_has_state_religion = rel:mazdayasna
+		
+		custom_tooltip = {
+			text = has_iranization_of_crown_var
+			has_variable = iranization_of_crown_var
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:pashtun
+		add_primary_culture = cu:ashkenazi
+		set_variable = primary_culturing_nemroz_var
+		add_modifier = {
+			name = re_integrate_cultures
+			months = 24
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}

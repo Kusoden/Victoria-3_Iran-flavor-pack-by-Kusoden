@@ -1,0 +1,20 @@
+DIPLOMACY = {
+	c:PER ?= {
+		set_relations = { country = c:RUS value = -10 }
+		set_relations = { country = c:GBR value = -10 }
+		set_relations = { country = c:TUR value = -30 }
+		set_relations = { country = c:HER value = -50 }
+		set_relations = { country = c:FRA value = 50 }
+		set_relations = { country = c:AUS value = 20 }
+		set_relations = { country = c:PRU value = 20 }
+		set_relations = { country = c:KAB value = -50 }
+		set_relations = { country = c:BUK value = -50 }
+		set_relations = { country = c:KAN value = -50 }
+		set_relations = { country = c:KUN value = -50 }
+		set_relations = { country = c:MAI value = -50 }
+		set_relations = { country = c:KOK value = -50 }
+		set_relations = { country = c:OMA value = -50 }
+		set_relations = { country = c:MAK value = -50 }
+		set_relations = { country = c:KAL value = -50 }
+	}
+}

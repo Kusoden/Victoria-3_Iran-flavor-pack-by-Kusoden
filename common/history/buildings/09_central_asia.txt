@@ -648,7 +648,7 @@
 					building={
 						type="building_manor_house"
 						country="c:KAN"
-						levels=1
+						levels=3
 						region="STATE_KANDAHAR"
 					}
 				}
@@ -680,6 +680,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KAN"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
 			}
 		}
 	}
@@ -762,7 +773,7 @@
 					building={
 						type="building_manor_house"
 						country="c:HER"
-						levels=2
+						levels=4
 						region="STATE_HERAT"
 					}
 				}
@@ -800,7 +811,7 @@
 				add_ownership={
 					country={
 						country="c:HER"
-						levels=2
+						levels=3
 					}
 				}
 				reserves=1
@@ -815,7 +826,7 @@
 				add_ownership={
 					country={
 						country="c:KAB"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -891,6 +902,17 @@
 	s:STATE_BALUCHISTAN={
 		region_state:MAK={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:MAK"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
@@ -931,6 +953,30 @@
 			}
 		}
 		region_state:KAL={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KAL"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_wheat_farm"
+						country="c:KAL"
+						levels=3
+						region="STATE_BALUCHISTAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={

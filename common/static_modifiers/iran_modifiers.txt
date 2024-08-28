@@ -18,12 +18,11 @@ qajar_familial_corruption={
 	state_tax_waste_add = 0.05
 	state_radicals_from_sol_change_mult = 0.20
 	country_authority_mult = -0.15
-	country_resource_discovery_chance_mult = -0.5
+	country_resource_discovery_chance_mult = -1
 }
 
 qajar_familial_corruption_lower={
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	state_tax_collection_mult = -0.05
 	state_radicals_from_sol_change_mult = 0.20
 	country_authority_mult = -0.1
 	country_resource_discovery_chance_mult = -0.25
@@ -51,7 +50,7 @@ re_integrate_cultures={
 high_number_nomads={
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
 	state_construction_mult = -0.01
-	country_bureaucracy_mult = -0.1
+	country_bureaucracy_mult = -0.05
 	country_authority_mult = -0.05
 	state_urbanization_mult = -0.05
 	state_tax_collection_mult = -0.05
@@ -84,13 +83,44 @@ local_khans_modifier={
 	state_mortality_turmoil_mult = 0.05
 	state_conscription_rate_add = 0.01
 	state_bureaucracy_population_base_cost_factor_mult = -0.05
-	country_bureaucracy_mult = -0.1
+	country_bureaucracy_mult = -0.05
 }
 
 wuzurgan_modifier={
+		icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	interest_group_ig_landowners_pop_attraction_mult = 0.25
 	state_urbanization_mult = 0.1
 	state_construction_mult = 0.05
 	state_mortality_turmoil_mult = -0.01
 	unit_army_experience_gain_mult = 0.5
+}
+
+the_lion_roars={
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	unit_morale_loss_mult = -0.2
+}
+
+paper_students={
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 750
+	country_tech_spread_mult = 0.2
+}
+
+darulfunun_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_tech_spread_mult = 0.05
+	building_university_throughput_add = 0.1
+	state_pop_support_law_technocracy_mult = 0.1
+	state_pop_support_law_monarchy_mult = 0.2
+}
+
+agreed_with_britian = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_approval_add = 4
+}
+
+britian_wants_strong_iran = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_weekly_innovation_add = 5
+	country_tech_spread_mult = 0.15
 }

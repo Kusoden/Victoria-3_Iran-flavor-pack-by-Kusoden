@@ -122,7 +122,6 @@ STATES = {
 		}
 		
 		add_homeland = cu:iranian
-		add_claim = c:PER
 	}
 	s:STATE_SOUTH_BENGAL = {
 		create_state = {
@@ -154,7 +153,6 @@ STATES = {
 		
 		add_homeland = cu:mashriqi
 		add_homeland = cu:iranian
-		add_claim = c:PER
 	}
 	s:STATE_EASTERN_THRACE = {
 		create_state = {
@@ -1535,7 +1533,7 @@ STATES = {
 			owned_provinces = { x505AE0 x2768F8 xEF5020 }
 		}
 		
-		add_homeland = cu:bedouin
+		add_homeland = cu:iranian
 	}
 	s:STATE_YEMEN = {
 		create_state = {
@@ -5373,7 +5371,8 @@ STATES = {
 			owned_provinces = { xE0D060 x136A0C x0EC997 x60D060 x605060 xE05060 xC9CBC0 x365E8F }
 		}
 		
-		add_homeland = cu:mashriqi
+		add_homeland = cu:ashkenazi
+		add_homeland = cu:sephardic
 		add_claim = c:TUR
 	}
 	s:STATE_LEBANON = {
@@ -5412,7 +5411,6 @@ STATES = {
 		
 		add_homeland = cu:mashriqi
 		add_homeland = cu:iranian
-		add_claim = c:PER
 	}
 	s:STATE_MOSUL = {
 		create_state = {
@@ -5422,7 +5420,6 @@ STATES = {
 		
 		add_homeland = cu:iranian
 		add_homeland = cu:assyrian
-		add_claim = c:PER
 	}
 	s:STATE_LARISTAN = {
 		create_state = {
@@ -5439,7 +5436,7 @@ STATES = {
 			owned_provinces = { "x8070A0" "xB80596" }
 			state_type = unincorporated
 		}
-		
+		add_claim = c:PER
 		add_homeland = cu:iranian
 		add_homeland = cu:bedouin
 	}
@@ -5470,8 +5467,8 @@ STATES = {
 			state_type = unincorporated
 		}
 		
-		add_claim = c:PER
 		add_homeland = cu:iranian
+		add_claim = c:PER
 	}
 	s:STATE_KHORASAN = {
 		create_state = {
@@ -5607,7 +5604,6 @@ STATES = {
 		
 		add_homeland = cu:georgian
 		add_homeland = cu:iranian
-		add_claim = c:PER
 	}
 	s:STATE_MONTENEGRO = {
 		create_state = {
@@ -5707,7 +5703,6 @@ STATES = {
 		
 		add_homeland = cu:armenian
 		add_homeland = cu:iranian
-		add_claim = c:PER
 	}
 	s:STATE_KARS = {
 		create_state = {
@@ -5722,7 +5717,6 @@ STATES = {
 		add_homeland = cu:armenian
 		add_homeland = cu:iranian
 		add_homeland = cu:georgian
-		add_claim = c:PER
 	}
 	s:STATE_CRETE = {
 		create_state = {
@@ -5887,7 +5881,6 @@ STATES = {
 		add_homeland = cu:armenian
 		add_homeland = cu:iranian
 		add_homeland = cu:assyrian
-		add_claim = c:PER
 	}
 	s:STATE_BANGKOK = {
 		create_state = {
@@ -7730,7 +7723,6 @@ STATES = {
 		add_homeland = cu:mashriqi
 		add_homeland = cu:iranian
 		add_homeland = cu:assyrian
-		add_claim = c:PER
 	}
 	s:STATE_BAJA_CALIFORNIA = {
 		create_state = {

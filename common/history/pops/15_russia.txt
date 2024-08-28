@@ -840,15 +840,16 @@
 		region_state:RUS = {
 			create_pop = {
 				culture = iranian
-				size = 91660
+				size = 21660
 			}
 			create_pop = {
 				culture = iranian
 				religion = sunni
-				size = 55000
+				size = 115000
 			}
 			create_pop = {
 				culture = iranian
+				religion = mazdayasna
 				size = 12999
 			}
 			create_pop = {
@@ -857,7 +858,7 @@
 			}
 			create_pop = {
 				culture = armenian
-				size = 92855
+				size = 122855
 			}
 			create_pop = {
 				culture = south_german
@@ -873,19 +874,27 @@
 		region_state:RUS = {
 			create_pop = {
 				culture = russian
-				size = 289248
+				size = 59248
 			}
 			create_pop = {
 				culture = ukrainian
+				size = 61784
+			}
+			create_pop = {
+				culture = north_caucasian
 				size = 191784
 			}
 			create_pop = {
-				culture = kazak
-				size = 12054
+				culture = circassian
+				size = 261784
 			}
 			create_pop = {
-				culture = turkmen
-				size = 8908
+				culture = kazak
+				size = 4054
+			}
+			create_pop = {
+				culture = iranian
+				size = 18908
 			}
 			create_pop = {
 				culture = kalmyk

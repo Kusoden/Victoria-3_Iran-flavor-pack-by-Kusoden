@@ -1,0 +1,3 @@
+colors = {	
+	eranshahr_color = rgb { 90 16 115 } #31 5 117
+} 

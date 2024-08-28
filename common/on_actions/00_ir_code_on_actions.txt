@@ -1,0 +1,12 @@
+on_monthly_pulse_country = {
+    on_actions = {
+			my_on_action
+    }
+}
+
+my_on_action = {
+    events = {
+        amirkabir.1
+		amirkabir.2
+    }
+}

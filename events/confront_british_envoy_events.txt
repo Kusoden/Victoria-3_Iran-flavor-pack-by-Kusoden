@@ -22,6 +22,7 @@ slavery.1 = {
 		}
 	}
 	option = {
+		default_option = yes
 		name = slavery.1.b
 		activate_law = law_type:law_legacy_slavery
 		change_relations = {
@@ -30,7 +31,6 @@ slavery.1 = {
 		}
 	}
 	option = {
-		default_option = yes
 		name = slavery.1.c
 		activate_law = law_type:law_slavery_banned
 		change_relations = {

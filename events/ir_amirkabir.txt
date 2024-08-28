@@ -1,0 +1,92 @@
+﻿namespace = amirkabir
+
+amirkabir.1 = {
+	type = country_event
+	placement =	s:STATE_IRAKAJEMI.region_state:PER
+
+	title = amirkabir.1.t
+	desc = amirkabir.1.d
+	flavor = amirkabir.1.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+	
+	trigger = { # year 1850 will get triggered by code_on_actions
+		year >= 1850
+		c:PER ?= this
+		NOT = { has_variable = paper_students_go }
+	}
+
+	immediate = {
+		set_variable = paper_students_go
+	}
+
+	option = {
+		name = amirkabir.1.a
+		c:PER = {
+			add_modifier = {
+				name = 	paper_students
+				years = 4
+			}
+		}
+	}
+}
+
+amirkabir.2 = {
+	type = country_event
+	placement =	s:STATE_IRAKAJEMI.region_state:PER
+
+	title = amirkabir.2.t
+	desc = amirkabir.2.d
+	flavor = amirkabir.2.f
+
+	event_image = {
+		video = "ep1_central_asian_city"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+	
+	trigger = { # year 1854 will get triggered by code_on_actions		
+		year >= 1854
+		c:PER ?= this
+		has_variable = paper_students_go
+		NOT = { has_modifier = paper_students }
+		NOT = { has_variable = paper_students_cameback }
+	}
+
+	immediate = {
+		set_variable = paper_students_cameback
+	}
+
+	option = {
+		name = amirkabir.2.a
+		s:STATE_IRAKAJEMI={
+			region_state:PER={
+				create_building={
+					building="building_paper_mills"
+					add_ownership={
+						building={
+							type="building_financial_district"
+							country="c:PER"
+							levels=2
+							region="STATE_IRAKAJEMI"
+						}
+					}
+					reserves=1
+					activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+				}	
+			}
+		}
+	}
+}

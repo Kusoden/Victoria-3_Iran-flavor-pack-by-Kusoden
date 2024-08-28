@@ -1,0 +1,107 @@
+namespace = ir_events_alternative
+
+ir_events_alternative.8 = {
+	type = country_event
+	placement = scope:herat_scope
+
+	title = ir_events_alternative.8.t
+	desc = ir_events_alternative.8.d
+	flavor = ir_events_alternative.8.f
+
+	event_image = {
+		video = "ep1_ca_mountain_pass_military"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	dlc = dlc010
+
+	duration = 3
+
+	trigger = {
+		# triggered by event
+	}
+
+	immediate = {
+		c:GBR ?= {
+			save_scope_as = britain_scope
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_HERAT
+			}
+			save_scope_as = herat_scope
+		}
+	}
+
+	option = {
+		name = ir_events_alternative.8.a
+        default_option = yes
+        custom_tooltip = {
+        	text = britain_ir_protect_india_tt
+			scope:britain_scope = {
+				set_secret_goal = {
+					country = root
+					secret_goal = protect			
+				}				
+			}
+			set_secret_goal = {
+				country = scope:britain_scope
+				secret_goal = befriend	
+			}
+        }
+		every_interest_group = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			add_modifier = {
+				name = agreed_with_britian
+				months = long_modifier_time
+			}
+		}
+		add_modifier = {
+			name = britian_wants_strong_iran
+			months = short_modifier_time
+		}
+	}
+	option = {
+		name = ir_events_alternative.8.b
+
+		custom_tooltip = {
+        	text = britain_wants_herat_tt
+			scope:britain_scope = {
+				set_secret_goal = {
+					country = root
+					secret_goal = conquer			
+				}				
+			}
+			set_secret_goal = {
+				country = scope:britain_scope
+				secret_goal = antagonize	
+			}
+        }
+		add_loyalists = {
+			value = 0.2
+			religion = rel:shiite
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_devout
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			add_modifier = {
+				name = did_not_bow_to_britain_modifier
+				months = normal_modifier_time
+			}
+		}
+	}
+}

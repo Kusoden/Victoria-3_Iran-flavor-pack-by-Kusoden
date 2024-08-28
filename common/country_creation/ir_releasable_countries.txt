@@ -11,14 +11,13 @@
 		STATE_VOLHYNIA
 		STATE_WEST_GALICIA
 		STATE_WEST_PRUSSIA
-		STATE_LITHUANIA
-		STATE_LATVIA
 		STATE_KIEV
 		STATE_CHERSON
 		STATE_MINSK
-		STATE_ORSHA
 		STATE_CRIMEA
-		STATE_LUHANSK
+		STATE_KAUNAS
+		STATE_TAURIDA
+		STATE_VILNIUS
 	}
 
 	ai_will_do = { always = no }
@@ -38,5 +37,11 @@ ISR = {
 		STATE_PALESTINE
 	}
 
+	ai_will_do = { always = no }
+}
+
+GOS = {
+	states = { STATE_DZUNGARIA STATE_TIANSHAN STATE_JETISY }
+	
 	ai_will_do = { always = no }
 }

@@ -1,7 +1,10 @@
 wuzurgan_decision = {
 	is_shown = {
 		NOT = { has_variable = wuzurgan_var }
-		this ?= c:PER
+		OR ={
+			this ?= c:PER
+			this ?= c:ARY
+		}
 	}
 
 	possible = {
@@ -33,7 +36,7 @@ wuzurgan_decision = {
 
 		ig:ig_landowners = {
 			hidden_effect = {
-				set_interest_group_name = "wuzur­gān"
+				set_interest_group_name = "Wuzur­gān"
 				set_ig_trait = ig_trait:ig_trait_iranian_wuzurgan_3
 				set_ig_trait = ig_trait:ig_trait_iranian_wuzurgan_2
 				set_ig_trait = ig_trait:ig_trait_iranian_wuzurgan_1
@@ -47,8 +50,10 @@ wuzurgan_decision = {
 			remove_ideology = ideology_patriarchal
 			add_ideology = ideology_wehdin
 
-			remove_ideology = ideology_pro_slavery
-
+			if = {
+				limit = { has_ideology = ideology:ideology_pro_slavery }
+				remove_ideology = ideology_pro_slavery
+			}
 			#changed from Deh-sālār, Āzādān might be viable aswell. but because of the power of Wuzurgan during Sasanians i chose Wuzurgan. source: https://www.iranicaonline.org/articles/bozorgan-mpers
 		}
 	}

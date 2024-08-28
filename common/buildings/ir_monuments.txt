@@ -1,0 +1,58 @@
+building_argebam = {
+	building_group = bg_monuments
+	texture = "gfx/interface/icons/building_icons/argebam.dds"
+	expandable = no
+	downsizeable = no
+	buildable = no
+	unique = yes
+	locator = "argebam_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { } 
+	entity_constructed = { "wonder_argebam_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 8
+	}
+	
+	production_method_groups = {
+		pmg_base_building_argebam
+	}
+
+	possible = {
+		state_region = s:STATE_KERMAN
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+
+}
+
+building_khaju_bridge = {
+	building_group = bg_monuments
+	texture = "gfx/interface/icons/building_icons/khajubridge.dds"
+	expandable = no
+	downsizeable = no
+	buildable = no
+	unique = yes
+	locator = "khaju_bridge_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { } 
+	entity_constructed = { "wonder_khaju_bridge_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 4
+	}
+	
+	production_method_groups = {
+		pmg_base_building_khaju_bridge
+	}
+
+	possible = {
+		state_region = s:STATE_ISFAHAN
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}

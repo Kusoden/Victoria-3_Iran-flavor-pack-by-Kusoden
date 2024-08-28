@@ -25,6 +25,9 @@ farman.1 = {
 	option = {
 		name = farman.1.a
 		default_option = yes
+		custom_tooltip = {
+			text = resettling_help_farang
+		}
 		c:PER = {
 			activate_law = law_type:law_freedom_of_conscience
 			add_technology_researched = logistics
@@ -77,7 +80,7 @@ farman.1 = {
 			}
 			add_loyalists = {
 				value = 0.2
-				religion = rel:shiite
+				religion = rel:shiiteremade
 			}
 		}
 	}

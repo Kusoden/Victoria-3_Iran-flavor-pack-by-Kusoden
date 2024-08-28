@@ -1,7 +1,9 @@
 ﻿mazdayasna_decision = {
 	is_shown = {
-		exists = c:PER
-		this ?= c:PER
+		OR ={
+			this ?= c:PER
+			this ?= c:ARY
+		}
 		NOT = {
 			country_has_state_religion = rel:mazdayasna
 		}
@@ -76,7 +78,7 @@
 		#ideology changes
 		ig:ig_devout = {
 			hidden_effect = {
-				set_interest_group_name = mazdayasna_priests
+				
 				set_ig_trait = ig_trait:ig_trait_iranian_din_3
 				set_ig_trait = ig_trait:ig_trait_iranian_din_2
 				set_ig_trait = ig_trait:ig_trait_iranian_din_1
@@ -92,12 +94,12 @@
 		}
 		ig:ig_armed_forces = {
 			hidden_effect = {
-				set_interest_group_name = "Gārd-e jāvidān-e Šāh-an-Šāh-i"
+				set_interest_group_name = "Gārd-e Jāvidān-e Šāhanšāh-i"
 			}
 		}
 		ig:ig_intelligentsia = {
 			hidden_effect = {
-				set_interest_group_name = "Rošan Fekr-ān"
+				set_interest_group_name = "Xerad-Mardomān" #corrected from Rošan Fekr-ān since "fekr" is tazi
 			}
 		}
 		ig:ig_trade_unions = {
@@ -107,7 +109,7 @@
 		}
 		ig:ig_rural_folk = {
 			hidden_effect = {
-				set_interest_group_name = "Šahrestān-i-ha"
+				set_interest_group_name = "Dehat-Mardomān" #corrected from Šareshtān-i-ha since it means provincial capital cities.
 			}
 		}
 		ig:ig_industrialists = {

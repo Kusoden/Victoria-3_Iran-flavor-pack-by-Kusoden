@@ -48,5 +48,22 @@
 			}
 			add_journal_entry = { type = je_eastern_frontier }
 		}
+
+		add_modifier = {
+			name = 	qajar_familial_corruption
+		}
+
+		add_modifier = {
+			name = 	high_number_nomads
+		}
+
+		add_modifier = {
+			name = 	seperator_delusion
+		}
+
+		add_modifier = {
+			name = 	local_khans_modifier
+		}
+
 	}
 }

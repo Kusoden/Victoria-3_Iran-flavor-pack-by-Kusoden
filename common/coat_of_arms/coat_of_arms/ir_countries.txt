@@ -1,13 +1,29 @@
-ARY_flag = {
+derafsh_kaviani = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
 	textured_emblem = {
-		texture = "aryana_flag.dds"
+		texture = "derafsh_kaviani.dds"
 		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
 	}
 }
 
-GOS_flag = {
+derafsh_shahbaz = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
 	textured_emblem = {
-		texture = "gostana.dds"
+		texture = "derafsh_shahbaz.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+}
+
+pazyryk_derafsh_kaviani = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "pazyryk_derafsh_kaviani.dds"
 		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
 	}
 }

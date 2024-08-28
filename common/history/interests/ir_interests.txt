@@ -1,0 +1,6 @@
+INTERESTS = {
+	c:PER ?= {
+		add_declared_interest = region_france
+		add_declared_interest = region_central_asia
+	}
+}

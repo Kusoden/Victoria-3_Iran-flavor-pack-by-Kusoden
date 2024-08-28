@@ -10,7 +10,7 @@ iran.1 = {
 	placement = scope:bahrein_overlord_capital
 
 	event_image = {
-		video = "unspecific_signed_contract"
+		video = "ep1_redcoats"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -36,29 +36,76 @@ iran.1 = {
 		name = bahrein.1.a
 		default_option = yes
 		annex = c:BHN
-		
-		if = {
-			limit = {
-				NOR = {
-					has_claim = s:STATE_BALUCHISTAN
-					owns_entire_state_region = STATE_BALUCHISTAN 
-				}
-			}
-			s:STATE_BALUCHISTAN = {
-				add_claim = ROOT
-			}
+	}
+}
+
+iran.2 = {
+	type = country_event
+
+	title = iran.2.t
+	desc = iran.2.d
+	flavor = iran.2.f
+
+	event_image = {
+		video = "ep1_ca_mountain_pass_military"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	duration = 3
+	
+	trigger = {
+		# Triggered by JE ir_retake_west_e_din
+	}
+
+	immediate = {
+		set_variable = ir_retake_west_var
+	}
+
+	option = {
+		name = iran.2.a
+        add_modifier = {
+        	name = the_lion_roars
+        	months = very_long_modifier_time
+        }
+		s:STATE_ABU_DHABI = {
+			add_claim = root
 		}
-		
-		if = {
-			limit = {
-				NOR = {
-					has_claim = s:STATE_EASTERN_AFGHANISTAN
-					owns_entire_state_region = STATE_EASTERN_AFGHANISTAN
-				}
-			}
-			s:STATE_EASTERN_AFGHANISTAN = {
-				add_claim = ROOT
-			}
+        s:STATE_BASRA = {
+        	add_claim = root
+        }
+        s:STATE_BAGHDAD = {
+        	add_claim = root
+        }
+        s:STATE_MOSUL = {
+        	add_claim = root
+        }
+        s:STATE_DEIR_EZ_ZOR = {
+        	add_claim = root
+        }
+		s:STATE_DIYARBAKIR = {
+			add_claim = root
 		}
+		s:STATE_ERZURUM = {
+			add_claim = root
+		}
+		s:STATE_KARS = {
+			add_claim = root
+		}
+        s:STATE_DAGESTAN = {
+        	add_claim = root
+        }
+        s:STATE_GREATER_CAUCASUS = {
+        	add_claim = root
+        }
+        s:STATE_NORTH_CAUCASUS = {
+        	add_claim = root
+        }
+        s:STATE_STAVROPOL = {
+        	add_claim = root
+        }
+        s:STATE_KUBAN = {
+        	add_claim = root
+        }
 	}
 }

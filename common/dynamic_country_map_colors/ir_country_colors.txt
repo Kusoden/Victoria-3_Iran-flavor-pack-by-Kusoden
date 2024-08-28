@@ -1,0 +1,9 @@
+PER = {
+	color = "eranshahr_color"
+
+	possible = {
+		exists = c:PER
+		THIS = c:PER
+		c:PER = { is_country_type = recognized }
+	}
+}

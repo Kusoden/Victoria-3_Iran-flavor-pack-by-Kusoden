@@ -1,6 +1,9 @@
 ﻿bahrein_decision = {
 	is_shown = {
-		this ?= c:PER
+		OR ={
+			this ?= c:PER
+			this ?= c:ARY
+		}
 		NOT = { has_variable = bahrain_var }
 		is_subject = no
 		exists = c:BHN
@@ -10,8 +13,14 @@
 	}
 
 	possible = {
-		c:PER = {
-			navy_size >= 8
+		custom_tooltip = {
+			text = bahrein_powerprojection_tooltip
+			c:OMA = {
+				naval_power_projection < root.naval_power_projection
+			}
+		}
+		c:OMA = {
+			naval_power_projection < root.naval_power_projection
 		}
 	}
 
@@ -97,6 +106,7 @@ seperators_decision = {
 		
 		remove_modifier = seperator_delusion
 	}
+
 
 	ai_chance = {
 		base = 75
