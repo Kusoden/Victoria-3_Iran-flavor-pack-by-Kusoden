@@ -5717,6 +5717,7 @@ STATES = {
 		add_homeland = cu:armenian
 		add_homeland = cu:iranian
 		add_homeland = cu:georgian
+		add_claim = c:PER
 	}
 	s:STATE_CRETE = {
 		create_state = {
@@ -6713,6 +6714,7 @@ STATES = {
 		}	
 
 		add_homeland = cu:iranian
+		add_claim = c:PER
 	}
 	s:STATE_SEMIRECHE = {
 		create_state = {
@@ -7767,6 +7769,7 @@ STATES = {
 	    	owned_provinces = { "x2E3A04" "x80FDCA" "x5F1CE5" "x1B7D15" "xD72954" "x0111C0" "x7B3A19" }
 	    }
 	    add_homeland = cu:iranian
+		add_claim = c:PER
 	}
 
 	s:STATE_SYRDARYA = {
