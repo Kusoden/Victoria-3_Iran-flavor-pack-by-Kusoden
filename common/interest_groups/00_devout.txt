@@ -26,16 +26,6 @@
 			if = {
 				limit = {
 					owner = {
-						country_has_state_religion = rel:mazdayasna
-					}
-				}
-				set_ig_trait = ig_trait:ig_trait_iranian_din_3
-				set_ig_trait = ig_trait:ig_trait_iranian_din_2
-				set_ig_trait = ig_trait:ig_trait_iranian_din_1
-			}
-			else_if = {
-				limit = {
-					owner = {
 						country_has_state_religion = rel:protestant
 					}
 				}
@@ -90,6 +80,16 @@
 			else_if = {
 				limit = {
 					owner = {
+						country_has_state_religion = rel:mazdayasna
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_iranian_din_3
+				set_ig_trait = ig_trait:ig_trait_iranian_din_2
+				set_ig_trait = ig_trait:ig_trait_iranian_din_1
+			}
+			else_if = {
+				limit = {
+					owner = {
 						country_has_state_religion = rel:shinto
 					}
 				}
@@ -135,13 +135,13 @@
 			}
 			ig:ig_devout = {
 				set_interest_group_name = mazdayasna_priests
-			remove_ideology = ideology_patriarchal
-			add_ideology = ideology_wehdin
+				remove_ideology = ideology_patriarchal
+				add_ideology = ideology_wehdin
 			}
 		}
 
 		# Buddhist Monks (Japan)
-		if = {
+		else_if = {
 			limit = {
 				country_has_state_religion = rel:mahayana
 				country_has_primary_culture = cu:japanese
@@ -358,6 +358,15 @@
 				set_interest_group_name = ig_theravada_monks
 				remove_ideology = ideology_moralist
 				add_ideology = ideology_buddhist_moralist
+			}
+		}
+		# MazdaYasna
+		else_if = {
+			limit = { country_has_state_religion = rel:mazdayasna }
+			ig:ig_devout = {
+				set_interest_group_name = mazdayasna_priests
+				remove_ideology = ideology_patriarchal
+				add_ideology = ideology_wehdin
 			}
 		}
 		# Mahayana Monks

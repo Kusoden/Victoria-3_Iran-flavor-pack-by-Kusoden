@@ -30,15 +30,16 @@
 
 	when_taken = {
 		set_state_religion = rel:mazdayasna
-		#cant scope all devouts
-		#every_scope_pop = {
-		#	ig:ig_devout = {
-		#		change_pop_religion = {
-		#			target = rel:mazdayasna
-		#			value = 1
-		#		}
-		#	}
-		#}
+		ig:ig_devout = {
+			hidden_effect = {
+				set_interest_group_name = mazdayasna_priests
+				set_ig_trait = ig_trait:ig_trait_iranian_din_3
+				set_ig_trait = ig_trait:ig_trait_iranian_din_2
+				set_ig_trait = ig_trait:ig_trait_iranian_din_1
+			}
+			remove_ideology = ideology_patriarchal
+			add_ideology = ideology_wehdin
+		}
 		#all leaders convert
 		custom_tooltip = {
 			text = decision_mazda_yasna_ig_leaders_tt
@@ -46,12 +47,6 @@
 				change_character_religion = rel:mazdayasna
 			}
 		}
-		#every_primary_culture = { taboo doesnot exists
-		#	limit = {
-		#		culture = cu:iranian
-		#	}
-		#	remove_cultural_taboo = wine
-		#}
 		custom_tooltip = {
 			text = decision_mazda_yasna_dec_react_tt
 			every_scope_state = {
@@ -75,18 +70,7 @@
 		add_modifier = {
 			name = Zarathushtras_teachings
 		}
-		#ideology changes
-		ig:ig_devout = {
-			hidden_effect = {
-				
-				set_ig_trait = ig_trait:ig_trait_iranian_din_3
-				set_ig_trait = ig_trait:ig_trait_iranian_din_2
-				set_ig_trait = ig_trait:ig_trait_iranian_din_1
-			}
-			remove_ideology = ideology_patriarchal
-			add_ideology = ideology_wehdin
-		}
-		#namechanges
+
 		ig:ig_petty_bourgeoisie = {
 			hidden_effect = {
 				set_interest_group_name = "Dehgān-ān"

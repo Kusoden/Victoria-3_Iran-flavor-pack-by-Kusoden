@@ -547,7 +547,7 @@ MCH = {
 }
 
 GOS = {
-	states = { STATE_DZUNGARIA STATE_TIANSHAN STATE_JETISY }
+	states = { STATE_DZUNGARIA STATE_TIANSHAN STATE_JETISY STATE_ALTAI }
 	
 	ai_will_do = { always = no }
 }
