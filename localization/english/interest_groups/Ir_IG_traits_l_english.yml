@@ -20,6 +20,16 @@
   ig_trait_iranian_bazaari_1:0 "Harg Vizīrišn"
   ig_trait_iranian_bazaari_1_desc:0 "Harg = tax, vizīrišn = avoidance" 
 
+  # Intelligentsia IG Traits
+  ig_trait_iranian_roshan_3:0 "Nistād konandegān"
+  ig_trait_iranian_roshan_3_desc:0 "Nistād =advertisement/propaganda?, konandegān = those who do it"
+
+  ig_trait_iranian_roshan_2:0 "pēšāhang"
+  ig_trait_iranian_roshan_2_desc:0 "pēšāhang = Vanguard?"
+
+  ig_trait_iranian_roshan_1:0 "īrād-gereftan az hangēhīh"
+  ig_trait_iranian_roshan_1_desc:0 "īrād-gereftan = criticizing, hangēhīh = society"
+
   # Armed Forces IG Traits
   ig_trait_iranian_artesh_3:0 "Wizārišn-e Mihan-Parasti"
   ig_trait_iranian_artesh_3_desc:0 "Wizārišn = fervor or enthusiasm, Mihan-Parasti = Patriotic"
@@ -28,8 +38,19 @@
   ig_trait_iranian_artesh_2_desc:0 "Pēšawarag ?= Veteran, hampursagīh ?= Consultation"
 
   ig_trait_iranian_artesh_1:0 "Kešvarāndag "
-  ig_trait_iranian_artesh_1_desc:0 "Kešvarāndag ?=wastage of resources or materials"
+  ig_trait_iranian_artesh_1_desc:0 "Kešvarāndag ?=wastage of resources/materials"
 
+  # Devout IG Traits
+  ig_trait_iranian_din_3:0 "humata, Huxta, Huvarshta"
+  ig_trait_iranian_din_3_desc:0 "three Avestan words which encapsulate the ethical goals of Zoroastrianism, meaning (well thought, well said, well done) they were substantivized to mean(good words, good thoughts, good deeds)"
+
+  ig_trait_iranian_din_2:0 "āmōzeš-e kahvan"
+  ig_trait_iranian_din_2_desc:0 "āmōziš = Teaching, Kahvan -> Kohan = Old "
+
+  ig_trait_iranian_din_1:0 "Dastāviz-i dēndār"
+  ig_trait_iranian_din_1_desc:0 "Dastāviz = excuse, dēndār = pious"
+
+  #ideologies
   ideology_wehdin:0 "Weh-dēn"
   ideology_dehgan:0 "Ēr Values"
   ideology_er:0 "Ēr Nobility"
@@ -59,15 +80,7 @@
 #  ig_trait_bourse_du_travail: "Bourse du Travail"
 #  ig_trait_bourse_du_travail_desc: "Organization doesn't end at the end of workday! A united front requires aiding each other not just on the factory floor, but in our homes and communities as well."
 
-  # Intelligentsia IG Traits
-  ig_trait_iranian_roshan_3:0 "Nistād konandegān"
-  ig_trait_iranian_roshan_3_desc:0 "Nistād =advertisement/propaganda?, konandegān = those who do it"
 
-  ig_trait_iranian_roshan_2:0 "pēšāhang"
-  ig_trait_iranian_roshan_2_desc:0 "pēšāhang = Vanguard?"
-
-  ig_trait_iranian_roshan_1:0 "īrād-gereftan az hangēhīh"
-  ig_trait_iranian_roshan_1_desc:0 "īrād-gereftan = criticizing, hangēhīh = society"
 
   # Petite-Bourgeoisie IG Traits
 #  ig_trait_treasury_bonds:0 "Treasury Bonds"
