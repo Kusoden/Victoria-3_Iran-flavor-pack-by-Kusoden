@@ -55,7 +55,7 @@ iran.2 = {
 	duration = 3
 	
 	trigger = {
-		# Triggered by JE ir_retake_west_e_din
+		# Triggered by JE je_ir_shattered_borders_broken_sovereignty
 	}
 
 	immediate = {
@@ -107,5 +107,658 @@ iran.2 = {
         s:STATE_KUBAN = {
         	add_claim = root
         }
+		change_relations = {
+			country = c:TUR
+			value = -10
+		}
+		change_relations = {
+			country = c:RUS
+			value = -10
+		}
+
+	}
+}
+
+iran.3 = {
+	type = country_event
+
+	title = iran.3.t
+	desc = iran.3.d
+	flavor = iran.3.f
+
+	event_image = {
+		video = "ep1_ca_mountain_pass_military"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	duration = 3
+	
+	trigger = {
+		# Triggered by JE je_ir_unifying_the_divided
+	}
+
+	immediate = {
+		set_variable = ir_seperators_last
+		create_country = {
+			tag = KUR
+			origin = this
+			province = p:x7F1958
+			on_created = {
+				s:STATE_URMIA = {
+					set_owner_of_provinces = {
+						country = c:KUR
+						provinces = { x7F1958 xADF8DB x2F0CE8 xB09D9C xC33C0F x07BB1D x510E91 x4F6E8F x7BC870 x6F55BA x780DBA xC9CF24 xD8B670 }
+					}
+				}
+				change_relations = {
+					country = c:PER
+					value = -50
+				}
+				set_ruling_interest_groups = { ig_landowners }
+				
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_chiefdom
+						}
+					}
+					activate_law = law_type:law_chiefdom
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_hereditary_bureaucrats
+						}
+					}
+					activate_law = law_type:law_hereditary_bureaucrats
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_autocracy
+						}
+					}
+					activate_law = law_type:law_autocracy
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_national_militia
+						}
+					}
+					activate_law = law_type:law_national_militia
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_religious_schools
+						}
+					}
+					activate_law = law_type:law_religious_schools
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_traditionalism
+						}
+					}
+					activate_law = law_type:law_traditionalism
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_closed_borders
+						}
+					}
+					activate_law = law_type:law_closed_borders
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_cultural_exclusion
+						}
+					}
+					activate_law = law_type:law_cultural_exclusion
+				}
+			}
+		}
+		create_country = {
+			tag = AZB
+			origin = this
+			province = p:xD82CB4
+			on_created = {
+				s:STATE_TABRIZ = {
+					set_owner_of_provinces = {
+						country = c:AZB
+						provinces = { xD82CB4 x97DFB2 xCC139E x493F0B x0467D5 }
+					}
+				}
+				change_relations = {
+					country = c:PER
+					value = -50
+				}
+				set_ruling_interest_groups = { ig_landowners }
+				
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_chiefdom
+						}
+					}
+					activate_law = law_type:law_chiefdom
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_hereditary_bureaucrats
+						}
+					}
+					activate_law = law_type:law_hereditary_bureaucrats
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_autocracy
+						}
+					}
+					activate_law = law_type:law_autocracy
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_national_militia
+						}
+					}
+					activate_law = law_type:law_national_militia
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_religious_schools
+						}
+					}
+					activate_law = law_type:law_religious_schools
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_traditionalism
+						}
+					}
+					activate_law = law_type:law_traditionalism
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_closed_borders
+						}
+					}
+					activate_law = law_type:law_closed_borders
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_cultural_exclusion
+						}
+					}
+					activate_law = law_type:law_cultural_exclusion
+				}
+			}
+		}
+		create_country = {
+			tag = ARB
+			origin = this
+			province = p:x55D475
+			on_created = {
+				s:STATE_KHUZESTAN = {
+					set_owner_of_provinces = {
+						country = c:ARB
+						provinces = { x55D475 xA99276 xA18555 xFBA38B }
+					}
+				}
+				change_relations = {
+					country = c:PER
+					value = -50
+				}
+				set_ruling_interest_groups = { ig_landowners }
+				
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_chiefdom
+						}
+					}
+					activate_law = law_type:law_chiefdom
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_hereditary_bureaucrats
+						}
+					}
+					activate_law = law_type:law_hereditary_bureaucrats
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_autocracy
+						}
+					}
+					activate_law = law_type:law_autocracy
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_national_militia
+						}
+					}
+					activate_law = law_type:law_national_militia
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_religious_schools
+						}
+					}
+					activate_law = law_type:law_religious_schools
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_traditionalism
+						}
+					}
+					activate_law = law_type:law_traditionalism
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_closed_borders
+						}
+					}
+					activate_law = law_type:law_closed_borders
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_cultural_exclusion
+						}
+					}
+					activate_law = law_type:law_cultural_exclusion
+				}
+			}
+		}
+		create_country = {
+			tag = BLH
+			origin = this
+			province = p:xB7B2BD
+			on_created = {
+				s:STATE_BALUCHISTAN = {
+					set_owner_of_provinces = {
+						country = c:BLH
+						provinces = { xB7B2BD xE87BBF x951063 x321257 x945FA2 xA9F721 xB6CF46 xBAE3D2 x3FE8A6 }
+					}
+				}
+				change_relations = {
+					country = c:PER
+					value = -50
+				}
+				set_ruling_interest_groups = { ig_landowners }
+				
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_chiefdom
+						}
+					}
+					activate_law = law_type:law_chiefdom
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_hereditary_bureaucrats
+						}
+					}
+					activate_law = law_type:law_hereditary_bureaucrats
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_autocracy
+						}
+					}
+					activate_law = law_type:law_autocracy
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_national_militia
+						}
+					}
+					activate_law = law_type:law_national_militia
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_religious_schools
+						}
+					}
+					activate_law = law_type:law_religious_schools
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_traditionalism
+						}
+					}
+					activate_law = law_type:law_traditionalism
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_closed_borders
+						}
+					}
+					activate_law = law_type:law_closed_borders
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_law = law_type:law_cultural_exclusion
+						}
+					}
+					activate_law = law_type:law_cultural_exclusion
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_country_type = unrecognized
+			}
+			c:PER = {
+				create_diplomatic_pact = {
+					country = c:KUR
+					type = vassal
+				}
+			}
+			c:PER = {
+				create_diplomatic_pact = {
+					country = c:AZB
+					type = vassal
+				}
+			}
+			c:PER = {
+				create_diplomatic_pact = {
+					country = c:ARB
+					type = vassal
+				}
+			}
+			c:PER = {
+				create_diplomatic_pact = {
+					country = c:BLH
+					type = vassal
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				is_country_type = recognized
+			}
+			c:PER = {
+				create_diplomatic_pact = {
+					country = c:KUR
+					type = puppet
+				}
+			}
+			c:PER = {
+				create_diplomatic_pact = {
+					country = c:AZB
+					type = puppet
+				}
+			}
+			c:PER = {
+				create_diplomatic_pact = {
+					country = c:ARB
+					type = puppet
+				}
+			}
+			c:PER = {
+				create_diplomatic_pact = {
+					country = c:BLH
+					type = puppet
+				}
+			}
+		}
+	}
+
+	option = {
+		name = iran.3.a
+		add_journal_entry  = { type = je_ir_unifying_the_divided_language }
+		add_modifier = {
+			name = 	revival_of_eranian_language
+			years = 3
+			is_decaying = yes
+		}
+		add_radicals = {
+			value = 0.05
+			culture = cu:iranian
+		}
+		add_loyalists = {
+			value = 0.01
+			culture = cu:iranian
+		}
+		c:PER = {
+			create_diplomatic_play = {
+			
+				target_state = s:STATE_URMIA.region_state:KUR
+				
+				war = yes
+				
+				type = dp_annex_war
+	
+				add_war_goal = {
+					holder = c:KUR
+					type = Independence
+					target_state = s:STATE_IRAKAJEMI.region_state:PER
+				}
+			}			
+		}
+		c:PER = {
+			create_diplomatic_play = {
+			
+				target_state = s:STATE_TABRIZ.region_state:AZB
+				
+				war = yes
+				
+				type = dp_annex_war
+	
+				add_war_goal = {
+					holder = c:AZB
+					type = Independence
+					target_state = s:STATE_IRAKAJEMI.region_state:PER
+				}
+			}			
+		}
+		c:PER = {
+			create_diplomatic_play = {
+			
+				target_state = s:STATE_KHUZESTAN.region_state:ARB
+				
+				war = yes
+				
+				type = dp_annex_war
+	
+				add_war_goal = {
+					holder = c:ARB
+					type = Independence
+					target_state = s:STATE_IRAKAJEMI.region_state:PER
+				}
+			}			
+		}
+		c:PER = {
+			create_diplomatic_play = {
+			
+				target_state = s:STATE_BALUCHISTAN.region_state:BLH
+				
+				war = yes
+				
+				type = dp_annex_war
+	
+				add_war_goal = {
+					holder = c:BLH
+					type = Independence
+					target_state = s:STATE_IRAKAJEMI.region_state:PER
+				}
+			}			
+		}
+	}
+	option = {
+		name = iran.3.b
+		add_radicals = {
+			value = 0.2
+			culture = cu:iranian
+		}
+		change_relations = {
+			country = c:KUR
+			value = 35
+		}
+		change_relations = {
+			country = c:AZB
+			value = 35
+		}
+		change_relations = {
+			country = c:ARB
+			value = 35
+		}
+		change_relations = {
+			country = c:BLH
+			value = 35
+		}
+		s:STATE_SISTAN.region_state:PER = { set_state_owner = c:BLH }
+		s:STATE_BALUCHISTAN.region_state:PER = { set_state_owner = c:BLH }
+		s:STATE_NORTHERN_BALUCHISTAN.region_state:PER = { set_state_owner = c:BLH }
+		s:STATE_AZERBAIJAN.region_state:PER = { set_state_owner = c:AZB }
+		s:STATE_TABRIZ.region_state:PER = { set_state_owner = c:AZB }
+		s:STATE_MOSUL.region_state:PER = { set_state_owner = c:KUR }
+		s:STATE_URMIA.region_state:PER = { set_state_owner = c:KUR }
+		s:STATE_DIYARBAKIR.region_state:PER = { set_state_owner = c:KUR }
+		s:STATE_PERSIAN_KURDISTAN.region_state:PER = { set_state_owner = c:KUR }
+		s:STATE_KHUZESTAN.region_state:PER = { set_state_owner = c:ARB }
+		if = {
+			limit = { 
+					c:PER = {
+						owns_entire_state = s:STATE_BASRA
+					}
+			}
+			s:STATE_BASRA.region_state:PER = { set_state_owner = c:ARB }
+		}
+		if = {
+			limit = { 
+					c:PER = {
+						owns_entire_state = s:STATE_BAGHDAD
+					}
+			}
+			s:STATE_BAGHDAD.region_state:PER = { set_state_owner = c:ARB }
+		}
+	}
+}
+
+iran.4 = { # language changing after unifying the divided language
+	type = country_event
+
+	title = iran.4.t
+	desc = iran.4.d
+	flavor = iran.4.f
+
+	event_image = {
+		video = "ep1_transfer_of_authority"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	duration = 3
+	
+	trigger = {
+		# Triggered by JE je_ir_unifying_the_divided_language
+	}
+
+
+	option = {## Avestan
+		name = iran.4.a
+		add_modifier = {
+			name = avestan_script
+			months = long_modifier_time
+		}
+		add_modifier = {
+			name = researching_avestan
+			multiplier = money_amount_multiplier_medium
+			months = normal_modifier_time
+		}
+		add_modifier = {
+			name = foundation_of_sacred_thoughts
+			months = -1
+		}
+
+		every_interest_group = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_devout
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			add_modifier = {
+				name = iranization_of_the_langauge
+				months = long_modifier_time
+			}
+		}
+		custom_tooltip = {
+			text = iranians_convert_twentyfive_react_tt
+			every_scope_state = {
+				convert_population = {
+					target = rel:mazdayasna
+					value = 0.25
+				}
+			}
+		}
+	}
+	option = { ## Middle Iranian Pahlav
+		name = iran.4.b
+		add_modifier = {
+			name = pahlavi_script
+			months = normal_modifier_time
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			add_modifier = {
+				name = adopting_pahlavi
+				months = normal_modifier_time
+			}
+		}
+	}
+	option = { ## Latin Alphabet
+		name = iran.4.c
+		add_modifier = {
+			name = latin_script
+			months = normal_modifier_time
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_intelligentsia
+				}
+			}
+			add_modifier = {
+				name = adopting_latin
+				months = normal_modifier_time
+			}
+		}
 	}
 }

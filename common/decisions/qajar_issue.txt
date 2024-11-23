@@ -1,10 +1,7 @@
 qajar_lowering_decision = {
 	is_shown = {
 		NOT = { has_variable = qajar_var1 }
-		OR ={
-			this ?= c:PER
-			this ?= c:ARY
-		}
+		country_has_primary_culture = cu:iranian
 		has_modifier = qajar_familial_corruption
 	}
 
@@ -31,12 +28,11 @@ qajar_lowering_decision = {
 qajar_cleanse_decision = {
 	is_shown = {
 		NOT = { has_variable = qajar_var2 }
-		this ?= c:PER
+		country_has_primary_culture = cu:iranian
 		has_modifier = qajar_familial_corruption_lower
 	}
 
 	possible = {
-		this ?= c:PER
 		institution_investment_level = {
 			institution = institution_police
 			value = 3

@@ -1,32 +1,27 @@
 farman_e_din = {
 	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
 	
-	group = je_group_historical_content
+	group = je_group_foreign_affairs
 
-	is_shown_when_inactive = {
-		this ?= c:PER
-		year <= 1842
-	}
-
-	possible = {
+	complete = {
 		this ?= c:PER
 
 		year >= 1839
-		year <= 1841
 		
 		c:FRA = {
 			relations:root >= relations_threshold:cordial
 		}
 	}
-
-	immediate = {
-		trigger_event = { id = farman.1 }
+	
+	fail = {
+		year = 1841
+		c:FRA = {
+			relations:root < relations_threshold:cordial
+		}
 	}
 
-	complete = {
-		has_variable = farman_e_din_var 
-	}
 	on_complete = {
+		trigger_event = { id = farman.1 }
 	}
 
 	weight = 100
@@ -35,16 +30,10 @@ farman_e_din = {
 justin_sheil = {
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	
-	group = je_group_historical_content
+	group = je_group_foreign_affairs
 
-	is_shown_when_inactive = {
-		this ?= c:PER
-		year <= 1851
-	}
-
-	possible = {
+	complete = {
 		year >= 1844
-		year <= 1850
 
 		c:GBR = {
 			relations:root >= relations_threshold:cordial
@@ -52,15 +41,15 @@ justin_sheil = {
 		has_law = law_type:law_slave_trade
 	}
 
-	immediate = {
-		trigger_event = { id = slavery.1 }
-	}
-
-	complete = {
-		has_variable = slavery_var
+	fail = {
+		year = 1850
+		c:GBR = {
+			relations:root < relations_threshold:cordial
+		}
 	}
 
 	on_complete = {
+		trigger_event = { id = slavery.1 }
 	}
 
 	weight = 100

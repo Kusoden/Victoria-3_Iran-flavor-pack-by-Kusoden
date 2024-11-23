@@ -9,38 +9,22 @@
 		building_tooling_workshops
 		building_coal_mine
 		building_iron_mine
-		building_lead_mine
-		building_sulfur_mine
-		building_logging_camp
 	}
 
 	potential = {
-		OR = {
-			AND = {
-				country_has_primary_culture = cu:persian
-				country_has_primary_culture = cu:kurdish
-				country_has_primary_culture = cu:azerbaijani
-			}
-			country_has_primary_culture = cu:iranian
-		}
+		country_has_primary_culture = cu:iranian
 	}
 
 	attainable = {
-		OR = {
-			AND = {
-				country_has_primary_culture = cu:persian
-				country_has_primary_culture = cu:kurdish
-				country_has_primary_culture = cu:azerbaijani
-			}
-			AND = {
-				country_has_primary_culture = cu:iranian
-				has_law = law_type:law_monarchy
-			}
+		AND = {
+			country_has_primary_culture = cu:iranian
+			has_law = law_type:law_monarchy
 		}
 	}
 
 	possible = { 
 		any_scope_state = {
+			region = sr:region_persia
 			any_scope_building = {
 				OR = {
 					is_building_type = building_coal_mine
@@ -52,9 +36,8 @@
 	}
 
 	prosperity_modifier = {
-		building_railway_throughput_add = 0.1
-		unit_army_offense_mult = 0.1
-		unit_army_defense_mult = 0.1
+		building_railway_throughput_add = 0.15
+		building_steel_mills_throughput_add = 0.1
 		state_construction_mult = 0.1
 		building_group_bg_manufacturing_throughput_add = 0.2
 	}

@@ -78,37 +78,25 @@ persia_events.1 = {
         	name = modifier_military_of_the_east
         	months = very_long_modifier_time
         }
-        s:STATE_BASRA = {
+        s:STATE_TRABZON = {
         	add_claim = root
         }
-        s:STATE_BAGHDAD = {
+        s:STATE_ANKARA = {
+			add_claim = root
+        }
+		s:STATE_ADANA = {
+			add_claim = root
+		}
+        s:STATE_KONYA = {
         	add_claim = root
         }
-        s:STATE_MOSUL = {
+        s:STATE_KASTAMONU = {
         	add_claim = root
         }
-        s:STATE_ABU_DHABI = {
+        s:STATE_HUDAVENDIGAR = {
         	add_claim = root
         }
-        s:STATE_ARMENIA = {
-        	add_claim = root
-        }
-        s:STATE_AZERBAIJAN = {
-        	add_claim = root
-        }
-        s:STATE_ELIZAVETPOL = {
-        	add_claim = root
-        }
-        s:STATE_ERZURUM = {
-        	add_claim = root
-        }
-        s:STATE_DAGESTAN = {
-        	add_claim = root
-        }
-        s:STATE_GREATER_CAUCASUS = {
-        	add_claim = root
-        }
-        s:STATE_NORTH_CAUCASUS = {
+        s:STATE_AYDIN = {
         	add_claim = root
         }
 	}
@@ -549,7 +537,9 @@ persia_events.4 = {
 
 	option = {
 		name = persia_events.4.a
-		default_option = yes
+		trigger = {
+			can_create_diplomatic_pact = { target = c:PER type = military_assistance }
+		}
 		ai_chance = {
 			base = 75
 		}
@@ -570,13 +560,13 @@ persia_events.4 = {
 					}
 				}
 			}
+			create_diplomatic_pact = {
+				country = c:PER
+				type = military_assistance
+			}
 			c:PER ?= {
 				add_modifier = {
 					name = modifier_persian_cossack_brigade
-				}
-				add_modifier = {
-					name = modifier_russian_persian_aid
-					months = normal_modifier_time
 				}
 			}
 		}
@@ -588,9 +578,9 @@ persia_events.4 = {
 				}
 			}
 			c:PER ?= {
-				add_modifier = {
-					name = modifier_russian_persian_aid
-					months = normal_modifier_time
+				create_diplomatic_pact = {
+					country = c:PER
+					type = military_assistance
 				}
 			}
 		}
@@ -610,6 +600,10 @@ persia_events.4 = {
 						has_modifier = modifier_south_persia_rifles
 					}
 				}
+			}
+			create_diplomatic_pact = {
+				country = c:PER
+				type = military_assistance
 			}
 			c:PER ?= {
 				add_modifier = {
@@ -960,6 +954,12 @@ persia_events.6 = {
         default_option = yes
 		ai_chance = {
 			base = 100
+			modifier = {
+				trigger = {
+					c:PER = { has_variable = ir_rus_expelled_var }
+				}
+				add = -100
+			}
 		}
 		c:PER ?= {
 			trigger_event = { id = persia_events.8 popup = yes }
@@ -973,17 +973,15 @@ persia_events.6 = {
 			value = -50
 		}
 	}
-	option = {
+	option = { #BRITAIN REACT POSITIVE TO CONQUER HERAT
 		name = persia_events.6.b
 		ai_chance = {
 			base = 0
 			modifier = {
 				trigger = {
-					c:PER = {
-						relations:root >= 20
-					}
+					c:PER ={ has_variable = ir_rus_expelled_var }
 				}
-				add = 150
+				add = 850
 			}
 		}
 		c:PER ?= {

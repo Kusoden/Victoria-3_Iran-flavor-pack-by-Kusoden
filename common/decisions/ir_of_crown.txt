@@ -1,9 +1,6 @@
 ﻿iranization_of_crown = {
 	is_shown = {
-		OR ={
-			this ?= c:PER
-			this ?= c:ARY
-		}
+		country_has_primary_culture = cu:iranian
 		NOT = {
 			has_variable = iranization_of_crown_var
 		}

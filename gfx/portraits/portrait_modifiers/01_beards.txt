@@ -89,6 +89,7 @@
                 OR = {
                     arabic_clothes_trigger = yes
                     arabic_clothes_pop_trigger = yes
+                    iranic_clothes_pop_trigger = yes
                 }
                 scope:character ?= {
                     is_historical = no
@@ -112,7 +113,7 @@
                 add = 100
                 
                 scope:pop ?= {
-                    culture = cu:persian
+                    culture = cu:iranian
                 }
             }
         }
@@ -139,6 +140,7 @@
                 OR = {
                     arabic_clothes_trigger = yes
                     arabic_clothes_pop_trigger = yes
+                    iranic_clothes_pop_trigger = yes
                 } 
             }
         }

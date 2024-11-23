@@ -11,7 +11,7 @@ pm_default_building_argebam = {
 
 	state_modifiers = {
 		workforce_scaled = {
-			building_throughput_mult = 0.01
+			building_throughput_add = 0.01
 		}
 	}
 

@@ -306,7 +306,7 @@
         }
     }
 
-    naser_qajar_headgear = {
+    naser_qajar_headgear = { # pers iran
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -326,7 +326,28 @@
                 scope:character ?= {
                     age > 12
                     has_template = per_nasir_al_din_qajar_template
+                }
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 95000
+
+                has_dlc_feature = ep1_cosmetics
+
+                scope:character ?= {
                     is_ruler = yes
+                    OR = {
+                        owner ?= {
+                            c:PER ?= this
+                            has_law = law_type:law_monarchy
+                        }
+                        owner ?= {
+                            c:ARY ?= this
+                            has_law = law_type:law_monarchy
+                        }
+                    }
                 }
             }
         }
@@ -2326,7 +2347,6 @@
                         }
                         culture = {
                             has_discrimination_trait = iranian_turanian_culture_group
-                            has_discrimination_trait = aryan_heritage
                         }
                     }
                 }
@@ -2346,7 +2366,7 @@
         weight = {
             base = 0
             modifier = {
-                add = 5000
+                add = 50000
 
                 has_dlc_feature = ep1_cosmetics
 
@@ -2365,11 +2385,26 @@
                 }
             }
         }
+        
+        weight = {
+            base = 0
+            modifier = {
+                add = 950000
+
+                has_dlc_feature = ep1_cosmetics
+
+                scope:character ?= {
+                    age > 12
+                    has_template = per_mohammad_shah_qajar_template
+                    is_ruler = yes
+                }
+            }
+        }
 
         weight = {
             base = 0
             modifier = {
-                add = 5000
+                add = 50000
 
                 has_dlc_feature = ep1_cosmetics
 
@@ -2393,7 +2428,7 @@
         weight = {
             base = 0
             modifier = {
-                add = 5000
+                add = 50000
 
                 has_dlc_feature = ep1_cosmetics
 
@@ -2450,7 +2485,6 @@
                     has_role = agitator
                     is_ruler = no
                     culture = {
-                        has_discrimination_trait = iranian_turanian_culture_group
                         has_discrimination_trait = aryan_heritage
                     }
                 }
@@ -2484,7 +2518,7 @@
                         }
                     }
                     culture = {
-                        has_discrimination_trait = central_asian_heritage
+                        has_discrimination_trait = iranian_turanian_culture_group
                     }
                 }
             }

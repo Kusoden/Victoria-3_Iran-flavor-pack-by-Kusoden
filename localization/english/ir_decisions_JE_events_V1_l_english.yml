@@ -12,24 +12,26 @@ bahrein_powerprojection_tooltip:0 "Iran should have naval supremacy over Oman to
 #Arable land Kariz (Qanat) decision
 arable_land_decision:0 "Improve arable land and water supplies"
 arable_land_event_tt:0 "Arable lands will be improved in all states where Iran already owns."
-arable_land_decision_desc:0 "The kārēz (< kār- “to draw furrows” and rēz- “to flow”) conducts water from the level of an aquifer to the open air by means of simple gravity in order to distribute it to lower areas. This technology is primarily used for irrigation (ābyāri) and allows for the cultivation of approximately 1,500,000 hectares worldwide, or about 0.6 percent of the total irrigated surface area. Underground water channels originated in the highlands of Iranian lands, where until today they have remained the preferred irrigation technology. (Source:Iranica)"
+arable_land_decision_desc:0 "The kārēz (< kār- “to draw furrows” and rēz- “to flow”) conducts water from the level of an aquifer to the open air by means of simple gravity in order to distribute it to lower areas. This technology is primarily used for irrigation (ābyāri) and allows for the cultivation of approximately 1,500,000 hectares worldwide, or about 0.6 percent of the total irrigated surface area. Underground water channels originated in the highlands of Iranian lands, where until today they have remained the preferred irrigation technology."
 arable_land_var_custom_tooltip:0 "Has made the decision to work on the Arable lands"
 
 #Confront British envoy
-justin_sheil:0 "Arrival of English ambassador"
-slavery.1.t:0 "When Justin Sheil succeeded John McNiel as the envoy to Iran in 1844, he and his wife observed the slavery and decided to act against it."
-slavery.1.d:0 "He sent a letter to Mirza Aqasi Iravani and pleaded for its abolition. Mohammad Shah, however, did not respond to this diplomatic pressure so Sheil brought up the moral aspect of slavery. Mohammad Shah remained unmoved and said abolition would contradict the islamic tradition."
-slavery.1.f:0 "In late 1847, Sheil was recalled to London and replaced with Colonel Francis Farrant, who also negotiated for abolition with Aqasi. Farrant argued if the Ottoman Empire could abolish slavery in their nation, Iranians could do the same. The argument appealed to Aqasi, who suggested it to Mohammad Shah. Mohammad was ready to adapt the changes similar to those of the Ottomans because it is clear from the letter he sent to Farrant. Mohammad Shah agreed to the abolition of the slave trade through the Persian Gulf but having slaves and trading them over land was still allowed. On the advice of both Sheil and Farrant, Aqasi also approached the major ulama of Tehran to ask their consent should the slave traders accuse them of blasphemy. The results were unfavorable; most of the ulama regarded slavers as legal according to Mohammedan law. Sheil, however, was successful in obtaining a fatwa in support of the shah's decision."
+justin_sheil:0 "Arrival of the English ambassador"
+justin_sheil_reason:0 "In late 1847, Sheil was recalled to London and replaced with Colonel Francis Farrant, who also negotiated for abolition with Aqasi. Farrant argued if the Ottoman Empire could abolish slavery in their nation, Iranians could do the same. The argument appealed to Aqasi, who suggested it to Mohammad Shah. Mohammad was ready to adapt the changes similar to those of the Ottomans because it is clear from the letter he sent to Farrant. Mohammad Shah agreed to the abolition of the slave trade through the Persian Gulf but having slaves and trading them over land was still allowed. On the advice of both Sheil and Farrant, Aqasi also approached the major ulama of Tehran to ask their consent should the slave traders accuse them of blasphemy. The results were unfavorable; most of the ulama regarded slavers as legal according to Mohammedan law. Sheil, however, was successful in obtaining a fatwa in support of the shah's decision."
+slavery.1.t:0 "English ambassador arrived!"
+slavery.1.d:0 "When Justin Sheil succeeded John McNiel as the envoy to Iran in 1844, he and his wife observed the slavery and decided to act against it."
+slavery.1.f:0 "He sent a letter to Mirza Aqasi Iravani and pleaded for its abolition. Mohammad Shah, however, did not respond to this diplomatic pressure so Sheil brought up the moral aspect of slavery. Mohammad Shah remained unmoved and said abolition would contradict the islamic tradition."
 slavery.1.a:0 "Reject what British offer, praise islamic traditions"
 slavery.1.b:0 "Do what Mohammad Shah done, and partially ban Slavery, mostly in southern states"
 slavery.1.c:0 "Accept their request, and fully ban Slavery!"
 
 #Farman-e Vejdan-e Azad
-farman_e_din:0 "Arrival of the French ambassador"
-farman.1.t:0 "French ambassador arrived!"
-farman.1.d:0 "The French Ambassador asks for an order to enforce Freedom of Conscience!"
-farman.1.f:0 "The arrival in 1839 of Félix Édouard Comte de Sercey as French ambassador to the Iranian court brought the Lazarists unprecedented advantages. In June he obtained from Moḥammad Shah an farmān (order) affirming the principle of freedom of conscience in Iran. Thenceforth, Roman Catholics were to enjoy the same rights and privileges as Muslim Iranians! source:Iranica (FRANCE xv. FRENCH SCHOOLS IN PERSIA)"
+farman_e_din:0 "Arrival of the Farang-ī ambassador"
+farman_e_din_reason:0 "The arrival in 1839 of Félix Édouard Comte de Sercey as French ambassador to the Iranian court brought the Lazarists unprecedented advantages. In June he obtained from Moḥammad Shah an farmān (order) affirming the principle of freedom of conscience in Iran. Thenceforth, Roman Catholics were to enjoy the same rights and privileges as Muslim Iranians!"
 farman.1.a:0 "Pass the law Freedom of Conscience, and ask for help from the French to modernize!"
+farman.1.t:0 "Farang-ī ambassador arrived!"
+farman.1.d:0 "The French Ambassador asks for an order to enforce Freedom of Conscience!"
+farman.1.f:0 ""
 farman.1.b:0 "Reject their wishes."
 resettling_help_farang:0 "Farang will help us with the resettling in Marv and Turan!"
 
@@ -79,13 +81,12 @@ qajar_cleanse_decision_desc:0 "Remove all the corruptors in the government."
  has_iranization_of_crown_var:0 "Iranization of the Crown decision has been made."
 
 #Landowner reform Wuzurgan
- wuzurgan_decision:0 "Iranization of the Noblity system."
- wuzurgan_decision_desc:0 "By reforming the Landowners, we will ensure to put the Iranian culture and Identity as their priority, and put the Iranian Nobilities in charge whom value the Ethics and Morals of our society."
+ #wuzurgan_decision:0 "Iranization of the Noblity system."
+ #wuzurgan_decision_desc:0 "By reforming the Landowners, we will ensure to put the Iranian culture and Identity as their priority, and put the Iranian Nobilities in charge whom value the Ethics and Morals of our society."
 
- has_wuzurgan_var:0 "Iranization of the Noblity system" decision has been made"
+ has_wuzurgan_var:0 "Iranization of the Noblity system JE has been Completed"
 
 #Nomads
- iranian_nomads:0 "Nomadic Issues"
 
   #event
   nomads.1.t:0 "Settling Nomads"

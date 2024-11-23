@@ -1,0 +1,4 @@
+﻿iran_piroz_theme = {
+	category = ui_skin_theme
+	ui_skin = "iran_piroz_theme"
+}

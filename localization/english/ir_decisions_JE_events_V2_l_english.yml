@@ -19,9 +19,9 @@ ir_retake_west:0 "For Ērānšahr"
 
  #event
  iran.2.t:0 "The Lion Roars!"
- iran.2.d:0 "Iran reclaims Ērānšahr, after standing against both Farang-i's, Taz-i's and Turkish invaders!"
+ iran.2.d:0 "With renewed strength and unwavering resolve, Iran rises to reclaim its rightful lands, igniting the spirit of a proud nation. The lion roars once more, determined to restore Ērānšahr's legacy!"
  iran.2.f:0 " "
- iran.2.a:0 "Let's show these foreigners and invaders what Iranian unity looks like!"
+ iran.2.a:0 "Let's show these invaders what Ērānian unity looks like!"
 
 #ir_events_alternative persia soi events
 ir_events_alternative.8.t: "Britain Demands Protection of her Interests in India"

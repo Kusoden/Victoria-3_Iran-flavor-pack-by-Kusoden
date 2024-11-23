@@ -1,7 +1,7 @@
 DIPLOMACY = {
 	c:PER ?= {
-		set_relations = { country = c:RUS value = -10 }
-		set_relations = { country = c:GBR value = -10 }
+		set_relations = { country = c:RUS value = 20 }
+		set_relations = { country = c:GBR value = -5 }
 		set_relations = { country = c:TUR value = -30 }
 		set_relations = { country = c:HER value = -50 }
 		set_relations = { country = c:FRA value = 50 }

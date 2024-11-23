@@ -1,7 +1,7 @@
 ﻿arable_land_taken={
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	country_expenses_add = 10000
-	country_bureaucracy_mult = -0.1,
+	country_bureaucracy_mult = -0.1
 	state_loyalists_from_sol_change_mult = 0.4
 	state_birth_rate_mult = 0.05
 } 
@@ -47,14 +47,13 @@ re_integrate_cultures={
 	country_authority_mult = -0.05
 }
 
-high_number_nomads={
+high_number_nomads={ #Defiant Tribal Authority
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
 	state_construction_mult = -0.01
 	country_bureaucracy_mult = -0.05
-	country_authority_mult = -0.05
-	state_urbanization_mult = -0.05
 	state_tax_collection_mult = -0.05
 	state_conscription_rate_mult = 0.15
+	unit_army_experience_gain_add = -0.2
 }
 
 settled_nomads={
@@ -79,7 +78,6 @@ seperator_delusion={
 
 local_khans_modifier={
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
-	state_urbanization_mult = -0.1
 	state_mortality_turmoil_mult = 0.05
 	state_conscription_rate_add = 0.01
 	state_bureaucracy_population_base_cost_factor_mult = -0.05
@@ -87,9 +85,9 @@ local_khans_modifier={
 }
 
 wuzurgan_modifier={
-		icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	interest_group_ig_landowners_pop_attraction_mult = 0.25
-	state_urbanization_mult = 0.1
+	interest_group_ig_landowners_pol_str_mult = 0.20
 	state_construction_mult = 0.05
 	state_mortality_turmoil_mult = -0.01
 	unit_army_experience_gain_mult = 0.5
@@ -110,8 +108,8 @@ darulfunun_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_mult = 0.05
 	building_university_throughput_add = 0.1
-	state_pop_support_law_technocracy_mult = 0.1
-	state_pop_support_law_monarchy_mult = 0.2
+	building_government_administration_throughput_add = 0.1
+	state_pop_support_law_monarchy_mult = 0.3
 }
 
 agreed_with_britian = {
@@ -123,6 +121,8 @@ britian_wants_strong_iran = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	country_weekly_innovation_add = 5
 	country_tech_spread_mult = 0.25
+	country_infamy_decay_mult = 0.4
+	country_legitimacy_base_add = -15
 }
 
 iran_farangi_reward = {
@@ -130,4 +130,94 @@ iran_farangi_reward = {
 	country_military_tech_spread_mult = 1.5
 	country_society_tech_spread_mult = 0.3
 	country_production_tech_research_speed_mult = 0.15
+	country_legitimacy_base_add = -5
+}
+
+revival_of_eranian_language = { #Revival of the Eranian Language
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	state_pop_qualifications_mult = -0.35
+}
+
+scriptural_disunity = { #Scriptural Disunity
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	state_pop_qualifications_mult = -0.05
+	country_tech_spread_add = -5
+	country_weekly_innovation_add = -5
+	state_education_access_add = -0.05
+}
+
+researching_avestan = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1
+}
+
+avestan_script = { #Adopting Avestan
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_loyalists_from_sol_change_mult = 0.05
+}
+
+pahlavi_script = { #Adopting Pahlavi
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_pop_qualifications_mult = 0.05
+	state_loyalists_from_sol_change_mult = 0.25
+}
+
+latin_script = { #Adopting Latin 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_pop_qualifications_mult = 0.10
+	country_production_tech_research_speed_mult = 0.10
+	state_education_access_add = 0.1
+}
+
+linguistic_purification = { #Linguistic Purification 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_loyalists_from_sol_change_mult = 0.1
+}
+
+iranization_of_the_langauge = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_approval_add = 5
+}
+
+adopting_pahlavi = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_approval_add = 5
+}
+
+adopting_latin = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_approval_add = 2
+}
+
+brilliance_of_ancestral_legacy = { #Brilliance of Ancestral Legacy
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_bureaucracy_mult = 0.1
+	unit_offense_mult = 0.1
+	unit_defense_mult = 0.1
+}
+
+foundation_of_sacred_thoughts = { #Foundation of Sacred Thoughts
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_education_access_add = 0.05
+	country_weekly_innovation_add = 5
+}
+
+childbrith_grant = { #Childbirth Grant
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_birth_rate_mult = 0.15
+}
+
+childbrith_grant_expenses = { #Childbirth Grant Expenses
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1
+}
+
+repulsion_of_jahansuzan = { #Repulsion of Jahansuzan
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1
+}
+
+promoting_sufism = { #Mohammad Shah Qajar's interest in Sufism
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	interest_group_ig_devout_pol_str_mult = -0.20 
 }

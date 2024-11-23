@@ -69,6 +69,9 @@ ir_events_alternative.8 = {
 			name = britian_wants_strong_iran
 			months = short_modifier_time
 		}
+		ai_chance = {
+			base = 500
+		}
 	}
 	option = {
 		name = ir_events_alternative.8.b

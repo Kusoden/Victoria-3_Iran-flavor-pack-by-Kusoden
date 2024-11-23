@@ -15,13 +15,11 @@ nomads.1 = {
 	duration = 3
 	
 	trigger = {
-		# Triggered by JE iranian_nomads
+		# Triggered by JE je_ir_nomads
 	}
 
 	immediate = {
 		set_variable = iranian_nomads_settled_var
-
-		remove_modifier = high_number_nomads
 
 		add_modifier = { 
 			name = settled_nomads

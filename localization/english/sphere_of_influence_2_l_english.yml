@@ -25,7 +25,7 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
 
 
  je_eastern_frontier: "The Eastern Frontier"
- je_eastern_frontier_reason: "The great expanse to our east, dominated by once bustling cities such as [SCOPE.sStateRegion('merv_scope').GetName] and [SCOPE.sStateRegion('herat_scope').GetName], have comprised part of [SCOPE.GetRootScope.GetCountry.GetAdjective] Khorasan ever since the days of Manochehr. While these lands have since been wrested from us by the passage of time and the domination of oppressive and powerful rulers, it can be so no longer.\n\nDecisive steps must be taken to reintegrate these wayward lands, so that no foreign power may invade and subjugate them again.\n\n#bold Turanian Captivity#!\nGenerations of Turkmen raids into our lands have resulted in large populations of Persian slaves toiling in oases such as [SCOPE.sStateRegion('uzbekia_scope').GetName] and [SCOPE.sStateRegion('khiva_scope').GetName]. Capturing these areas will allow us to liberate and #tooltippable #tooltip:je_eastern_frontier_tt_5 resettle#!#! enslaved Persian communties, if we so please."
+ je_eastern_frontier_reason: "The great expanse to our east, dominated by once bustling cities such as [SCOPE.sStateRegion('merv_scope').GetName] and [SCOPE.sStateRegion('herat_scope').GetName], have comprised part of [SCOPE.GetRootScope.GetCountry.GetAdjective] Khorasan ever since the days of Manochehr. While these lands have since been wrested from us by the passage of time and the domination of oppressive and powerful rulers, it can be so no longer.\n\nDecisive steps must be taken to reintegrate these wayward lands, so that no foreign power may invade and subjugate them again.\n\n#bold Turanian Captivity#!\nGenerations of Turkmen raids into our lands have resulted in large populations of Ērānian slaves toiling in oases such as [SCOPE.sStateRegion('uzbekia_scope').GetName] and [SCOPE.sStateRegion('khiva_scope').GetName]. Capturing these areas will allow us to liberate and #tooltippable #tooltip:je_eastern_frontier_tt_5 resettle#!#! enslaved Ērānian communties, if we so please."
  je_eastern_frontier_tt_1: "#tooltippable #tooltip:khorasan_tt #bold Khorasan#!#!#! is owned by [SCOPE.GetRootScope.GetCountry.GetName] or its subjects."
  je_eastern_frontier_tt_2: "#tooltippable #tooltip:chorasmia_tt #bold Chorasmia#!#!#! is owned by [SCOPE.GetRootScope.GetCountry.GetName] or its subjects."
  je_eastern_frontier_tt_3: "#tooltippable #tooltip:transoxiana_tt #bold Transoxiana#!#!#! is owned by [SCOPE.GetRootScope.GetCountry.GetName] or its subjects."
@@ -38,7 +38,7 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
 
  greater_khorasan_button: "Claim Greater Khorasan"
  greater_khorasan_button_desc: "While [SCOPE.GetRootScope.GetCountry.GetAdjective] claims to Greater Khorasan stretch back millennia, in recent centuries our control of the area have ranged from loose to nominal. Nader Shah's eastern campaigns briefly saw the restoration of Iranian control to Khorasan, but his achievements proved fleeting and would not outlast his reign.\n\nWhat Nader Shah begun, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] shall finish, with a grand campaign that will see Persian rule restored in the east for perpetuity. [SCOPE.sStateRegion('herat_scope').GetName], the Pearl of Khorasan and our key to the east will serve as the lynchpin of this great undertaking."
- greater_khorasan_button_tt: "Depending on our mutual [concept_relations], [SCOPE.sCountry('britain_scope').GetName] may react negatively to our occupation of [SCOPE.sStateRegion('herat_scope').GetName]."
+ greater_khorasan_button_tt: "If we have #b EXPELLED RUSSIAN DIPLOMATS #!, [SCOPE.sCountry('britain_scope').GetName] will react POSITIVELY to our occupation of [SCOPE.sStateRegion('herat_scope').GetName]."
 
  persian_baluchistan_button: "Pacify the Turkmens"
  persian_baluchistan_button_desc: "To our north, unruly [SCOPE.sCountry('turkmenia_scope').GetAdjectiveNoFlag] tribes defy our authority by raiding our lands, abducting thousands of our subjects every year to be sold off in the great slave markets of Bukhara and Khiva — ever while squatting on rightful Iranian lands. Let us kill two birds with one stone and force these bandits to heel."
@@ -63,13 +63,13 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
 
  persia_events.1.t: "Land of the Rising Sun"
  persia_events.1.d: "With the eastern borders of [SCOPE.GetRootScope.GetCountry.GetName] restored in full, [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle] [SCOPE.GetRootScope.GetCountry.GetRuler.GetFirstName] has overseen the final righting of a great historical wrong."
- persia_events.1.f: "From the fertile oases of Chorasmia, through Khorasan's ancient cities, to the Turanian heartlands across the Oxus: Ērānšahr's ancient eastern provinces once again answer to their rightful master."
+ persia_events.1.f: "From the fertile oases of Chorasmia, through Khorasan's ancient cities, to the Turanian heartlands across the Wehrōd: Ērānšahr's ancient eastern provinces once again answer to their rightful master."
  persia_events.1.a: "The great wealth of the east shall fuel our progress."
  persia_events.1.b: "Let these ancient intellectual centers flourish once more."
- persia_events.1.c: "Ya Ali! The west tremble at the lion's roar."
+ persia_events.1.c: "Ya Mehr! The west tremble at the lion's roar."
  modifier_wealth_of_the_east: "Wealth of the East"
  modifier_persianize_the_east: "Knowledge of the East"
- modifier_military_of_the_east: "Shiran-e Pars"
+ modifier_military_of_the_east: "Shirān-e Ērān"
  darulfunun_modifier: "DĀR AL-FONŪN"
 
  persia_events.2.t: "Pearl of Khorasan"

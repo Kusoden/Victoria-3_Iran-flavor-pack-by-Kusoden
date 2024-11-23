@@ -4,14 +4,18 @@
 			add_ruling_interest_group = yes
 			set_interest_group_name = local_khans
 		}
-		ig:ig_devout = {
+		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes
+		}
+		ig:ig_devout = {
 			set_interest_group_name = ig_shia_madrasahs
 		}
 
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_conservative = yes
+		
+		add_technology_researched = sericulture
 
 		add_technology_researched = admiralty
 		add_technology_researched = law_enforcement
@@ -49,6 +53,14 @@
 			add_journal_entry = { type = je_eastern_frontier }
 		}
 
+		add_journal_entry = { type = je_ir_expelled_rus }
+		add_journal_entry = { type = je_ir_shattered_borders_broken_sovereignty }
+		add_journal_entry = { type = je_ir_unifying_the_divided }
+		add_journal_entry = { type = je_ir_nomads }
+		add_journal_entry = { type = je_ir_wuzurgan }
+		add_journal_entry = { type = justin_sheil }
+		add_journal_entry = { type = farman_e_din }
+
 		add_modifier = {
 			name = 	qajar_familial_corruption
 		}
@@ -64,6 +76,12 @@
 		add_modifier = {
 			name = 	local_khans_modifier
 		}
-
+		
+		add_modifier = {
+			name = 	promoting_sufism
+		}
+		add_modifier = {
+			name = 	scriptural_disunity
+		}
 	}
 }

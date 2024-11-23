@@ -1,9 +1,6 @@
 ﻿primary_culturing_abaxtaran_decision = {
 	is_shown = {
-		OR ={
-			this ?= c:PER
-			this ?= c:ARY
-		}
+		country_has_primary_culture = cu:iranian
 		NOT = {
 			has_variable = primary_culturing_abaxtaran_var
 		}

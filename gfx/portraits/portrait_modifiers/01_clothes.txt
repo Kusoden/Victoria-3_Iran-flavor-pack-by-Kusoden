@@ -4275,7 +4275,7 @@
                     scope:pop ?= {
                         is_pop_type = aristocrats
                         culture = {
-                            has_discrimination_trait = iranian_turanian_culture_group
+                            has_discrimination_trait = aryan_heritage
                         }
                     }
                     scope:character ?= {
@@ -4289,7 +4289,6 @@
                             }
                         }
                         culture = {
-                            has_discrimination_trait = iranian_turanian_culture_group
                             has_discrimination_trait = aryan_heritage
                         }
                     }
@@ -4298,6 +4297,13 @@
                         age >= define:NCharacters|ADULT_AGE
                         culture = {
                             has_discrimination_trait = central_asian_heritage
+                        }
+                    }
+                    scope:character ?= {
+                        is_ruler = yes
+                        age >= define:NCharacters|ADULT_AGE
+                        culture = {
+                            has_discrimination_trait = aryan_heritage
                         }
                     }
                 }
@@ -4351,7 +4357,7 @@
         weight = {
             base = 0
             modifier = {
-                add = 5000
+                add = 50000
 
                 has_dlc_feature = ep1_cosmetics
 
@@ -5571,6 +5577,7 @@ indigenous_oceanic_pop_clothes = {
                     }
                     AND = {
                         OR = {
+                            iranic_clothes_pop_trigger = yes
                             arabic_clothes_pop_trigger = yes
                             AND = {
                                 exists = scope:pop
@@ -5606,6 +5613,7 @@ indigenous_oceanic_pop_clothes = {
                 add = 1000
                 AND = {
                     OR = {
+                        iranic_clothes_pop_trigger = yes
                         arabic_clothes_pop_trigger = yes
                         scope:pop ?= {
                             culture = {
@@ -5631,9 +5639,16 @@ indigenous_oceanic_pop_clothes = {
             base = 0
             modifier = {
                 add = 1000
-                AND = {
-                    arabic_clothes_pop_trigger = yes
-                    upper_clothes_pop_trigger = yes
+                OR = {
+                    AND = {
+                        arabic_clothes_pop_trigger = yes
+                        upper_clothes_pop_trigger = yes
+                    }
+                    AND = {
+                        iranic_clothes_pop_trigger = yes
+                        upper_clothes_pop_trigger = yes
+                    }
+
                 }
            }
         }
@@ -5851,6 +5866,7 @@ indigenous_oceanic_pop_clothes = {
                         european_clothes_pop_trigger = yes
                         african_diaspora_pop_clothes_trigger = yes
                         arabic_clothes_pop_trigger = yes
+                        iranic_clothes_pop_trigger = yes
                         native_american_clothes_pop_trigger = yes
                         cold_clothes_pop_trigger = yes
                     }  
@@ -6363,6 +6379,7 @@ indigenous_oceanic_pop_clothes = {
                 add = 1000
                 AND = {
                     OR = {
+                        iranic_clothes_pop_trigger = yes
                         arabic_clothes_pop_trigger = yes
                         central_asian_clothes_pop_trigger = yes
                     }

@@ -52,7 +52,6 @@
 			ideology = ideology_traditionalist
 			traits = {
 				cautious
-				diplomat
 			}
 			commander_rank = commander_rank_2
 		}

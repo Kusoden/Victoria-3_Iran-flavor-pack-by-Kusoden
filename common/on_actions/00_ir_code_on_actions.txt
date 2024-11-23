@@ -9,4 +9,93 @@ my_on_action = {
         amirkabir.1
 		amirkabir.2
     }
+    effect = {
+        if = {
+            limit = { 
+                exists = c:ARY
+                NOT = { has_variable = ig_traits_set }
+            }
+            c:ARY = {
+                ig:ig_armed_forces = {
+                    set_ig_trait = ig_trait:ig_trait_iranian_artesh_3
+                    set_ig_trait = ig_trait:ig_trait_iranian_artesh_2
+                    set_ig_trait = ig_trait:ig_trait_iranian_artesh_1
+                }
+                ig:ig_devout = {
+                    set_ig_trait = ig_trait:ig_trait_iranian_din_3
+                    set_ig_trait = ig_trait:ig_trait_iranian_din_2
+                    set_ig_trait = ig_trait:ig_trait_iranian_din_1
+                }
+                ig:ig_industrialists = {
+                    set_ig_trait = ig_trait:ig_trait_iranian_bazaari_3
+                    set_ig_trait = ig_trait:ig_trait_iranian_bazaari_2
+                    set_ig_trait = ig_trait:ig_trait_iranian_bazaari_1
+                }
+                ig:ig_intelligentsia = {
+                    set_ig_trait = ig_trait:ig_trait_iranian_roshan_3
+                    set_ig_trait = ig_trait:ig_trait_iranian_roshan_2
+                    set_ig_trait = ig_trait:ig_trait_iranian_roshan_1
+                    
+                    remove_ideology = ideology_republican
+                    add_ideology = ideology_constitutionalist
+                }
+                ig:ig_petty_bourgeoisie = {
+                    set_ig_trait = ig_trait:ig_trait_iranian_dehgan_3
+                    set_ig_trait = ig_trait:ig_trait_iranian_dehgan_2
+                    set_ig_trait = ig_trait:ig_trait_iranian_dehgan_1
+                }
+                ig:ig_landowners = {
+                    set_interest_group_name = "Wuzur­gān"
+
+                    set_ig_trait = ig_trait:ig_trait_iranian_wuzurgan_3
+                    set_ig_trait = ig_trait:ig_trait_iranian_wuzurgan_2
+                    set_ig_trait = ig_trait:ig_trait_iranian_wuzurgan_1
+
+                    remove_ideology = ideology_paternalistic
+                    add_ideology = ideology_er
+        
+                    remove_ideology = ideology_stratocratic
+                    add_ideology = ideology_dehgan
+        
+                    remove_ideology = ideology_patriarchal
+                    add_ideology = ideology_wehdin
+
+                    if = {
+                        limit = { has_ideology = ideology:ideology_pro_slavery }
+                        remove_ideology = ideology_pro_slavery
+                    }
+                }
+                set_variable = ig_traits_set
+            }
+        }
+        if = { # For when converted via powerblock
+            limit = {
+                owner = {
+                    country_has_state_religion = rel:mazdayasna
+                }
+            }
+            ig:ig_devout = {
+                set_interest_group_name = mazdayasna_priests
+
+                set_ig_trait = ig_trait:ig_trait_iranian_din_3
+                set_ig_trait = ig_trait:ig_trait_iranian_din_2
+                set_ig_trait = ig_trait:ig_trait_iranian_din_1
+
+                remove_ideology = ideology_patriarchal
+			    add_ideology = ideology_wehdin
+            }
+        }
+        if = { # For when converted via powerblock
+            limit = {
+                ruler ?= {
+                    NOT = { has_template = per_mohammad_shah_qajar_template }
+                }
+            }
+            if = {
+                limit = { has_modifier = promoting_sufism }
+
+                remove_modifier = promoting_sufism
+            }
+        }
+    }
 }

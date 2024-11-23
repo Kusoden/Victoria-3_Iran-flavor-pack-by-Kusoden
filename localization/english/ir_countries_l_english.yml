@@ -1,0 +1,21 @@
+﻿l_english:
+ ARY:0 "Āryānā"
+ ARY_ADJ:0 "Āryānā"
+
+ dyn_c_guarded_doamins_of_iran:0 "Guarded Domains of Iran"
+ PER:0 "Iran" 
+ PER_ADJ:0 "Iranian"
+ dyn_c_per:0 "Iran" 
+ dyn_c_per_adj:0 "Iranian"
+ dyn_c_iran: "Ērānšahr"
+ dyn_c_iran_adj: "Ērānšahr-i"
+
+ iran_get_name_iran:0 "If #b recognized#! Major power, will change the name to 'Ērānšahr', otherwise will change to Iran"
+
+ GOS:0 "Gostana"
+ GOS_ADJ:0 "Gostanian"
+
+ objective_great_game_name_PER: "#v $dyn_c_per$#!"
+ objective_great_game_desc_PER: "#lore $IRN_FLAVOR_TEXT$#!"
+
+ IRN_FLAVOR_TEXT:0 "Although Iran has won several wars in the past century against the Ottomans, it has not effectively pursued the reclamation of lost territories or the development of its nation. It is still reeling from the loss of significant regions to Imperial Russia in the north, while the British sought to take advantage in the south of Iran's weakness at the beginning of the century. Additionally, domestic problems such as tribal factions attempting to seize power from the central government further complicate the situation. Will Iran be able to recover and reclaim its status as a great power?"

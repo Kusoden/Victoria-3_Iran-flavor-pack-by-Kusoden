@@ -1,9 +1,6 @@
 ﻿bahrein_decision = {
 	is_shown = {
-		OR ={
-			this ?= c:PER
-			this ?= c:ARY
-		}
+		country_has_primary_culture = cu:iranian
 		NOT = { has_variable = bahrain_var }
 		is_subject = no
 		exists = c:BHN
@@ -79,36 +76,5 @@
 
 	ai_chance = {
 		base = 100
-	}
-}
-
-seperators_decision = {
-	is_shown = {
-		this ?= c:PER
-		NOT = { has_variable = seperators_var }
-	}
-
-	possible = {
-		has_law = law_type:law_dedicated_police
-		institution_investment_level = {
-			institution = institution_police
-			value = 3
-		}
-		custom_tooltip = {
-			text = has_wuzurgan_var
-			has_variable = wuzurgan_var
-		}
-		
-	}
-
-	when_taken = {
-		set_variable = seperators_var
-		
-		remove_modifier = seperator_delusion
-	}
-
-
-	ai_chance = {
-		base = 75
 	}
 }

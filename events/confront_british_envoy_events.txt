@@ -11,9 +11,7 @@ slavery.1 = {
 	duration = 3
 	trigger = {
 	}
-	immediate = {
-		set_variable = slavery_var
-	}
+
 	option = {
 		name = slavery.1.a
 		change_relations = {
@@ -28,6 +26,9 @@ slavery.1 = {
 		change_relations = {
 			country = c:GBR
 			value = 15
+		}
+		ai_chance = {
+			base = 25
 		}
 	}
 	option = {
@@ -68,6 +69,9 @@ slavery.1 = {
 		add_radicals = {
 			value = 0.05
 			religion = rel:shiite
+		}
+		ai_chance = {
+			base = 10
 		}
 	}
 }

@@ -1,9 +1,6 @@
 ﻿mazdayasna_decision = {
 	is_shown = {
-		OR ={
-			this ?= c:PER
-			this ?= c:ARY
-		}
+		country_has_primary_culture = cu:iranian
 		NOT = {
 			country_has_state_religion = rel:mazdayasna
 		}
@@ -39,6 +36,11 @@
 			}
 			remove_ideology = ideology_patriarchal
 			add_ideology = ideology_wehdin
+		}
+		if = {
+			limit = { has_modifier = promoting_sufism }
+
+			remove_modifier = promoting_sufism
 		}
 		#all leaders convert
 		custom_tooltip = {

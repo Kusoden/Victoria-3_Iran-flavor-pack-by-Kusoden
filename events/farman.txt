@@ -18,17 +18,16 @@ farman.1 = {
 		# Triggered by JE farman_e_din
 	}
 
-	immediate = {
-		set_variable = farman_e_din_var
-	}
-
 	option = {
 		name = farman.1.a
+		
 		default_option = yes
 		custom_tooltip = {
 			text = resettling_help_farang
 		}
 		c:PER = {
+			set_variable = farman_e_din_var
+
 			activate_law = law_type:law_freedom_of_conscience
 			add_technology_researched = colonization
 
@@ -60,8 +59,11 @@ farman.1 = {
 			}
 			add_radicals = {
 				value = 0.01
-				religion = rel:shiiteremade
+				religion = rel:shiite
 			}
+		}
+		ai_chance = {
+			base = 100
 		}
 	}
 
@@ -82,8 +84,11 @@ farman.1 = {
 			}
 			add_loyalists = {
 				value = 0.2
-				religion = rel:shiiteremade
+				religion = rel:shiite
 			}
+		}
+		ai_chance = {
+			base = 1
 		}
 	}
 }

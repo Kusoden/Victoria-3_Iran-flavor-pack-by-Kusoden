@@ -1,0 +1,83 @@
+﻿l_english:
+#JE Wuzurgan
+je_ir_wuzurgan:0 "Ērānization of the Noblity system"
+je_ir_wuzurgan_reason:0 "The tribal armies, loyal exclusively to their chieftains, often ignored the commands of the Šāh and his generals, hampering efforts to centralize power and implement reforms. #B This autonomous tribal loyalty#! restricted the Šāh’s authority,#R preventing crucial military and civil advancements#!.Furthermore, the nomads’ resistance to state-imposed taxation deprived the treasury of funds vital for rebuilding and stabilizing Ērān. Mohammad Šāh’s reign faced additional challenges in integrating these tribes into a cohesive state, as many remained resistant to centralized governance and modern economic structures.#gold Would Mohammad Šāh be able to reconcile these longstanding divisions and overcome the complex tensions between nomadic independence and the need for national unity?#!
+
+By reforming the Local Khans, we will ensure that they will praise Ērānian culture and Identity as their priority, and put the Ērānian Nobilities in charge whom value the Ethics and Morals of our society."
+
+#JE Shattered Borders, Broken Sovereignty
+
+je_ir_shattered_borders_broken_sovereignty:0 "Shattered Borders, Broken Sovereignty"
+je_ir_shattered_borders_broken_sovereignty_reason:0 "Though Ērān emerged victorious against the Ottomans in the 1820s, the sovereignty of the Ērānšahr remains fractured. The earlier Afghan rebellion led to the separation of eastern Ērānšahr, leaving the eastern borders vulnerable to attacks from the #italic Jahansuzan#! in Turan. Coupled with the loss of the Caucasus to Russia, these challenges underscore the fragility of Ērān borders. #gold Can Ērān restore its rightful control and secure its ancient lands, or will foreign forces continue to erode its sovereignty?#!"
+
+# JE Nomads
+je_ir_nomads:0 "Nomadic Issues"
+je_ir_nomads_reason:0 "During the reign of #B Mohammad Šāh Qajar#!, the presence and power of nomadic tribes created persistent obstacles for Ērān’s central authority. While his father,#B Abbas Mirza#!, had taken steps to modernize the state, Mohammad Šāh inherited a complex struggle."
+
+ #NOMADs events are in JE V1 localization
+
+#JE Unifying the Divided
+
+je_ir_unifying_the_divided:0 "Unifying the Divided"
+je_ir_unifying_the_divided_reason:0 "In an era marked by fragmented identity of Ērān, Ērānšahr faces the call to revive the unity of Ērānzamin not only through reclaiming lands but by restoring a shared cultural heritage. By reconnecting with the values and language that defined the nation and ethnicity before foreign invasions, the goal is to transform scattered tribal and provincial loyalties into a unified Ērānian identity."
+
+
+  #Event The Last Reckoning of Tribes
+  iran.3.t:0 "The Last Reckoning of Tribes"
+  iran.3.d:0 "The tribalists have risen in defiance, resisting the unification of the ancient Ērānian identity"
+  iran.3.f:0 "Since the Arab/Mohammadan invasion, the unity of Ērānšahr was shattered, dividing the once great empire into fragments. Though many Ērānians across the land sought to rebuild the strength of Ērānšahr, the absence of a centralized government allowed tribalists and local landowners to seize power. They spun false identities, each claiming a piece of our heritage, sowing division where unity once thrived. Now, the time has come for the final reckoning—no longer shall these tribal factions break apart our sacred lands. The heart of Ērānšahr will be whole once more!"
+  iran.3.a:0 "Whosoever resists our unification stands as a foe"
+  iran.3.b:0 "The tribal identities of Ērān hold the right to evolve into distinct cultures of their own"
+
+#je_ir_unifying_the_divided_language aka. Tribalization or Civilization
+je_ir_unifying_the_divided_language:0 "Tribalization or Civilization?"
+je_ir_unifying_the_divided_language_reason:0 "The tribals/Provinces of Ērānšahr must be fully annexed, to continue the Unfication of Identity process"
+
+ #event iran.4 
+  iran.4.t:0 "Reforming the language"
+  iran.4.d:0 "Since the modern Ērānian language originated in Khorasan and spread to the heart of Ērānzamin, it has been recorded using scripts like Sogdian and Hebrew. Later, as Ērānians adapted the Arabic script, this alphabet—designed by Ērānians of that time, for Arabic language not only damaged our literacy but also encouraged the imposition of Arabized terms and pronunciations into the Ērānian tongue. Now, with sovereignty regained and our unity restored, it is time to reclaim our language by replacing the current script with one true to our heritage, free of foreign influence. Avestan has emerged as a promising candidate, praised for its precision and suitability to be readapted for our modern language. Let us reclaim our linguistic integrity and restore a script befitting Ērān. " # should explain why need to reform and
+  iran.4.f:0 "When the Arabs invaded Ērānšahr, they sought to block Ērānians from using Pahlavi (Middle Ērānian), replacing it with Arabic as they did in every region they conquered. Their aim was to erase Ērānian identity and ideology, supplanting it with Arabic and Islamic ideas, isolating Ērānians from their heritage. Over time, as libraries were burned and the language was forcibly changed, a new Ērānian language gradually emerged from Khorasan! But it has ceased to be the most useful language, struggling to keep pace with the demands of the new era." #historical content and problems with current
+  iran.4.a:0 "Revival of the Pure Airyān Avestan Script and Purify the Language from Foreign Influence" # back to Avestan
+  iran.4.b:0 "Return to the Pahlavi Script and Purify the Language from Foreign Influence" # back to Pahlavi
+  iran.4.c:0 "Adopt Latin Script" # adopt Latin 
+
+  iranians_convert_twentyfive_react_tt:0 "25% of Ērānšahris will convert to Mazda Yasna"
+
+#je_ir_unifying_the_divided_language_progress aka. Embracing the Rebirth: A New Dawn for Language and Script
+je_ir_unifying_the_divided_language_progress:0 "Embracing the Rebirth: A New Dawn for Language and Script" # adopting people to the new reformed language
+je_ir_unifying_the_divided_language_progress_reason:0 "The Persian/Modern Ērānian language faces significant challenges. We do not write as we speak, some words are shortened, others are altered, such as ending with an "a" but pronounced as "n." These inconsistencies make life difficult for those who are literate, and they present a major obstacle to improving our literacy rate. Since this alphabet was not designed for the Ērānian language, it is fundamentally inadequate. It is imperative that we adapt the population to a new, reformed script and purify the Ērānian language as soon as possible." #historical content and problems with the modern iranian langauge
+
+
+
+#JE Liberation of Khorasan ud Turan
+je_ir_repulsion_of_eastern_invaders:0 "Liberation of Khorasan ud Turan"
+je_ir_repulsion_of_eastern_invaders_reason:0 "For centuries, the lands of Khorasan and Turan, once thriving heartlands of Ērānian culture and power, have been ravaged by foreign invaders from the steppes. The once proud expanse, stretching from the Euro-Asian steppes to the heart of Ērānšahr, has been defiled by East Asian invaders, who not only murdered countless Ērānians but have also sought to erase our heritage. Though these invaders have been Ērānized through culture, their violent nature and warmongering ways have remained unchanged. They continue to encroach upon our sacred land, destroying all that is ours. Now, the time has come for us to take back what is rightfully ours. We shall rid our land of these barbaric forces, deporting them to the other side of the border, and leaving them to the dominion of Russia, who now occupies the vast stretches of north-east Asia. This is the dawn of our liberation—a restoration of Ērānšahr’s glory and heritage, undisturbed by those who seek to erase it"
+ 
+
+#JE Turning the Tide of Influence
+je_ir_expelled_rus:0 "Turning the Tide of Influence"
+je_ir_expelled_rus_reason:0 "Since gaining control over India, Britain has sought to protect its holdings there from any potential threats from the north, making stability in Ērān a matter of priority. The route through Kabul, once traversed by great leaders like Nāder Šāh, who threatened the Indian government, now stands as a critical passage that Britain aims to secure from any foreign influence. However, after Ērān’s defeat in the Kafkās and forced to the Treaty of Turkmenchay, Russia was granted the unrestricted right to station consular envoys anywhere within our borders, posing a direct threat to British India and undermining the security of the region. On several occasions, Britain has urged us to expel the Russian envoys from our lands."
+
+  #variable
+  ir_rus_expelled:0 "Great Britain will act Positive against our re-claiming of Khorasan and eastern Ērānzamin"
+
+turan_deportation_text:0 "All of the turkic population of Turan will be deported over to Russian border"
+
+
+revival_of_eranian_language:0 "Revival of the Ērānian Language"
+scriptural_disunity:0 "Scriptural Disunity"
+researching_avestan:0 "Researching and reconstruction of the Avestan Script"
+avestan_script:0 "Adopting Avestan"
+pahlavi_script:0 "Pahlavi Script Adoption"
+latin_script:0 "Latin Script Adoption"
+linguistic_purification:0 "Linguistic Purification"
+iranization_of_the_langauge:0 "Ērānization of the language"
+adopting_pahlavi:0 "Adopting Pahlavi"
+adopting_latin:0 "Adopting Latin"
+brilliance_of_ancestral_legacy:0 "Brilliance of Ancestral Legacy"
+foundation_of_sacred_thoughts:0 "Foundation of Sacred Thoughts"
+childbrith_grant:0 "Childbirth Grant"
+childbrith_grant_expenses:0 "Childbirth Grant Expenses"
+repulsion_of_jahansuzan:0 "Repulsion of Jahansuzan"
+promoting_sufism:0 "Mohammad Šāh Qajar's interest in Sufism"
+linguistic_purification:0 "Linguistic Purification"

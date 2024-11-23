@@ -4,8 +4,6 @@
 	modifier = {
 		state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
-		building_group_bg_plantations_throughput_add = 0.2
-		building_group_bg_logging_throughput_add = 0.2
 	}
 }
 
@@ -126,6 +124,14 @@ state_trait_caspian_sea = { #added
 		building_group_bg_fishing_throughput_mult = 0.1
 		building_group_bg_plantations_throughput_add = 0.1
 	}	
+}
+
+state_trait_karun_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+	}
 }
 
 #state_trait_Hyrcanian_forests = { #added not used anymore since they added it with 1.5.3

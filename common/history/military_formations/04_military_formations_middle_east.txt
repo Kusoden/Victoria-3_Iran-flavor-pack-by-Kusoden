@@ -400,6 +400,19 @@
 		}
 	}
 
+	c:KAF = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_persia
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_KABUL
+				count = 3
+			}
+		}
+	}
+
 	c:HER = {
 		create_military_formation = {
 			type = army
@@ -492,7 +505,7 @@
 	c:KAL = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_india
+			hq_region = sr:region_persia
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -510,7 +523,7 @@
 	c:MAK = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_india
+			hq_region = sr:region_persia
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry

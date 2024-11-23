@@ -1,0 +1,28 @@
+GLOBAL = {
+	c:PER ?= {
+        ig:ig_armed_forces = {
+            set_ig_trait = ig_trait:ig_trait_iranian_artesh_3
+            set_ig_trait = ig_trait:ig_trait_iranian_artesh_2
+            set_ig_trait = ig_trait:ig_trait_iranian_artesh_1
+        }
+        ig:ig_industrialists = {
+            set_ig_trait = ig_trait:ig_trait_iranian_bazaari_3
+            set_ig_trait = ig_trait:ig_trait_iranian_bazaari_2
+            set_ig_trait = ig_trait:ig_trait_iranian_bazaari_1
+        }
+        ig:ig_intelligentsia = {
+            set_ig_trait = ig_trait:ig_trait_iranian_roshan_3
+            set_ig_trait = ig_trait:ig_trait_iranian_roshan_2
+            set_ig_trait = ig_trait:ig_trait_iranian_roshan_1
+            
+            remove_ideology = ideology_republican
+            add_ideology = ideology_constitutionalist
+        }
+        ig:ig_petty_bourgeoisie = {
+            set_ig_trait = ig_trait:ig_trait_iranian_dehgan_3
+            set_ig_trait = ig_trait:ig_trait_iranian_dehgan_2
+            set_ig_trait = ig_trait:ig_trait_iranian_dehgan_1
+        }
+
+	}
+}

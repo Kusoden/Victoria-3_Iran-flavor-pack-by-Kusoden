@@ -1,0 +1,397 @@
+﻿
+je_ir_shattered_borders_broken_sovereignty= {
+	should_be_pinned_by_default = yes
+	icon = "gfx/interface/icons/objectives/great_game.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		c:PER = {
+			owns_entire_state_region = STATE_HERAT
+			owns_entire_state_region = STATE_KANDAHAR
+		}
+
+		c:TUR = {
+			relations:root <= relations_threshold:poor
+		}
+		
+		any_scope_state = {
+			is_incorporated = yes
+			has_building = building_urban_center
+			percent >= 0.40
+		}
+	}
+
+
+	fail = {
+		year = 1852
+		c:PER ?= {
+			NAND = {
+				owns_entire_state_region = STATE_HERAT
+				owns_entire_state_region = STATE_KANDAHAR
+			}
+		}
+	}
+
+
+	on_complete = {
+		set_variable = je_ir_shattered_borders_broken_sovereignty_var
+		add_journal_entry  = { type = je_ir_repulsion_of_eastern_invaders }
+		trigger_event = { id = iran.2 }
+		custom_tooltip = iran_get_name_iran
+	}
+
+	weight = 2000
+}
+
+je_ir_unifying_the_divided = {
+	should_be_pinned_by_default = yes
+	icon = "gfx/interface/icons/objectives/great_game.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		c:PER = {
+			owns_entire_state_region = STATE_KHUZESTAN
+			owns_entire_state_region = STATE_LARISTAN
+			owns_entire_state_region = STATE_BALUCHISTAN
+			owns_entire_state_region = STATE_TAJIKISTAN
+			owns_entire_state_region = STATE_AZERBAIJAN
+			owns_entire_state_region = STATE_ARMENIA
+			owns_entire_state_region = STATE_ERZURUM
+			owns_entire_state_region = STATE_DIYARBAKIR
+			owns_entire_state_region = STATE_MOSUL
+			country_has_state_religion = rel:mazdayasna
+		}
+
+		has_law = law_type:law_dedicated_police
+		institution_investment_level = {
+			institution = institution_police
+			value = 3
+		}
+
+		custom_tooltip = {
+			text = has_wuzurgan_var
+			has_variable = wuzurgan_var
+		}
+	}
+
+
+	fail = {
+		year = 1890
+		c:PER ?= {
+			NAND = {
+				owns_entire_state_region = STATE_KHUZESTAN
+				owns_entire_state_region = STATE_LARISTAN
+				owns_entire_state_region = STATE_BALUCHISTAN
+				owns_entire_state_region = STATE_TAJIKISTAN
+				owns_entire_state_region = STATE_AZERBAIJAN
+				owns_entire_state_region = STATE_DIYARBAKIR
+				owns_entire_state_region = STATE_MOSUL
+			}
+		}
+	}
+	
+
+	on_complete = {
+		set_variable = seperators_var
+		trigger_event = { id = iran.3 }
+		remove_modifier = seperator_delusion
+	}
+
+	weight = 2000
+}
+
+je_ir_unifying_the_divided_language = { #Tribalization or Civilization
+	should_be_pinned_by_default = yes
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		c:PER = { # Iran annexes all rebelions fight against centralization of Er
+			owns_entire_state_region = STATE_ERZURUM
+			owns_entire_state_region = STATE_DIYARBAKIR
+			owns_entire_state_region = STATE_MOSUL
+			owns_entire_state_region = STATE_URMIA
+			owns_entire_state_region = STATE_AZERBAIJAN
+			owns_entire_state_region = STATE_TABRIZ
+			owns_entire_state_region = STATE_KHUZESTAN
+			owns_entire_state_region = STATE_SISTAN
+			owns_entire_state_region = STATE_BALUCHISTAN
+		}
+	}
+
+	on_complete = {
+		add_journal_entry  = { type = je_ir_unifying_the_divided_language_progress }
+		trigger_event = { id = iran.4 }
+	}
+
+	weight = 2000
+}
+
+je_ir_unifying_the_divided_language_progress = { # Embracing the Rebirth: A New Dawn for Language and Script
+	should_be_pinned_by_default = yes
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_university
+			occupancy > 0.9
+			level >= 15
+		}
+		literacy_rate >= 0.5
+
+		OR = {
+			has_law = law_type:law_public_schools
+			has_law = law_type:law_religious_schools
+		}
+
+		institution_investment_level = {
+			institution = institution_schools
+			value = 4
+		}
+	}
+	
+
+	on_complete = {
+		set_variable =language_var
+		add_modifier = {
+			name = brilliance_of_ancestral_legacy
+			months = long_modifier_time
+		}
+		remove_modifier = scriptural_disunity
+	}
+
+	weight = 2000
+}
+
+je_ir_repulsion_of_eastern_invaders = { # Liberation of Khorasan ud Turan
+	should_be_pinned_by_default = yes
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		c:PER = {
+			AND = {
+				owns_entire_state_region = STATE_BALKH
+				owns_entire_state_region = STATE_TURKMENIA
+				owns_entire_state_region = STATE_MERZ
+				owns_entire_state_region = STATE_KHIVA
+				owns_entire_state_region = STATE_UZBEKIA
+				owns_entire_state_region = STATE_TAJIKISTAN
+				owns_entire_state_region = STATE_KIRGHIZIA
+				owns_entire_state_region = STATE_FERGANA
+			}
+		}
+	}
+	
+
+	on_complete = {
+		custom_tooltip = {
+			text = turan_deportation_text
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_central_asia
+				any_scope_pop = {
+					culture = cu:turkmen
+				}
+			}
+			hidden_effect = {
+				every_scope_pop = {
+					limit = {
+						culture = cu:turkmen
+					}
+					move_pop = 	s:STATE_KRASNOYARSK.region_state:RUS
+				}
+			}
+
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_central_asia
+				any_scope_pop = {
+					culture = cu:uzbek
+				}
+			}
+			hidden_effect = {
+				every_scope_pop = {
+					limit = {
+						culture = cu:uzbek
+					}
+					move_pop = 	s:STATE_TOMSK.region_state:RUS
+				}
+			}
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_central_asia
+				any_scope_pop = {
+					culture = cu:kirgiz
+				}
+			}
+			hidden_effect = {
+				every_scope_pop = {
+					limit = {
+						culture = cu:kirgiz
+					}
+					move_pop = 	s:STATE_TOBOLSK.region_state:RUS
+				}
+			}
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_central_asia
+				any_scope_pop = {
+					culture = cu:kazak
+				}
+			}
+			hidden_effect = {
+				every_scope_pop = {
+					limit = {
+						culture = cu:kazak
+					}
+					move_pop = 	s:STATE_TRANS_BAIKAL.region_state:RUS
+				}
+			}
+		}
+		add_modifier = {
+			name = repulsion_of_jahansuzan
+			multiplier = money_amount_multiplier_medium
+			months = normal_modifier_time
+		}
+		add_modifier = {
+			name = childbrith_grant
+			months = long_modifier_time
+		}
+		add_modifier = {
+			name = childbrith_grant_expenses
+			multiplier = money_amount_multiplier_medium
+			months = long_modifier_time
+		}
+	}
+
+	weight = 2000
+}
+
+je_ir_wuzurgan = {
+	should_be_pinned_by_default = yes
+	icon = "gfx/interface/icons/event_portrait.dds"
+
+	group = je_group_internal_affairs
+
+	complete = {
+		ig:ig_landowners = {
+			ig_clout <= 0.3
+		}
+		literacy_rate >= 0.3
+
+		has_law = law_type:law_slavery_banned
+		has_law = law_type:law_homesteading
+
+		institution_investment_level = {
+			institution = institution_police
+			value = 3
+		}
+		
+		country_has_state_religion = rel:mazdayasna
+	}
+
+	on_complete = {
+		set_variable = wuzurgan_var
+		
+		remove_modifier = local_khans_modifier
+		add_modifier = {
+			name = wuzurgan_modifier
+			months = 84
+		}
+
+		ig:ig_landowners = {
+			hidden_effect = {
+				set_interest_group_name = "Wuzur­gān"
+				set_ig_trait = ig_trait:ig_trait_iranian_wuzurgan_3
+				set_ig_trait = ig_trait:ig_trait_iranian_wuzurgan_2
+				set_ig_trait = ig_trait:ig_trait_iranian_wuzurgan_1
+			}
+			remove_ideology = ideology_paternalistic
+			add_ideology = ideology_er
+
+			remove_ideology = ideology_stratocratic
+			add_ideology = ideology_dehgan
+
+			remove_ideology = ideology_patriarchal
+			add_ideology = ideology_wehdin
+
+			if = {
+				limit = { has_ideology = ideology:ideology_pro_slavery }
+				remove_ideology = ideology_pro_slavery
+			}
+			#changed from Deh-sālār, Āzādān might be viable aswell. but because of the power of Wuzurgan during Sasanians i chose Wuzurgan. source: https://www.iranicaonline.org/articles/bozorgan-mpers
+		}
+	}
+
+	weight =  50
+}
+
+je_ir_nomads = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_internal_affairs
+
+	complete = {
+		NOT = {
+			OR = {
+				has_law = law_type:law_traditionalism
+				has_law = law_type:law_agrarianism 
+			} 
+		}
+		pop_type_percent_country = {
+			pop_type = peasants
+			percent < 0.50
+		}
+		ig:ig_industrialists = {
+			is_marginal = no
+		}
+		every_scope_state = {
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 2
+			}
+		}	
+	}
+	on_complete = {
+		remove_modifier = high_number_nomads
+		trigger_event = { id = nomads.1 }
+	}
+
+	weight = 100
+}
+
+je_ir_expelled_rus = {
+	should_be_pinned_by_default = yes
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	group = je_group_foreign_affairs
+
+	complete = {
+		c:PER ={ has_diplomats_expelled = c:RUS }
+	}
+
+	on_complete = {
+		custom_tooltip = ir_rus_expelled
+		c:PER = { set_variable = ir_rus_expelled_var }
+		change_relations = {
+			country = c:GBR
+			value = 20
+		}
+	}
+
+	fail = {
+		year = 1844
+		NOT = { c:PER ={ has_diplomats_expelled = c:RUS } }
+	}
+}

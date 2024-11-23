@@ -550,7 +550,7 @@
 		region_state:BUK = {
 			create_pop = {
 				culture = uzbek
-				size = 592396
+				size = 492396
 			}
 			create_pop = {
 				culture = turkmen
@@ -567,7 +567,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = iranian
-				size = 15000
+				size = 115000
 			}
 			create_pop = {
 				pop_type = slaves
@@ -756,7 +756,7 @@
 				size = 125000
 			}
 			create_pop = {
-				culture = uzbek
+				culture = iranian
 				size = 31005
 			}
 		}
@@ -808,15 +808,15 @@
 		region_state:KOK = {
 			create_pop = {
 				culture = uzbek
-				size = 470592
+				size = 270592
 			}
 			create_pop = {
 				culture = kirgiz
-				size = 201520
+				size = 101520
 			}
 			create_pop = {
 				culture = iranian
-				size = 71600
+				size = 371600
 			}
 			create_pop = {
 				culture = sephardic
@@ -1492,6 +1492,41 @@
 		}
 	}
 	s:STATE_HIMALAYAS = {
+		region_state:NEP = {
+			create_pop = {
+				culture = nepali
+				size = 619204
+			}
+			create_pop = {
+				culture = bihari
+				religion = animist
+				size = 172000
+			}
+			create_pop = {
+				culture = tibetan
+				size = 192008
+			}
+		}
+	}
+	s:STATE_EASTERN_HIMALAYAS = {
+		region_state:TIB = {
+			create_pop = {
+				culture = naga
+				size = 20102
+			}
+			create_pop = {
+				culture = kachin
+				size = 21022
+			}
+			create_pop = {
+				culture = assamese
+				size = 7012
+			}
+			create_pop = {
+				culture = tibetan
+				size = 102010
+			}
+		}
 		region_state:SIK = {
 			create_pop = {
 				culture = tibetan
@@ -1510,21 +1545,6 @@
 			create_pop = {
 				culture = nepali
 				size = 16004
-			}
-		}
-		region_state:NEP = {
-			create_pop = {
-				culture = nepali
-				size = 619204
-			}
-			create_pop = {
-				culture = bihari
-				religion = animist
-				size = 172000
-			}
-			create_pop = {
-				culture = tibetan
-				size = 192008
 			}
 		}
 	}

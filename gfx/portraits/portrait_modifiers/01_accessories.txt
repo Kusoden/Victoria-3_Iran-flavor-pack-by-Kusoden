@@ -1544,6 +1544,7 @@
                     }
                 }
                 OR = {
+                    iranic_clothes_pop_trigger = yes
                     arabic_clothes_trigger = yes
                     chinese_imperial_clothes_trigger = yes
                     indian_clothes_trigger = yes
@@ -1562,7 +1563,6 @@
                             NOT = { has_law = law_type:law_monarchy }
                         }
                         culture = {
-                            has_discrimination_trait = iranian_turanian_culture_group
                             has_discrimination_trait = aryan_heritage
                         }
                     }
@@ -1607,6 +1607,7 @@
                     }
                 }
                 OR = {
+                    iranic_clothes_pop_trigger = yes
                     arabic_clothes_trigger = yes
                     chinese_imperial_clothes_trigger = yes
                     indian_clothes_trigger = yes
@@ -1625,7 +1626,6 @@
                             NOT = { has_law = law_type:law_monarchy }
                         }
                         culture = {
-                            has_discrimination_trait = iranian_turanian_culture_group
                             has_discrimination_trait = aryan_heritage
                         }
                     }
@@ -1670,6 +1670,7 @@
                     }
                 }
                 OR = {
+                    iranic_clothes_pop_trigger = yes
                     arabic_clothes_trigger = yes
                     chinese_imperial_clothes_trigger = yes
                     indian_clothes_trigger = yes
@@ -1688,7 +1689,6 @@
                             NOT = { has_law = law_type:law_monarchy }
                         }
                         culture = {
-                            has_discrimination_trait = iranian_turanian_culture_group
                             has_discrimination_trait = aryan_heritage
                         }
                     }
@@ -1733,6 +1733,7 @@
                     }
                 }
                 OR = {
+                    iranic_clothes_pop_trigger = yes
                     arabic_clothes_trigger = yes
                     chinese_imperial_clothes_trigger = yes
                     indian_clothes_trigger = yes
@@ -1751,7 +1752,6 @@
                             NOT = { has_law = law_type:law_monarchy }
                         }
                         culture = {
-                            has_discrimination_trait = iranian_turanian_culture_group
                             has_discrimination_trait = aryan_heritage
                         }
                     }
@@ -1796,6 +1796,7 @@
                     }
                 }
                 OR = {
+                    iranic_clothes_pop_trigger = yes
                     arabic_clothes_trigger = yes
                     chinese_imperial_clothes_trigger = yes
                     indian_clothes_trigger = yes
@@ -1814,7 +1815,6 @@
                             NOT = { has_law = law_type:law_monarchy }
                         }
                         culture = {
-                            has_discrimination_trait = iranian_turanian_culture_group
                             has_discrimination_trait = aryan_heritage
                         }
                     }
