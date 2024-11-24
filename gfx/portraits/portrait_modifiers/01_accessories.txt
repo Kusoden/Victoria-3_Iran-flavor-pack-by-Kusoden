@@ -252,6 +252,8 @@
                         has_template = agitator_louise_michel
                         has_template = agitator_susan_b_anthony
                         has_template = agitator_emiliano_zapata
+                        has_template = canonic_count_dracula
+                        has_template = exile_count_dracula
                     }
                 }
                 OR = {
@@ -322,6 +324,8 @@
                         has_template = agitator_louise_michel
                         has_template = agitator_susan_b_anthony
                         has_template = agitator_emiliano_zapata
+                        has_template = canonic_count_dracula
+                        has_template = exile_count_dracula
                     }
                 }
             }
@@ -479,6 +483,8 @@
                         has_template = agitator_louise_michel
                         has_template = agitator_susan_b_anthony
                         has_template = agitator_emiliano_zapata
+                        has_template = canonic_count_dracula
+                        has_template = exile_count_dracula
                     }
                 }
                 OR = {
@@ -1572,6 +1578,33 @@
                         }
                     }
                 }
+                NOR = {
+                    scope:character ?= {
+                        is_ruler = yes
+                        is_female = no
+                        owner ?= {
+                            c:MUG ?= this
+                            has_law = law_type:law_monarchy
+                        }
+                    }
+                    scope:character ?= {
+                        is_ruler = yes
+                        is_female = no
+                        OR = {
+                            owner ?= {
+                                c:PER ?= this
+                                has_law = law_type:law_monarchy
+                            }
+                            owner ?= {
+                                c:ARY ?= this
+                                has_law = law_type:law_monarchy
+                            }
+                        }
+                        culture = {
+                            has_discrimination_trait = aryan_heritage
+                        }
+                    }
+                }
             }
         }
     }
@@ -1632,6 +1665,33 @@
                     scope:character ?= {
                         culture = {
                             has_discrimination_trait = central_asian_heritage
+                        }
+                    }
+                }
+                NOR = {
+                    scope:character ?= {
+                        is_ruler = yes
+                        is_female = no
+                        owner ?= {
+                            c:MUG ?= this
+                            has_law = law_type:law_monarchy
+                        }
+                    }
+                    scope:character ?= {
+                        is_ruler = yes
+                        is_female = no
+                        OR = {
+                            owner ?= {
+                                c:PER ?= this
+                                has_law = law_type:law_monarchy
+                            }
+                            owner ?= {
+                                c:ARY ?= this
+                                has_law = law_type:law_monarchy
+                            }
+                        }
+                        culture = {
+                            has_discrimination_trait = aryan_heritage
                         }
                     }
                 }
@@ -1698,6 +1758,33 @@
                         }
                     }
                 }
+                NOR = {
+                    scope:character ?= {
+                        is_ruler = yes
+                        is_female = no
+                        owner ?= {
+                            c:MUG ?= this
+                            has_law = law_type:law_monarchy
+                        }
+                    }
+                    scope:character ?= {
+                        is_ruler = yes
+                        is_female = no
+                        OR = {
+                            owner ?= {
+                                c:PER ?= this
+                                has_law = law_type:law_monarchy
+                            }
+                            owner ?= {
+                                c:ARY ?= this
+                                has_law = law_type:law_monarchy
+                            }
+                        }
+                        culture = {
+                            has_discrimination_trait = aryan_heritage
+                        }
+                    }
+                }
             }
         }
     }
@@ -1758,6 +1845,33 @@
                     scope:character ?= {
                         culture = {
                             has_discrimination_trait = central_asian_heritage
+                        }
+                    }
+                }
+                NOR = {
+                    scope:character ?= {
+                        is_ruler = yes
+                        is_female = no
+                        owner ?= {
+                            c:MUG ?= this
+                            has_law = law_type:law_monarchy
+                        }
+                    }
+                    scope:character ?= {
+                        is_ruler = yes
+                        is_female = no
+                        OR = {
+                            owner ?= {
+                                c:PER ?= this
+                                has_law = law_type:law_monarchy
+                            }
+                            owner ?= {
+                                c:ARY ?= this
+                                has_law = law_type:law_monarchy
+                            }
+                        }
+                        culture = {
+                            has_discrimination_trait = aryan_heritage
                         }
                     }
                 }
@@ -1824,6 +1938,27 @@
                         }
                     }
                 }
+                NOR = {
+                    scope:character ?= {
+                        is_ruler = yes
+                        is_female = no
+                        owner ?= {
+                            c:MUG ?= this
+                            has_law = law_type:law_monarchy
+                        }
+                    }
+                    scope:character ?= {
+                        is_ruler = yes
+                        is_female = no
+                        owner ?= {
+                            c:PER ?= this
+                            has_law = law_type:law_monarchy
+                        }
+                        culture = {
+                            has_discrimination_trait = aryan_heritage
+                        }
+                    }
+                }
             }
         }
     }
@@ -1862,8 +1997,17 @@
                             has_trait = master_bureaucrat
                         }
                         AND = {
+                            is_historical = no
+                            has_trait = engineer
+                        }
+                        AND = {
                             has_dlc_feature = ep1_cosmetics
-
+                            OR = {
+                                has_trait = erudite
+                                has_trait = literary
+                                has_trait = master_bureaucrat
+                                has_trait = engineer
+                            }
                             is_ruler = yes
                             owner ?= {
                                 is_in_power_bloc = yes
@@ -1930,7 +2074,12 @@
                         }
                         african_diaspora_clothes_trigger = yes
                     }
-
+                    OR = {
+                        armed_forces_clothes_trigger = yes
+                        military_clothes_trigger = yes
+                        monarchy_clothes_trigger = yes
+                        army_traits_trigger = yes
+                    }
                     age >= define:NCharacters|ADULT_AGE
 
                     owner ?= {
@@ -1948,6 +2097,8 @@
                         has_template = agitator_john_stuart_mill
                         has_variable = is_stirner_var
                         has_template = rus_leon_trotsky_character_template
+                        has_template = canonic_count_dracula
+                        has_template = exile_count_dracula
                         AND = {
                             has_template = fra_napoleon_iii_character_template
                             monarchy_clothes_trigger = no
@@ -2246,6 +2397,30 @@
                         power_bloc ?= {
                             has_identity = identity:identity_religious
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    historical_glasses_wearer = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = props
+                template = glasses_02
+                accessory = props_glasses_02
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                has_dlc_feature = ip2_cosmetics
+                scope:character ?= {
+                    OR = {
+                        has_template = BIC_mohandas_karamchand_gandhi
+                        has_template = BIC_gopal_gokhale
                     }
                 }
             }
