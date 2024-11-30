@@ -13,7 +13,7 @@
 		coa_with_overlord_canton = PER_subject
 		priority = 20
 		trigger = {
-			coa_def_absolute_monarchy_flag_trigger = yes
+			year <= 1848
 		}
 	}
 	flag_definition = {

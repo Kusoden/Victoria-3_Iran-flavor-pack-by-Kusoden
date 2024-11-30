@@ -840,7 +840,7 @@
 		region_state:PER = {
 			create_pop = {
 				culture = bedouin
-				size = 5270
+				size = 2270
 			}
 			create_pop = {
 				culture = bedouin
@@ -849,12 +849,12 @@
 			}
 			create_pop = {
 				culture = iranian
-				size = 25050
+				size = 35050
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = lacustrine_bantu
-				size = 3200
+				size = 1200
 			}
 		}
 		region_state:OMA = {
@@ -883,21 +883,6 @@
 				pop_type = slaves
 				culture = lacustrine_bantu
 				size = 8200
-			}
-		}
-		region_state:ABU = {
-			create_pop = {
-				culture = bedouin
-				size = 1002
-			}
-			create_pop = {
-				culture = iranian
-				size = 7006
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = lacustrine_bantu
-				size = 230
 			}
 		}
 	}

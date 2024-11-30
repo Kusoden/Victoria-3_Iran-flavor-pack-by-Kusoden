@@ -6418,7 +6418,7 @@ turkish= {
 azerbaijani= {
 	color= hsv{ 0.67 0.38 0.41 }
 	religion = shiite
-	traits = { caucasus_group turkic middle_eastern_heritage }
+	traits = { caucasus_group iranian_turanian_culture_group aryan_heritage }
 	male_common_first_names = {
 		Ahmad
 		Ali
@@ -6501,7 +6501,7 @@ azerbaijani= {
 north_caucasian= {
 	color= hsv{ 0.17 0.26 0.99 }
 	religion = sunni
-	traits = { caucasus_group middle_eastern_heritage }
+	traits = { caucasus_group aryan_heritage }
 	male_common_first_names = {
 		Aslan
 		Hamza
@@ -7065,7 +7065,7 @@ persian= {
 uzbek= {
 	color= hsv{ 0.01 0.46 0.59 }
 	religion = sunni
-	traits = { turkic iranian_turanian_culture_group central_asian_heritage }
+	traits = { turkic central_asian_heritage }
 	male_common_first_names = {
 		Abd_al-Ahad
 		Abd_al-Karim
@@ -7126,7 +7126,7 @@ uzbek= {
 kazak= {
 	color= { 83 102 46 }
 	religion = sunni
-	traits = { turkic iranian_turanian_culture_group central_asian_heritage }
+	traits = { turkic central_asian_heritage }
 	male_common_first_names = {
 		Ablai
 		Abu_al-Khayr
@@ -7182,7 +7182,7 @@ kazak= {
 kirgiz= {
 	color= { 62 73 41 }
 	religion = sunni
-	traits = { turkic iranian_turanian_culture_group central_asian_heritage }
+	traits = { turkic central_asian_heritage }
 	male_common_first_names = {
 		Askar
 		Bayymbet
@@ -7288,7 +7288,7 @@ tajik= {
 uighur= {
 	color=rgb{ 84 92 109 }
 	religion = sunni
-	traits = { turkic iranian_turanian_culture_group central_asian_heritage }
+	traits = { turkic central_asian_heritage }
 	male_common_first_names = {
 		Afaq
 		Ahmed
@@ -7339,7 +7339,7 @@ uighur= {
 pashtun= {
 	color= hsv{ 0.76 0.34 0.60 }
 	religion = sunni
-	traits = { iranian_turanian_culture_group central_asian_heritage }
+	traits = { iranian_turanian_culture_group aryan_heritage }
 	male_common_first_names = {
 		Abd_al-Quddus
 		Abd_al-Rahman
@@ -7492,7 +7492,7 @@ hazara= {
 turkmen= {
 	color= hsv{ 0.84 0.21 0.75 }
 	religion = sunni
-	traits = { turkic iranian_turanian_culture_group central_asian_heritage }
+	traits = { turkic central_asian_heritage }
 	male_common_first_names = {
 		Ahmed
 		Borkluce

@@ -3655,7 +3655,7 @@ STATES = {
 			country = c:SIN
 			owned_provinces = { x56F6E9 x105356 x6E9D54 x5AF594 x1A04E6 x705060 x8C4F5A x11152D x16F3F6 x3FFB31 xF90BDE x23DFA9 x02BBA0 x268E58 x808515 xDD447A x1507B8 xD7517F x8FC69D x60B021 x73A9E3 xDB079F xF5592F xB2850D x315160 xAE1ED1 xFBDCF5 xE4B4A2 x59EE31 xCC14D7 x882A58 xC7D26A }
 		}
-		
+		add_claim = c:BIC
 		add_homeland = cu:sindi
 	}
 	s:STATE_RAJPUTANA = {
@@ -3724,7 +3724,7 @@ STATES = {
 			country = c:BHW
 			owned_provinces = { x022D2B xD597DC x30122F xCF602F x706940 x2DBD82 x19E5C0 xEFC3B4 xCA516D xB4E322 }
 		}
-		
+		add_claim = c:BIC
 		add_homeland = cu:panjabi
 	}
 	s:STATE_CENTRAL_PROVINCES = {
@@ -3818,7 +3818,7 @@ STATES = {
 			country = c:LAD
 			owned_provinces = { xD71AAB x6326A6 xCDB7DB xB0FE2D x07D342 xF28F90 x15F552 x2969A3 xB4AA65 xD25436 x43B99F x9666D9 xAA60FC x72F7C2 xB637A4 x56684E xCCD333 xC49B8C x2B6E7C x2D5D46 x5990A7 xEDCC3E x21F020 xA09736 x6AA44A x2DDFDB x18CED8  }
 		}
-		
+		add_claim = c:BIC
 		add_claim = c:KAS
 		add_homeland = cu:kashmiri
 		add_homeland = cu:tibetan
@@ -3969,6 +3969,7 @@ STATES = {
 			country = c:MGH
 			owned_provinces = { xA030E0 x9A1864 xA77996 x0BB5E2 x1D0302 }
 		}	
+		add_claim = c:BIC
 		add_homeland = cu:assamese
 		add_homeland = cu:bengali
 		add_homeland = cu:manipuri
@@ -5584,18 +5585,14 @@ STATES = {
 	s:STATE_LARISTAN = {
 		create_state = {
 			country = c:PER
-			owned_provinces = { x1BC9CB x3FA81D x407020 x517637 x922EDA x9DF415 xA54E11 xB67223  xF14D58 }
+			owned_provinces = { x1BC9CB x3FA81D x407020 x517637 x922EDA x9DF415 xA54E11 xB67223 xF14D58 x8070A0 xB80596}
 		}
 		create_state = {
 			country = c:OMA
 			owned_provinces = { xAAA21C x876E91 x0170A0 x350DED x75B0BE x36F270 x42FC41 x2F832B }
-		}
-
-		create_state = {
-			country = c:ABU
-			owned_provinces = { x8070A0 xB80596 }
 			state_type = unincorporated
 		}
+		
 		add_claim = c:PER
 		add_homeland = cu:iranian
 	}
@@ -8197,7 +8194,7 @@ STATES = {
 	    	country = c:KKI
 	    	owned_provinces = { x6305C9 xB316F6 }
 		}
-		
+		add_claim = c:BIC
 	    add_homeland = cu:burmese
 	    add_homeland = cu:lushai
 	}
@@ -8220,7 +8217,7 @@ STATES = {
 	    	country = c:PTA
 	    	owned_provinces = { xA0F0A0 x66C9D9 x0C25D9 x394B7F }
 		}
-
+		add_claim = c:BIC
 	    add_homeland = cu:pahari
 	    add_homeland = cu:panjabi
 	}

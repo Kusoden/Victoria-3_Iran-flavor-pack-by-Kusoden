@@ -6,6 +6,7 @@
 		}
 		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes
+			set_interest_group_name = Qoshun_e_Iran
 		}
 		ig:ig_devout = {
 			set_interest_group_name = ig_shia_madrasahs
@@ -27,18 +28,19 @@
 		add_technology_researched = general_staff
 
 		activate_law = law_type:law_monarchy
-		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_council_shah
 		activate_law = law_type:law_state_religion  #by june1839 freedom of conscience https://www.iranicaonline.org/articles/france-xv#prettyPhoto
 		activate_law = law_type:law_ethnostate
 		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_local_police # there were some minor Police forces (including shabgards, baazaar watchmen etc.) but not a big Police force all over the country.
 		activate_law = law_type:law_private_schools #https://www.iranicaonline.org/articles/france-xv#prettyPhoto
-		activate_law = law_type:law_professional_army # Under Mohammad Shah qajar the army were moslty Professional and especially around 1836 because he wanted to invade Herat and extend Iran's influence up to Amu Darya.
-		activate_law = law_type:law_appointed_bureaucrats #The Shah had the authority to appoint officials to various administrative roles within the government, including high-ranking positions such as ministers, governors, and other administrative posts.
+		activate_law = law_type:law_peasant_levies 
+		activate_law = law_type:law_comissioned_bureaucrats #The Shah had the authority to appoint officials to various administrative roles within the government, including high-ranking positions such as ministers, governors, and other administrative posts.
 		activate_law = law_type:law_no_migration_controls
 		
 		set_tax_level = high

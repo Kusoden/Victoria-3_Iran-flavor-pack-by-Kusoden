@@ -1,6 +1,6 @@
 building_argebam = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/argebam.dds"
+	icon = "gfx/interface/icons/building_icons/argebam.dds"
 	expandable = no
 	downsizeable = no
 	buildable = no
@@ -30,7 +30,7 @@ building_argebam = {
 
 building_khaju_bridge = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/khajubridge.dds"
+	icon = "gfx/interface/icons/building_icons/khajubridge.dds"
 	expandable = no
 	downsizeable = no
 	buildable = no

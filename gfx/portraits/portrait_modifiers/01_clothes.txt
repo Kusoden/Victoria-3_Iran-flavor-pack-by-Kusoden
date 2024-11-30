@@ -202,6 +202,7 @@
                 add = 100
                 agitator_character_trigger = yes
                 OR = {
+                    iranic_clothes_trigger = yes
                     arabic_clothes_trigger = yes
                     scope:character ?= {
                         culture = {
@@ -2038,7 +2039,6 @@ naser_qajar_clothes = {
             has_dlc_feature = ep1_cosmetics
             scope:character ?= {
                 has_template = per_nasir_al_din_qajar_template
-                age >= define:NCharacters|ADULT_AGE
             }
         }
     }
@@ -3994,6 +3994,7 @@ historical_bal_gangadhar_tilak_clothes = {
             modifier = {
                 add = 1000
                 american_clothes_trigger = no
+                iranic_clothes_trigger = no
                 arabic_clothes_trigger = no
                 british_empire_clothes_trigger = no
                 french_empire_clothes_trigger = no
@@ -4067,6 +4068,7 @@ historical_bal_gangadhar_tilak_clothes = {
             modifier = {
                 add = 2000
                 american_clothes_trigger = no
+                iranic_clothes_trigger = no
                 arabic_clothes_trigger = no
                 british_empire_clothes_trigger = no
                 french_empire_clothes_trigger = no
@@ -4830,8 +4832,13 @@ historical_bal_gangadhar_tilak_clothes = {
                 add = 10000
 
                 scope:pop ?= {
-                    owner ?= {
-                        c:PER ?= this
+                    OR = {
+                        owner ?= {
+                            c:PER ?= this
+                        }
+                        owner ?= {
+                            c:ARY ?= this
+                        }
                     }
                     OR = {
                         is_pop_type = soldiers
@@ -4842,8 +4849,13 @@ historical_bal_gangadhar_tilak_clothes = {
             modifier = {
                 add = 10000
 
-                c:PER ?= {
-                    NOT = { has_technology_researched = bolt_action_rifles }
+                OR = {
+                    c:PER ?= {
+                        NOT = { has_technology_researched = bolt_action_rifles }
+                    }
+                    c:ARY ?= {
+                        NOT = { has_technology_researched = bolt_action_rifles }
+                    }
                 }
 
                 scope:character ?= {
@@ -4851,6 +4863,10 @@ historical_bal_gangadhar_tilak_clothes = {
                         AND = {
                             exists = c:PER
                             home_country ?= c:PER
+                        } 
+                        AND = {
+                            exists = c:ARY
+                            home_country ?= c:ARY
                         } 
                     }
                     is_ruler = no
@@ -5693,11 +5709,22 @@ historical_bal_gangadhar_tilak_clothes = {
                     scope:pop ?= {
                         is_pop_type = aristocrats
                         culture = {
-                            has_discrimination_trait = iranian_turanian_culture_group
+                            has_discrimination_trait = aryan_heritage
+                        }
+                    }
+                    scope:pop ?= {
+                        is_pop_type = bureaucrats
+                        culture = {
+                            has_discrimination_trait = aryan_heritage
                         }
                     }
                     scope:character ?= {
-                        is_interest_group_type = ig_landowners
+                        OR = {
+                            is_interest_group_type = ig_landowners
+                            is_interest_group_type = ig_industrialists
+                            is_interest_group_type = ig_intelligentsia
+                            is_interest_group_type = ig_petty_bourgeoisie
+                        }
                         age >= define:NCharacters|ADULT_AGE
                         has_role = politician
                         NAND = {    # monarchs wear other stuff
@@ -5707,16 +5734,14 @@ historical_bal_gangadhar_tilak_clothes = {
                             }
                         }
                         culture = {
-                            has_discrimination_trait = iranian_turanian_culture_group
-                            has_discrimination_trait = middle_eastern_heritage
+                            has_discrimination_trait = aryan_heritage
                         }
                     }
                     scope:character ?= {
                         is_ruler = yes
                         age >= define:NCharacters|ADULT_AGE
                         culture = {
-                            has_discrimination_trait = iranian_turanian_culture_group
-                            has_discrimination_trait = central_asian_heritage
+                            has_discrimination_trait = aryan_heritage
                         }
                     }
                 }
@@ -5770,20 +5795,26 @@ historical_bal_gangadhar_tilak_clothes = {
         weight = {
             base = 0
             modifier = {
-                add = 5000
+                add = 50000
 
                 has_dlc_feature = ep1_cosmetics
 
                 scope:character ?= {
                     is_ruler = yes
                     is_female = no
-                    owner ?= {
-                        c:PER ?= this
-                        has_law = law_type:law_monarchy
+                    OR = {
+                        owner ?= {
+                            c:PER ?= this
+                            has_law = law_type:law_monarchy
+                        }
+                        owner ?= {
+                            c:ARY ?= this
+                            has_law = law_type:law_monarchy
+                        }
                     }
+                    
                     culture = {
-                        has_discrimination_trait = iranian_turanian_culture_group
-                        has_discrimination_trait = middle_eastern_heritage
+                        has_discrimination_trait = aryan_heritage
                     }
                 }
             }
@@ -6073,6 +6104,7 @@ historical_bal_gangadhar_tilak_clothes = {
                 add = 100
                 agitator_character_trigger = no
                 OR = {
+                    iranic_clothes_trigger = yes
                     arabic_clothes_trigger = yes
                     scope:character ?= {
                         culture = {
@@ -6099,6 +6131,8 @@ historical_bal_gangadhar_tilak_clothes = {
                 add = 500
                 AND = {
                     OR = {
+                        iranic_clothes_trigger = yes
+                        iranic_clothes_pop_trigger = yes
                         arabic_clothes_trigger = yes
                         arabic_clothes_pop_trigger = yes
                         scope:pop ?= {
@@ -7468,6 +7502,7 @@ indigenous_oceanic_pop_clothes = {
                     european_clothes_pop_trigger = no
                     african_diaspora_pop_clothes_trigger = no
                     arabic_clothes_pop_trigger = no
+                    iranic_clothes_pop_trigger = no
                     native_american_clothes_pop_trigger = no
                     cold_clothes_pop_trigger = no
                 } 

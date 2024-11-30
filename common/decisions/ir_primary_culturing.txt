@@ -7,11 +7,13 @@
 	}
 	possible = {
 		country_has_state_religion = rel:mazdayasna
-
-		custom_tooltip = {
-			text = has_iranization_of_crown_var
-			has_variable = iranization_of_crown_var
-		}
+		owns_entire_state_region = STATE_AZERBAIJAN
+		owns_entire_state_region = STATE_ARMENIA
+		owns_entire_state_region = STATE_KARS
+		owns_entire_state_region = STATE_GREATER_CAUCASUS
+		owns_entire_state_region = STATE_DAGESTAN
+		owns_entire_state_region = STATE_NORTH_CAUCASUS
+		owns_entire_state_region = STATE_KUBAN
 	}
 	when_taken = {
 		add_primary_culture = cu:armenian
@@ -22,7 +24,7 @@
 		set_variable = primary_culturing_abaxtaran_var
 		add_modifier = {
 			name = re_integrate_cultures
-			months = 12
+			months = 36
 		}
 	}
 	ai_chance = {
@@ -39,11 +41,10 @@ primary_culturing_nemroz_decision = {
 		}
 	}
 	possible = {
-		country_has_state_religion = rel:mazdayasna
-		
+		owns_entire_state_region = STATE_PASHTUNISTAN
 		custom_tooltip = {
-			text = has_iranization_of_crown_var
-			has_variable = iranization_of_crown_var
+			text = has_primary_culturing_abaxtaran_var
+			has_variable = primary_culturing_abaxtaran_var
 		}
 	}
 	when_taken = {

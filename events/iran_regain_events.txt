@@ -148,7 +148,7 @@ iran.3 = {
 				s:STATE_URMIA = {
 					set_owner_of_provinces = {
 						country = c:KUR
-						provinces = { x7F1958 xADF8DB x2F0CE8 xB09D9C xC33C0F x07BB1D x510E91 x4F6E8F x7BC870 x6F55BA x780DBA xC9CF24 xD8B670 }
+						provinces = { x7F1958 x2F0CE8 xB09D9C x07BB1D x510E91 x7BC870 x6F55BA xC9CF24 xD8B670 }
 					}
 				}
 				change_relations = {
@@ -231,7 +231,7 @@ iran.3 = {
 				s:STATE_TABRIZ = {
 					set_owner_of_provinces = {
 						country = c:AZB
-						provinces = { xD82CB4 x97DFB2 xCC139E x493F0B x0467D5 }
+						provinces = { xD82CB4 x97DFB2 xCC139E x493F0B }
 					}
 				}
 				change_relations = {
@@ -397,7 +397,7 @@ iran.3 = {
 				s:STATE_BALUCHISTAN = {
 					set_owner_of_provinces = {
 						country = c:BLH
-						provinces = { xB7B2BD xE87BBF x951063 x321257 x945FA2 xA9F721 xB6CF46 xBAE3D2 x3FE8A6 }
+						provinces = { xE87BBF x951063 x321257 x945FA2 xA9F721 xB6CF46 xBAE3D2 x3FE8A6 }
 					}
 				}
 				change_relations = {

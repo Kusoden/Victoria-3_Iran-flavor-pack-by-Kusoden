@@ -1,10 +1,16 @@
 ﻿iranic_clothes_pop_trigger = {
 	exists = scope:pop
-	scope:pop = {
-		OR = {
-			culture = {
-				has_discrimination_trait = aryan_heritage
-			}   
-		}
+	scope:pop ?= {
+        culture = {
+			has_discrimination_trait = aryan_heritage
+     	}
 	}
+}
+iranic_clothes_trigger = {
+	exists = scope:character
+	scope:character = {
+		culture = {
+			has_discrimination_trait = aryan_heritage
+		}
+	}        
 }

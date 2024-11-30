@@ -493,7 +493,7 @@ law_cooperative_ownership = {
 	
 	unlocking_laws = {
 		law_council_republic	
-		law_monarchy
+		law_council_shah
 		law_corporate_state			
 	}
 	

@@ -11,3 +11,7 @@
 #Synthetics
  pmg_dye_production:1 "Synthetics"
  pm_synthetic_rubber:0 "Rubber Synthesis"
+
+#governments
+
+pm_comissioned_bureaucrats:0 "Commissioned Administration"

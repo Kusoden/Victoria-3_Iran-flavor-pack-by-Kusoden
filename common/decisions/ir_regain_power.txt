@@ -2,11 +2,7 @@
 	is_shown = {
 		country_has_primary_culture = cu:iranian
 		NOT = { has_variable = bahrain_var }
-		is_subject = no
 		exists = c:BHN
-		c:BHN = {
-			NOT = { is_subject_of = ROOT }
-		}
 	}
 
 	possible = {

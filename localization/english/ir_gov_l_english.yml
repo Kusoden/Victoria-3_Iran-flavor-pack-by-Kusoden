@@ -8,3 +8,8 @@
  RULER_TITLE_SHAH_MODDED:0 "Šāh"
  RULER_TITLE_SHAHANSHAH:0 "Šāhanšāh"
  RULER_TITLE_SHAHZADEH:0 "Šāhzadeh"
+
+ law_council_shah:0 "Dīvān of the Šāhanšāh"
+ law_council_shah_desc:0 "The Dīvān serves as the central council of the Šāhanšāh, consolidating power within the royal court. It includes the heads of key institutions such as the armed forces, provincial governors, and senior bureaucrats, ensuring that critical decisions are made under the Šāhanšāh’s direct authority. This structure centralizes governance, with power flowing from the Šāhanšāh to his most trusted officials."
+ law_comissioned_bureaucrats:0 "Commisioned Bureaucrats"
+ law_comissioned_bureaucrats_desc:0 "In this system, government positions are filled through appointments rather than inheritance, with the highest bidders often securing influential roles. The bureaucracy is shaped by the need to raise funds for the treasury, leading to a transactional structure where offices are sold or granted to those who can afford them. This system results in an administration of shopkeepers and bureaucrats rather than aristocrats, and is marked by a fluid hierarchy where anyone, regardless of social origin, can rise to power based on financial backing or political influence. The emphasis on commissioned roles increases tax efficiency as the new appointees strive to recoup their investments, while the traditional aristocracy's grip on governance weakens."
