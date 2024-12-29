@@ -3,7 +3,7 @@ pm_default_building_argebam = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_prestige_add = 100
+			country_prestige_add = 40
 			country_authority_add = 200
 		}
 	}

@@ -17,9 +17,13 @@ je_ir_shattered_borders_broken_sovereignty= {
 		
 		any_scope_state = {
 			is_incorporated = yes
-			has_building = building_urban_center
-			percent >= 0.40
+			any_scope_building = {
+				is_building_type = building_government_administration
+				level >= 2
+			}
+			percent >= 1
 		}
+
 	}
 
 
@@ -33,6 +37,13 @@ je_ir_shattered_borders_broken_sovereignty= {
 		}
 	}
 
+	on_fail = {
+		add_modifier = { 
+			name = humiliated_iran
+			months = long_modifier_time
+		}
+			
+	}
 
 	on_complete = {
 		set_variable = je_ir_shattered_borders_broken_sovereignty_var
@@ -67,7 +78,7 @@ je_ir_unifying_the_divided = {
 		has_law = law_type:law_dedicated_police
 		institution_investment_level = {
 			institution = institution_police
-			value = 3
+			value >= 3
 		}
 
 		custom_tooltip = {
@@ -151,7 +162,7 @@ je_ir_unifying_the_divided_language_progress = { # Embracing the Rebirth: A New 
 
 		institution_investment_level = {
 			institution = institution_schools
-			value = 4
+			value >= 4
 		}
 	}
 	
@@ -295,7 +306,7 @@ je_ir_wuzurgan = {
 
 		institution_investment_level = {
 			institution = institution_police
-			value = 3
+			value >= 3
 		}
 		
 		country_has_state_religion = rel:mazdayasna
