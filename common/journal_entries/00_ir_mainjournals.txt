@@ -21,7 +21,7 @@ je_ir_shattered_borders_broken_sovereignty= {
 				is_building_type = building_government_administration
 				level >= 2
 			}
-			percent >= 1
+			percent >= 0.9
 		}
 
 	}
