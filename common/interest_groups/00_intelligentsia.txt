@@ -11,6 +11,18 @@
 		ideology_anti_slavery
 	}
 
+	character_ideologies = {
+		ideology_moderate
+		ideology_republican_leader
+		ideology_radical
+		ideology_reformer
+		ideology_sovereignist_leader
+		ideology_orleanist
+		ideology_despotic_utopian
+		ideology_humanitarian
+		ideology_utopian
+	}
+
 	enable = {
 		always = yes
 	}
@@ -50,8 +62,8 @@
 			}
 			else_if = {
 				limit = {
-					owner = { 
-						OR = { 
+					owner = {
+						OR = {
 							c:TUR ?= this
 							c:RUS ?= this
 						}
@@ -70,13 +82,22 @@
 				set_ig_trait = ig_trait:ig_trait_avant_garde
 				set_ig_trait = ig_trait:ig_trait_les_beaux_arts
 			}
+			else_if = {
+				limit = {
+					has_dlc_feature = ip2_content
+					owner = { c:BIC ?= this }
+				}
+				set_ig_trait = ig_trait:ig_trait_swaraj
+				set_ig_trait = ig_trait:ig_trait_civil_service
+				set_ig_trait = ig_trait:ig_trait_westernisation
+			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_social_criticism
 				set_ig_trait = ig_trait:ig_trait_avant_garde
 				set_ig_trait = ig_trait:ig_trait_propagandists
 			}
 		}
-		
+
 		# Papal Intellegentsia
 		if = {
 			limit = {
@@ -102,7 +123,7 @@
 					has_discrimination_trait = han_chinese
 				}
 			}
-			ig:ig_intelligentsia = { 
+			ig:ig_intelligentsia = {
 				set_interest_group_name = ig_literati
 				remove_ideology = ideology_anti_clerical
 			}
@@ -122,12 +143,27 @@
 				add_ideology = ideology_constitutionalist
 			}
 		}
-		# Britain and other Constitutionalists
+		# India
 		else_if = {
+			limit = {
+				c:BIC ?= THIS
+			}
+			ig:ig_intelligentsia = {
+				set_interest_group_name = ig_civil_servants
+
+				remove_ideology = ideology_republican
+				add_ideology = ideology_constitutionalist
+			}
+		}
+		# Britain and other Constitutionalists
+		if = {
 			limit = {
 				OR = {
 					c:GBR ?= THIS
 					c:JAP ?= THIS
+					any_primary_culture = { # Princely States and Nepal
+						has_discrimination_trait = south_asian_heritage
+					}
 				}
 			}
 			ig:ig_intelligentsia = {
@@ -135,7 +171,7 @@
 				add_ideology = ideology_constitutionalist
 			}
 		}
-		
+
 		if = {
 			limit = {
 				has_technology_researched = feminism
@@ -150,6 +186,19 @@
 		}
 	}
 	on_disable = {}
+	priority_cultures = { #Country scope
+		rule = {
+			trigger = {
+				c:BIC ?= this
+				any_primary_culture = {
+					cu:british = this
+				}
+			}
+			cultures = {
+				assamese avadhi baluchi bengali bihari gujarati kannada malayalam marathi oriya panjabi pathan rajput sindi tamil telegu hindustani bundeli pahari gondi bageli chhattisgarhi deccani
+			}
+		}
+	}
 	on_character_ig_membership = {}
 
 	pop_potential = {
@@ -217,7 +266,7 @@
 				}
 			}
 		}
-		
+
 		add = {
 			desc = "ADMINISTRATION_ROLE"
 			if = {
@@ -236,7 +285,50 @@
 				value = 100
 			}
 		}
-		
+
+		if = {
+			limit = {
+				owner = {
+					c:BIC ?= this
+				}
+				OR = {
+					is_pop_type = bureaucrats
+					is_pop_type = clerks
+				}
+			}
+			if = {
+				limit = {
+					culture = {
+						has_discrimination_trait = european_heritage
+					}
+				}
+				multiply = {
+					desc = "POP_INDIA_COLONIAL_RULE"
+					value = 0.25
+				}
+			}
+			else = {
+				multiply = {
+					desc = "POP_INDIA_CIVIL_SERVICE"
+					value = 1.5
+				}
+			}
+		}
+
+		add = {
+			desc = "POP_MILITARY_BUREAUCRACY"
+			if = {
+				limit = {
+					is_pop_type = bureaucrats
+					owner = {
+						c:ALK ?= this
+						has_government_type = gov_chartered_company
+					}
+				}
+				multiply = 0.25
+			}
+		}
+
 		if = {
 			limit = {
 				literacy_rate >= 0.50
@@ -287,7 +379,7 @@
 				min = 0
 			}
 		}
-		
+
 		if = {
 			limit = {
 				scope:interest_group = {
@@ -391,11 +483,19 @@
 		value = 1.0
 	}
 
+	executive_weight = {
+		value = 2.0
+	}
+
 	noble_chance = {
 		value = 0.5
 	}
 
 	female_commander_chance = {
+		value = 0.0
+	}
+
+	female_executive_chance = {
 		value = 0.0
 	}
 
@@ -417,7 +517,7 @@
 
 	female_agitator_chance = {
 		value = 0.035
-		
+
 		if = {
 			limit = {
 				owner = {
@@ -428,8 +528,8 @@
 			add = {
 				value = 0.035
 			}
-		}	
-		
+		}
+
 		if = {
 			limit = {
 				owner = {
@@ -452,22 +552,19 @@
 			add = {
 				value = 0.035
 			}
-		}		
+		}
 	}
 
 	# The chance that a commander belonging to this IG takes over leadership when it changes
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
 		value = 0.25
-		if = {
-			limit = {
-				exists = scope:character
-			}
-			multiply = {
-				value = 1
-				add = scope:character.popularity
-				min = 0
-			}
-		}
+		multiply = ig_commander_leader_chance_mult
+	}
+
+	# The chance that a executive belonging to this IG takes over leadership when it changes
+	# scope:character is the most popular executive in the IG
+	executive_leader_chance = {
+		value = 0.5
 	}
 }

@@ -78,6 +78,7 @@ ideology_er = {
 	icon = "gfx/interface/icons/ideology_icons/er.dds"
 	
 	lawgroup_distribution_of_power = {
+		law_council_shah = strongly_approve
 		law_single_party_state = neutral
 		law_landed_voting = approve
 		law_autocracy = strongly_approve

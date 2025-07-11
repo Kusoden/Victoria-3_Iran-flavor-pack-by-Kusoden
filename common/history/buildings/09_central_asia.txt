@@ -177,7 +177,7 @@
 					building={
 						type="building_manor_house"
 						country="c:RUS"
-						levels=3
+						levels=4
 						region="STATE_AZERBAIJAN"
 					}
 				}
@@ -799,7 +799,7 @@
 					building={
 						type="building_manor_house"
 						country="c:HER"
-						levels=2
+						levels=1
 						region="STATE_HERAT"
 					}
 				}
@@ -967,6 +967,7 @@
 		}
 		region_state:KAL={
 			create_building={
+				create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
@@ -990,7 +991,6 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
-			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={

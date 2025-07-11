@@ -537,11 +537,16 @@ persia_events.4 = {
 
 	option = {
 		name = persia_events.4.a
-		trigger = {
-			can_create_diplomatic_pact = { target = c:PER type = military_assistance }
-		}
 		ai_chance = {
 			base = 75
+			modifier = {
+				trigger = {
+					c:PER = {
+						relations:root >= 40
+					}
+				}
+				add = 150
+			}
 		}
 		if = {
 			limit = {
@@ -577,11 +582,9 @@ persia_events.4 = {
 					has_modifier = modifier_persian_cossack_brigade
 				}
 			}
-			c:PER ?= {
-				create_diplomatic_pact = {
-					country = c:PER
-					type = military_assistance
-				}
+			create_diplomatic_pact = {
+				country = c:PER
+				type = military_assistance
 			}
 		}
 		if = {
@@ -609,10 +612,6 @@ persia_events.4 = {
 				add_modifier = {
 					name = modifier_south_persia_rifles
 				}
-				add_modifier = {
-					name = modifier_british_persian_aid
-					months = normal_modifier_time
-				}
 			}
 		}
 		if = {
@@ -622,11 +621,9 @@ persia_events.4 = {
 					has_modifier = modifier_south_persia_rifles
 				}
 			}
-			c:PER ?= {
-				add_modifier = {
-					name = modifier_british_persian_aid
-					months = normal_modifier_time
-				}
+			create_diplomatic_pact = {
+				country = c:PER
+				type = military_assistance
 			}
 		}
 		c:PER ?= {
@@ -637,7 +634,7 @@ persia_events.4 = {
 		}
 
 	}
-
+	
 	option = {
 		name = persia_events.4.b
 		ai_chance = {
@@ -650,6 +647,7 @@ persia_events.4 = {
 		}
 	}
 }
+
 
 persia_events.5 = {
 	type = country_event

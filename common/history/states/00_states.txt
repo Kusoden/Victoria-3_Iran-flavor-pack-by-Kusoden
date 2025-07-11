@@ -104,7 +104,7 @@ STATES = {
 	s:STATE_BALUCHISTAN = {
 		create_state = {
 			country = c:OMA
-			state_type = treaty_port
+			state_type = unincorporated
 			owned_provinces = { xB7B2BD }
 		}
 		create_state = {
@@ -5639,7 +5639,7 @@ STATES = {
 			country = c:ARB
 			owned_provinces = { x09F8D1 x4CA291 x4FDA9B x55D475 x80E4E1 x872ACE xA18555 xA99276 xF5BD8F xFBA38B }
 		}
-		
+		add_claim = c:PER
 		add_homeland = cu:iranian
 	}
 	s:STATE_FARS = {
@@ -6847,7 +6847,7 @@ STATES = {
 			country = c:KHI
 			owned_provinces = { x5FF9CD xC57238 x85B179 x0C18E0 xE4C351 xC131A1 x521ED8 x2E361B x184E72 xEE6836 }
 		}	
-
+		add_claim = c:PER
 		add_homeland = cu:iranian
 	}
 	s:STATE_SEMIRECHE = {
@@ -7901,6 +7901,7 @@ STATES = {
 	    	country = c:KHI
 	    	owned_provinces = { x2E3A04 x80FDCA x5F1CE5 x1B7D15 xD72954 x0111C0 x7B3A19 }
 	    }
+		add_claim = c:PER
 		add_homeland = cu:iranian
 	}
 

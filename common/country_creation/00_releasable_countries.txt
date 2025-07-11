@@ -19,7 +19,6 @@
 		STATE_TAURIDA
 		STATE_VILNIUS
 	}
-
 	ai_will_do = { always = no }
 }
 
@@ -31,11 +30,11 @@ GOS = {
 
 UBD = {
 	states = { STATE_KAUNAS STATE_VILNIUS STATE_TALINN STATE_TARTU STATE_RIGA STATE_COURLAND }
-	
-	required_num_states = 3 
+
+	required_num_states = 3
 
 	ai_will_do = { always = no }
-	
+
 	possible = {
 		has_technology_researched = pan-nationalism
 	}
@@ -43,7 +42,7 @@ UBD = {
 
 AUS = {
 	use_culture_states = yes
-	
+
 	required_num_states = 2
 
 	ai_will_do = { always = no }
@@ -51,7 +50,7 @@ AUS = {
 
 IRE = {
 	use_culture_states = yes
-	
+
 	required_num_states = 2
 
 	ai_will_do = { always = no }
@@ -59,7 +58,7 @@ IRE = {
 
 MTC = {
 	use_culture_states = yes
-	
+
 	required_num_states = 1
 
 	ai_will_do = { always = no }
@@ -69,7 +68,7 @@ GEO = {
 	states = {
 		STATE_GREATER_CAUCASUS
 	}
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -80,7 +79,7 @@ ARM = {
 		STATE_KARS
 		STATE_ELIZAVETPOL
 	}
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -88,7 +87,7 @@ DAG = {
 	states = {
 		STATE_DAGESTAN
 	}
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -97,12 +96,12 @@ AZB = {
 		STATE_AZERBAIJAN
 		STATE_ELIZAVETPOL
 	}
-	
+
 	ai_will_do = { always = no }
 }
 
 SCO = {
-	states = { 
+	states = {
 		STATE_LOWLANDS
 		STATE_HIGHLANDS
 	}
@@ -114,7 +113,7 @@ WLS = {
 	states = {
 		STATE_WALES
 	}
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -122,7 +121,7 @@ ULS = {
 	states = {
 		STATE_ULSTER
 	}
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -135,9 +134,9 @@ ENG = {
 		STATE_YORKSHIRE
 		STATE_LANCASHIRE
 	}
-	
+
 	required_num_states = 3
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -160,25 +159,25 @@ LIT = {
 }
 
 SWE = {
-	states = { 
-		STATE_SVEALAND 
-		STATE_GOTALAND 
-		STATE_SCANIA 
-		STATE_NORRLAND 
+	states = {
+		STATE_SVEALAND
+		STATE_GOTALAND
+		STATE_SCANIA
+		STATE_NORRLAND
 	}
-	
+
 	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
 
 FIN = {
-	states = { 
-		STATE_UUSIMAA 
-		STATE_OSTROBOTHNIA 
-		STATE_WEST_KARELIA 
-		STATE_KUOPIO 
-		STATE_OULU 
+	states = {
+		STATE_UUSIMAA
+		STATE_OSTROBOTHNIA
+		STATE_WEST_KARELIA
+		STATE_KUOPIO
+		STATE_OULU
 	}
 
 	required_num_states = 2
@@ -188,7 +187,7 @@ FIN = {
 
 NOR = {
 	use_culture_states = yes
-	
+
 	required_num_states = 2
 
 	ai_will_do = { always = no }
@@ -196,7 +195,7 @@ NOR = {
 
 DEN = {
 	use_culture_states = yes
-	
+
 	required_num_states = 2
 
 	ai_will_do = { always = no }
@@ -210,7 +209,7 @@ ICL = {
 
 CSA = {
 	use_culture_states = yes
-	
+
 	required_num_states = 5
 
 	ai_will_do = { always = no }
@@ -237,7 +236,7 @@ ASA = {
 }
 
 LOU = {
-	states = { 
+	states = {
 		STATE_LOUISIANA
 	}
 
@@ -245,13 +244,13 @@ LOU = {
 }
 
 AGJ = {
-	states = { 
-		STATE_PERNAMBUCO 
+	states = {
+		STATE_PERNAMBUCO
 		STATE_PARAIBA
 		STATE_RIO_GRANDE_DO_NORTE
 		STATE_BAHIA
 	}
-	
+
 	required_num_states = 2
 
 	ai_will_do = { always = no }
@@ -271,9 +270,9 @@ CHE = {
 
 SCN = {
 	states = { STATE_SCANIA }
-	
+
 	ai_will_do = { always = no }
-	
+
 	possible = {
 		NOT = { has_game_rule = plausible_releasable_nations }
 	}
@@ -281,15 +280,15 @@ SCN = {
 
 NAV = {
 	states = { STATE_NAVARRA }
-	
+
 	ai_will_do = { always = no }
 }
 
 
 TRS = {
-	states = { 
-		STATE_SOUTHERN_TRANSYLVANIA 
-		STATE_NORTHERN_TRANSYLVANIA 
+	states = {
+		STATE_SOUTHERN_TRANSYLVANIA
+		STATE_NORTHERN_TRANSYLVANIA
 	}
 
 	ai_will_do = { always = no }
@@ -308,10 +307,10 @@ TRE = {
 }
 
 FRA = {
-	states = { 
-		STATE_ILE_DE_FRANCE 
-		STATE_PROVENCE 
-		STATE_NORMANDY 
+	states = {
+		STATE_ILE_DE_FRANCE
+		STATE_PROVENCE
+		STATE_NORMANDY
 		STATE_LANGUEDOC
 		STATE_RHONE
 		STATE_FRENCH_LOW_COUNTRIES
@@ -329,7 +328,7 @@ FRA = {
 		STATE_ORLEANS
 		STATE_MAINE_ANJOU
 	}
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -341,9 +340,9 @@ BRI = {
 
 JAN = {
 	provinces = { x31968A }
-	
+
 	ai_will_do = { always = no }
-	
+
 	possible = {
 		NOT = { has_game_rule = plausible_releasable_nations }
 	}
@@ -351,7 +350,7 @@ JAN = {
 
 POL = {
 	use_culture_states = yes
-	
+
 	required_num_states = 3
 
 	ai_will_do = { always = no }
@@ -359,7 +358,7 @@ POL = {
 
 UKR = {
 	states = { STATE_EAST_GALICIA STATE_CHERSON STATE_VOLHYNIA STATE_KIEV STATE_TAURIDA STATE_KHARKOV STATE_CRIMEA STATE_CHERNIHIV }
-	
+
 	required_num_states = 3
 
 	ai_will_do = { always = no }
@@ -367,13 +366,13 @@ UKR = {
 
 GAL = {
 	states = { STATE_EAST_GALICIA STATE_WEST_GALICIA }
-	
+
 	ai_will_do = { always = no }
 }
 
 HUN = {
 	use_culture_states = yes
-	
+
 	required_num_states = 2
 
 	ai_will_do = { always = no }
@@ -381,7 +380,7 @@ HUN = {
 
 ROM = {
 	use_culture_states = yes
-	
+
 	required_num_states = 3
 
 	ai_will_do = { always = no }
@@ -394,10 +393,10 @@ BOH = {
 }
 
 CRO = {
-	states = { 
-		STATE_CROATIA 
-		STATE_SLAVONIA 
-		STATE_DALMATIA 
+	states = {
+		STATE_CROATIA
+		STATE_SLAVONIA
+		STATE_DALMATIA
 	}
 	required_num_states = 2
 
@@ -412,20 +411,20 @@ SLV = {
 
 VEN = {
 	states = { STATE_VENETIA }
-	
+
 	ai_will_do = { always = no }
 }
 
 LOM = {
 	states = { STATE_LOMBARDY }
-	
+
 	ai_will_do = { always = no }
 }
 
 
 BYE = {
 	use_culture_states = yes
-	
+
 	required_num_states = 2
 
 	ai_will_do = { always = no }
@@ -433,48 +432,48 @@ BYE = {
 
 CRE = {
 	states = { STATE_CRETE }
-	
+
 	ai_will_do = { always = no }
 }
 
 POM = {
 	states = { STATE_POMERANIA }
-	
+
 	ai_will_do = { always = no }
 }
 
 ANH = {
 	states = { STATE_ANHALT }
-	
+
 	ai_will_do = { always = no }
 }
 
 NAS = {
 	provinces = { x3E794B x90C0A0 x1357DB }
-	
+
 	ai_will_do = { always = no }
 }
 
 HES = {
 	states = { STATE_HESSE }
-	
+
 	ai_will_do = { always = no }
 }
 
 WES = {
-	states = { 
-		STATE_WESTPHALIA 
-		STATE_NORTH_RHINE 
+	states = {
+		STATE_WESTPHALIA
+		STATE_NORTH_RHINE
 		STATE_RUHR
 	}
-	
+
 	required_num_states = 2
-	
+
 	ai_will_do = { always = no }
 }
 
 PRU = {
-	states = { 
+	states = {
 		STATE_BRANDENBURG
 		STATE_POMERANIA
 		STATE_WEST_PRUSSIA
@@ -484,32 +483,32 @@ PRU = {
 	}
 
 	required_num_states = 3
-	
+
 	ai_will_do = { always = no }
 }
 
 JAP = {
 	use_culture_states = yes
-	
+
 	required_num_states = 3
 
-	ai_will_do = { always = no }	
+	ai_will_do = { always = no }
 }
 
 RUS = {
 	use_culture_states = yes
-	
+
 	required_num_states = 5
 
-	ai_will_do = { always = no }	
+	ai_will_do = { always = no }
 }
 
 CHI = {
 	use_culture_states = yes
-	
+
 	required_num_states = 5
 
-	ai_will_do = { always = no }	
+	ai_will_do = { always = no }
 }
 
 DAI = {
@@ -532,7 +531,7 @@ KOR = {
 
 LAO = {
 	states = { STATE_LAOS }
-	
+
 	required_num_states = 1
 
 	ai_will_do = { always = no }
@@ -540,13 +539,13 @@ LAO = {
 
 VIE = {
 	states = { STATE_LAOS }
-	
+
 	ai_will_do = { always = no }
 }
 
 CMI = {
 	states = { STATE_CHIANG_MAI }
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -557,7 +556,7 @@ TIB = {
 }
 
 MGL = {
-	states = { 
+	states = {
 		STATE_ULIASTAI
 		STATE_URGA
 	}
@@ -566,7 +565,7 @@ MGL = {
 }
 
 MCH = {
-	states = { 
+	states = {
 		STATE_SOUTHERN_MANCHURIA
 		STATE_NORTHERN_MANCHURIA
 		STATE_OUTER_MANCHURIA
@@ -579,19 +578,19 @@ MCH = {
 
 XIN = {
 	states = { STATE_DZUNGARIA STATE_TIANSHAN STATE_JETISY }
-	
+
 	ai_will_do = { always = no }
 }
 
 HAI = {
 	states = { STATE_HAITI }
-	
+
 	ai_will_do = { always = no }
 }
 
 DOM = {
 	states = { STATE_SANTO_DOMINGO }
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -600,7 +599,7 @@ WIN = {
 		STATE_WEST_INDIES
 		STATE_JAMAICA
 	}
-	
+
 	required_num_states = 2
 
 	ai_will_do = { always = no }
@@ -614,7 +613,7 @@ MAY = {
 
 CAT = {
 	use_culture_states = yes
-	
+
 	required_num_states = 2
 
 	ai_will_do = { always = no }
@@ -622,7 +621,7 @@ CAT = {
 
 SPA = {
 	use_culture_states = yes
-	
+
 	required_num_states = 2
 
 	ai_will_do = { always = no }
@@ -630,73 +629,73 @@ SPA = {
 
 ELS = {
 	states = { STATE_SAN_SALVADOR }
-	
+
 	ai_will_do = { always = no }
 }
 
 GUA = {
 	states = { STATE_GUATEMALA }
-	
+
 	ai_will_do = { always = no }
 }
 
 ALT = {
 	provinces = { xD9BEFE x78C465 xBD8628  }
-	
+
 	ai_will_do = { always = no }
 }
 
 NIC = {
 	states = { STATE_NICARAGUA }
-	
+
 	ai_will_do = { always = no }
 }
 
 HON = {
 	states = { STATE_HONDURAS }
-	
+
 	ai_will_do = { always = no }
 }
 
 COS = {
 	states = { STATE_COSTA_RICA }
-	
+
 	ai_will_do = { always = no }
 }
 
 FRM = {
 	provinces = { x11C0A0 }
-	
+
 	ai_will_do = { always = no }
 }
 
 LUB = {
 	provinces = { x60809F }
-	
+
 	ai_will_do = { always = no }
 }
 
 HAM = {
 	provinces = { x587297 }
-	
+
 	ai_will_do = { always = no }
 }
 
 BRE = {
 	provinces = { xC08061 x68BE66 }
-	
+
 	ai_will_do = { always = no }
 }
 
 CUB = {
 	states = { STATE_CUBA }
-	
+
 	ai_will_do = { always = no }
 }
 
 PCO = {
 	states = { STATE_PUERTO_RICO }
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -713,7 +712,7 @@ BAH = {
 }
 
 PHI = {
-	states = { 
+	states = {
 		STATE_MINDANAO
 		STATE_LUZON
 		STATE_VISAYAS
@@ -733,7 +732,7 @@ NAH = {
 }
 
 GRN = {
-	states = { 
+	states = {
 		STATE_GREENLAND
 	}
 	ai_will_do = { always = no }
@@ -741,12 +740,12 @@ GRN = {
 
 AIN = {
 	use_culture_states = yes
-	
+
 	ai_will_do = { always = no }
 }
 
 ANL = {
-	states = { 
+	states = {
 		STATE_ANDALUSIA
 		STATE_BADAJOZ
 		STATE_GRANADA
@@ -755,12 +754,12 @@ ANL = {
 }
 
 CAS = {
-	states = { 
+	states = {
 		STATE_ASTURIAS
 		STATE_CASTILE
 		STATE_TOLEDO
 	}
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -801,7 +800,7 @@ AST = {
 }
 
 NZL = {
-	states = { 
+	states = {
 		STATE_NORTH_ISLAND
 		STATE_SOUTH_ISLAND
 	}
@@ -810,7 +809,7 @@ NZL = {
 }
 
 YUC = {
-	states = { 
+	states = {
 		STATE_YUCATAN
 	}
 
@@ -831,7 +830,7 @@ RIO = {
 }
 
 PNI = {
-	states = { 
+	states = {
 		STATE_RIO_GRANDE_DO_SUL
 	}
 
@@ -845,7 +844,7 @@ PNI = {
 }
 
 CEY = {
-	states = { 
+	states = {
 		STATE_CEYLON
 	}
 
@@ -853,7 +852,7 @@ CEY = {
 }
 
 NEN = {
-	states = { 
+	states = {
 		STATE_MASSACHUSETTS
 		STATE_NEW_HAMPSHIRE
 		STATE_MAINE
@@ -866,7 +865,7 @@ NEN = {
 }
 
 PNM = {
-	states = { 
+	states = {
 		STATE_PANAMA
 	}
 
@@ -894,7 +893,7 @@ IRO = {
 }
 
 TEX = {
-	states = { 
+	states = {
 		STATE_TEXAS
 	}
 
@@ -926,7 +925,7 @@ NNV = {
 }
 
 NEW = {
-	states = { 
+	states = {
 		STATE_NEWFOUNDLAND
 	}
 
@@ -972,7 +971,7 @@ BUL = {
 
 OCC = {
 	use_culture_states = yes
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -1223,7 +1222,7 @@ YUG = {
 	possible = {
 		has_technology_researched = pan-nationalism
 	}
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -1242,7 +1241,7 @@ CLM = {
 		STATE_CAUCA
 		STATE_GUAVIARE
 	}
-	
+
 	required_num_states = 3
 
 	ai_will_do = { always = no }
@@ -1250,7 +1249,7 @@ CLM = {
 
 TUR = {
 	use_culture_states = yes
-	
+
 	required_num_states = 5
 
 	ai_will_do = { always = no }
@@ -1266,14 +1265,14 @@ DZG = {
 
 EGY = {
 	use_culture_states = yes
-	
+
 	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
 CZH = {
 	use_culture_states = yes
-	
+
 	ai_will_do = { always = no }
 
 	required_num_states = 3
@@ -1285,7 +1284,7 @@ CZH = {
 
 ARG = {
 	use_culture_states = yes
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -1293,7 +1292,7 @@ HAN = {
 	states = {
 		STATE_HANNOVER
 	}
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -1301,20 +1300,20 @@ SIC = {
 	states = {
 		STATE_SICILY
 	}
-	
+
 	ai_will_do = { always = no }
 }
 
 UCA = {
 	use_culture_states = yes
 	required_num_states = 3
-	
+
 	ai_will_do = { always = no }
 }
 
 SLO = {
 	use_culture_states = yes
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -1322,7 +1321,7 @@ ALB = {
 	states = {
 		STATE_ALBANIA
 	}
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -1357,6 +1356,7 @@ ISR = {
 	}
 
 	ai_will_do = { always = no }
+
 }
 
 PAL = {
@@ -1409,9 +1409,9 @@ UOM = {
 	states = {
 		STATE_MICHIGAN
 	}
-	
+
 	ai_will_do = { always = no }
-	
+
 	possible = {
 		NOT = { has_game_rule = plausible_releasable_nations }
 	}
@@ -1427,7 +1427,7 @@ CAL = {
 
 USA = {
 	use_culture_states = yes
-	
+
 	required_num_states = 10
 
 	ai_will_do = { always = no }
@@ -1435,7 +1435,7 @@ USA = {
 
 BEL = {
 	use_culture_states = yes
-	
+
 	required_num_states = 2
 
 	ai_will_do = { always = no }
@@ -1578,7 +1578,7 @@ SWI = {
 
 GRE = {
 	use_culture_states = yes
-	
+
 	required_num_states = 2
 
 	ai_will_do = { always = no }
@@ -1624,7 +1624,7 @@ AFG = {
 	}
 	required_num_states = 4
 	ai_will_do = { always = no }
-	
+
 	possible = {
 		has_technology_researched = pan-nationalism
 	}
@@ -1729,12 +1729,6 @@ BHW = {
 
 BAS = {
 	provinces = { x8ECE82 x013159 xF09DA1 x1170A0 xB56E8E x2F70FB x274E94 x66F24C x20BC2C xC38F66 }
-	ai_will_do = { always = no }
-}
-
-
-BUN = {
-	provinces = { x52001D x66337F x5CBFF7 xD64336 x7884D6 x6B7184 x4605A8 }
 	ai_will_do = { always = no }
 }
 
@@ -2037,11 +2031,6 @@ ASM = {
 	states = {
 		STATE_ASSAM
 	}
-	ai_will_do = { always = no }
-}
-
-MNP = {
-	provinces = { xB03121 xA17DC4 x8C53B3 xCB0893 x30B15A x8F90F5 xB238B2 }
 	ai_will_do = { always = no }
 }
 
@@ -2348,14 +2337,14 @@ ASS = {
 
 WAL = {
 
-	states = { 
+	states = {
 		STATE_WALLACHIA
 	}
 	ai_will_do = { always = no }
 }
 
 KLM = {
-	states = { 
+	states = {
 		STATE_KALMYKIA
 	}
 
@@ -2370,11 +2359,11 @@ CAU = {
 		STATE_KARS
 		STATE_ELIZAVETPOL
 	}
-	
+
 	required_num_states = 3
 
 	ai_will_do = { always = no }
-	
+
 	possible = {
 		has_technology_researched = pan-nationalism
 	}
@@ -2387,7 +2376,7 @@ MOR = {
 		STATE_AL_RIF
 		STATE_INNER_MOROCCO
 	}
-	
+
 	required_num_states = 3
 
 	ai_will_do = { always = no }
@@ -2455,12 +2444,12 @@ WAD = {
 
 MAD = {
 	use_culture_states = yes
-	
+
 	ai_will_do = { always = no }
 }
 
 KAU = {
-	states = { 
+	states = {
 		STATE_SOUTH_AUSTRALIA
 	}
 
@@ -2468,7 +2457,7 @@ KAU = {
 }
 
 YUZ = {
-	states = { 
+	states = {
 		STATE_FORMOSA
 	}
 	ai_will_do = { always = no }
@@ -2479,19 +2468,19 @@ SAV = {
 		STATE_SAVOY
 		STATE_RHONE
 	}
-	
+
 	ai_will_do = { always = no }
 }
 
 RHE = {
-	states = { 
+	states = {
 		STATE_RHINELAND
-		STATE_NORTH_RHINE 
+		STATE_NORTH_RHINE
 		STATE_RUHR
 	}
-	
+
 	required_num_states = 2
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -2538,13 +2527,13 @@ KYR = {
 }
 
 EQT = {
-	states = { 
+	states = {
 		STATE_PERNAMBUCO
 		STATE_RIO_GRANDE_DO_NORTE
 		STATE_CEARA
 		STATE_PIAUI
 		STATE_PARAIBA
-		
+
 		STATE_MARANHAO
 	}
 
@@ -2570,7 +2559,7 @@ PAU = {
 }
 
 CTR = {
-	states = { 
+	states = {
 		STATE_SANTA_CATARINA
 	}
 
@@ -2614,9 +2603,9 @@ BHI = {
 
 CNW = {
 	provinces = { x1E38F8 x63EF7E xC900EF xA2DD9E }
-	
+
 	ai_will_do = { always = no }
-	
+
 	possible = {
 		NOT = { has_game_rule = plausible_releasable_nations }
 	}
@@ -2626,9 +2615,9 @@ NCR = {
 	states = {
 		STATE_NORTH_CAROLINA
 	}
-	
+
 	ai_will_do = { always = no }
-	
+
 	possible = {
 		NOT = { has_game_rule = plausible_releasable_nations }
 	}
@@ -2638,9 +2627,9 @@ SCR = {
 	states = {
 		STATE_SOUTH_CAROLINA
 	}
-	
+
 	ai_will_do = { always = no }
-	
+
 	possible = {
 		NOT = { has_game_rule = plausible_releasable_nations }
 	}
@@ -2651,9 +2640,9 @@ CLI = {
 		STATE_NORTH_CAROLINA
 		STATE_SOUTH_CAROLINA
 	}
-	
+
 	ai_will_do = { always = no }
-	
+
 	possible = {
 		NOT = { has_game_rule = plausible_releasable_nations }
 	}
@@ -2663,9 +2652,9 @@ GRG = {
 	states = {
 		STATE_GEORGIA
 	}
-	
+
 	ai_will_do = { always = no }
-	
+
 	possible = {
 		NOT = { has_game_rule = plausible_releasable_nations }
 	}
@@ -2675,9 +2664,9 @@ FLR = {
 	states = {
 		STATE_FLORIDA
 	}
-	
+
 	ai_will_do = { always = no }
-	
+
 	possible = {
 		NOT = { has_game_rule = plausible_releasable_nations }
 	}
@@ -2708,88 +2697,88 @@ MAZ = {
 }
 
 SAT = {
-	provinces = { x3E5505 x33E560 xE73C3C x47EE55 x4F5C91 xCC722D xE01853 x187C37 xCF3817 xD6660F 
+	provinces = { x3E5505 x33E560 xE73C3C x47EE55 x4F5C91 xCC722D xE01853 x187C37 xCF3817 xD6660F
 	#Kolhapur
 	x40CE40 x42ACA6 x1131A0 }
-	
+
 	ai_will_do = { always = no }
 }
 
 KHP = {
 	provinces = { x40CE40 x42ACA6 x1131A0 }
-	
+
 	ai_will_do = { always = no }
 }
 
 COC = {
 	provinces = { xE4EB67 }
-	
+
 	ai_will_do = { always = no }
 }
 
 PUD = {
 	provinces = { xA02050 }
-	
+
 	ai_will_do = { always = no }
 }
 
 KNO = {
 	provinces = { x84EE56 xF91482 }
-	
+
 	ai_will_do = { always = no }
 }
 
 JEY = {
 	provinces = { x6B15F1 x7166FA xC744F9 x3EC5D1 xB3DED5 xD19AD8 xB00B6B }
-	
+
 	ai_will_do = { always = no }
 }
 
 MYB = {
 	provinces = { x0CE6EA xCCE5B7 x323B8A x11D169 x22B96B xBAE4B3 }
-	
+
 	ai_will_do = { always = no }
 }
 
 NAR = {
 	provinces = { xA0A8E0 xA15F01 x30C2D5 }
-	
+
 	ai_will_do = { always = no }
 }
 
 PTN = {
 	provinces = { xB6E5C1 x1504AD x5031A0 x1622F2 x404EEA xFBF096 x5BC5C8 xB07FDD }
-	
+
 	ai_will_do = { always = no }
 }
 
 COO = {
 	provinces = { x13A493 }
-	
+
 	ai_will_do = { always = no }
 }
 
 MNP = {
 	provinces = { x8C53B3 xCB0893 xB03121 xA17DC4 xB238B2 }
-	
+
 	ai_will_do = { always = no }
 }
 
 SUR = {
 	provinces = { x66337F x6B7184 x7884D6 x52001D x4605A8 xD64336 x5CBFF7 }
-	
+
 	ai_will_do = { always = no }
 }
 
 BAG = {
 	provinces = { x355332 xFE11FD xBC06E9 x0E5FEA x114EAE x618D5B x845EA7 xD0B021 xD0F986 }
-	
+
 	ai_will_do = { always = no }
 }
 
 BUN = {
 	provinces = { x5272B3 xE81D4F xEB50A4 x907021 }
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -2871,7 +2860,7 @@ BIH = {
 	possible = {
 		has_technology_researched = nationalism
 	}
-	
+
 	ai_will_do = { always = no }
 }
 
@@ -2879,6 +2868,14 @@ ARK = {
 	states = {
 		STATE_ARAKAN
 	}
-	
+
+	ai_will_do = { always = no }
+}
+
+ALK = {
+	states = {
+		STATE_ALASKA
+	}
+
 	ai_will_do = { always = no }
 }
