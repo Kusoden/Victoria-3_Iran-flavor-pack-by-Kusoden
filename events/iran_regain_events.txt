@@ -3,9 +3,9 @@
 iran.1 = {
 	type = country_event
 
-	title = bahrein.1.t
-	desc = bahrein.1.d
-	flavor = bahrein.1.f
+	title = iran.1.t
+	desc = iran.1.d
+	flavor = iran.1.f
 
 	placement = scope:bahrein_overlord_capital
 
@@ -33,9 +33,9 @@ iran.1 = {
 	}
 
 	option = {
-		name = bahrein.1.a
+		name = iran.1.a
 		default_option = yes
-		annex = c:BHN
+		
 	}
 }
 
@@ -66,7 +66,7 @@ iran.2 = {
 		name = iran.2.a
         add_modifier = {
         	name = the_lion_roars
-        	months = very_long_modifier_time
+        	days = very_long_modifier_time
         }
 		s:STATE_ABU_DHABI = {
 			add_claim = root
@@ -688,16 +688,16 @@ iran.4 = { # language changing after unifying the divided language
 		name = iran.4.a
 		add_modifier = {
 			name = avestan_script
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 		add_modifier = {
 			name = researching_avestan
 			multiplier = money_amount_multiplier_medium
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		add_modifier = {
 			name = foundation_of_sacred_thoughts
-			months = -1
+			days = -1
 		}
 
 		every_interest_group = {
@@ -710,7 +710,7 @@ iran.4 = { # language changing after unifying the divided language
 			}
 			add_modifier = {
 				name = iranization_of_the_langauge
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 		}
 		custom_tooltip = {
@@ -727,7 +727,7 @@ iran.4 = { # language changing after unifying the divided language
 		name = iran.4.b
 		add_modifier = {
 			name = pahlavi_script
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		every_interest_group = {
 			limit = {
@@ -738,7 +738,7 @@ iran.4 = { # language changing after unifying the divided language
 			}
 			add_modifier = {
 				name = adopting_pahlavi
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -746,7 +746,7 @@ iran.4 = { # language changing after unifying the divided language
 		name = iran.4.c
 		add_modifier = {
 			name = latin_script
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		every_interest_group = {
 			limit = {
@@ -757,7 +757,7 @@ iran.4 = { # language changing after unifying the divided language
 			}
 			add_modifier = {
 				name = adopting_latin
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}

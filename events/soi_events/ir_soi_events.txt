@@ -62,12 +62,12 @@ ir_events_alternative.8 = {
 			}
 			add_modifier = {
 				name = agreed_with_britian
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 		}
 		add_modifier = {
 			name = britian_wants_strong_iran
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 		ai_chance = {
 			base = 500
@@ -103,7 +103,7 @@ ir_events_alternative.8 = {
 			}
 			add_modifier = {
 				name = did_not_bow_to_britain_modifier
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}

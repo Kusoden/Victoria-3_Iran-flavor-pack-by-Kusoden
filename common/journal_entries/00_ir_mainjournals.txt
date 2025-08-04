@@ -40,7 +40,7 @@ je_ir_shattered_borders_broken_sovereignty= {
 	on_fail = {
 		add_modifier = { 
 			name = humiliated_iran
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 			
 	}
@@ -171,7 +171,7 @@ je_ir_unifying_the_divided_language_progress = { # Embracing the Rebirth: A New 
 		set_variable =language_var
 		add_modifier = {
 			name = brilliance_of_ancestral_legacy
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 		remove_modifier = scriptural_disunity
 	}
@@ -273,16 +273,16 @@ je_ir_repulsion_of_eastern_invaders = { # Liberation of Khorasan ud Turan
 		add_modifier = {
 			name = repulsion_of_jahansuzan
 			multiplier = money_amount_multiplier_medium
-			months = normal_modifier_time
+			days = normal_modifier_time
 		}
 		add_modifier = {
 			name = childbrith_grant
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 		add_modifier = {
 			name = childbrith_grant_expenses
 			multiplier = money_amount_multiplier_medium
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 	}
 

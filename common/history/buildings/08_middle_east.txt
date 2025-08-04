@@ -142,6 +142,17 @@
 			}
 		}
 		region_state:OMA={
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:ABU"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_anchorage" }
+			}
 		}
 		region_state:BHN={
 		}
@@ -233,7 +244,7 @@
 				add_ownership={
 					country={
 						country="c:LAH"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -953,11 +964,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_anchorage" }
-			}
-
-			create_building={
-				building= "building_argebam"
-				level = 1
 			}
 		}
 		region_state:OMA={

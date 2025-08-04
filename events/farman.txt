@@ -33,7 +33,7 @@ farman.1 = {
 
 			add_modifier = {
 				name = iran_farangi_reward
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 
 			loyalists_from_sol_change_mult = 0.1

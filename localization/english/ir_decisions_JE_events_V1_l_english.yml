@@ -1,12 +1,12 @@
 ﻿l_english:
 #Bahrein decision
-bahrein_decision:0 "Regain power on Persian Gulf and regain Bahrein"
-bahrein_event_tt:0 "Bahrein will be regained"
+bahrein_decision:0 "Regain power on Persian Gulf and Bahrein"
+bahrein_event_tt:0 "Iran will get rid off the treaty with oman, and we will defend the coast by ourselves!"
 bahrein_decision_desc:0 "It's been a long time since we lost our power on Persian Gulf and because of that not only outsiders trying to claim Bahrein, but also local landowners trying to gain Independence. Although Iran says otherwise, it has no power to show it. Will Iran be able to change that?"
-bahrein.1.t:0 "Bahrein Regained!"
-bahrein.1.d:0 "After Iran regaining power in Persian gulf once again. We were able to Regain our islands back from bedouin invaders and settlers!"
-bahrein.1.f:0 "We have been able to prevent some of our people from being taken over by foreigners, we have been able to reclaim some of our lands. As the Shah of Iran, it is your duty to make sure that all our people are within Iran's borders. They should be safe, prosperous and have a guaranteed future."
-bahrein.1.a:0 "Perhaps now is an opportune moment to repossess our lost territories, starting by adversaries who have sought to undermine Iran over the course of centuries."
+iran.1.t:0 "Bahrein Regained!"
+iran.1.d:0 "After Iran regaining naval power in Persian gulf. We are ready to take control and defend the people and the land from bedouin invaders and settlers!"
+iran.1.f:0 "We have been able to prevent some of our people from being taken over by foreigners, aswell as to reclaim some of our lands. As the Shah of Iran, it is your duty to make sure that all our people are within Iran's borders. They should be safe, prosperous and have a guaranteed future."
+iran.1.a:0 "To the Persian sea!."
 bahrein_powerprojection_tooltip:0 "Iran should have naval supremacy over Oman to be able to regain its lost terriories."
 
 #Arable land Kariz (Qanat) decision

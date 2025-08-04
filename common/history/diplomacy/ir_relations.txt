@@ -19,7 +19,16 @@ DIPLOMACY = {
 		set_relations = { country = c:KAL value = -50 }
 	}
 	c:RUS ?= {
+		set_relations = { country = c:KAB value = -40 }
 		set_relations = { country = c:BUK value = -20 }
 		set_relations = { country = c:KHI value = -20 }
+		set_relations = { country = c:HER value = -50 }
+		set_relations = { country = c:OMA value = -50 }
+		set_relations = { country = c:MAK value = -30 }
+		set_relations = { country = c:KAL value = -50 }
+		set_relations = { country = c:MAI value = -50 }
+		set_relations = { country = c:KOK value = -30 }
+		set_relations = { country = c:KAN value = -50 }
+		set_relations = { country = c:KUN value = -50 }
 	}
 }

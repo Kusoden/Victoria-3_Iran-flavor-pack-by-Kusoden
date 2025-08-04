@@ -2,7 +2,6 @@
 	is_shown = {
 		country_has_primary_culture = cu:iranian
 		NOT = { has_variable = bahrain_var }
-		exists = c:BHN
 	}
 
 	possible = {
@@ -29,9 +28,12 @@
 				days = 0
 				popup = yes
 			}
+			if = {
+				limit = { exists = c:BHN }
+				annex = c:BHN
+			}
 		}
 
-		#will get the oman treaty port, because of the low prestige of oman you cant get the treaty port inside the diplomatic playXDDD
 		s:STATE_BALUCHISTAN= {
 			set_owner_of_provinces = { 
 				country = ROOT
@@ -46,27 +48,41 @@
 			}
 			state_type = treaty_port
 		}
-
-		create_diplomatic_play = {
-			name = push_back_oman
-
-			target_state = s:STATE_ABU_DHABI.region_state:OMA
-			
-			war = yes
-			
-			type = dp_return_state
-
-			add_war_goal = {
-				holder = c:PER
-				type = return_state
-				target_state = s:STATE_LARISTAN.region_state:OMA
+		s:STATE_ABU_DHABI= {
+			set_owner_of_provinces = { 
+				country = ROOT
+				provinces = {x0DC972}
 			}
-			
-			add_war_goal = {
-				holder = c:OMA
-				type = conquer_state
-				target_state = s:STATE_LARISTAN.region_state:PER
+			state_type = treaty_port
+		}
+
+
+		create_treaty = {
+		name = treaty_name_farmaan_e_hormuzd
+		first_country = c:PER
+		second_country = c:OMA
+
+		is_draft = no
+		binding_period = { years = 5 } # 99 year binding period after start of game
+
+		articles_to_create = {
+			{
+				article = treaty_port
+				source_country = c:OMA
+				target_country = c:PER
+				inputs = {
+					{ state = s:STATE_LARISTAN.region_state:OMA }
+				}
 			}
+			{
+				article = money_transfer
+				source_country = c:PER
+				target_country = c:OMA
+				inputs = {
+					{ quantity = 2250 } # Loose estimate, the rent was 'thousands of tomans per year' (1 toman was roughly equal to a pound in 1815)
+				}
+			}
+		}
 		}
 	}
 

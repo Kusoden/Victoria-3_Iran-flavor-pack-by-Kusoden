@@ -252,7 +252,7 @@
 			}
 			add_modifier = {
 				name = modifier_herat_inspiration
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 			custom_tooltip = greater_khorasan_button_tt
 			if = {
@@ -354,13 +354,13 @@ persian_baluchistan_button = {
 				activate_law = law_type:law_frontier_colonization
 				add_modifier = {
 					name = modifier_turkmen_subjugation
-					months = normal_modifier_time
+					days = normal_modifier_time
 				}
 			}
 			else = {
 				add_modifier = {
 					name = modifier_turkmen_subjugation
-					months = normal_modifier_time
+					days = normal_modifier_time
 					multiplier = 2
 				}
 			}
@@ -370,14 +370,14 @@ persian_baluchistan_button = {
 				}
 				add_modifier = {
 					name = modifier_turkmen_logistics
-					months = normal_modifier_time
+					days = normal_modifier_time
 					multiplier = money_amount_multiplier_large
 				}
 			}
 			else = {
 				add_modifier = {
 					name = modifier_turkmen_logistics
-					months = normal_modifier_time
+					days = normal_modifier_time
 					multiplier = money_amount_multiplier_very_large
 				}
 			}
@@ -460,7 +460,7 @@ persia_british_aid_button = {
 				}
 				add_modifier = {
 					name = modifier_british_persian_aid
-					months = normal_modifier_time
+					days = normal_modifier_time
 				}
 			}
 			if = {
@@ -469,7 +469,7 @@ persia_british_aid_button = {
 				}
 				add_modifier = {
 					name = modifier_british_persian_aid
-					months = normal_modifier_time
+					days = normal_modifier_time
 				}
 			}
 			scope:relevant_country.power_bloc = {
@@ -537,7 +537,7 @@ persia_russian_aid_button = {
 				}
 				add_modifier = {
 					name = modifier_russian_persian_aid
-					months = normal_modifier_time
+					days = normal_modifier_time
 				}
 			}
 			if = {
@@ -546,7 +546,7 @@ persia_russian_aid_button = {
 				}
 				add_modifier = {
 					name = modifier_russian_persian_aid
-					months = normal_modifier_time
+					days = normal_modifier_time
 				}
 			}
 			scope:relevant_country.power_bloc = {
